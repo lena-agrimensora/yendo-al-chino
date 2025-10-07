@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=3 uid="uid://b1q7njkc4i6s8"]
+
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/shaders/default_object.gdshader" id="1_jn6gl"]
+[ext_resource type="AudioStream" uid="uid://dkykdlrnwaina" path="res://assets/sonido/donde_estan_las_bepis.wav" id="1_ocxle"]
+[ext_resource type="Texture2D" uid="uid://cj55jfqcowgie" path="res://assets/texturas/Girly Pop.png" id="2_ocxle"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rqfwj"]
+render_priority = 0
+shader = ExtResource("1_jn6gl")
+shader_parameter/color_texture = ExtResource("2_ocxle")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m0nlb"]
+albedo_color = Color(0.716296, 0.716296, 0.716296, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jn6gl"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v2irc"]
+size = Vector3(1.03564, 1.33789, 0.876953)
+
+[node name="Parlante (Propiedad de la Cajera)" type="RigidBody3D"]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(-0.999955, 0, 0.00951234, 0, 1, 0, -0.00951234, 0, -0.999955, 0.00583124, -0.190854, -0.0323792)
+stream = ExtResource("1_ocxle")
+volume_db = -20.0
+unit_size = 20.36
+autoplay = true
+max_distance = 1000.0
+playback_type = 1
+emission_angle_enabled = true
+emission_angle_degrees = 34.0
+
+[node name="MeshInstance3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.3, 0, 0, 0, 0.8, 0, 0, 0)
+material = SubResource("ShaderMaterial_rqfwj")
+
+[node name="MeshInstance3D2" type="CSGCylinder3D" parent="MeshInstance3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.00163791, -0.384612, 0, 0.624994, 0.00266161, 0, -0.142783, 0.121741)
+use_collision = true
+radius = 0.681
+height = 1.41064
+material = SubResource("StandardMaterial3D_m0nlb")
+
+[node name="MeshInstance3D4" type="CSGSphere3D" parent="MeshInstance3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.00163791, -0.384612, 0, 0.624994, 0.00266161, 0, -0.142783, 0.622262)
+operation = 2
+use_collision = true
+radius = 0.611771
+material = SubResource("StandardMaterial3D_m0nlb")
+
+[node name="MeshInstance3D3" type="CSGCylinder3D" parent="MeshInstance3D"]
+transform = Transform3D(0.7, 0, 0, 0, 0.00163791, -0.384612, 0, 0.624994, 0.00266161, 0, 0.298441, 0.123724)
+radius = 0.304688
+height = 1.4043
+material = SubResource("StandardMaterial3D_m0nlb")
+
+[node name="MeshInstance3D5" type="CSGSphere3D" parent="MeshInstance3D"]
+transform = Transform3D(0.7, 0, 0, 0, 0.00163792, -0.384612, 0, 0.624995, 0.00266161, 0, 0.298441, 0.574585)
+operation = 2
+radius = 0.246249
+material = SubResource("StandardMaterial3D_m0nlb")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="MeshInstance3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.00163791, -0.384612, 0, 0.624994, 0.00266161, 0, -0.141334, 0.246584)
+radius = 0.22168
+height = 0.230469
+material = SubResource("StandardMaterial3D_jn6gl")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="MeshInstance3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.00163791, -0.384612, 0, 0.624994, 0.00266161, 0, 0.297926, 0.409258)
+radius = 0.128418
+height = 0.230469
+material = SubResource("StandardMaterial3D_jn6gl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000732422, 0.00292969, 0.0273438)
+shape = SubResource("BoxShape3D_v2irc")

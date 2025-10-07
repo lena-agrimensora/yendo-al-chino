@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ouwp3tk25icb"]
+
+[ext_resource type="PackedScene" uid="uid://cu70qmg6st8in" path="res://assets/modelos_3D/Modelado - Productos/Verdulería/CALABAZA_A.glb" id="1_rlo07"]
+
+[node name="CALABAZA_A" instance=ExtResource("1_rlo07")]
+
+[node name="CALABAZA" parent="." index="0"]
+transform = Transform3D(0.24, 0, 0, 0, -1.04907e-08, -0.24, 0, 0.24, -1.04907e-08, 0, 0, 0)

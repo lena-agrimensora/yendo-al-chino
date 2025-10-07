@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqeqlwuosi6bb"]
+
+[ext_resource type="PackedScene" uid="uid://c3upfr1jdjrpm" path="res://assets/modelos_3D/Modelado - Productos/Verdulería/TOMATE_A.glb" id="1_qtf43"]
+
+[node name="Tomate" instance=ExtResource("1_qtf43")]

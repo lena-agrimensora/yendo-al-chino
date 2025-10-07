@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk35kyjs5nqyw"]
+
+[ext_resource type="ArrayMesh" uid="uid://mn0h26y7w7e2" path="res://assets/modelos - texturas/objetos/changuitos/changuito.obj" id="1_j8vdl"]
+[ext_resource type="Texture2D" uid="uid://m5mkxymykxnc" path="res://assets/modelos - texturas/objetos/changuitos/Chango.png" id="2_e4rvo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e4rvo"]
+size = Vector3(6.56851, 8.93799, 9.88437)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtj7d"]
+albedo_color = Color(0.934787, 0.000632968, 0.0095372, 1)
+albedo_texture = ExtResource("2_e4rvo")
+
+[node name="Changuito" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049057, -0.142334, 0.849106)
+shape = SubResource("BoxShape3D_e4rvo")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_j8vdl")
+surface_material_override/0 = SubResource("StandardMaterial3D_gtj7d")

@@ -1,0 +1,418 @@
+[gd_scene load_steps=13 format=4 uid="uid://4dhan3kuujdb"]
+
+[ext_resource type="Texture2D" uid="uid://b1bq8l6ieo2g" path="res://assets/modelos - texturas/muebles/heladera/heladera-larga_Estantes.png" id="1_ara0m"]
+[ext_resource type="Script" uid="uid://bj76ms0tiwom8" path="res://scripts/managers/Gondola_Manager.gd" id="2_mlf8i"]
+[ext_resource type="Texture2D" uid="uid://cmurehl0xxrfe" path="res://assets/modelos - texturas/muebles/heladera/heladera-larga_Heladera.png" id="2_xgf75"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vc74e"]
+resource_name = "Estantes"
+cull_mode = 2
+albedo_texture = ExtResource("1_ara0m")
+roughness = 0.4
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sgoiq"]
+_surfaces = [{
+"aabb": AABB(-0.934571, -2.29876, -6.30584, 1.5992, 4.59753, 4.34057),
+"format": 34896613377,
+"index_count": 144,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYACAAJAAoACAALAAkADAAKAAkACwAMAAkADQAIAAoACwAIAA0ADAAOAAoADQAKAA4ACwAPAAwACwANAA8ADwAOAAwADwANAA4AEAARABIAEAATABEAFAASABEAEwAUABEAFQAQABIAEwAQABUAFAAWABIAFQASABYAEwAXABQAEwAVABcAFwAWABQAFwAVABYAGAAZABoAGAAbABkAHAAaABkAGwAcABkAHQAYABoAGwAYAB0AHAAeABoAHQAaAB4AGwAfABwAGwAdAB8AHwAeABwAHwAdAB4A"),
+"name": "Estantes",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("AAD/////AAAAAAAAWvQAAAAA//9a9AAAAAAAAP//AAD//wAAWvQAAP///////wAA/////1r0AAD//wAA//8AAAAA//+kCwAAAAAAAAAAAAAAAP//AAAAAAAAAACkCwAA//8AAAAAAAD/////pAsAAP////8AAAAA//8AAKQLAAAAAP//ZloAAAAAAADBTgAAAAD//8FOAAAAAAAAZloAAP//AADBTgAA/////2ZaAAD/////wU4AAP//AABmWgAAAAD//zaqAAAAAAAAkZ4AAAAA//+RngAAAAAAADaqAAD//wAAkZ4AAP////82qgAA/////5GeAAD//wAANqoAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sumvr"]
+resource_name = "heladera-larga_Cube_004"
+_surfaces = [{
+"aabb": AABB(-0.934571, -2.29876, -6.30584, 1.5992, 4.59753, 4.34057),
+"attribute_data": PackedByteArray("lbR/9hS6f3YUun/2lbR/dpPLf+sS0fm+EtF/65PL+b6878ENPerBjT3qwQ2878GNU7gnPtO9oRHTvSc+U7ihEd8y/3+yDL7tsgz/f98yvu0LWf9/3zK+7d8y/38LWb7tFLp/9pO/f3aTv3/2FLp/dpPL+b4S0XOSEtH5vpPLc5IV+rwElvS8hJb0vAQV+ryEk8tzkhLR7WUS0XOSk8vtZTh//38LWb7tC1n/fzh/vu3fMkASsgz/f7IMQBLfMv9/l6l/9havf3YWr3/2l6l/dhPGf+uTy/m+k8t/6xPG+b7T2fwKU9T8ilPU/ArT2fyKE8b5vpPLc5KTy/m+E8ZzkgtZQBLfMv9/3zJAEgtZ/384f0ASC1n/fwtZQBI4f/9/Fq9/9pW0f3aVtH/2Fq9/dhPGc5KTy+1lk8tzkhPG7WVj5aEE5N+ghOTfoQRj5aCEVKytQtOxJxbTsa1CVKwnFmWl/384f77tOH//f2Wlvu1lpUASOH//fzh/QBJlpf9/"),
+"format": 34896613399,
+"index_count": 144,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0A"),
+"material": SubResource("StandardMaterial3D_vc74e"),
+"name": "Estantes",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 96,
+"vertex_data": PackedByteArray("AAD/////veMAAAAAWvSW8QAA//9a9JbxAAAAAP//veMAAAAA//+94///AABa9EDcAAAAAFr0lvH//wAA//+Wsf//AAD//73j/////1r0lvH//wAAWvSW8f///////73j////////lrEAAP//WvSW8f////9a9EDcAAD/////veMAAAAA//+H9v///////4f2//8AAP//h/YAAP////+H9v//AABa9JPhAAD//1r0k+EAAAAAWvST4f////9a9JPhAAD//6QLveMAAAAAAACW8QAA//8AAJbxAAAAAKQLveMAAAAApAu94///AAAAAEDcAAAAAAAAlvH//wAApAuWsf//AACkC73j/////wAAlvH//wAAAACW8f////+kC73j/////6QLlrEAAP//AACW8f////8AAEDcAAD//6QLveMAAAAApAuH9v////+kC4f2//8AAKQLh/YAAP//pAuH9v//AAAAAJPhAAD//wAAk+EAAAAAAACT4f////8AAJPhAAD//2ZaveMAAAAAwU6W8QAA///BTpbxAAAAAGZaveMAAAAAZlq94///AADBTkDcAAAAAMFOlvH//wAAZlqWsf//AABmWr3j/////8FOlvH//wAAwU6W8f////9mWr3j/////2ZalrEAAP//wU6W8f/////BTkDcAAD//2ZaveMAAAAAZlqH9v////9mWof2//8AAGZah/YAAP//ZlqH9v//AADBTpPhAAD//8FOk+EAAAAAwU6T4f/////BTpPhAAD//zaqveMAAAAAkZ6W8QAA//+RnpbxAAAAADaqveMAAAAANqq94///AACRnkDcAAAAAJGelvH//wAANqqWsf//AAA2qr3j/////5GelvH//wAAkZ6W8f////82qr3j/////zaqlrEAAP//kZ6W8f////+RnkDcAAD//zaqveMAAAAANqqH9v////82qof2//8AADaqh/YAAP//NqqH9v//AACRnpPhAAD//5Gek+EAAAAAkZ6T4f////+RnpPhJvBAJr09jWSN5EFCvlkncL5ZJ3BxX2cxvT2NZA5oMkbYD77ZQcJxm3Ebvb1AptePMcbxF43kQUJnsY0gJvBAJmLhguicHnwXfJdjYYJom56gC05YXvSwp7Enn4tN2F90JvBAJr09jWSN5EFCvlkncL5ZJ3BxX2cxvT2NZA5oMkbYD77ZQcJxm3Ebvb1AptePMcbxF43kQUJnsY0gJvBAJmLhguicHnwXfJdjYYJom56gC05YXvSwp7Enn4tN2F90JvBAJr09jWSN5EFCvlkncL5ZJ3BxX2cxvT2NZA5oMkbYD77ZQcJxm3Ebvb1AptePMcbxF43kQUJnsY0gJvBAJmLhguicHnwXfJdjYYJom56gC05YXvSwp7Enn4tN2F90JvBAJr09jWSN5EFCvlkncL5ZJ3BxX2cxvT2NZA5oMkbYD77ZQcJxm3Ebvb1AptePMcbxF43kQUJnsY0gJvBAJmLhguicHnwXfJdjYYJom56gC05YXvSwp7Enn4tN2F90")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_sgoiq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b6p2o"]
+resource_name = "Heladera"
+cull_mode = 2
+albedo_texture = ExtResource("2_xgf75")
+roughness = 0.45
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pxynh"]
+_surfaces = [{
+"aabb": AABB(-1, -2.36386, -7.66164, 2, 4.72772, 8.38486),
+"format": 34896613377,
+"index_count": 252,
+"index_data": PackedByteArray("HgAfACAAHgAAAB8AAAAQAB8AAAAeABIAAAAHABAAAAASAAcABwARABAABwASABEAEAAhAB8AEQAiABAAEAAiACEAHwAhABUAHwAVACAAIgAjACEAIQAkABUAIQAjACQAIAAVACUAFQAkACYAFQAmACUAIwAWACQAJAAXACYAJAAWABcAIwACABYAIgAUACMAFAACACMACQAUACIAEQAJACIAFAABAAIAAQAWAAIACwABABQACQALABQAAQAnABYAJwAXABYACwAnAAEAJwAZABcACAAnAAsACAAZACcAGQADABcAJgAXAAMAGQAGAAMAJgADABgAGAADAAYAJQAmABgAGgAGABkAGAAGABoAGgAZAAgAJQAYACgAKAAYABoAKQAlACgAIAAlACkAKAAaACoAKgAaAAgAKQAoABwAHAAoACoABAApABwAGwAgACkABAAbACkAGwAeACAABQAEABwAGwAEAAUAHgAbACsAGwAFACsAHgArABIABQAcAB0AKwAFAB0AHAAqAB0AEgArABMAKwAdABMAEgATABEAHQAqAAoAHQAKABMAEwAJABEAEwAKAAkAKgAIAAoACgANAAkACAAPAAoACgAPAA0ACAAMAA8ACwAMAAgADwAOAA0ACQANAA4ADwAMAA4ACQAOAAsACwAOAAwA"),
+"lods": [1e-10, PackedByteArray("AAAQAAIAAAAHABAABwARABAABwASABEAAAASAAcAEQAJABAAEgATABEAEwAJABEAEgAFABMAAAAFABIAEAAUAAIACQAUABAAAgAVAAAAFAABAAIAAgAWABUAAQAWAAIAFQAWABcAAQAXABYAAAAVABgACwABABQACQALABQAFQAXAAMAFQADABgAAQAZABcAGQADABcAGQAGAAMAGAADAAYACAAZAAEACAABAAsAGgAGABkAGAAGABoAGgAZAAgAAAAYABsAAAAbAAUAHAAYABoAGwAYABwABAAbABwAGwAEAAUABQAEABwABQAcAB0AHAAaAB0AHQAaAAgABQAdABMAHQAKABMAHQAIAAoAEwAKAAkACgANAAkACAAPAAoACgAPAA0ACAAMAA8ACwAMAAgADwAOAA0ACQANAA4ADwAMAA4ACQAOAAsACwAOAAwA"), 0.00124557, PackedByteArray("AAABAAIAAQADAAIAAAACAAMAAAADAAQABQAEAAMAAAAEAAUAAwAGAAUAAQAGAAMAAAAFAAcAAAAHAAEABQAGAAgACAAGAAEABwAFAAkABwAJAAEABQAIAAoABQAKAAkACAABAAsACQALAAEACwAMAAgACgANAAkACQAOAAsACwAOAAwACQANAA4ACAAMAA8ACAAPAAoADwAMAA4ACgAPAA0ADwAOAA0A")],
+"name": "Heladera",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 44,
+"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAP////8AAP///////wAA/////wAAAAD//wAA//8AAP//cflbDAAA//+oBorOAAD//3H5is4AAP//qAZbDAAAwjNx+VsMAADCM6gGis4AAMIzqAZbDAAAwjNx+YrOAAD//wAA1dMAAP//qAbV0wAA//+oBv//AAD//3H51dMAAP//AABbDAAAAACoBorOAAAAAKgGAAAAAAAAcfkAAAAAAAD//1sMAAD//3H5AAAAAP////9bDAAAAABx+f//AAAAAP//1dMAAP/////V0wAAAACoBv//AAAAAAAA1dMAAAAAqAbV0wAAAAAAAIrOAAD//wAAis4AAAAAAABbDAAAAACoBlsMAAAAAHH5is4AAAAAcflbDAAA//+oBgAAAAAAAP//is4AAAAAcfnV0wAA/////4rOAAD//3H5//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cxr61"]
+resource_name = "heladera-larga_heladera_izq"
+_surfaces = [{
+"aabb": AABB(-1, -2.36386, -7.66164, 2, 4.72772, 8.38486),
+"attribute_data": PackedByteArray("zOGZxIPSwYTM4cGEg9KZxBbxmcTM4ZnEzOHBhBbxwYSszzjyrM8hvLnQsLhlqSG8udD//1yosLhcqP//Zak48v9/hoCejZy2/3+ctp6NhoBcqLC4/3////9/sLhcqP//+b4Yj+atTLfmrRiP+b5Mt+atGI/TnEy305wYj+atTLey1zP/+v0dyfr9M/+y1x3JF88msXfBBIsXzwSLd8EmsT6bnLaejYaAPpuGgJ6NnLZf8gag//8oxl/yKMb//wagg9KWuYPS1odcqLHzZamx86zP//9cqCG8ZamwuLnQIby50LHzrM+x88zhlrkW8Za5FvHWh8zh1ofmrUW205wjkPm+RbbmrUW25q0jkAiBsLj/f438/3/9xE+nd8YIgf//T6f//0+nsLhcqP3ET6f9xFyod8YIgf3E/393xgiBd8YIgY38T6eN/FyojfzM4Za5zOFEuIPSRLjM4daHZan//1yoOPK50DjyrM+wuBbxRLjM4US405xFtuatI5D5viOQ"),
+"format": 34896613399,
+"index_count": 252,
+"index_data": PackedByteArray("SQBKAEsASQAUAEoAQwBJAEsASgBGAEsASgBMAEYAQwBLAE0AFgBDAE0AFgBNAEUATQBOAEUASwBPAE0ATQBPAE4ASwBGAE8ATwBEAE4ATwBQAEQARgBQAE8AUAAVAEQAUABHABUARgBRAFAAUQBHAFAATABRAEYAUQBIAEcATABSAFEAUgBIAFEAUgAXAEgAAAAwAFMAAAADADAAMABUAFMAMABVAFQAVQBWAFQAVQAxAFYAMQACAFYAMQABAAIAVwAyADMAVwAOADIANABXADMAMgAPADMAMgBYAA8ANAAzADkADAA0ADkADAA5ADgAOQBZADgAWAALAA8AMwAPAAgAMwAIADkAOQAIAFkACAA3AFkACAAJADcACQAKADcACQBaAAoACwBaAAkAWAA1AAsACwA2AFoANQA2AAsANQANADYABAA6ADsABAAFADoAOgBbADsAOgBcAFsAXAA8AFsAXAA9ADwAPQAHADwAPQAGAAcAPgAdAF0APgAfAB0AXgA+AF0AXgBdAD8AHABeAD8AHAA/AB4AQAAZAEEAQAAbABkAXwBAAEEAXwBBAEIAGABfAEIAGABCABoAEAARABIAEAATABEAIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"),
+"lods": [1e-10, PackedByteArray("AAAwAAIAAAADADAAMAAxAAIAMQABAAIADgAyADMANAAOADMAMgAPADMAMgALAA8AMgA1AAsAMwAPAAgANQA2AAsANQANADYACwA2AAoACwAKAAkACQAKADcACAAJADcACAA3ADgAMwAIADkAOQAIADgANAAzADkADAA5ADgADAA0ADkABAA6ADsABAAFADoAOgA8ADsAOgA9ADwAPQAHADwAPQAGAAcAPgAfAB0AHAA+AB0AHAAdAD8AHAA/AB4AQAAZAEEAQAAbABkAGABAAEEAGABBAEIAGABCABoAQwBEAEUAFgBDAEUAFABEAEMAFABGAEQARgAVAEQAFwBGABQARgBHABUAFwBIAEYARgBIAEcAEAARABIAEAATABEAIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A"), 0.00124557, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABgAHAAQACAAJAAoACwAKAAkADAAIAAoACwANAAoADAAOAAgADgANAAsADgAPAAgADgALAA8AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0A")],
+"material": SubResource("StandardMaterial3D_b6p2o"),
+"name": "Heladera",
+"primitive": 3,
+"uv_scale": Vector4(1.99219, 2, 0, 0),
+"vertex_count": 96,
+"vertex_data": PackedByteArray("AAAAAP///////wAAAAD//wAAAAAAAP////8AAP//////////////vwAA//////+/AAD//wAA/7//////AAD/v///qAaKzlTV//+oBlsMVNX//wAAAABU1f//cflbDFTV//8AAP//VNX/////AABU1f///////1TV//9x+YrOVNX//3H5Wwz//8IzcfmKzv////9x+YrO///CM3H5Wwz//wAAAAD//1TVAAD//wAAVNUAAP////9U1QAAAAAAAFTV//8AAAAA//8AAP//AAD//wAAAAAAAP///////wAA//8AAAAA//////////////////8AAP////8AAP///////8IzcfmKzlTVwjOoBlsMVNXCM6gGis5U1cIzcflbDFTV//9x+YrO///CM6gGis7/////qAaKzv//wjNx+YrO/////6gGis7/v8IzqAZbDP+///+oBlsM/7/CM6gGis7/v///qAZbDP//wjNx+VsM/////3H5Wwz//8IzqAZbDP////8AANXT/////wAAWwz////////V01TV//9x+dXTVNX//6gG//9U1f////9bDFTV//9x+QAAVNX//wAAWwxU1f//AADV01TV//+oBtXTVNUAAP//1dP/v//////V0/+//////1sM/78AAP//Wwz/vwAAcfn///////+oBv///////3H5AAD//wAAcfkAAP//AACoBgAA//8AAHH5//9U1QAA//9bDFTVAAD//9XTVNUAAKgGis5U1QAAcfkAAFTVAACoBgAAVNUAAKgG//9U1QAAAADV01TVAACoBtXTVNUAAAAAis5U1QAAcfnV01TVAAD//4rOVNUAAHH5is5U1QAAcflbDFTVAACoBlsMVNUAAAAAWwxU1QAAAADV0///AAAAAIrO/////wAAis7//wAAAABbDP////9x+f//VNX/////is5U1f//AACKzlTV//+oBgAAVNX/////is7/vwAA//+Kzv+///9x+f////8AAKgG////////qAYAAP///3//P/9//z//f/8//3//P////3////9/////f////3+qqlRVqqpUVaqqVFWqqlRVqqpUVaqqVFWqqlRVqqpUVf9//z//f/8//3//P/9//z9UVaqqVFWqqlRVqqpUVaqq////f////3////9/////f/9//3//f/9//3//f/9//3+qqlVVqqpUVaqqVVWqqlRV////f////3////9/////f////3////9/////f////3//f/9//3//f/9//3//f/9//3//P/9//z+qqlRVqqpUVaqqVFWqqlRVqqpUVaqqVFWqqlRVqqpVVf///3////9/////f////3//f/9//3//f////3////9/////f1RVqqpUVaqqVFWqqlRVqqpUVaqqVFWqqlRVqqpUVaqqVFWqqlRVqqpUVaqqVFWqqlRVqqpUVaqqVFWqqlRVqqr/f/8//3//P/9//z//f/8/qqpUVaqqVFWqqlRVqqpUVf///3////9//3//f/9//3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_pxynh")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ara0m"]
+size = Vector3(1.25897, 0.23938, 15.801)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xgf75"]
+size = Vector3(2.01773, 1.65381, 16.2428)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_51xhb"]
+size = Vector3(2.0076, 8.42453, 0.450989)
+
+[node name="heladera-larga" type="StaticBody3D"]
+script = ExtResource("2_mlf8i")
+
+[node name="Estantes" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 3.43593, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_sumvr")
+skeleton = NodePath("")
+
+[node name="SpawnPoints" type="Node3D" parent="Estantes"]
+
+[node name="Estante" type="Node3D" parent="Estantes/SpawnPoints"]
+
+[node name="Marker3D" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 2.07299, -1.06361)
+
+[node name="Marker3D2" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 2.07299, -1.06361)
+
+[node name="Marker3D3" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 2.07299, -1.06361)
+
+[node name="Marker3D4" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 1.81609, -1.06361)
+
+[node name="Marker3D5" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 1.81609, -1.06361)
+
+[node name="Marker3D6" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 1.81609, -1.06361)
+
+[node name="Marker3D7" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 1.52597, -1.06361)
+
+[node name="Marker3D8" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 1.52597, -1.06361)
+
+[node name="Marker3D9" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 1.52597, -1.06361)
+
+[node name="Marker3D10" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 1.26906, -1.06361)
+
+[node name="Marker3D11" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 1.26906, -1.06361)
+
+[node name="Marker3D12" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 1.26906, -1.06361)
+
+[node name="Marker3D13" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 0.971029, -1.06361)
+
+[node name="Marker3D14" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 0.971029, -1.06361)
+
+[node name="Marker3D15" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 0.971029, -1.06361)
+
+[node name="Marker3D16" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 0.549033, -1.06361)
+
+[node name="Marker3D17" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 0.549033, -1.06361)
+
+[node name="Marker3D18" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 0.549033, -1.06361)
+
+[node name="Marker3D19" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 0.292127, -1.06361)
+
+[node name="Marker3D20" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 0.292127, -1.06361)
+
+[node name="Marker3D21" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 0.292127, -1.06361)
+
+[node name="Marker3D22" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 0.00200748, -1.06361)
+
+[node name="Marker3D23" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 0.00200748, -1.06361)
+
+[node name="Marker3D24" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 0.00200748, -1.06361)
+
+[node name="Marker3D25" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -0.254898, -1.06361)
+
+[node name="Marker3D26" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -0.254898, -1.06361)
+
+[node name="Marker3D27" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -0.254898, -1.06361)
+
+[node name="Marker3D28" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -0.552931, -1.06361)
+
+[node name="Marker3D29" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -0.552931, -1.06361)
+
+[node name="Marker3D30" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -0.552931, -1.06361)
+
+[node name="Marker3D31" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -1.02655, -1.06361)
+
+[node name="Marker3D32" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -1.02655, -1.06361)
+
+[node name="Marker3D33" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -1.02655, -1.06361)
+
+[node name="Marker3D34" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -1.28345, -1.06361)
+
+[node name="Marker3D35" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -1.28345, -1.06361)
+
+[node name="Marker3D36" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -1.28345, -1.06361)
+
+[node name="Marker3D37" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -1.57357, -1.06361)
+
+[node name="Marker3D38" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -1.57357, -1.06361)
+
+[node name="Marker3D39" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -1.57357, -1.06361)
+
+[node name="Marker3D40" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -1.83048, -1.06361)
+
+[node name="Marker3D41" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -1.83048, -1.06361)
+
+[node name="Marker3D42" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -1.83048, -1.06361)
+
+[node name="Marker3D43" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -2.12851, -1.06361)
+
+[node name="Marker3D44" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -2.12851, -1.06361)
+
+[node name="Marker3D45" type="Marker3D" parent="Estantes/SpawnPoints/Estante"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -2.12851, -1.06361)
+
+[node name="Estante2" type="Node3D" parent="Estantes/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.135466, 0, -1.28846)
+
+[node name="Marker3D" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 2.07299, -1.06361)
+
+[node name="Marker3D2" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 2.07299, -1.06361)
+
+[node name="Marker3D3" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 2.07299, -1.06361)
+
+[node name="Marker3D4" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 1.81609, -1.06361)
+
+[node name="Marker3D5" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 1.81609, -1.06361)
+
+[node name="Marker3D6" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 1.81609, -1.06361)
+
+[node name="Marker3D7" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 1.52597, -1.06361)
+
+[node name="Marker3D8" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 1.52597, -1.06361)
+
+[node name="Marker3D9" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 1.52597, -1.06361)
+
+[node name="Marker3D10" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 1.26906, -1.06361)
+
+[node name="Marker3D11" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 1.26906, -1.06361)
+
+[node name="Marker3D12" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 1.26906, -1.06361)
+
+[node name="Marker3D13" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 0.971029, -1.06361)
+
+[node name="Marker3D14" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 0.971029, -1.06361)
+
+[node name="Marker3D15" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 0.971029, -1.06361)
+
+[node name="Marker3D16" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 0.520721, -1.06361)
+
+[node name="Marker3D17" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 0.520721, -1.06361)
+
+[node name="Marker3D18" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 0.520721, -1.06361)
+
+[node name="Marker3D19" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, 0.263816, -1.06361)
+
+[node name="Marker3D20" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, 0.263816, -1.06361)
+
+[node name="Marker3D21" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, 0.263816, -1.06361)
+
+[node name="Marker3D22" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -0.0263037, -1.06361)
+
+[node name="Marker3D23" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -0.0263037, -1.06361)
+
+[node name="Marker3D24" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -0.0263037, -1.06361)
+
+[node name="Marker3D25" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -0.283209, -1.06361)
+
+[node name="Marker3D26" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -0.283209, -1.06361)
+
+[node name="Marker3D27" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -0.283209, -1.06361)
+
+[node name="Marker3D28" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -0.581242, -1.06361)
+
+[node name="Marker3D29" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -0.581242, -1.06361)
+
+[node name="Marker3D30" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -0.581242, -1.06361)
+
+[node name="Marker3D31" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -1.02655, -1.06361)
+
+[node name="Marker3D32" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -1.02655, -1.06361)
+
+[node name="Marker3D33" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -1.02655, -1.06361)
+
+[node name="Marker3D34" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -1.28345, -1.06361)
+
+[node name="Marker3D35" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -1.28345, -1.06361)
+
+[node name="Marker3D36" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -1.28345, -1.06361)
+
+[node name="Marker3D37" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -1.57357, -1.06361)
+
+[node name="Marker3D38" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -1.57357, -1.06361)
+
+[node name="Marker3D39" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -1.57357, -1.06361)
+
+[node name="Marker3D40" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -1.83048, -1.06361)
+
+[node name="Marker3D41" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -1.83048, -1.06361)
+
+[node name="Marker3D42" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -1.83048, -1.06361)
+
+[node name="Marker3D43" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, -0.188764, -2.12851, -1.06361)
+
+[node name="Marker3D44" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.330146, -2.12851, -1.06361)
+
+[node name="Marker3D45" type="Marker3D" parent="Estantes/SpawnPoints/Estante2"]
+transform = Transform3D(1.91069e-15, 4.37114e-08, -1, 1, -4.37114e-08, 0, -4.37114e-08, -1, -4.37114e-08, 0.705432, -2.12851, -1.06361)
+
+[node name="Heladera" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 3.43593, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_cxr61")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0430603, 6.20795, -0.00354004)
+shape = SubResource("BoxShape3D_ara0m")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0430603, 4.86755, -0.00354004)
+shape = SubResource("BoxShape3D_ara0m")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0430603, 3.50914, -0.00354004)
+shape = SubResource("BoxShape3D_ara0m")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0430603, 2.07878, -0.00354004)
+shape = SubResource("BoxShape3D_ara0m")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0430603, 0.783348, -0.00354004)
+shape = SubResource("BoxShape3D_ara0m")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00248718, 0.0817871, 0.0281372)
+shape = SubResource("BoxShape3D_xgf75")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0153961, 3.50468, -7.92371)
+shape = SubResource("BoxShape3D_51xhb")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0153961, 3.50468, 7.91969)
+shape = SubResource("BoxShape3D_51xhb")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00248718, 8.05253, 0.0281372)
+shape = SubResource("BoxShape3D_xgf75")

@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=4 uid="uid://cf4kf0j3sigwa"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_ysdtu"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/shaders/default_object.gdshader" id="3_jo2wq"]
+[ext_resource type="Texture2D" uid="uid://nemo0v3ptf7o" path="res://assets/texturas/Texturas - Productos/Shampoo_TEX.002.png" id="4_qkh2t"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jo2wq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mgewk"]
+resource_name = "BAKE.002"
+cull_mode = 2
+albedo_texture = SubResource("CompressedTexture2D_jo2wq")
+roughness = 0.5
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jo2wq"]
+resource_name = "Shampoo_Plane_001"
+_surfaces = [{
+"aabb": AABB(-0.729302, -0.09, -1.05683, 1.45648, 0.09, 2.00792),
+"attribute_data": PackedByteArray("F4PkITWpFRITqdQhvpUsEnKDFRJmvhkuQGrw64bB8OvqlQb1t2Lw63IL8OuRDhkuDjcG9eBJ5CHkI9QhwiMVEjo3LBKGSRUSidU3Cg3Z6D+E0us/C9yqCjDq0SFN8Wkr1+qaK6rwKCGE0us/C9yZ1YDViNUN2eg/PevwRfTxnMB4637At/HfRRLVcd8r2cf1s9IF9ZDbAeB4637A1O3H9WLnMfX08ZzAYucRC6rwKCEw6tEhyu03Ctfqmiu38d9FPevwRU3xaSuA1YjVkNsB4BLVcd8L3JnVjmlGWnJuGS4zbutrN8JGWpm962sIwI278nIG9eK4BvU3YY27BVoG9RYUBvVeD+trwQpGWsRe62tpY0Zahl4ZLtHS2DNT2TM0MNRGkg/bs56I1OKe09uwu7faHJJL1c27ednzXoPr52798eBuq+uwoXLramLs8WBi9eoLzGnxicwua3BH15UZLuSVcEcFluUhmsBwR+KVRlrmletrwGuNu+SVjbvjlfDrymFwRyA3GS7yNuUhFDdwR14McEcVN0ZaETfraxM3jbvvDI27FDfw69HS2DNT2TM0g+vnbibyr6Gr67Ch/fHgblzrRVbs8WBicutqYtfxOVbi1B6r09uwu0vVzbtp2/Gq1/E5VlzrRVby0hZft9ockjDURpJ52fNeJvKvoYjU4p5p2/Gq4tQeqw/bs57y0hZfafGJzPXqC8w="),
+"format": 34896613399,
+"index_count": 312,
+"index_data": PackedByteArray("VgBXAFgAVgA3AFcANgBWAFgANwBZAFcANwAAAFkAAAADAFkAAAAEAAMAWQADAAEAWQABAAIAVwBZAAIAVwACAAUAWABXAAUAWAAFAFoAWwBYAFoANgBYAFsAWwBaADkAOAA2AFsAXABbADkAOABbAFwAXAA5ADoAXQA4AFwAXgBcADoAXQBcAF4AXgA6ADsABwBeADsAXwBdAF4ABwBfAF4AXwAGAF0APAAGAF8APABfAAgACABfAAcACAAHAD0AYABhAEUARQBhAGIARQBiAA0ADQBiABAADQAQABEAYgAPABAAYgAOAA8AYQAOAGIAYQALAA4AYABjAGEAYwALAGEARABjAGAAYwBkAAsARABlAGMAZQBkAGMAQwBlAEQAZQBCAGQAQwBmAGUAZgBCAGUAPgBmAEMAZgBBAEIAZwBBAGYAPgBnAGYAZwBoAEEACgBoAGcAaQBnAD4ACgBnAGkAaQA+AAkAPwBpAAkAPwAMAGkADAAKAGkADABAAAoAagATABQAagBrABMAFgAXABgAFgAZABcASABJAEoASABMAEkAbABtAG4AbABvAG0AcABxAHIAcABzAHEAdAB1AHYAdAB3AHUAIgAjACQAIgAlACMAEgBHAEYAEgAVAEcAVAAnACgAVABVACcAKgArACwAKgAtACsAHgB4AHkAHgAhAHgATQAbABwATQBLABsAegB7AHwAegB9AHsAUQAfACAAUQB+AB8AfwCAAIEAfwCCAIAAUgBQAE8AUgBTAFAAGgBOAIMAGgAdAE4AJgCEAIUAJgApAIQALgAvADAALgAxAC8AMgAzADQAMgA1ADMA"),
+"lods": [0.00429088, PackedByteArray("NgA3AAAAAAAEAAMAAAADAAEAAAABAAIAAAACAAUANgAAAAUAOAA2AAUAOAAFAAYABgAFADkABgA5ADoAOwAGADoABwAGADsACAAGAAcAPAAGAAgACAAHAD0ADAA+AAkAPwAMAAkACgA+AAwADABAAAoACgBBAD4APgBBAEIAPgBCAEMAQwBCAEQARABCAEUARQBCAAsARQALAA4ARQAOAA8ARQAPAA0ADQAPABAADQAQABEARgATABQARgBHABMAEgBHAEYAEgAVAEcAFgAXABgAFgAZABcASABJAEoASgBJAEsASABMAEkASgBLAE0ATQBLABsATQAbABwAGgBMAEgAGgBOAEwAGgAdAE4ATwBQAFEAUgBQAE8AUQBQAB8AUQAfACAAUgBTAFAAHgBTAFIAHgAhAFMAIgAjACQAIgAlACMAVAAnACgAVABVACcAJgBVAFQAJgApAFUAKgArACwAKgAtACsALgAvADAALgAxAC8AMgAzADQAMgA1ADMA"), 0.201071, PackedByteArray("AAABAAIAAAADAAEAAAAEAAMAAAACAAUABgAAAAUABwAGAAUACAAGAAcACQAKAAsACgAJAAwACQALAA0ADQALAA4ADQAOAA8ADQAPABAADQAQABEAEgATABQAEgAVABMAFgAXABgAFgAZABcAGgAbABwAGgAdABsAHgAfACAAHgAhAB8AIgAjACQAIgAlACMAJgAnACgAJgApACcAKgArACwAKgAtACsALgAvADAALgAxAC8AMgAzADQAMgA1ADMA")],
+"material": SubResource("StandardMaterial3D_mgewk"),
+"name": "BAKE.002",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 134,
+"vertex_data": PackedByteArray("ukn+/9UR/7/Lt/7/AAD/v2i3/v/CEf+/lX/+/xkA/7/ASv7/AAD/v/v0/v+aH/+/AgL//7/1/7///f//v/X/vxSA/v////+/AgIAAL/1/////QAAv/X///v0AACaH///FIAAAP////+6SQAA1RH//2i3AADCEf//y7cAAAAA//+VfwAAGQD//8BKAAAAAP//FID+////Pr0CAgAAv/X8wQIC//+/9a/CFIAAAP//ML3Lt/7/AAC91mi3AADCEUrWaLf+/8IRr9XLtwAAAABa1wIC//+/9crWukkAANURG/e6Sf7/1REW9wICAAC/9bzW+/T+/5ofYtn//QAAv/VU1v/9//+/9UXW+/QAAJofZdnASv7/AADr/5V/AAAZAOr/lX/+/xkA6v/ASgAAAADr///9//+/9TvBFIAAAP//X7wUgP7///9QvP/9AAC/9fTBlX/+/xkA7v/LtwAAAADu/8u3/v8AAO7/lX8AABkA7v9ot/7/whF49/v0AACaH2n3+/T+/5ofZvdotwAAwhF797pJ/v/VEXLVwEoAAAAA99TASv7/AABV1LpJAADVERjWAAD+/25R/78dDv7/mh//v2kN/v9WZf+////+/25R/7+q8v7/VmX/v7L5/v8pv/+/HBv+/////78M5f7/////v1YGAAApv///HBsAAP////8M5QAA/////6ryAABWZf////8AAG5R//9pDQAAVmX//wAAAABuUf//HQ4AAJof//8cG/7////CvRwbAAD//7S9aQ3+/1ZlYswAAAAAblFqzAAA/v9uUXHMHQ4AAJofNvdpDQAAVmVczB0O/v+aHzH3VgYAACm/Hdeq8v7/VmW/y6ryAABWZcTLsvn+/ym/pNb///7/blHKy///AABuUc/LDOX+////1rwM5QAA///lvK8E/v8vPP+/33/+/5of/78DgP7/Lzz/v2SA/v/VEf+/Vvv+/y88/7//f/7/blH/vwmA/v9WZf+/Vgb+/ym//78EgP7/Kb//vwGA/v+/9f+/rwQAAC88///ffwAAmh///2SAAADVEf//A4AAAC88//9W+wAALzz///9/AABuUf//CYAAAFZl//8EgAAAKb///7L5AAApv///AYAAAL/1//8cG/7///8xwRwbAAD//37AqvL+/1Zlw9ay+QAAKb+y1rL5/v8pv7DWqvIAAFZlxNZW+/7/LzxH2f//AABuUUXZ///+/25RQ9lW+wAALzxJ2a8E/v8vPIzbHQ4AAJofc9sdDv7/mh9n268EAAAvPJjbVvsAAC88WtlW+/7/LzxW2VYG/v8pvyzXaQ0AAFZlQddpDf7/VmVD11YGAAApvyrXsvkAACm/s9YAAP7/blG+2a8EAAAvPLzZrwT+/y88utkAAAAAblHA2VYG/v8pvyzXDOUAAP//bcAM5f7///+0v/7//3////9/////f////3/+//9/////f////3////9/////f/9//z//f/8//3//P/9//z//f/8//3//P/9//z//f/8//3//P/9//38MalCW+mn5lf9//393q6FXNqsdV92qaVbPq1NYdVRZq8REkLvjRLO7flRrqwetYlM7qxFUMqv/UwqtZ1MEvRk9Zrx7PDi8TDwzvUc98ZU5af9//3//f/9/BJaUaQM87buZPIS8wjysvNo7xbs6vFhF2rvqRMW70kRPvHFFTlVbrJ9V+qwNVtGt4lSIq////3////9/////f////3////9/////f////3////9//3//P/9//z//f/8//3//P/9//z//f/8//3//P/9//z//f/9//3//fzNc3KIxXNaiL1zQoiFE07o1XOGiP0T2uj9U8Kqeo4Vcn6OJXHCreFSho45co6OSXP9//3//f/9/////f////3////9/////f////3////9/////f////3////9/////f/9//z//f/8//3//P/9//z//f/8//3//P/9//z//f/8//3//P/9//z8harKWM2oKl4WrpFR5q45UeKuMVIarplT2rFdT9KxUU/OsUVP4rFpTslEqrcdRT63QUWCtqFEZrQKtWFP/rFNTNVTZqihUv6onVLyqN1Tcqnqri1SxUg6sslIRrLRSFKyvUgysNlTeqtuV02jIlXZo")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jo2wq"]
+render_priority = 0
+shader = ExtResource("3_jo2wq")
+shader_parameter/color_texture = ExtResource("4_qkh2t")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ysdtu"]
+size = Vector3(0.476684, 0.609966, 0.0749512)
+
+[node name="Shampoo Knees n Toes" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_ysdtu")
+
+[node name="Plane_001" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.32, 7.62939e-08, -3.09522e-15, 0, -1.39876e-08, -0.297, -7.62939e-08, 0.32, -1.29823e-08, 0, 0.283789, 0)
+mesh = SubResource("ArrayMesh_jo2wq")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("ShaderMaterial_jo2wq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00299069, 0.304109, -0.0137939)
+shape = SubResource("BoxShape3D_ysdtu")
+
+[node name="Producto" type="Node" parent="."]

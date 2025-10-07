@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://dh8y11ifjh2fi"]
+
+[ext_resource type="PackedScene" uid="uid://fbhio4u5tmif" path="res://assets/modelos_3D/Modelado - Productos/Heladeras/LECHE.glb" id="1_qg7b8"]
+[ext_resource type="Texture2D" uid="uid://dp1br5uiyxt38" path="res://assets/texturas/Texturas - Productos/Heladeras/Leche/lecheAzul_TEX.png" id="2_qg7b8"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/Shaders/default_object.gdshader" id="2_yky8d"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_riu62"]
+render_priority = 0
+shader = ExtResource("2_yky8d")
+shader_parameter/color_texture = ExtResource("2_qg7b8")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="LECHE2" instance=ExtResource("1_qg7b8")]
+transform = Transform3D(0.3, 0, -3.55271e-14, 0, 0.3, 0, 3.55271e-14, 0, 0.3, 0, 0, 0)
+
+[node name="LECHE" parent="." index="0"]
+transform = Transform3D(0.25, 0, 3.38813e-21, 0, 0.25, 0, -3.38813e-21, 0, 0.25, 0.00360639, 0.461717, -1.58819e-22)
+surface_material_override/0 = SubResource("ShaderMaterial_riu62")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://x6kn66ou5k0d"]
+
+[ext_resource type="PackedScene" uid="uid://d3nbrnlu5pa3" path="res://assets/modelos_3D/Modelado - Productos/Heladeras/CARNE PICADA.glb" id="1_4fryn"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/Shaders/default_object.gdshader" id="2_nvfql"]
+[ext_resource type="Texture2D" uid="uid://g4nlyro26fv4" path="res://assets/texturas/Texturas - Productos/Heladeras/Carne/carnePicada_TEX.png" id="2_wonam"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4dfcg"]
+render_priority = 0
+shader = ExtResource("2_nvfql")
+shader_parameter/color_texture = ExtResource("2_wonam")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="Bandeja de carne" instance=ExtResource("1_4fryn")]
+
+[node name="CARNE PICADA" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_4dfcg")

@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://3280n7k7wsly"
+path.s3tc="res://.godot/imported/AROMATIZANTE ATOMIZADOR_aromatizanteAtoMenta_TEX.png-20076d2c8e47c922c5c89f6cfe05d8cd.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "5a13835d38bf1d8a37508bff7c0673de"
+}
+
+[deps]
+
+source_file="res://scripts/herramientas/Productos GLB/Aromatizante atom/AROMATIZANTE ATOMIZADOR_aromatizanteAtoMenta_TEX.png"
+dest_files=["res://.godot/imported/AROMATIZANTE ATOMIZADOR_aromatizanteAtoMenta_TEX.png-20076d2c8e47c922c5c89f6cfe05d8cd.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

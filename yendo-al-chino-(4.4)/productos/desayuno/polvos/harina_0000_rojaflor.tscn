@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=4 uid="uid://dqdcj6rpk5f1p"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_j7o4u"]
+[ext_resource type="Texture2D" uid="uid://brgbplj5egp4j" path="res://assets/modelos_3D/Modelado - Productos/Harinas, cereales y polvos/HARINA_harinaAzul_TEX.png" id="2_860sy"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/shaders/default_object.gdshader" id="3_h8ckv"]
+[ext_resource type="Texture2D" uid="uid://cgfpmntc5iup6" path="res://assets/modelos_3D/Modelado - Productos/Harinas, cereales y polvos/harinaRoja_TEX.png" id="4_2n3ig"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nm4vj"]
+resource_name = "HARINA MAT"
+cull_mode = 2
+albedo_texture = ExtResource("2_860sy")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_dyq1c"]
+_surfaces = [{
+"aabb": AABB(-1.4836, -2.10448, -0.0450001, 2.9672, 4.22167, 0.0900001),
+"format": 34896613377,
+"index_count": 138,
+"index_data": PackedByteArray("AAAMAAIAAgANAAAAAgAOAA0AAgAPAA4ADgAQAA0ADgAPABAAAgADAA8AAwAQAA8ADAADAAIADQAQAAQAAwAEABAADQAEAAAADAARAAMABAADABEABAARABIAAAAEABIAAAATAAwAAAASABMAEwABAAwAAQARAAwAEgARAAUAAQAFABEAEwASAAYAEgAFAAYAEwAGAAcAEwAHAAEABwAGAAUABwAFAAEABwAGAAgABQAIAAYAAQAHAAkABwAIAAkACgAFAAEAAQAJAAoABQALAAgACgALAAUACQAIABQACwAUAAgACgAJABUACQAUABUAFgALAAoACgAVABYACwAXABQAFQAUABcAFgAXAAsAFQAXABYA"),
+"lods": [0.135851, PackedByteArray("AAABAAIAAQADAAIAAgAEAAAAAgADAAQABAADAAUAAQAFAAMAAAAEAAYABAAFAAYAAAAGAAcAAAAHAAEABwAGAAUABwAFAAEABwAGAAgABQAIAAYAAQAHAAkABwAIAAkACgAFAAEAAQAJAAoABQALAAgACQAIAAsACgALAAUACQALAAoA")],
+"name": "HARINA MAT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAjCf7/AACr7vrv//8AAP//Iwn+/wAA//8jCQAAAAAAACMJAAAAAKvu+u8AAAAAUxH67wAAAABTEfrv//8AAFMRkPsAAAAAUxGQ+///AACr7pD7//8AAKvukPsAAAAA//8C3///AAAODwAA/v8AAPDwAAD+/wAA8PAAAAAAAAAODwAAAAAAAP//At8AAAAAAAAC3wAAAAAAAALf//8AAHsd//8AAAAAex3/////AACD4v////8AAIPi//8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_su8p0"]
+resource_name = "HARINA_Plane_002"
+_surfaces = [{
+"aabb": AABB(-1.4836, -2.10448, -0.0450001, 2.9672, 4.22167, 0.0900001),
+"attribute_data": PackedByteArray("P/tW9nGHzjMJf1b21/LOM9fyCipxhwoqzn1W9gAKzjNmdc4zmAFW9mZ1CioACgoq2ugtAikhwwopIS0C2ujDCiQXwwokFy0CKSFZE9rowwra6FkTKSHDCiQXWRMkF8MK2uhiGtoqYhraKlkTAAAAAP//AAD//wAAAAAAANroYhqSRGshkkRiGtroayEJfxtC8fMJ/leGCf4/+xtC8exOJleNTiaYARtCzn0bQoB2Cf7mCAn+gG9OJuYPTibYL8MK2C8tAtgvWRPa6FkT2C/DCtgvwwrYL1kT2C8tAtgvwwqt3VkTBzZiGgc2WROt3WIaBzZZEwc2Yhqt3WIard1ZEykhLQIpIcMKKSHDCikhWRPU32IamE1rIZhNYhrU32sh1N9rIdTfYhqYTWIamE1rIQ=="),
+"format": 34896613399,
+"index_count": 138,
+"index_data": PackedByteArray("AAAjAAIAAgAkAAAAAgAlACQAAAAmACMAJgABACMAJgADAAEAAQADAAQAAQAEAAUABQAEACcABQAnACgABgApACoABgAJACkACQAGACsACQArACwAKgApAAcAKgAHAAgABwAKAAgABwALAAoACwAtAAoACwAuAC0ADAAvADAADAAPAC8AMQATADIAMQAzABMAGwAcAB0AGwAeABwAEgA0ADUAEgAVADQANgANAA4ANgA3AA0AOAA5ADoAOAA7ADkAPAAZABoAPAA9ABkAFAA+AD8AFAAYAD4AQAAQABEAQABBABAAFgBCAEMAFgAXAEIARABFAEYARABHAEUAHwBIAEkAHwAiAEgASgAgACEASgBLACAA"),
+"lods": [0.135851, PackedByteArray("AAABAAIAAAADAAEAAQADAAQAAQAEAAUABgAHAAgABgAJAAcABwAKAAgABwALAAoADAANAA4ADAAPAA0ADgANABAADgAQABEAEgATABQAEgAVABMAFgAVABIAFgAXABUAFAAYABkAFAAZABoAGwAcAB0AGwAeABwAHwAgACEAHwAiACAA")],
+"material": SubResource("StandardMaterial3D_nm4vj"),
+"name": "HARINA MAT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 76,
+"vertex_data": PackedByteArray("AAAjCf7/AACr7vrv//8AAP//Iwn+/wAAUxH67///AABTEZD7//8AAKvukPv//wAAAAAjCQAA//+r7vrvAAD//1MR+u8AAP////8jCQAA//9TEZD7AAD//6vukPsAAP//AAAjCf7/VNVTEfrvAAA05VMR+u///zTlAAAjCQAAVNVTEZD7AABU1VMRkPv//1TVq+767///jsj//yMJAABU1f//Iwn+//bEq+767wAAjsir7pD7//9U1avukPsAAFTV//8jCQAA9sQAACMJAAD2xAAAIwn+//bEUxH67////7+r7vrvAAD/v6vu+u////+/UxH67wAA/79TEZD7//9H8qvukPsAAEfyq+6Q+///R/JTEZD7AABH8v//At///wAADg8AAP7/AADw8AAA/v8AAAAAAt///wAAex3/////AACD4v////8AAP//At8AAP//AAAC3wAA//8ODwAAAAD///DwAAAAAP//ex3//wAA//+D4v//AAD//wAAAt8AAFTVAAAC3///VNX//wLf//9U1f//Iwn+/1TV//8C3wAAVNX//wLfAACOyP//At///47IAAAC3///NOUAAALfAAA05fDwAAD+//+/Dg8AAAAA/78ODwAA/v//v/DwAAAAAP+/Dg8AAP7/9sQODwAAAAD2xPDwAAAAAPbE8PAAAP7/9sRTEfrv//9U1VMR+u8AAFTVq+767wAAVNWr7vrv//9U1Xsd////////g+L//wAA//+D4v///////3sd//8AAP//ex3//wAAR/J7Hf////9H8oPi/////0fyg+L//wAAR/L/f/9//3//f/9//3//f/9//3//f/9//3//f////3////9/////f////3////9///9UVaqq22Xtsttl7bJUVaqqVFWqqlRVqqoov5RfqqpUVU0bZEkov5RfqapUVaqqVFVNG2RJmjZNm5o2TZv///9/////f////3////9/FXIKuQo56Q0KOekNFXIKuf9//3//f/9//3//f/9//3//f/9//3//f/9/////f////3////9/////f////3///1RVqqpUVaqqqqpUVaqqVFWqqlRVKL+UXyi/lF/bZe2y22XtsgAA/38AAP9/AAD/fwAA/3+aNk2bmjZNm00bZElNG2RJVFWqqlRVqqqpqlRVqapUVf9//7//f/+//3//v/9//78Vcgq5FXIKuQo56Q0KOekN")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_dyq1c")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wslmt"]
+render_priority = 0
+shader = ExtResource("3_h8ckv")
+shader_parameter/color_texture = ExtResource("4_2n3ig")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xgcrh"]
+size = Vector3(0.605637, 0.851456, 0.0453491)
+
+[node name="Harina 0000 RojaFlor" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_j7o4u")
+
+[node name="HARINA" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.421707, 0)
+mesh = SubResource("ArrayMesh_su8p0")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("ShaderMaterial_wslmt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000297546, 0.423134, 0.000321403)
+shape = SubResource("BoxShape3D_xgcrh")
+
+[node name="Producto" type="Node" parent="."]

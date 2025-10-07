@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7k3uuomuln2c"]
+
+[ext_resource type="Script" uid="uid://bgpccb2hn7vnm" path="res://scripts/UI/loadingscreen.gd" id="1_20vy6"]
+[ext_resource type="Texture2D" uid="uid://bx1oer867lh4q" path="res://assets/modelos - texturas/UI/Pantalla inicio (placeholder).jpg" id="2_p23vo"]
+
+[node name="LoadingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_20vy6")
+
+[node name="PantallaInicio(placeholder)" type="Sprite2D" parent="."]
+position = Vector2(576.59, 322.268)
+scale = Vector2(0.716763, 0.728089)
+texture = ExtResource("2_p23vo")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.762
+anchor_top = 0.207
+anchor_right = 0.932
+anchor_bottom = 0.367
+offset_left = 0.175964
+offset_top = -0.136017
+offset_right = 0.335938
+offset_bottom = 0.18399
+text = "Cargando :3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="progress_number" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.321
+anchor_right = 0.927
+anchor_bottom = 0.418
+offset_left = -0.0400391
+offset_top = -0.00801086
+offset_right = 0.0959473
+offset_bottom = 0.135986
+horizontal_alignment = 1
+vertical_alignment = 1

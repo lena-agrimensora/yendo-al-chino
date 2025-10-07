@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn3b7spbad1xi"]
+
+[ext_resource type="PackedScene" uid="uid://dfhpud6j1vyoo" path="res://assets/modelos_3D/Modelado - Productos/Heladeras/DDL.glb" id="1_4fryn"]
+[ext_resource type="Texture2D" uid="uid://bexsumsk6uhtb" path="res://assets/texturas/Texturas - Productos/Heladeras/Dulce de Leche/ddlAzul_TEX.png" id="2_4fryn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxn01"]
+albedo_texture = ExtResource("2_4fryn")
+
+[node name="DDL" instance=ExtResource("1_4fryn")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, -0.141527, 0)
+
+[node name="DULCE" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_nxn01")

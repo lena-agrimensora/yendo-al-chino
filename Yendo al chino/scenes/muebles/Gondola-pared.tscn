@@ -1,0 +1,1641 @@
+[gd_scene load_steps=2 format=3 uid="uid://5hxb76o3n22o"]
+
+[ext_resource type="PackedScene" uid="uid://b3s64khlovcqu" path="res://scenes/muebles/Muebles Base/gondola-pared.glb" id="1_j7wuu"]
+
+[node name="gondola-pared2" instance=ExtResource("1_j7wuu")]
+
+[node name="SpawnPoints" type="Node3D" parent="gondola-pared" index="1"]
+
+[node name="Estante" type="Node3D" parent="gondola-pared/SpawnPoints" index="0"]
+
+[node name="Marker3D" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.220715)
+
+[node name="Marker3D2" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.516413)
+
+[node name="Marker3D3" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.96562, 1.16627, 0.776313)
+
+[node name="Marker3D4" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.220715)
+
+[node name="Marker3D5" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="4"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.516413)
+
+[node name="Marker3D6" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="5"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.910232, 1.16627, 0.776313)
+
+[node name="Marker3D7" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="6"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.217432)
+
+[node name="Marker3D8" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="7"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.51313)
+
+[node name="Marker3D9" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="8"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854709, 1.17772, 0.77303)
+
+[node name="Marker3D10" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="9"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.217432)
+
+[node name="Marker3D11" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="10"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.51313)
+
+[node name="Marker3D12" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="11"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.799321, 1.17772, 0.77303)
+
+[node name="Marker3D13" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="12"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.220715)
+
+[node name="Marker3D14" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="13"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.516413)
+
+[node name="Marker3D15" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="14"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.74569, 1.16627, 0.776313)
+
+[node name="Marker3D16" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="15"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.220715)
+
+[node name="Marker3D17" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="16"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.516413)
+
+[node name="Marker3D18" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="17"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.690302, 1.16627, 0.776313)
+
+[node name="Marker3D19" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="18"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.217432)
+
+[node name="Marker3D20" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="19"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.51313)
+
+[node name="Marker3D21" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="20"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634779, 1.17772, 0.77303)
+
+[node name="Marker3D22" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="21"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.217432)
+
+[node name="Marker3D23" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="22"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.51313)
+
+[node name="Marker3D24" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="23"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.579391, 1.17771, 0.77303)
+
+[node name="Marker3D25" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="24"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.220715)
+
+[node name="Marker3D26" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="25"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.516413)
+
+[node name="Marker3D27" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="26"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.525352, 1.16627, 0.776313)
+
+[node name="Marker3D28" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="27"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.220715)
+
+[node name="Marker3D29" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="28"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.516413)
+
+[node name="Marker3D30" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="29"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469963, 1.16627, 0.776313)
+
+[node name="Marker3D31" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="30"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.217432)
+
+[node name="Marker3D32" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="31"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.51313)
+
+[node name="Marker3D33" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="32"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.414441, 1.17772, 0.77303)
+
+[node name="Marker3D34" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="33"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.217432)
+
+[node name="Marker3D35" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="34"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.51313)
+
+[node name="Marker3D36" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="35"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.359052, 1.17771, 0.77303)
+
+[node name="Marker3D37" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="36"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.220715)
+
+[node name="Marker3D38" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="37"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.516413)
+
+[node name="Marker3D39" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="38"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305422, 1.16627, 0.776313)
+
+[node name="Marker3D40" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="39"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.220715)
+
+[node name="Marker3D41" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="40"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.516413)
+
+[node name="Marker3D42" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="41"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.250033, 1.16627, 0.776313)
+
+[node name="Marker3D43" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="42"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.217432)
+
+[node name="Marker3D44" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="43"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.51313)
+
+[node name="Marker3D45" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="44"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.194511, 1.17771, 0.77303)
+
+[node name="Marker3D46" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="45"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.217432)
+
+[node name="Marker3D47" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="46"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.51313)
+
+[node name="Marker3D48" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="47"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.139122, 1.17771, 0.77303)
+
+[node name="Marker3D49" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="48"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.220715)
+
+[node name="Marker3D50" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="49"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.516413)
+
+[node name="Marker3D51" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="50"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0831491, 1.16627, 0.776313)
+
+[node name="Marker3D52" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="51"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.220715)
+
+[node name="Marker3D53" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="52"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.516413)
+
+[node name="Marker3D54" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="53"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277607, 1.16627, 0.776313)
+
+[node name="Marker3D55" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="54"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.217432)
+
+[node name="Marker3D56" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="55"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.51313)
+
+[node name="Marker3D57" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="56"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0277617, 1.17772, 0.77303)
+
+[node name="Marker3D58" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="57"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.217432)
+
+[node name="Marker3D59" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="58"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.51313)
+
+[node name="Marker3D60" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="59"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.0831501, 1.17771, 0.77303)
+
+[node name="Marker3D61" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="60"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.220715)
+
+[node name="Marker3D62" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="61"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.516413)
+
+[node name="Marker3D63" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="62"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136781, 1.16627, 0.776313)
+
+[node name="Marker3D64" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="63"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.220715)
+
+[node name="Marker3D65" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="64"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.516413)
+
+[node name="Marker3D66" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="65"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.192169, 1.16627, 0.776313)
+
+[node name="Marker3D67" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="66"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.217432)
+
+[node name="Marker3D68" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="67"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.51313)
+
+[node name="Marker3D69" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="68"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.247692, 1.17771, 0.77303)
+
+[node name="Marker3D70" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="69"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.217432)
+
+[node name="Marker3D71" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="70"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.51313)
+
+[node name="Marker3D72" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="71"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.30308, 1.17771, 0.77303)
+
+[node name="Marker3D73" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="72"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.220715)
+
+[node name="Marker3D74" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="73"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.516413)
+
+[node name="Marker3D75" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="74"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.357119, 1.16627, 0.776313)
+
+[node name="Marker3D76" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="75"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.220715)
+
+[node name="Marker3D77" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="76"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.516413)
+
+[node name="Marker3D78" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="77"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412508, 1.16627, 0.776313)
+
+[node name="Marker3D79" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="78"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.217432)
+
+[node name="Marker3D80" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="79"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.51313)
+
+[node name="Marker3D81" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="80"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.46803, 1.17771, 0.77303)
+
+[node name="Marker3D82" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="81"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.217432)
+
+[node name="Marker3D83" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="82"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.51313)
+
+[node name="Marker3D84" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="83"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.523418, 1.17771, 0.77303)
+
+[node name="Marker3D85" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="84"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.220715)
+
+[node name="Marker3D86" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="85"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.516413)
+
+[node name="Marker3D87" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="86"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.577049, 1.16627, 0.776313)
+
+[node name="Marker3D88" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="87"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.220715)
+
+[node name="Marker3D89" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="88"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.516413)
+
+[node name="Marker3D90" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="89"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.632438, 1.16627, 0.776313)
+
+[node name="Marker3D91" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="90"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.217432)
+
+[node name="Marker3D92" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="91"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.51313)
+
+[node name="Marker3D93" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="92"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.68796, 1.17771, 0.77303)
+
+[node name="Marker3D94" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="93"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.743399, 1.187, 0.217432)
+
+[node name="Marker3D95" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="94"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743399, 1.187, 0.51313)
+
+[node name="Marker3D96" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="95"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743348, 1.17771, 0.77303)
+
+[node name="Marker3D97" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="96"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.220715)
+
+[node name="Marker3D98" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="97"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.516413)
+
+[node name="Marker3D99" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="98"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.803695, 1.16627, 0.776313)
+
+[node name="Marker3D100" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="99"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.220715)
+
+[node name="Marker3D101" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="100"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.516413)
+
+[node name="Marker3D102" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="101"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.859084, 1.16627, 0.776313)
+
+[node name="Marker3D103" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="102"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.914657, 1.187, 0.217432)
+
+[node name="Marker3D104" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="103"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914657, 1.187, 0.51313)
+
+[node name="Marker3D105" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="104"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914606, 1.17771, 0.77303)
+
+[node name="Marker3D106" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="105"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.217432)
+
+[node name="Marker3D107" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="106"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.51313)
+
+[node name="Marker3D108" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante" index="107"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.969995, 1.17771, 0.77303)
+
+[node name="Estante2" type="Node3D" parent="gondola-pared/SpawnPoints" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.39586, 0)
+
+[node name="Marker3D" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.220715)
+
+[node name="Marker3D2" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.516413)
+
+[node name="Marker3D3" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.96562, 1.16627, 0.776313)
+
+[node name="Marker3D4" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.220715)
+
+[node name="Marker3D5" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="4"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.516413)
+
+[node name="Marker3D6" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="5"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.910232, 1.16627, 0.776313)
+
+[node name="Marker3D7" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="6"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.217432)
+
+[node name="Marker3D8" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="7"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.51313)
+
+[node name="Marker3D9" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="8"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854709, 1.17772, 0.77303)
+
+[node name="Marker3D10" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="9"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.217432)
+
+[node name="Marker3D11" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="10"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.51313)
+
+[node name="Marker3D12" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="11"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.799321, 1.17772, 0.77303)
+
+[node name="Marker3D13" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="12"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.220715)
+
+[node name="Marker3D14" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="13"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.516413)
+
+[node name="Marker3D15" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="14"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.74569, 1.16627, 0.776313)
+
+[node name="Marker3D16" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="15"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.220715)
+
+[node name="Marker3D17" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="16"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.516413)
+
+[node name="Marker3D18" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="17"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.690302, 1.16627, 0.776313)
+
+[node name="Marker3D19" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="18"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.217432)
+
+[node name="Marker3D20" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="19"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.51313)
+
+[node name="Marker3D21" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="20"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634779, 1.17772, 0.77303)
+
+[node name="Marker3D22" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="21"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.217432)
+
+[node name="Marker3D23" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="22"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.51313)
+
+[node name="Marker3D24" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="23"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.579391, 1.17771, 0.77303)
+
+[node name="Marker3D25" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="24"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.220715)
+
+[node name="Marker3D26" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="25"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.516413)
+
+[node name="Marker3D27" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="26"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.525352, 1.16627, 0.776313)
+
+[node name="Marker3D28" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="27"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.220715)
+
+[node name="Marker3D29" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="28"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.516413)
+
+[node name="Marker3D30" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="29"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469963, 1.16627, 0.776313)
+
+[node name="Marker3D31" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="30"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.217432)
+
+[node name="Marker3D32" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="31"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.51313)
+
+[node name="Marker3D33" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="32"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.414441, 1.17772, 0.77303)
+
+[node name="Marker3D34" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="33"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.217432)
+
+[node name="Marker3D35" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="34"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.51313)
+
+[node name="Marker3D36" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="35"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.359052, 1.17771, 0.77303)
+
+[node name="Marker3D37" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="36"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.220715)
+
+[node name="Marker3D38" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="37"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.516413)
+
+[node name="Marker3D39" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="38"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305422, 1.16627, 0.776313)
+
+[node name="Marker3D40" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="39"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.220715)
+
+[node name="Marker3D41" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="40"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.516413)
+
+[node name="Marker3D42" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="41"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.250033, 1.16627, 0.776313)
+
+[node name="Marker3D43" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="42"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.217432)
+
+[node name="Marker3D44" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="43"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.51313)
+
+[node name="Marker3D45" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="44"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.194511, 1.17771, 0.77303)
+
+[node name="Marker3D46" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="45"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.217432)
+
+[node name="Marker3D47" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="46"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.51313)
+
+[node name="Marker3D48" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="47"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.139122, 1.17771, 0.77303)
+
+[node name="Marker3D49" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="48"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.220715)
+
+[node name="Marker3D50" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="49"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.516413)
+
+[node name="Marker3D51" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="50"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0831491, 1.16627, 0.776313)
+
+[node name="Marker3D52" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="51"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.220715)
+
+[node name="Marker3D53" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="52"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.516413)
+
+[node name="Marker3D54" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="53"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277607, 1.16627, 0.776313)
+
+[node name="Marker3D55" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="54"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.217432)
+
+[node name="Marker3D56" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="55"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.51313)
+
+[node name="Marker3D57" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="56"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0277617, 1.17772, 0.77303)
+
+[node name="Marker3D58" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="57"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.217432)
+
+[node name="Marker3D59" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="58"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.51313)
+
+[node name="Marker3D60" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="59"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.0831501, 1.17771, 0.77303)
+
+[node name="Marker3D61" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="60"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.220715)
+
+[node name="Marker3D62" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="61"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.516413)
+
+[node name="Marker3D63" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="62"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136781, 1.16627, 0.776313)
+
+[node name="Marker3D64" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="63"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.220715)
+
+[node name="Marker3D65" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="64"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.516413)
+
+[node name="Marker3D66" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="65"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.192169, 1.16627, 0.776313)
+
+[node name="Marker3D67" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="66"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.217432)
+
+[node name="Marker3D68" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="67"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.51313)
+
+[node name="Marker3D69" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="68"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.247692, 1.17771, 0.77303)
+
+[node name="Marker3D70" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="69"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.217432)
+
+[node name="Marker3D71" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="70"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.51313)
+
+[node name="Marker3D72" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="71"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.30308, 1.17771, 0.77303)
+
+[node name="Marker3D73" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="72"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.220715)
+
+[node name="Marker3D74" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="73"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.516413)
+
+[node name="Marker3D75" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="74"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.357119, 1.16627, 0.776313)
+
+[node name="Marker3D76" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="75"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.220715)
+
+[node name="Marker3D77" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="76"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.516413)
+
+[node name="Marker3D78" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="77"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412508, 1.16627, 0.776313)
+
+[node name="Marker3D79" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="78"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.217432)
+
+[node name="Marker3D80" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="79"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.51313)
+
+[node name="Marker3D81" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="80"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.46803, 1.17771, 0.77303)
+
+[node name="Marker3D82" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="81"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.217432)
+
+[node name="Marker3D83" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="82"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.51313)
+
+[node name="Marker3D84" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="83"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.523418, 1.17771, 0.77303)
+
+[node name="Marker3D85" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="84"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.220715)
+
+[node name="Marker3D86" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="85"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.516413)
+
+[node name="Marker3D87" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="86"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.577049, 1.16627, 0.776313)
+
+[node name="Marker3D88" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="87"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.220715)
+
+[node name="Marker3D89" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="88"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.516413)
+
+[node name="Marker3D90" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="89"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.632438, 1.16627, 0.776313)
+
+[node name="Marker3D91" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="90"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.217432)
+
+[node name="Marker3D92" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="91"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.51313)
+
+[node name="Marker3D93" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="92"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.68796, 1.17771, 0.77303)
+
+[node name="Marker3D94" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="93"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.743399, 1.187, 0.217432)
+
+[node name="Marker3D95" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="94"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743399, 1.187, 0.51313)
+
+[node name="Marker3D96" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="95"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743348, 1.17771, 0.77303)
+
+[node name="Marker3D97" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="96"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.220715)
+
+[node name="Marker3D98" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="97"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.516413)
+
+[node name="Marker3D99" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="98"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.803695, 1.16627, 0.776313)
+
+[node name="Marker3D100" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="99"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.220715)
+
+[node name="Marker3D101" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="100"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.516413)
+
+[node name="Marker3D102" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="101"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.859084, 1.16627, 0.776313)
+
+[node name="Marker3D103" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="102"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.914657, 1.187, 0.217432)
+
+[node name="Marker3D104" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="103"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914657, 1.187, 0.51313)
+
+[node name="Marker3D105" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="104"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914606, 1.17771, 0.77303)
+
+[node name="Marker3D106" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="105"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.217432)
+
+[node name="Marker3D107" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="106"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.51313)
+
+[node name="Marker3D108" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante2" index="107"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.969995, 1.17771, 0.77303)
+
+[node name="Estante3" type="Node3D" parent="gondola-pared/SpawnPoints" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0, 8.54135, 0)
+
+[node name="Marker3D" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.220715)
+
+[node name="Marker3D2" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.516413)
+
+[node name="Marker3D3" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.96562, 1.16627, 0.776313)
+
+[node name="Marker3D4" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.220715)
+
+[node name="Marker3D5" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="4"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.516413)
+
+[node name="Marker3D6" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="5"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.910232, 1.16627, 0.776313)
+
+[node name="Marker3D7" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="6"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.217432)
+
+[node name="Marker3D8" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="7"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.51313)
+
+[node name="Marker3D9" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="8"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854709, 1.17772, 0.77303)
+
+[node name="Marker3D10" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="9"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.217432)
+
+[node name="Marker3D11" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="10"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.51313)
+
+[node name="Marker3D12" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="11"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.799321, 1.17772, 0.77303)
+
+[node name="Marker3D13" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="12"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.220715)
+
+[node name="Marker3D14" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="13"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.516413)
+
+[node name="Marker3D15" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="14"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.74569, 1.16627, 0.776313)
+
+[node name="Marker3D16" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="15"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.220715)
+
+[node name="Marker3D17" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="16"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.516413)
+
+[node name="Marker3D18" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="17"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.690302, 1.16627, 0.776313)
+
+[node name="Marker3D19" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="18"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.217432)
+
+[node name="Marker3D20" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="19"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.51313)
+
+[node name="Marker3D21" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="20"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634779, 1.17772, 0.77303)
+
+[node name="Marker3D22" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="21"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.217432)
+
+[node name="Marker3D23" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="22"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.51313)
+
+[node name="Marker3D24" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="23"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.579391, 1.17771, 0.77303)
+
+[node name="Marker3D25" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="24"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.220715)
+
+[node name="Marker3D26" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="25"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.516413)
+
+[node name="Marker3D27" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="26"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.525352, 1.16627, 0.776313)
+
+[node name="Marker3D28" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="27"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.220715)
+
+[node name="Marker3D29" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="28"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.516413)
+
+[node name="Marker3D30" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="29"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469963, 1.16627, 0.776313)
+
+[node name="Marker3D31" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="30"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.217432)
+
+[node name="Marker3D32" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="31"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.51313)
+
+[node name="Marker3D33" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="32"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.414441, 1.17772, 0.77303)
+
+[node name="Marker3D34" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="33"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.217432)
+
+[node name="Marker3D35" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="34"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.51313)
+
+[node name="Marker3D36" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="35"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.359052, 1.17771, 0.77303)
+
+[node name="Marker3D37" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="36"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.220715)
+
+[node name="Marker3D38" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="37"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.516413)
+
+[node name="Marker3D39" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="38"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305422, 1.16627, 0.776313)
+
+[node name="Marker3D40" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="39"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.220715)
+
+[node name="Marker3D41" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="40"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.516413)
+
+[node name="Marker3D42" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="41"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.250033, 1.16627, 0.776313)
+
+[node name="Marker3D43" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="42"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.217432)
+
+[node name="Marker3D44" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="43"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.51313)
+
+[node name="Marker3D45" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="44"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.194511, 1.17771, 0.77303)
+
+[node name="Marker3D46" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="45"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.217432)
+
+[node name="Marker3D47" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="46"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.51313)
+
+[node name="Marker3D48" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="47"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.139122, 1.17771, 0.77303)
+
+[node name="Marker3D49" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="48"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.220715)
+
+[node name="Marker3D50" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="49"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.516413)
+
+[node name="Marker3D51" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="50"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0831491, 1.16627, 0.776313)
+
+[node name="Marker3D52" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="51"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.220715)
+
+[node name="Marker3D53" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="52"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.516413)
+
+[node name="Marker3D54" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="53"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277607, 1.16627, 0.776313)
+
+[node name="Marker3D55" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="54"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.217432)
+
+[node name="Marker3D56" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="55"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.51313)
+
+[node name="Marker3D57" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="56"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0277617, 1.17772, 0.77303)
+
+[node name="Marker3D58" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="57"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.217432)
+
+[node name="Marker3D59" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="58"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.51313)
+
+[node name="Marker3D60" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="59"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.0831501, 1.17771, 0.77303)
+
+[node name="Marker3D61" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="60"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.220715)
+
+[node name="Marker3D62" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="61"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.516413)
+
+[node name="Marker3D63" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="62"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136781, 1.16627, 0.776313)
+
+[node name="Marker3D64" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="63"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.220715)
+
+[node name="Marker3D65" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="64"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.516413)
+
+[node name="Marker3D66" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="65"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.192169, 1.16627, 0.776313)
+
+[node name="Marker3D67" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="66"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.217432)
+
+[node name="Marker3D68" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="67"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.51313)
+
+[node name="Marker3D69" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="68"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.247692, 1.17771, 0.77303)
+
+[node name="Marker3D70" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="69"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.217432)
+
+[node name="Marker3D71" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="70"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.51313)
+
+[node name="Marker3D72" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="71"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.30308, 1.17771, 0.77303)
+
+[node name="Marker3D73" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="72"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.220715)
+
+[node name="Marker3D74" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="73"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.516413)
+
+[node name="Marker3D75" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="74"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.357119, 1.16627, 0.776313)
+
+[node name="Marker3D76" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="75"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.220715)
+
+[node name="Marker3D77" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="76"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.516413)
+
+[node name="Marker3D78" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="77"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412508, 1.16627, 0.776313)
+
+[node name="Marker3D79" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="78"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.217432)
+
+[node name="Marker3D80" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="79"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.51313)
+
+[node name="Marker3D81" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="80"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.46803, 1.17771, 0.77303)
+
+[node name="Marker3D82" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="81"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.217432)
+
+[node name="Marker3D83" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="82"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.51313)
+
+[node name="Marker3D84" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="83"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.523418, 1.17771, 0.77303)
+
+[node name="Marker3D85" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="84"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.220715)
+
+[node name="Marker3D86" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="85"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.516413)
+
+[node name="Marker3D87" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="86"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.577049, 1.16627, 0.776313)
+
+[node name="Marker3D88" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="87"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.220715)
+
+[node name="Marker3D89" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="88"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.516413)
+
+[node name="Marker3D90" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="89"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.632438, 1.16627, 0.776313)
+
+[node name="Marker3D91" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="90"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.217432)
+
+[node name="Marker3D92" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="91"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.51313)
+
+[node name="Marker3D93" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="92"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.68796, 1.17771, 0.77303)
+
+[node name="Marker3D94" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="93"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.743399, 1.187, 0.217432)
+
+[node name="Marker3D95" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="94"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743399, 1.187, 0.51313)
+
+[node name="Marker3D96" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="95"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743348, 1.17771, 0.77303)
+
+[node name="Marker3D97" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="96"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.220715)
+
+[node name="Marker3D98" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="97"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.516413)
+
+[node name="Marker3D99" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="98"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.803695, 1.16627, 0.776313)
+
+[node name="Marker3D100" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="99"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.220715)
+
+[node name="Marker3D101" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="100"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.516413)
+
+[node name="Marker3D102" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="101"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.859084, 1.16627, 0.776313)
+
+[node name="Marker3D103" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="102"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.914657, 1.187, 0.217432)
+
+[node name="Marker3D104" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="103"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914657, 1.187, 0.51313)
+
+[node name="Marker3D105" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="104"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914606, 1.17771, 0.77303)
+
+[node name="Marker3D106" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="105"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.217432)
+
+[node name="Marker3D107" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="106"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.51313)
+
+[node name="Marker3D108" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="107"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.969995, 1.17771, 0.77303)
+
+[node name="Estante4" type="Node3D" parent="gondola-pared/SpawnPoints" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0, 13.1427, 0)
+
+[node name="Marker3D" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.220715)
+
+[node name="Marker3D2" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.516413)
+
+[node name="Marker3D3" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.96562, 1.16627, 0.776313)
+
+[node name="Marker3D4" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.220715)
+
+[node name="Marker3D5" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="4"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.516413)
+
+[node name="Marker3D6" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="5"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.910232, 1.16627, 0.776313)
+
+[node name="Marker3D7" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="6"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.217432)
+
+[node name="Marker3D8" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="7"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.51313)
+
+[node name="Marker3D9" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="8"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854709, 1.17772, 0.77303)
+
+[node name="Marker3D10" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="9"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.217432)
+
+[node name="Marker3D11" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="10"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.51313)
+
+[node name="Marker3D12" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="11"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.799321, 1.17772, 0.77303)
+
+[node name="Marker3D13" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="12"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.220715)
+
+[node name="Marker3D14" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="13"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.516413)
+
+[node name="Marker3D15" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="14"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.74569, 1.16627, 0.776313)
+
+[node name="Marker3D16" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="15"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.220715)
+
+[node name="Marker3D17" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="16"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.516413)
+
+[node name="Marker3D18" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="17"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.690302, 1.16627, 0.776313)
+
+[node name="Marker3D19" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="18"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.217432)
+
+[node name="Marker3D20" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="19"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.51313)
+
+[node name="Marker3D21" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="20"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634779, 1.17772, 0.77303)
+
+[node name="Marker3D22" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="21"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.217432)
+
+[node name="Marker3D23" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="22"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.51313)
+
+[node name="Marker3D24" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="23"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.579391, 1.17771, 0.77303)
+
+[node name="Marker3D25" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="24"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.220715)
+
+[node name="Marker3D26" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="25"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.516413)
+
+[node name="Marker3D27" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="26"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.525352, 1.16627, 0.776313)
+
+[node name="Marker3D28" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="27"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.220715)
+
+[node name="Marker3D29" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="28"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.516413)
+
+[node name="Marker3D30" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="29"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469963, 1.16627, 0.776313)
+
+[node name="Marker3D31" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="30"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.217432)
+
+[node name="Marker3D32" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="31"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.51313)
+
+[node name="Marker3D33" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="32"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.414441, 1.17772, 0.77303)
+
+[node name="Marker3D34" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="33"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.217432)
+
+[node name="Marker3D35" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="34"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.51313)
+
+[node name="Marker3D36" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="35"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.359052, 1.17771, 0.77303)
+
+[node name="Marker3D37" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="36"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.220715)
+
+[node name="Marker3D38" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="37"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.516413)
+
+[node name="Marker3D39" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="38"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305422, 1.16627, 0.776313)
+
+[node name="Marker3D40" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="39"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.220715)
+
+[node name="Marker3D41" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="40"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.516413)
+
+[node name="Marker3D42" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="41"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.250033, 1.16627, 0.776313)
+
+[node name="Marker3D43" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="42"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.217432)
+
+[node name="Marker3D44" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="43"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.51313)
+
+[node name="Marker3D45" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="44"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.194511, 1.17771, 0.77303)
+
+[node name="Marker3D46" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="45"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.217432)
+
+[node name="Marker3D47" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="46"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.51313)
+
+[node name="Marker3D48" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="47"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.139122, 1.17771, 0.77303)
+
+[node name="Marker3D49" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="48"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.220715)
+
+[node name="Marker3D50" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="49"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.516413)
+
+[node name="Marker3D51" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="50"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0831491, 1.16627, 0.776313)
+
+[node name="Marker3D52" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="51"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.220715)
+
+[node name="Marker3D53" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="52"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.516413)
+
+[node name="Marker3D54" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="53"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277607, 1.16627, 0.776313)
+
+[node name="Marker3D55" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="54"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.217432)
+
+[node name="Marker3D56" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="55"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.51313)
+
+[node name="Marker3D57" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="56"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0277617, 1.17772, 0.77303)
+
+[node name="Marker3D58" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="57"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.217432)
+
+[node name="Marker3D59" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="58"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.51313)
+
+[node name="Marker3D60" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="59"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.0831501, 1.17771, 0.77303)
+
+[node name="Marker3D61" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="60"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.220715)
+
+[node name="Marker3D62" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="61"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.516413)
+
+[node name="Marker3D63" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="62"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136781, 1.16627, 0.776313)
+
+[node name="Marker3D64" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="63"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.220715)
+
+[node name="Marker3D65" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="64"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.516413)
+
+[node name="Marker3D66" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="65"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.192169, 1.16627, 0.776313)
+
+[node name="Marker3D67" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="66"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.217432)
+
+[node name="Marker3D68" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="67"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.51313)
+
+[node name="Marker3D69" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="68"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.247692, 1.17771, 0.77303)
+
+[node name="Marker3D70" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="69"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.217432)
+
+[node name="Marker3D71" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="70"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.51313)
+
+[node name="Marker3D72" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="71"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.30308, 1.17771, 0.77303)
+
+[node name="Marker3D73" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="72"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.220715)
+
+[node name="Marker3D74" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="73"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.516413)
+
+[node name="Marker3D75" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="74"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.357119, 1.16627, 0.776313)
+
+[node name="Marker3D76" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="75"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.220715)
+
+[node name="Marker3D77" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="76"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.516413)
+
+[node name="Marker3D78" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="77"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412508, 1.16627, 0.776313)
+
+[node name="Marker3D79" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="78"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.217432)
+
+[node name="Marker3D80" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="79"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.51313)
+
+[node name="Marker3D81" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="80"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.46803, 1.17771, 0.77303)
+
+[node name="Marker3D82" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="81"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.217432)
+
+[node name="Marker3D83" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="82"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.51313)
+
+[node name="Marker3D84" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="83"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.523418, 1.17771, 0.77303)
+
+[node name="Marker3D85" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="84"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.220715)
+
+[node name="Marker3D86" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="85"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.516413)
+
+[node name="Marker3D87" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="86"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.577049, 1.16627, 0.776313)
+
+[node name="Marker3D88" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="87"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.220715)
+
+[node name="Marker3D89" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="88"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.516413)
+
+[node name="Marker3D90" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="89"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.632438, 1.16627, 0.776313)
+
+[node name="Marker3D91" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="90"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.217432)
+
+[node name="Marker3D92" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="91"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.51313)
+
+[node name="Marker3D93" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="92"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.68796, 1.17771, 0.77303)
+
+[node name="Marker3D94" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="93"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.743399, 1.187, 0.217432)
+
+[node name="Marker3D95" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="94"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743399, 1.187, 0.51313)
+
+[node name="Marker3D96" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="95"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743348, 1.17771, 0.77303)
+
+[node name="Marker3D97" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="96"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.220715)
+
+[node name="Marker3D98" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="97"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.516413)
+
+[node name="Marker3D99" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="98"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.803695, 1.16627, 0.776313)
+
+[node name="Marker3D100" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="99"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.220715)
+
+[node name="Marker3D101" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="100"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.516413)
+
+[node name="Marker3D102" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="101"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.859084, 1.16627, 0.776313)
+
+[node name="Marker3D103" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="102"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.914657, 1.187, 0.217432)
+
+[node name="Marker3D104" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="103"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914657, 1.187, 0.51313)
+
+[node name="Marker3D105" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="104"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914606, 1.17771, 0.77303)
+
+[node name="Marker3D106" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="105"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.217432)
+
+[node name="Marker3D107" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="106"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.51313)
+
+[node name="Marker3D108" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="107"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.969995, 1.17771, 0.77303)
+
+[node name="Estante5" type="Node3D" parent="gondola-pared/SpawnPoints" index="4"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0, 18.081, 0)
+
+[node name="Marker3D" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.220715)
+
+[node name="Marker3D2" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.516413)
+
+[node name="Marker3D3" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="2"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.96562, 1.16627, 0.776313)
+
+[node name="Marker3D4" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="3"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.220715)
+
+[node name="Marker3D5" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="4"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.91018, 1.17555, 0.516413)
+
+[node name="Marker3D6" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="5"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.910232, 1.16627, 0.776313)
+
+[node name="Marker3D7" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="6"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.217432)
+
+[node name="Marker3D8" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="7"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854658, 1.187, 0.51313)
+
+[node name="Marker3D9" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="8"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.854709, 1.17772, 0.77303)
+
+[node name="Marker3D10" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="9"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.217432)
+
+[node name="Marker3D11" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="10"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.79927, 1.187, 0.51313)
+
+[node name="Marker3D12" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="11"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.799321, 1.17772, 0.77303)
+
+[node name="Marker3D13" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="12"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.220715)
+
+[node name="Marker3D14" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="13"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.745639, 1.17555, 0.516413)
+
+[node name="Marker3D15" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="14"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.74569, 1.16627, 0.776313)
+
+[node name="Marker3D16" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="15"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.220715)
+
+[node name="Marker3D17" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="16"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.69025, 1.17555, 0.516413)
+
+[node name="Marker3D18" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="17"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.690302, 1.16627, 0.776313)
+
+[node name="Marker3D19" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="18"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.217432)
+
+[node name="Marker3D20" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="19"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634728, 1.187, 0.51313)
+
+[node name="Marker3D21" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="20"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.634779, 1.17772, 0.77303)
+
+[node name="Marker3D22" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="21"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.217432)
+
+[node name="Marker3D23" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="22"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.57934, 1.187, 0.51313)
+
+[node name="Marker3D24" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="23"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.579391, 1.17771, 0.77303)
+
+[node name="Marker3D25" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="24"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.220715)
+
+[node name="Marker3D26" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="25"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.5253, 1.17555, 0.516413)
+
+[node name="Marker3D27" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="26"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.525352, 1.16627, 0.776313)
+
+[node name="Marker3D28" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="27"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.220715)
+
+[node name="Marker3D29" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="28"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469912, 1.17555, 0.516413)
+
+[node name="Marker3D30" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="29"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.469963, 1.16627, 0.776313)
+
+[node name="Marker3D31" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="30"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.217432)
+
+[node name="Marker3D32" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="31"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.41439, 1.187, 0.51313)
+
+[node name="Marker3D33" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="32"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.414441, 1.17772, 0.77303)
+
+[node name="Marker3D34" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="33"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.217432)
+
+[node name="Marker3D35" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="34"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.359001, 1.187, 0.51313)
+
+[node name="Marker3D36" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="35"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.359052, 1.17771, 0.77303)
+
+[node name="Marker3D37" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="36"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.220715)
+
+[node name="Marker3D38" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="37"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305371, 1.17555, 0.516413)
+
+[node name="Marker3D39" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="38"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.305422, 1.16627, 0.776313)
+
+[node name="Marker3D40" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="39"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.220715)
+
+[node name="Marker3D41" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="40"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.249982, 1.17555, 0.516413)
+
+[node name="Marker3D42" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="41"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.250033, 1.16627, 0.776313)
+
+[node name="Marker3D43" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="42"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.217432)
+
+[node name="Marker3D44" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="43"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.19446, 1.187, 0.51313)
+
+[node name="Marker3D45" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="44"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.194511, 1.17771, 0.77303)
+
+[node name="Marker3D46" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="45"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.217432)
+
+[node name="Marker3D47" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="46"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.139071, 1.187, 0.51313)
+
+[node name="Marker3D48" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="47"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, -0.139122, 1.17771, 0.77303)
+
+[node name="Marker3D49" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="48"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.220715)
+
+[node name="Marker3D50" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="49"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0830979, 1.17555, 0.516413)
+
+[node name="Marker3D51" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="50"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0831491, 1.16627, 0.776313)
+
+[node name="Marker3D52" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="51"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.220715)
+
+[node name="Marker3D53" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="52"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277095, 1.17555, 0.516413)
+
+[node name="Marker3D54" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="53"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.0277607, 1.16627, 0.776313)
+
+[node name="Marker3D55" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="54"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.217432)
+
+[node name="Marker3D56" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="55"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0278129, 1.187, 0.51313)
+
+[node name="Marker3D57" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="56"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0277617, 1.17772, 0.77303)
+
+[node name="Marker3D58" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="57"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.217432)
+
+[node name="Marker3D59" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="58"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.0832013, 1.187, 0.51313)
+
+[node name="Marker3D60" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="59"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.0831501, 1.17771, 0.77303)
+
+[node name="Marker3D61" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="60"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.220715)
+
+[node name="Marker3D62" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="61"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136832, 1.17555, 0.516413)
+
+[node name="Marker3D63" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="62"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.136781, 1.16627, 0.776313)
+
+[node name="Marker3D64" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="63"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.220715)
+
+[node name="Marker3D65" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="64"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.19222, 1.17555, 0.516413)
+
+[node name="Marker3D66" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="65"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.192169, 1.16627, 0.776313)
+
+[node name="Marker3D67" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="66"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.217432)
+
+[node name="Marker3D68" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="67"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.247743, 1.187, 0.51313)
+
+[node name="Marker3D69" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="68"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.247692, 1.17771, 0.77303)
+
+[node name="Marker3D70" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="69"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.217432)
+
+[node name="Marker3D71" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="70"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.303131, 1.187, 0.51313)
+
+[node name="Marker3D72" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="71"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.30308, 1.17771, 0.77303)
+
+[node name="Marker3D73" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="72"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.220715)
+
+[node name="Marker3D74" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="73"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.35717, 1.17555, 0.516413)
+
+[node name="Marker3D75" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="74"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.357119, 1.16627, 0.776313)
+
+[node name="Marker3D76" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="75"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.220715)
+
+[node name="Marker3D77" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="76"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412559, 1.17555, 0.516413)
+
+[node name="Marker3D78" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="77"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.412508, 1.16627, 0.776313)
+
+[node name="Marker3D79" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="78"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.217432)
+
+[node name="Marker3D80" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="79"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.468081, 1.187, 0.51313)
+
+[node name="Marker3D81" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="80"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.46803, 1.17771, 0.77303)
+
+[node name="Marker3D82" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="81"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.217432)
+
+[node name="Marker3D83" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="82"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.52347, 1.187, 0.51313)
+
+[node name="Marker3D84" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="83"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.523418, 1.17771, 0.77303)
+
+[node name="Marker3D85" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="84"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.220715)
+
+[node name="Marker3D86" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="85"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.5771, 1.17555, 0.516413)
+
+[node name="Marker3D87" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="86"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.577049, 1.16627, 0.776313)
+
+[node name="Marker3D88" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="87"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.220715)
+
+[node name="Marker3D89" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="88"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.632489, 1.17555, 0.516413)
+
+[node name="Marker3D90" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="89"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.632438, 1.16627, 0.776313)
+
+[node name="Marker3D91" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="90"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.217432)
+
+[node name="Marker3D92" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="91"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.688011, 1.187, 0.51313)
+
+[node name="Marker3D93" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="92"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.68796, 1.17771, 0.77303)
+
+[node name="Marker3D94" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="93"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.743399, 1.187, 0.217432)
+
+[node name="Marker3D95" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="94"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743399, 1.187, 0.51313)
+
+[node name="Marker3D96" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="95"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.743348, 1.17771, 0.77303)
+
+[node name="Marker3D97" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="96"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.220715)
+
+[node name="Marker3D98" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="97"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.803746, 1.17555, 0.516413)
+
+[node name="Marker3D99" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="98"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.803695, 1.16627, 0.776313)
+
+[node name="Marker3D100" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="99"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.220715)
+
+[node name="Marker3D101" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="100"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.859135, 1.17555, 0.516413)
+
+[node name="Marker3D102" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="101"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.859084, 1.16627, 0.776313)
+
+[node name="Marker3D103" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="102"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0.914657, 1.187, 0.217432)
+
+[node name="Marker3D104" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="103"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914657, 1.187, 0.51313)
+
+[node name="Marker3D105" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="104"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.914606, 1.17771, 0.77303)
+
+[node name="Marker3D106" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="105"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.217432)
+
+[node name="Marker3D107" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="106"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.51313)
+
+[node name="Marker3D108" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="107"]
+transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.969995, 1.17771, 0.77303)

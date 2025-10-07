@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://ckvts0ff6yyt2"]
+
+[ext_resource type="Script" uid="uid://drpxfwx2kf3iv" path="res://scripts/UI-Menus/globo_de_texto_cajera.gd" id="1_hfjij"]
+[ext_resource type="Texture2D" uid="uid://bs0ganky1v8vn" path="res://assets/texturas/UI/box.png" id="2_xsy3q"]
+[ext_resource type="FontFile" uid="uid://cym0qah8ej80v" path="res://assets/fonts/YendoAlChido2-Regular.otf" id="3_412k2"]
+[ext_resource type="AudioStream" uid="uid://hmh8cbwj6xmc" path="res://assets/sonido/VozCajera.wav" id="4_hfjij"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_imk3r"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="LabelSettings" id="LabelSettings_mfgo8"]
+font = ExtResource("3_412k2")
+font_size = 60
+outline_size = 12
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Globo de texto" type="Node3D"]
+script = ExtResource("1_hfjij")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.98752, 1.24849, 0.689516)
+offset = Vector2(155, -190)
+billboard = 2
+texture_filter = 0
+texture = SubResource("ViewportTexture_imk3r")
+region_enabled = true
+region_rect = Rect2(0, -16, 768, 144)
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+vrs_mode = 1
+canvas_item_default_texture_filter = 0
+size = Vector2i(1024, 256)
+
+[node name="TextBox" type="MarginContainer" parent="Sprite3D/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Sprite3D/SubViewport/TextBox"]
+layout_mode = 2
+texture = ExtResource("2_xsy3q")
+patch_margin_left = 36
+patch_margin_top = 36
+patch_margin_right = 28
+patch_margin_bottom = 28
+
+[node name="MarginContainer" type="MarginContainer" parent="Sprite3D/SubViewport/TextBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="Sprite3D/SubViewport/TextBox/MarginContainer"]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_mfgo8")
+
+[node name="LetterDisplayTimer" type="Timer" parent="Sprite3D/SubViewport/TextBox"]
+one_shot = true
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.49754, -0.927754, -1.3755)
+stream = ExtResource("4_hfjij")
+volume_db = -3.0

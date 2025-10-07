@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7k3uuomuln2c"]
+
+[ext_resource type="Script" uid="uid://bgpccb2hn7vnm" path="res://scripts/UI/loadingscreen.gd" id="1_20vy6"]
+[ext_resource type="Texture2D" uid="uid://bx1oer867lh4q" path="res://assets/modelos - texturas/UI/Pantalla inicio (placeholder).jpg" id="2_p23vo"]
+[ext_resource type="FontFile" uid="uid://c6kcrwk4fdltc" path="res://assets/fonts/Handwriting-Regular.otf" id="3_el486"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_el486"]
+bg_color = Color(0.867654, 0.579895, 0.701566, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_trqc1"]
+font = ExtResource("3_el486")
+font_size = 40
+
+[node name="LoadingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_20vy6")
+
+[node name="PantallaInicio(placeholder)" type="Sprite2D" parent="."]
+position = Vector2(959.5, 536.76794)
+scale = Vector2(1.200625, 1.2031718)
+texture = ExtResource("2_p23vo")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.47
+anchor_top = 0.878
+anchor_right = 0.968
+anchor_bottom = 0.969
+offset_left = -0.440063
+offset_top = 0.0559692
+offset_right = -0.136108
+offset_bottom = 0.0879517
+theme_override_styles/fill = SubResource("StyleBoxFlat_el486")
+rounded = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.637
+anchor_top = 0.722
+anchor_right = 0.807
+anchor_bottom = 0.883
+offset_left = 9.17596
+offset_top = -1.85599
+offset_right = 137.336
+offset_bottom = -2.18396
+text = "Cargando ꉂ(˵˃ ᗜ ˂˵)"
+label_settings = SubResource("LabelSettings_trqc1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="progress_number" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77
+anchor_top = 0.321
+anchor_right = 0.927
+anchor_bottom = 0.418
+offset_left = -0.0400391
+offset_top = -0.00801086
+offset_right = 0.0959473
+offset_bottom = 0.135986
+horizontal_alignment = 1
+vertical_alignment = 1

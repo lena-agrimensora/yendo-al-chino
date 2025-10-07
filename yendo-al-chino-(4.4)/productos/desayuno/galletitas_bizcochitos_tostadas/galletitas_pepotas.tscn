@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5qdwsu1353h6"]
+
+[ext_resource type="PackedScene" uid="uid://cfxs7iexe8u30" path="res://assets/modelos_3D/Blend+Textura/Desayuno/Galletitas/Galles chips blancas.tscn" id="1_4beib"]
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_daeh7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y6vaj"]
+size = Vector3(1.07172, 0.336365, 0.0579987)
+
+[node name="Galletitos Pepotas" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_daeh7")
+
+[node name="GALLETITAS" parent="." instance=ExtResource("1_4beib")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00349069, 0.169233, -0.000328086)
+shape = SubResource("BoxShape3D_y6vaj")
+
+[node name="Producto" type="Node" parent="."]

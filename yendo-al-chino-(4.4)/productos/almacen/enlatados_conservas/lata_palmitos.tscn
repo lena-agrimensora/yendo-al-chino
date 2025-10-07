@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctclqusucrjja"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_whkwa"]
+[ext_resource type="PackedScene" uid="uid://cucp3li5ng3ki" path="res://assets/modelos_3D/Blend+Textura/Latas/lata palmitos.tscn" id="2_gcde5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hltg4"]
+size = Vector3(2.00957, 2.65147, 0.229797)
+
+[node name="Palmitos La Campeona" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_whkwa")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.00152637, 0.392185, -0.00271606)
+shape = SubResource("BoxShape3D_hltg4")
+
+[node name="LATAS" parent="." instance=ExtResource("2_gcde5")]
+
+[node name="Producto" type="Node" parent="."]

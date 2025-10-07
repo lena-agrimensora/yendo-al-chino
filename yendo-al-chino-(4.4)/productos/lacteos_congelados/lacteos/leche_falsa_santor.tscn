@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2al2dm852erx"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/productos/Producto.gd" id="1_0fp50"]
+[ext_resource type="PackedScene" uid="uid://dh8y11ifjh2fi" path="res://scenes/productos/Heladeras/Lácteos/Leche Sancor.tscn" id="2_i0qap"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oxpo4"]
+size = Vector3(0.664905, 0.926697, 0.0437622)
+
+[node name="Leche Santor Falsa" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_0fp50")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00588971, 0.47414, -0.000457764)
+shape = SubResource("BoxShape3D_oxpo4")
+
+[node name="LECHE2" parent="." instance=ExtResource("2_i0qap")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0, 0, 0)
+
+[node name="Producto" type="Node" parent="."]

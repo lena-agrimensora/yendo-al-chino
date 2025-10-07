@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj3jwehlovf8l"]
+
+[ext_resource type="PackedScene" uid="uid://c3upfr1jdjrpm" path="res://assets/modelos_3D/Modelado - Productos/Verdulería/TOMATE_A.glb" id="1_mtsep"]
+[ext_resource type="Texture2D" uid="uid://c8fx0xx8m3003" path="res://assets/texturas/Texturas - Productos/Verdulería/naranjaA_TEX.png" id="2_mtsep"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ankpn"]
+albedo_texture = ExtResource("2_mtsep")
+
+[node name="Naranja" instance=ExtResource("1_mtsep")]
+
+[node name="TOMATE" parent="." index="0"]
+transform = Transform3D(0.3, 0, 0, 0, -1.31134e-08, -0.3, 0, 0.3, -1.31134e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_ankpn")

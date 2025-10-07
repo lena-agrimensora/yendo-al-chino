@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpsy1erh247ay"]
+
+[ext_resource type="PackedScene" uid="uid://dcakq4yml15og" path="res://assets/modelos_3D/Modelos con colisiones/cajon verduleria singular.glb" id="1_nqt18"]
+
+[node name="cajon verduleria singular" instance=ExtResource("1_nqt18")]

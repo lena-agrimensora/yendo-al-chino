@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsxdkg0wudjhq"]
+
+[ext_resource type="PackedScene" uid="uid://diiry67a61see" path="res://assets/modelos_3D/Modelos con colisiones/verduleria.glb" id="1_tfhpo"]
+
+[node name="verduleria" instance=ExtResource("1_tfhpo")]

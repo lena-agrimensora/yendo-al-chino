@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://drbmbxhe5vmwi"]
+
+[ext_resource type="Script" uid="uid://bj76ms0tiwom8" path="res://scripts/managers/Gondola_Manager.gd" id="1_8ujwy"]
+[ext_resource type="PackedScene" uid="uid://cg6fp3lxyc3iu" path="res://scenes/muebles/Muebles Base/mostrador_carne.tscn" id="1_nhb8h"]
+
+[node name="Mostrador de Carne Con Productos" type="Node3D"]
+script = ExtResource("1_8ujwy")
+
+[node name="Mostrador Carne" parent="." instance=ExtResource("1_nhb8h")]
+
+[node name="Carne" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0534179, 0)
+
+[node name="Estante" type="Node3D" parent="Carne"]
+
+[node name="Marker3D" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-3.45374e-08, -0.612949, -0.790123, -2.67928e-08, 0.790123, -0.612949, 1, 0, -4.37114e-08, 0.282066, 1.96582, 2.78815)
+
+[node name="Marker3D2" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-3.45374e-08, -0.612949, -0.790123, -2.67928e-08, 0.790123, -0.612949, 1, 0, -4.37114e-08, 0.282066, 1.96582, 1.68815)
+
+[node name="Marker3D3" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-3.45374e-08, -0.612949, -0.790123, -2.67928e-08, 0.790123, -0.612949, 1, 0, -4.37114e-08, 0.282066, 1.96582, 0.58815)
+
+[node name="Marker3D4" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-3.45374e-08, -0.612949, -0.790123, -2.67928e-08, 0.790123, -0.612949, 1, 0, -4.37114e-08, 0.282066, 1.96582, -0.51185)
+
+[node name="Marker3D7" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-7.5904e-09, -0.984808, -0.173648, -4.30473e-08, 0.173648, -0.984808, 1, 6.16922e-16, -4.37114e-08, 1.1, 1.90042, 2.78815)
+
+[node name="Marker3D8" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-7.5904e-09, -0.984808, -0.173648, -4.30473e-08, 0.173648, -0.984808, 1, 6.16922e-16, -4.37114e-08, 1.1, 1.90042, 1.68815)
+
+[node name="Marker3D9" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-7.5904e-09, -0.984808, -0.173648, -4.30473e-08, 0.173648, -0.984808, 1, 6.16922e-16, -4.37114e-08, 1.1, 1.90042, 0.58815)
+
+[node name="Marker3D10" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-7.5904e-09, -0.984808, -0.173648, -4.30473e-08, 0.173648, -0.984808, 1, 6.16922e-16, -4.37114e-08, 1.1, 1.90042, -0.51185)
+
+[node name="Marker3D13" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-1.49502e-08, -0.939693, -0.34202, -4.10753e-08, 0.34202, -0.939693, 1, 6.16922e-16, -4.37114e-08, 1.7, 2.10042, 2.78815)
+
+[node name="Marker3D14" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-1.49502e-08, -0.939693, -0.34202, -4.10753e-08, 0.34202, -0.939693, 1, 6.16922e-16, -4.37114e-08, 1.7, 2.10042, 1.68815)
+
+[node name="Marker3D15" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-1.49502e-08, -0.939693, -0.34202, -4.10753e-08, 0.34202, -0.939693, 1, 6.16922e-16, -4.37114e-08, 1.7, 2.10042, 0.58815)
+
+[node name="Marker3D16" type="Marker3D" parent="Carne/Estante"]
+transform = Transform3D(-1.49502e-08, -0.939693, -0.34202, -4.10753e-08, 0.34202, -0.939693, 1, 6.16922e-16, -4.37114e-08, 1.7, 2.10042, -0.51185)
+
+[node name="Milanesas y Pollo" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.447248, 0)
+
+[node name="Estante" type="Node3D" parent="Milanesas y Pollo"]
+
+[node name="Marker3D5" type="Marker3D" parent="Milanesas y Pollo/Estante"]
+transform = Transform3D(1.77636e-15, -1, 5.96046e-08, -4.37114e-08, -5.96046e-08, -1, 1, 0, -4.37114e-08, 0.5, 1.70042, -1.77154)
+
+[node name="Marker3D6" type="Marker3D" parent="Milanesas y Pollo/Estante"]
+transform = Transform3D(1.77636e-15, -1, 5.96046e-08, -4.37114e-08, -5.96046e-08, -1, 1, 0, -4.37114e-08, 0.5, 1.70042, -2.87154)
+
+[node name="Marker3D11" type="Marker3D" parent="Milanesas y Pollo/Estante"]
+transform = Transform3D(-1.40816e-08, -0.946689, -0.32215, -4.13811e-08, 0.32215, -0.946689, 1, 6.16922e-16, -4.37114e-08, 1.65956, 1.90042, -1.77154)
+
+[node name="Marker3D12" type="Marker3D" parent="Milanesas y Pollo/Estante"]
+transform = Transform3D(-1.40816e-08, -0.946689, -0.32215, -4.13811e-08, 0.32215, -0.946689, 1, 6.16922e-16, -4.37114e-08, 1.65956, 1.90042, -2.87154)

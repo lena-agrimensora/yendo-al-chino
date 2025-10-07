@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ceeqyj3stpbdl"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_1iis6"]
+[ext_resource type="PackedScene" uid="uid://5ldye4ca8r6o" path="res://assets/modelos_3D/Blend+Textura/Desayuno/Infusiones/Yerba Verde.tscn" id="1_rcwf2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2so8i"]
+size = Vector3(0.818341, 1.03202, 0.0678298)
+
+[node name="Yerba Che Amigo" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_1iis6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000860371, 0.515109, 8.0117e-06)
+shape = SubResource("BoxShape3D_2so8i")
+
+[node name="YERBA BASE" parent="." instance=ExtResource("1_rcwf2")]
+
+[node name="Producto" type="Node" parent="."]

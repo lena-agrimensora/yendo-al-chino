@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf56etf11k0mj"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_acadi"]
+[ext_resource type="PackedScene" uid="uid://ctmx4qvorsmxf" path="res://assets/modelos_3D/Blend+Textura/Desayuno/Infusiones/Mate cocido.tscn" id="1_d7ecw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hw1wi"]
+size = Vector3(2.03928, 1.02545, 0.0889149)
+
+[node name="La Virgonia Mate Cocido" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_acadi")
+
+[node name="MATE2" parent="." instance=ExtResource("1_d7ecw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00486773, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.00116175, 0.257219, 0.000803443)
+shape = SubResource("BoxShape3D_hw1wi")
+
+[node name="Producto" type="Node" parent="."]

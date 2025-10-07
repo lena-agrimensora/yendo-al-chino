@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=4 uid="uid://df4w57l8r6gvl"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/productos/Producto.gd" id="1_o7xwa"]
+[ext_resource type="Texture2D" uid="uid://hihiid5oh51t" path="res://scripts/herramientas/Productos GLB/Limpieza del hogar/aerosol_papasC_TEX.png" id="2_gch14"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/shaders/default_object.gdshader" id="3_e2q1t"]
+[ext_resource type="Texture2D" uid="uid://dxbccrigqmrn4" path="res://scripts/herramientas/Productos GLB/Limpieza del hogar/insecticidaCucas_TEX.png" id="4_w2gow"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r1y4k"]
+resource_name = "PAPAS C MATERIAL"
+cull_mode = 2
+albedo_texture = ExtResource("2_gch14")
+roughness = 0.5
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_b5a8x"]
+_surfaces = [{
+"aabb": AABB(-0.726817, -2.14399, -0.0450001, 1.45409, 4.31846, 0.0900002),
+"format": 34896613377,
+"index_count": 108,
+"index_data": PackedByteArray("DAABAAIAAQADAAIAAgADAA0AAgANAAwAAQAFAAMADQADAAUADgAFAAEADAAOAAEADQAFAA8ADgAPAAUADAANAAYABgANAA8AAAAOAAwADAAGAAAAAAAEAA4ABAAPAA4ABgAPAAcABAAHAA8AEAAGAAcAAAAGABAAEQAEAAAAAAAQABEAEQASAAQAEgAHAAQAEAAHABMAEgATAAcACgAQABMAEQAQAAoACQATABIACwASABEACwAJABIAEQAKAAsACQAIABMACgATAAgACwAIAAkACwAKAAgA"),
+"lods": [0.0677168, PackedByteArray("AAABAAIAAQADAAIAAgADAAAAAAAEAAEAAQAFAAMABAAFAAEAAAADAAYABgADAAUABAAHAAUABgAFAAcABAAIAAcABgAHAAgACQAIAAQACgAGAAgACwAJAAQACwAEAAAACwAIAAkAAAAGAAsACwAKAAgACwAGAAoA")],
+"name": "PAPAS C MATERIAL",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 20,
+"vertex_data": PackedByteArray("6X4AAAAAAAAAAAf1AAAAAAAA9woAAAAAAAD3Cv7/AADpfv//AAAAAAAAB/X//wAA6X4AAP7/AADpfv////8AAP//B/X//wAA//8H9QAAAAD///cK/v8AAP//9woAAAAAYyE3AAAAAABjITcA/v8AANoe+fsAAAAA2h75+///AABw3DcA/v8AAHDcNwAAAAAA+N75+wAAAAD43vn7//8AAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8yvhv"]
+resource_name = "aerosol_Plane_004"
+_surfaces = [{
+"aabb": AABB(-0.726817, -2.14399, -0.0450001, 1.45409, 4.31846, 0.0900002),
+"attribute_data": PackedByteArray("xKz4/PXj7gz14znyxKwwAqJ0OfKidO4MonQ58oA8+PyidO4MgDwwAk8F7gxPBTny6PLI2mjtviPo8r4j6PIAAGjtAABo7cjaaO3//+jy//9o+DTbaPj+/+jyNNvo8ikkaPgpJOjy5gBo+OYAcNXB/IrWIAYYhMH8/oIgBtQTwfy6EiAGK2XB/EVmIAbo8sjaaO2+I+jyviNo7cjaaPhe5+jyXufo8ikkaPg02+jyNNto+CkkaO19GejyfRno8l7naO1e52jtXufo8l7n6PJe5+jy//9o+F7n6PJjGmj4Yxpo+GMa6PJjGujyfRlo7X0Z"),
+"format": 34896613399,
+"index_count": 108,
+"index_data": PackedByteArray("GwABAAIAGwAcAAEAAAAcABsAAAADABwAHQADAAAAHQAeAAMABAAeAB0ABAAFAB4AHwAKACAAHwALAAoABwAfACAABwAgAAkAIQAHAAkAIQAJACIABgAhACIABgAiAAgAIwAkACUAIwAmACQAFgAnACgAFgAUACcAKQAqACsAKQAsACoADgAtAC4ADgANAC0ALwARAAwALwAwABEAEwAxADIAEwASADEAMwAVADQAMwA1ABUANgAYABcANgA3ABgAGQA4ADkAGQAaADgAOgAQAA8AOgA7ABAA"),
+"lods": [0.0677168, PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMABgAHAAgABwAJAAgABwAKAAkABwALAAoADAANAA4ADgANAA8ADwANABAADAARAA0ADAASABEAEwASAAwAEwAUABUAFgAUABMAFwAUABYAFwAYABQAGQAYABcAGQAaABgA")],
+"material": SubResource("StandardMaterial3D_r1y4k"),
+"name": "PAPAS C MATERIAL",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 60,
+"vertex_data": PackedByteArray("6X4AAAAA//8AAAf1AAD//wAA9woAAP//6X7//wAA//////cKAAD/////B/UAAP/////3Cv7/AIDpfgAA/v8AgP//B/X//wCA6X7/////AIAAAAf1//8AgAAA9wr+/wCA///3CgAAysb//wf1//+qyf//B/UAAKrJ6X7//wAAe9Lpfv////970v//9wr+/8rG6X4AAP7/KtXpfgAAAAAr1QAA9wr+/1DG6X4AAP7/KtUAAPcKAABQxgAAB/UAAB/JAAAH9f//H8npfv//AAB70ul+/////3vSYyE3AAAA///aHvn7AAD//3DcNwAAAP//+N75+wAA//9jITcA/v8AgNoe+fv//wCAcNw3AP7/AID43vn7//8AgP//9woAAP+///8H9f///7///wf1AAD/v///9wr+//+/YyE3AP7/UMZjITcAAABQxgAAB/UAAP+/AAD3Cv7//78AAPcKAAD/vwAAB/X///+/+N75+///qsn43vn7AACqyXDcNwAAAMrGcNw3AP7/ysZw3DcA/v8r1XDcNwAAACvVYyE3AAAAKtXpfgAAAAAq1WMhNwD+/yrV2h75+wAAH8naHvn7//8fydoe+fv//3vS2h75+wAAe9L43vn7AAB70vje+fv//3vS/3////9/////f/7//3/+//9//v//f////3////9/////f////3////9/////f///0mFZPEzDpiFMw6Yhu9HeKLvR3ijSYVk8blUiVW5VIlUCRYDi3Cpt1QJFgOIPod+9D6Hfvd2oQq7dqEKu/3/+//9//v//f/7//3/+//9/////f////3////9/////fwAA/38AAP9/AAD/fwAAAkWA4gJFgOL/f/7//3/+//9//v//f/7/TMOmIUzDpiHSYVk80mFZPG5VIlVuVSJV3Cpt1dwqbdXcKm3VD6HfvQ+h373dqEKu3ahCrrvR3ii70d4o")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_b5a8x")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ycpim"]
+render_priority = 0
+shader = ExtResource("3_e2q1t")
+shader_parameter/color_texture = ExtResource("4_w2gow")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ycpim"]
+size = Vector3(1.65409, 4.40364, 0.248892)
+
+[node name="Aerosol Insecticida Cucas" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_o7xwa")
+
+[node name="@MeshInstance3D@55" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.439315, 0)
+mesh = SubResource("ArrayMesh_8yvhv")
+surface_material_override/0 = SubResource("ShaderMaterial_ycpim")
+
+[node name="@CollisionShape3D@56" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.000229239, 0.443071, -1.31852e-05)
+shape = SubResource("BoxShape3D_ycpim")

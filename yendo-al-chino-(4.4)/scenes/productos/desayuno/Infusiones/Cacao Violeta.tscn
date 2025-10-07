@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://syhp4roxpasr"]
+
+[ext_resource type="PackedScene" uid="uid://dptkwtlovlot8" path="res://assets/modelos_3D/Modelado - Productos/Desayuno/CACAO.glb" id="1_g6k5h"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/Shaders/default_object.gdshader" id="2_mbpwc"]
+[ext_resource type="Texture2D" uid="uid://cx56k2h8g6jae" path="res://assets/modelos_3D/Modelado - Productos/Desayuno/cacaoVioleta_TEX.png" id="3_kin68"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wnxpl"]
+render_priority = 0
+shader = ExtResource("2_mbpwc")
+shader_parameter/color_texture = ExtResource("3_kin68")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="Chocolatada" instance=ExtResource("1_g6k5h")]
+
+[node name="CACAO" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_wnxpl")

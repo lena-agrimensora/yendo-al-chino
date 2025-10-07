@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://brwgktvyoxwj8"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_bxysb"]
+[ext_resource type="PackedScene" uid="uid://ouwp3tk25icb" path="res://assets/modelos_3D/Blend+Textura/Verdulería/Calabaza_A.tscn" id="2_bxysb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cir6"]
+size = Vector3(0.513402, 0.932193, 0.041214)
+
+[node name="Calabaza" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_bxysb")
+
+[node name="CALABAZA_A" parent="." instance=ExtResource("2_bxysb")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000736562, 0.465211, 0.00159093)
+shape = SubResource("BoxShape3D_4cir6")
+
+[node name="Producto" type="Node" parent="."]

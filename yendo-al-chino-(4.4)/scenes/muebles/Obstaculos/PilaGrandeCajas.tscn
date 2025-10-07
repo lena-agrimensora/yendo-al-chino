@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgv5jr2o8xunk"]
+
+[ext_resource type="PackedScene" uid="uid://cne1otuis0cjo" path="res://assets/modelos - texturas/objetos/cajas/monton de cajas 1.glb" id="1_hxi5v"]
+
+[node name="monton de cajas 1" instance=ExtResource("1_hxi5v")]
+
+[node name="cajas1" parent="." index="0"]
+transform = Transform3D(-0.249838, 0, 0.649659, 0, 0.375, 0, -0.433106, 0, -0.374757, -0.00308931, 1.92008, -0.00211287)

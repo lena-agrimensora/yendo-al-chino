@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqt0edt1kv6p0"]
+
+[ext_resource type="PackedScene" uid="uid://doirpyjpsf78y" path="res://assets/modelos_3D/Modelos con colisiones/exhibidor carne.glb" id="1_g2fpo"]
+
+[node name="exhibidor carne" instance=ExtResource("1_g2fpo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.996892, 0)

@@ -1,0 +1,1971 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmy8y82vpdli0"]
+
+[ext_resource type="PackedScene" uid="uid://b75fnraam0727" path="res://assets/modelos_3D/Modelado - Muebles/Góndolas y heladeras/gondola-entera.glb" id="1_jd5d5"]
+[ext_resource type="Script" uid="uid://b7osk83nqedb7" path="res://scenes/muebles/Muebles con productos/Gondolas/spawn_limpieza_1.gd" id="3_jd5d5"]
+[ext_resource type="ArrayMesh" uid="uid://b6iwud6bqt5pg" path="res://assets/modelos_3D/changuito.obj" id="4_dsoy2"]
+[ext_resource type="Script" uid="uid://3o48qs2qxfn0" path="res://scenes/muebles/Muebles con productos/Gondolas/spawn_limpieza_2.gd" id="4_u2xrx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tmq48"]
+size = Vector3(3.73853, 5.7778, 2.0459)
+
+[node name="Latas y Desayuno2" type="Node3D"]
+
+[node name="gondola-entera2" parent="." instance=ExtResource("1_jd5d5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.71325, -0.1)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -5.8, 2.3)
+
+[node name="Changuito" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(-0.5544, 0, -6.21197e-08, 0, 0.34, 0, 8.3712e-08, 0, -0.4114, -0.652843, 3.35505, -8.14519)
+mesh = ExtResource("4_dsoy2")
+skeleton = NodePath("../../..")
+
+[node name="Changuito2" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(-0.5544, 0, -6.21197e-08, 0, 0.34, 0, 8.3712e-08, 0, -0.4114, -4.63413, 3.35505, -8.14519)
+mesh = ExtResource("4_dsoy2")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1.848, 0, -7.10543e-15, 0, 0.999997, 0, -7.10543e-15, 0, 2.41999, -2.67077, 4.26832, -8.0821)
+shape = SubResource("BoxShape3D_tmq48")
+
+[node name="SpawnPoints Yerba y té" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0621685, 0)
+script = ExtResource("3_jd5d5")
+
+[node name="Marker3D2" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.7, 2.25875, 0.500001)
+
+[node name="Marker3D50" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.7, 2.25875, 0.900001)
+
+[node name="Marker3D3" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.8, 2.25875, 0.500001)
+
+[node name="Marker3D4" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.9, 2.25875, 0.500001)
+
+[node name="Marker3D27" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.8, 2.25875, 0.700001)
+
+[node name="Marker3D28" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.9, 2.25875, 0.700001)
+
+[node name="Marker3D51" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.8, 2.25875, 0.900001)
+
+[node name="Marker3D52" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.9, 2.25875, 0.900001)
+
+[node name="Marker3D30" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.7, 2.25875, 0.700001)
+
+[node name="Marker3D5" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.3, -0.538848, 0.500001)
+
+[node name="Marker3D53" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.3, -0.538848, 0.900001)
+
+[node name="Marker3D6" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.2, -0.538848, 0.500001)
+
+[node name="Marker3D7" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.1, -0.538848, 0.500001)
+
+[node name="Marker3D29" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.2, -0.538848, 0.700001)
+
+[node name="Marker3D31" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.1, -0.538848, 0.700001)
+
+[node name="Marker3D54" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.2, -0.538848, 0.900001)
+
+[node name="Marker3D55" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.1, -0.538848, 0.900001)
+
+[node name="Marker3D32" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.3, -0.538848, 0.700001)
+
+[node name="Marker3D8" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.30154, 3.55875, 0.500001)
+
+[node name="Marker3D56" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.30154, 3.55875, 0.900001)
+
+[node name="Marker3D9" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.798462, 3.55875, 0.500001)
+
+[node name="Marker3D10" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.89846, 3.55875, 0.500001)
+
+[node name="Marker3D33" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.798462, 3.55875, 0.700001)
+
+[node name="Marker3D34" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.89846, 3.55875, 0.700001)
+
+[node name="Marker3D57" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.798462, 3.55875, 0.900001)
+
+[node name="Marker3D58" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.89846, 3.55875, 0.900001)
+
+[node name="Marker3D35" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.30154, 3.55875, 0.700001)
+
+[node name="Marker3D11" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.76426, -3.2757, 0.500001)
+
+[node name="Marker3D59" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.76426, -3.2757, 0.900001)
+
+[node name="Marker3D12" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.66426, -3.2757, 0.500001)
+
+[node name="Marker3D13" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.435742, -3.2757, 0.500001)
+
+[node name="Marker3D36" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.66426, -3.2757, 0.700001)
+
+[node name="Marker3D37" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.435742, -3.2757, 0.700001)
+
+[node name="Marker3D60" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.66426, -3.2757, 0.900001)
+
+[node name="Marker3D61" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.435742, -3.2757, 0.900001)
+
+[node name="Marker3D38" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.76426, -3.2757, 0.700001)
+
+[node name="Marker3D14" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.97144, -3.2757, 0.500001)
+
+[node name="Marker3D62" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.97144, -3.2757, 0.900001)
+
+[node name="Marker3D15" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.87144, -3.2757, 0.500001)
+
+[node name="Marker3D16" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.77144, -3.2757, 0.500001)
+
+[node name="Marker3D39" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.87144, -3.2757, 0.700001)
+
+[node name="Marker3D40" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.77144, -3.2757, 0.700001)
+
+[node name="Marker3D63" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.87144, -3.2757, 0.900001)
+
+[node name="Marker3D64" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.77144, -3.2757, 0.900001)
+
+[node name="Marker3D17" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.2, -0.599241, 0.300001)
+
+[node name="Marker3D65" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.2, -0.599241, 0.900001)
+
+[node name="Marker3D18" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.2, -0.599241, 0.300001)
+
+[node name="Marker3D19" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.2308, -0.599241, 0.300001)
+
+[node name="Marker3D42" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.2, -0.599241, 0.600001)
+
+[node name="Marker3D43" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.2308, -0.599241, 0.600001)
+
+[node name="Marker3D66" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.2, -0.599241, 0.900001)
+
+[node name="Marker3D67" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.2308, -0.599241, 0.900001)
+
+[node name="Marker3D20" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.1, -0.599241, 0.300001)
+
+[node name="Marker3D44" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.1, -0.599241, 0.600001)
+
+[node name="Marker3D45" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.2, -0.599241, 0.600001)
+
+[node name="Marker3D68" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.1, -0.599241, 0.900001)
+
+[node name="Marker3D21" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.8, -0.599241, 0.300001)
+
+[node name="Marker3D46" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.8, -0.599241, 0.600001)
+
+[node name="Marker3D69" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.8, -0.599241, 0.900001)
+
+[node name="Marker3D22" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.9, -0.599241, 0.300001)
+
+[node name="Marker3D23" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, -0.599241, 0.300001)
+
+[node name="Marker3D47" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.9, -0.599241, 0.600001)
+
+[node name="Marker3D48" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, -0.599241, 0.600001)
+
+[node name="Marker3D70" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.9, -0.599241, 0.900001)
+
+[node name="Marker3D71" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, -0.599241, 0.900001)
+
+[node name="Marker3D24" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.9, -0.599241, 0.300001)
+
+[node name="Marker3D49" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.9, -0.599241, 0.600001)
+
+[node name="Marker3D72" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.9, -0.599241, 0.900001)
+
+[node name="Marker3D25" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.4, -0.599241, 0.300001)
+
+[node name="Marker3D26" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.4, -0.599241, 0.300001)
+
+[node name="Marker3D73" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.4, -0.599241, 0.600001)
+
+[node name="Marker3D74" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.4, -0.599241, 0.900001)
+
+[node name="Marker3D75" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.600001, -0.599241, 0.300001)
+
+[node name="Marker3D76" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.7, -0.599241, 0.300001)
+
+[node name="Marker3D77" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.600001, -0.599241, 0.600001)
+
+[node name="Marker3D78" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.7, -0.599241, 0.600001)
+
+[node name="Marker3D79" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.600001, -0.599241, 0.900001)
+
+[node name="Marker3D80" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.7, -0.599241, 0.900001)
+
+[node name="Marker3D81" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.4, -0.599241, 0.600001)
+
+[node name="Marker3D82" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.4, -0.599241, 0.900001)
+
+[node name="Marker3D83" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.5, -0.599241, 0.300001)
+
+[node name="Marker3D84" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.4, -0.599241, 0.300001)
+
+[node name="Marker3D85" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.5, -0.599241, 0.600001)
+
+[node name="Marker3D86" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.4, -0.599241, 0.600001)
+
+[node name="Marker3D87" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.5, -0.599241, 0.900001)
+
+[node name="Marker3D88" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.4, -0.599241, 0.900001)
+
+[node name="Marker3D89" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.2, 3.58229, 0.300001)
+
+[node name="Marker3D90" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.2, 3.58229, 0.900001)
+
+[node name="Marker3D91" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.2, 3.58229, 0.300001)
+
+[node name="Marker3D92" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1, 3.58229, 0.300001)
+
+[node name="Marker3D93" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.2, 3.58229, 0.600001)
+
+[node name="Marker3D94" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1, 3.58229, 0.600001)
+
+[node name="Marker3D95" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.2, 3.58229, 0.900001)
+
+[node name="Marker3D96" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1, 3.58229, 0.900001)
+
+[node name="Marker3D97" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.1, 3.58229, 0.300001)
+
+[node name="Marker3D98" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.1, 3.58229, 0.600001)
+
+[node name="Marker3D99" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.2, 3.58229, 0.600001)
+
+[node name="Marker3D100" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.1, 3.58229, 0.900001)
+
+[node name="Marker3D101" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.9, 3.58229, 0.300001)
+
+[node name="Marker3D102" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 3.58229, 0.300001)
+
+[node name="Marker3D103" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.9, 3.58229, 0.600001)
+
+[node name="Marker3D104" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 3.58229, 0.600001)
+
+[node name="Marker3D105" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.9, 3.58229, 0.900001)
+
+[node name="Marker3D106" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 3.58229, 0.900001)
+
+[node name="Marker3D107" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 3.54067, 0.300001)
+
+[node name="Marker3D108" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 3.54067, 0.900001)
+
+[node name="Marker3D109" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.7, 3.54067, 0.300001)
+
+[node name="Marker3D110" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.7, 3.54067, 0.600001)
+
+[node name="Marker3D111" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.7, 3.54067, 0.900001)
+
+[node name="Marker3D112" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 3.54067, 0.600001)
+
+[node name="Marker3D113" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 3.54067, 0.300001)
+
+[node name="Marker3D114" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 3.54067, 0.900001)
+
+[node name="Marker3D115" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 3.54067, 0.300001)
+
+[node name="Marker3D116" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 3.54067, 0.300001)
+
+[node name="Marker3D117" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 3.54067, 0.600001)
+
+[node name="Marker3D118" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 3.54067, 0.600001)
+
+[node name="Marker3D119" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 3.54067, 0.900001)
+
+[node name="Marker3D120" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 3.54067, 0.900001)
+
+[node name="Marker3D121" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 3.54067, 0.600001)
+
+[node name="Marker3D122" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 3.54067, 0.300001)
+
+[node name="Marker3D123" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 3.54067, 0.300001)
+
+[node name="Marker3D124" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 3.54067, 0.600001)
+
+[node name="Marker3D125" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 3.54067, 0.600001)
+
+[node name="Marker3D126" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 3.54067, 0.900001)
+
+[node name="Marker3D127" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 3.54067, 0.900001)
+
+[node name="Marker3D128" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, 0.838229, 0.300001)
+
+[node name="Marker3D129" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, 0.838229, 0.900001)
+
+[node name="Marker3D130" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, 0.838229, 0.300001)
+
+[node name="Marker3D131" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.2551, 0.838229, 0.300001)
+
+[node name="Marker3D132" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, 0.838229, 0.600001)
+
+[node name="Marker3D133" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.2551, 0.838229, 0.600001)
+
+[node name="Marker3D134" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, 0.838229, 0.900001)
+
+[node name="Marker3D135" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.2551, 0.838229, 0.900001)
+
+[node name="Marker3D136" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, 0.838229, 0.300001)
+
+[node name="Marker3D137" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, 0.838229, 0.600001)
+
+[node name="Marker3D138" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, 0.838229, 0.600001)
+
+[node name="Marker3D139" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, 0.838229, 0.900001)
+
+[node name="Marker3D140" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, 0.838229, 0.300001)
+
+[node name="Marker3D141" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, 0.838229, 0.600001)
+
+[node name="Marker3D142" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, 0.838229, 0.900001)
+
+[node name="Marker3D143" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, 0.838229, 0.300001)
+
+[node name="Marker3D144" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, 0.838229, 0.300001)
+
+[node name="Marker3D145" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, 0.838229, 0.600001)
+
+[node name="Marker3D146" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, 0.838229, 0.600001)
+
+[node name="Marker3D147" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, 0.838229, 0.900001)
+
+[node name="Marker3D148" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, 0.838229, 0.900001)
+
+[node name="Marker3D149" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, 0.838229, 0.300001)
+
+[node name="Marker3D150" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, 0.838229, 0.600001)
+
+[node name="Marker3D151" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, 0.838229, 0.900001)
+
+[node name="Marker3D152" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, 0.838229, 0.300001)
+
+[node name="Marker3D153" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, 0.838229, 0.300001)
+
+[node name="Marker3D154" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, 0.838229, 0.600001)
+
+[node name="Marker3D155" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, 0.838229, 0.900001)
+
+[node name="Marker3D156" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, 0.838229, 0.300001)
+
+[node name="Marker3D157" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, 0.838229, 0.300001)
+
+[node name="Marker3D158" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, 0.838229, 0.600001)
+
+[node name="Marker3D159" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, 0.838229, 0.600001)
+
+[node name="Marker3D160" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, 0.838229, 0.900001)
+
+[node name="Marker3D161" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, 0.838229, 0.900001)
+
+[node name="Marker3D162" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, 0.838229, 0.600001)
+
+[node name="Marker3D163" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, 0.838229, 0.900001)
+
+[node name="Marker3D164" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, 0.838229, 0.300001)
+
+[node name="Marker3D165" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, 0.838229, 0.300001)
+
+[node name="Marker3D166" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, 0.838229, 0.600001)
+
+[node name="Marker3D167" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, 0.838229, 0.600001)
+
+[node name="Marker3D168" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, 0.838229, 0.900001)
+
+[node name="Marker3D169" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, 0.838229, 0.900001)
+
+[node name="Marker3D170" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 0.856698, 0.300001)
+
+[node name="Marker3D171" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 0.856698, 0.900001)
+
+[node name="Marker3D172" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 0.856698, 0.600001)
+
+[node name="Marker3D173" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 0.856698, 0.300001)
+
+[node name="Marker3D174" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 0.856698, 0.900001)
+
+[node name="Marker3D175" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0.856698, 0.300001)
+
+[node name="Marker3D176" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 0.856698, 0.300001)
+
+[node name="Marker3D177" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0.856698, 0.600001)
+
+[node name="Marker3D178" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 0.856698, 0.600001)
+
+[node name="Marker3D179" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0.856698, 0.900001)
+
+[node name="Marker3D180" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 0.856698, 0.900001)
+
+[node name="Marker3D181" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 0.856698, 0.600001)
+
+[node name="Marker3D182" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 0.856698, 0.300001)
+
+[node name="Marker3D183" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 0.856698, 0.300001)
+
+[node name="Marker3D184" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 0.856698, 0.600001)
+
+[node name="Marker3D185" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 0.856698, 0.600001)
+
+[node name="Marker3D186" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 0.856698, 0.900001)
+
+[node name="Marker3D187" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 0.856698, 0.900001)
+
+[node name="Marker3D188" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, -1.91029, 0.300001)
+
+[node name="Marker3D189" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, -1.91029, 0.900001)
+
+[node name="Marker3D190" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, -1.91029, 0.300001)
+
+[node name="Marker3D191" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1897, -1.91029, 0.300001)
+
+[node name="Marker3D192" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, -1.91029, 0.600001)
+
+[node name="Marker3D193" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1897, -1.91029, 0.600001)
+
+[node name="Marker3D194" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, -1.91029, 0.900001)
+
+[node name="Marker3D195" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1897, -1.91029, 0.900001)
+
+[node name="Marker3D196" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, -1.91029, 0.300001)
+
+[node name="Marker3D197" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, -1.91029, 0.600001)
+
+[node name="Marker3D198" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, -1.91029, 0.600001)
+
+[node name="Marker3D199" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, -1.91029, 0.900001)
+
+[node name="Marker3D200" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, -1.91029, 0.300001)
+
+[node name="Marker3D201" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, -1.91029, 0.600001)
+
+[node name="Marker3D202" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, -1.91029, 0.900001)
+
+[node name="Marker3D203" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, -1.91029, 0.300001)
+
+[node name="Marker3D204" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, -1.91029, 0.300001)
+
+[node name="Marker3D205" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, -1.91029, 0.600001)
+
+[node name="Marker3D206" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, -1.91029, 0.600001)
+
+[node name="Marker3D207" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, -1.91029, 0.900001)
+
+[node name="Marker3D208" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, -1.91029, 0.900001)
+
+[node name="Marker3D209" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, -1.91029, 0.300001)
+
+[node name="Marker3D210" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, -1.91029, 0.600001)
+
+[node name="Marker3D211" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, -1.91029, 0.900001)
+
+[node name="Marker3D212" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, -1.91029, 0.300001)
+
+[node name="Marker3D213" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, -1.91029, 0.300001)
+
+[node name="Marker3D214" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, -1.91029, 0.600001)
+
+[node name="Marker3D215" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, -1.91029, 0.900001)
+
+[node name="Marker3D216" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, -1.91029, 0.300001)
+
+[node name="Marker3D217" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, -1.91029, 0.300001)
+
+[node name="Marker3D218" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, -1.91029, 0.600001)
+
+[node name="Marker3D219" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, -1.91029, 0.600001)
+
+[node name="Marker3D220" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, -1.91029, 0.900001)
+
+[node name="Marker3D221" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, -1.91029, 0.900001)
+
+[node name="Marker3D222" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, -1.91029, 0.600001)
+
+[node name="Marker3D223" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, -1.91029, 0.900001)
+
+[node name="Marker3D224" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, -1.93571, 0.300001)
+
+[node name="Marker3D225" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, -1.91029, 0.300001)
+
+[node name="Marker3D226" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, -1.93571, 0.600001)
+
+[node name="Marker3D227" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, -1.91029, 0.600001)
+
+[node name="Marker3D228" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, -1.93571, 0.900001)
+
+[node name="Marker3D229" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, -1.91029, 0.900001)
+
+[node name="Marker3D230" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, -1.91724, 0.300001)
+
+[node name="Marker3D231" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, -1.91724, 0.900001)
+
+[node name="Marker3D232" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, -1.91724, 0.600001)
+
+[node name="Marker3D233" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, -1.90278, 0.300001)
+
+[node name="Marker3D234" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, -1.90278, 0.900001)
+
+[node name="Marker3D235" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, -1.91724, 0.300001)
+
+[node name="Marker3D236" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, -1.91724, 0.300001)
+
+[node name="Marker3D237" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, -1.91724, 0.600001)
+
+[node name="Marker3D238" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, -1.91724, 0.600001)
+
+[node name="Marker3D239" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, -1.91724, 0.900001)
+
+[node name="Marker3D240" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, -1.91724, 0.900001)
+
+[node name="Marker3D241" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, -1.90278, 0.600001)
+
+[node name="Marker3D242" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.3, -1.91724, 0.300001)
+
+[node name="Marker3D243" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, -1.91724, 0.300001)
+
+[node name="Marker3D244" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.3, -1.91724, 0.600001)
+
+[node name="Marker3D245" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, -1.91724, 0.600001)
+
+[node name="Marker3D246" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.3, -1.91724, 0.900001)
+
+[node name="Marker3D247" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, -1.91724, 0.900001)
+
+[node name="Marker3D248" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, -3.30318, 0.300001)
+
+[node name="Marker3D249" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, -3.30318, 0.900001)
+
+[node name="Marker3D250" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, -3.30318, 0.300001)
+
+[node name="Marker3D251" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1897, -3.30318, 0.300001)
+
+[node name="Marker3D252" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, -3.30318, 0.600001)
+
+[node name="Marker3D253" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1897, -3.30318, 0.600001)
+
+[node name="Marker3D254" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.15885, -3.30318, 0.900001)
+
+[node name="Marker3D255" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.1897, -3.30318, 0.900001)
+
+[node name="Marker3D256" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, -3.30318, 0.300001)
+
+[node name="Marker3D257" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, -3.30318, 0.600001)
+
+[node name="Marker3D258" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.15885, -3.30318, 0.600001)
+
+[node name="Marker3D259" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.05885, -3.30318, 0.900001)
+
+[node name="Marker3D260" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, -3.30318, 0.300001)
+
+[node name="Marker3D261" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, -3.30318, 0.600001)
+
+[node name="Marker3D262" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, -3.30318, 0.900001)
+
+[node name="Marker3D263" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, -3.30318, 0.300001)
+
+[node name="Marker3D264" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, -3.30318, 0.300001)
+
+[node name="Marker3D265" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, -3.30318, 0.600001)
+
+[node name="Marker3D266" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, -3.30318, 0.600001)
+
+[node name="Marker3D267" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.85885, -3.30318, 0.900001)
+
+[node name="Marker3D268" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.95885, -3.30318, 0.900001)
+
+[node name="Marker3D269" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, -3.30318, 0.300001)
+
+[node name="Marker3D270" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, -3.30318, 0.600001)
+
+[node name="Marker3D271" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, -3.30318, 0.900001)
+
+[node name="Marker3D272" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, -3.30318, 0.300001)
+
+[node name="Marker3D273" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, -3.30318, 0.600001)
+
+[node name="Marker3D274" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, -3.30318, 0.900001)
+
+[node name="Marker3D275" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, 2.2353, 0.300001)
+
+[node name="Marker3D276" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, 2.2353, 0.600001)
+
+[node name="Marker3D277" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.75885, 2.2353, 0.900001)
+
+[node name="Marker3D278" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, 2.2353, 0.300001)
+
+[node name="Marker3D279" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, 2.2353, 0.600001)
+
+[node name="Marker3D280" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.85885, 2.2353, 0.900001)
+
+[node name="Marker3D281" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, 2.2353, 0.300001)
+
+[node name="Marker3D282" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, 2.2353, 0.300001)
+
+[node name="Marker3D283" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, 2.2353, 0.600001)
+
+[node name="Marker3D284" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, 2.2353, 0.900001)
+
+[node name="Marker3D285" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, 2.2353, 0.300001)
+
+[node name="Marker3D286" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, 2.2353, 0.300001)
+
+[node name="Marker3D287" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, 2.2353, 0.600001)
+
+[node name="Marker3D288" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, 2.2353, 0.600001)
+
+[node name="Marker3D289" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.558847, 2.2353, 0.900001)
+
+[node name="Marker3D290" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.65885, 2.2353, 0.900001)
+
+[node name="Marker3D291" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.44116, 2.2353, 0.600001)
+
+[node name="Marker3D292" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.44115, 2.2353, 0.900001)
+
+[node name="Marker3D293" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, 2.2353, 0.300001)
+
+[node name="Marker3D294" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, 2.2353, 0.300001)
+
+[node name="Marker3D295" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, 2.2353, 0.600001)
+
+[node name="Marker3D296" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, 2.2353, 0.600001)
+
+[node name="Marker3D297" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.54115, 2.2353, 0.900001)
+
+[node name="Marker3D298" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.44115, 2.2353, 0.900001)
+
+[node name="Marker3D299" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 2.25377, 0.300001)
+
+[node name="Marker3D300" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 2.25377, 0.900001)
+
+[node name="Marker3D301" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.8, 2.25377, 0.600001)
+
+[node name="Marker3D302" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 2.25377, 0.300001)
+
+[node name="Marker3D303" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 2.25377, 0.900001)
+
+[node name="Marker3D304" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 2.25377, 0.300001)
+
+[node name="Marker3D305" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 2.25377, 0.300001)
+
+[node name="Marker3D306" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 2.25377, 0.600001)
+
+[node name="Marker3D307" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 2.25377, 0.600001)
+
+[node name="Marker3D308" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 2.25377, 0.900001)
+
+[node name="Marker3D309" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.9, 2.25377, 0.900001)
+
+[node name="Marker3D310" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.1, 2.25377, 0.600001)
+
+[node name="Marker3D311" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 2.25377, 0.300001)
+
+[node name="Marker3D312" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 2.25377, 0.300001)
+
+[node name="Marker3D313" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 2.25377, 0.600001)
+
+[node name="Marker3D314" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 2.25377, 0.600001)
+
+[node name="Marker3D315" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.4334, 2.25377, 0.900001)
+
+[node name="Marker3D316" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.2, 2.25377, 0.900001)
+
+[node name="Marker3D41" type="Marker3D" parent="SpawnPoints Yerba y té"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.97144, -3.2757, 0.700001)
+
+[node name="SpawnPoints Yerba y té2" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -0.285935, -0.0478132, -0.121449)
+script = ExtResource("4_u2xrx")
+
+[node name="Marker3D2" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.7, 2.25875, 0.500001)
+
+[node name="Marker3D50" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.7, 2.25875, 0.900001)
+
+[node name="Marker3D3" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.8, 2.25875, 0.500001)
+
+[node name="Marker3D4" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.9, 2.25875, 0.500001)
+
+[node name="Marker3D27" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.8, 2.25875, 0.700001)
+
+[node name="Marker3D28" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.9, 2.25875, 0.700001)
+
+[node name="Marker3D51" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.8, 2.25875, 0.900001)
+
+[node name="Marker3D52" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.9, 2.25875, 0.900001)
+
+[node name="Marker3D30" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.7, 2.25875, 0.700001)
+
+[node name="Marker3D5" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.3, -0.539143, 0.500001)
+
+[node name="Marker3D53" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.3, -0.539143, 0.900001)
+
+[node name="Marker3D6" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.2, -0.539143, 0.500001)
+
+[node name="Marker3D7" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.1, -0.539143, 0.500001)
+
+[node name="Marker3D29" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.2, -0.539143, 0.700001)
+
+[node name="Marker3D31" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.1, -0.539143, 0.700001)
+
+[node name="Marker3D54" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.2, -0.539143, 0.900001)
+
+[node name="Marker3D55" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.1, -0.539143, 0.900001)
+
+[node name="Marker3D32" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.3, -0.539143, 0.700001)
+
+[node name="Marker3D11" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.76426, -3.2757, 0.500001)
+
+[node name="Marker3D59" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.76426, -3.2757, 0.900001)
+
+[node name="Marker3D12" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.66426, -3.2757, 0.500001)
+
+[node name="Marker3D13" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.435742, -3.2757, 0.500001)
+
+[node name="Marker3D36" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.66426, -3.2757, 0.700001)
+
+[node name="Marker3D37" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.435742, -3.2757, 0.700001)
+
+[node name="Marker3D60" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.66426, -3.2757, 0.900001)
+
+[node name="Marker3D61" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.435742, -3.2757, 0.900001)
+
+[node name="Marker3D38" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.76426, -3.2757, 0.700001)
+
+[node name="Marker3D14" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.97144, -3.2757, 0.500001)
+
+[node name="Marker3D62" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.97144, -3.2757, 0.900001)
+
+[node name="Marker3D15" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.87144, -3.2757, 0.500001)
+
+[node name="Marker3D16" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.77144, -3.2757, 0.500001)
+
+[node name="Marker3D39" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.87144, -3.2757, 0.700001)
+
+[node name="Marker3D40" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.77144, -3.2757, 0.700001)
+
+[node name="Marker3D63" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.87144, -3.2757, 0.900001)
+
+[node name="Marker3D64" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.77144, -3.2757, 0.900001)
+
+[node name="Marker3D8" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.21884, 2.21965, 0.300001)
+
+[node name="Marker3D56" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.21884, 2.21965, 0.900001)
+
+[node name="Marker3D9" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.31884, 2.21965, 0.300001)
+
+[node name="Marker3D17" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.41884, 2.21965, 0.300001)
+
+[node name="Marker3D33" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.31884, 2.21965, 0.600001)
+
+[node name="Marker3D35" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.41884, 2.21965, 0.600001)
+
+[node name="Marker3D57" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.31884, 2.21965, 0.900001)
+
+[node name="Marker3D65" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.41884, 2.21965, 0.900001)
+
+[node name="Marker3D42" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.21884, 2.21965, 0.600001)
+
+[node name="Marker3D10" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.61884, -0.633117, 0.300001)
+
+[node name="Marker3D58" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.61884, -0.633117, 0.900001)
+
+[node name="Marker3D18" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.61884, -0.633117, 0.300001)
+
+[node name="Marker3D19" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6496, -0.633117, 0.300001)
+
+[node name="Marker3D34" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.61884, -0.633117, 0.600001)
+
+[node name="Marker3D43" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6496, -0.633117, 0.600001)
+
+[node name="Marker3D66" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.61884, -0.633117, 0.900001)
+
+[node name="Marker3D67" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6496, -0.633117, 0.900001)
+
+[node name="Marker3D20" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.51884, -0.633117, 0.300001)
+
+[node name="Marker3D44" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.51884, -0.633117, 0.600001)
+
+[node name="Marker3D45" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.61884, -0.633117, 0.600001)
+
+[node name="Marker3D68" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.51884, -0.633117, 0.900001)
+
+[node name="Marker3D21" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.21884, -0.633117, 0.300001)
+
+[node name="Marker3D46" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.21884, -0.633117, 0.600001)
+
+[node name="Marker3D69" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.21884, -0.633117, 0.900001)
+
+[node name="Marker3D22" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.31884, -0.633117, 0.300001)
+
+[node name="Marker3D23" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.41884, -0.633117, 0.300001)
+
+[node name="Marker3D47" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.31884, -0.633117, 0.600001)
+
+[node name="Marker3D48" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.41884, -0.633117, 0.600001)
+
+[node name="Marker3D70" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.31884, -0.633117, 0.900001)
+
+[node name="Marker3D71" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.41884, -0.633117, 0.900001)
+
+[node name="Marker3D24" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.31884, -0.633117, 0.300001)
+
+[node name="Marker3D49" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.31884, -0.633117, 0.600001)
+
+[node name="Marker3D72" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.31884, -0.633117, 0.900001)
+
+[node name="Marker3D25" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.981162, -0.633117, 0.300001)
+
+[node name="Marker3D26" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.018838, -0.633117, 0.300001)
+
+[node name="Marker3D73" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.018838, -0.633117, 0.600001)
+
+[node name="Marker3D74" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.981162, -0.633117, 0.900001)
+
+[node name="Marker3D75" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.01884, -0.633117, 0.300001)
+
+[node name="Marker3D76" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.11884, -0.633117, 0.300001)
+
+[node name="Marker3D77" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.01884, -0.633117, 0.600001)
+
+[node name="Marker3D78" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.11884, -0.633117, 0.600001)
+
+[node name="Marker3D79" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.01884, -0.633117, 0.900001)
+
+[node name="Marker3D80" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.11884, -0.633117, 0.900001)
+
+[node name="Marker3D81" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.981162, -0.633117, 0.600001)
+
+[node name="Marker3D82" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.018838, -0.633117, 0.900001)
+
+[node name="Marker3D83" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.08116, -0.633117, 0.300001)
+
+[node name="Marker3D84" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.98116, -0.633117, 0.300001)
+
+[node name="Marker3D85" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.08116, -0.633117, 0.600001)
+
+[node name="Marker3D86" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.98116, -0.633117, 0.600001)
+
+[node name="Marker3D87" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.08116, -0.633117, 0.900001)
+
+[node name="Marker3D88" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.98116, -0.633117, 0.900001)
+
+[node name="Marker3D89" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.08116, 2.21965, 0.300001)
+
+[node name="Marker3D90" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.08116, 2.21965, 0.900001)
+
+[node name="Marker3D91" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.018839, 2.21965, 0.300001)
+
+[node name="Marker3D92" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.11884, 2.21965, 0.300001)
+
+[node name="Marker3D93" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.018839, 2.21965, 0.600001)
+
+[node name="Marker3D94" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.11884, 2.21965, 0.600001)
+
+[node name="Marker3D95" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.018839, 2.21965, 0.900001)
+
+[node name="Marker3D96" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.11884, 2.21965, 0.900001)
+
+[node name="Marker3D97" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.08116, 2.21965, 0.600001)
+
+[node name="Marker3D98" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, 2.21965, 0.300001)
+
+[node name="Marker3D99" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, 2.21965, 0.900001)
+
+[node name="Marker3D100" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.28116, 2.21965, 0.300001)
+
+[node name="Marker3D101" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.18116, 2.21965, 0.300001)
+
+[node name="Marker3D102" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.28116, 2.21965, 0.600001)
+
+[node name="Marker3D103" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.18116, 2.21965, 0.600001)
+
+[node name="Marker3D104" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.28116, 2.21965, 0.900001)
+
+[node name="Marker3D105" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.18116, 2.21965, 0.900001)
+
+[node name="Marker3D106" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, 2.21965, 0.600001)
+
+[node name="Marker3D107" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, 2.21965, 0.300001)
+
+[node name="Marker3D108" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, 2.21965, 0.900001)
+
+[node name="Marker3D109" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, 2.21965, 0.300001)
+
+[node name="Marker3D110" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, 2.21965, 0.300001)
+
+[node name="Marker3D111" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, 2.21965, 0.600001)
+
+[node name="Marker3D112" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, 2.21965, 0.600001)
+
+[node name="Marker3D113" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, 2.21965, 0.900001)
+
+[node name="Marker3D114" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, 2.21965, 0.900001)
+
+[node name="Marker3D115" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, 2.21965, 0.600001)
+
+[node name="Marker3D116" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.0146, 2.21965, 0.300001)
+
+[node name="Marker3D117" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, 2.21965, 0.300001)
+
+[node name="Marker3D118" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.0146, 2.21965, 0.600001)
+
+[node name="Marker3D119" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, 2.21965, 0.600001)
+
+[node name="Marker3D120" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.0146, 2.21965, 0.900001)
+
+[node name="Marker3D121" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, 2.21965, 0.900001)
+
+[node name="Marker3D125" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, 0.804353, 0.300001)
+
+[node name="Marker3D126" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, 0.804353, 0.900001)
+
+[node name="Marker3D127" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, 0.804353, 0.300001)
+
+[node name="Marker3D128" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6739, 0.804353, 0.300001)
+
+[node name="Marker3D129" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, 0.804353, 0.600001)
+
+[node name="Marker3D130" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6739, 0.804353, 0.600001)
+
+[node name="Marker3D131" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, 0.804353, 0.900001)
+
+[node name="Marker3D132" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6739, 0.804353, 0.900001)
+
+[node name="Marker3D133" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, 0.804353, 0.300001)
+
+[node name="Marker3D134" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, 0.804353, 0.600001)
+
+[node name="Marker3D135" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, 0.804353, 0.600001)
+
+[node name="Marker3D136" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, 0.804353, 0.900001)
+
+[node name="Marker3D137" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, 0.804353, 0.300001)
+
+[node name="Marker3D138" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, 0.804353, 0.600001)
+
+[node name="Marker3D139" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, 0.804353, 0.900001)
+
+[node name="Marker3D140" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, 0.804353, 0.300001)
+
+[node name="Marker3D141" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, 0.804353, 0.300001)
+
+[node name="Marker3D142" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, 0.804353, 0.600001)
+
+[node name="Marker3D143" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, 0.804353, 0.600001)
+
+[node name="Marker3D144" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, 0.804353, 0.900001)
+
+[node name="Marker3D145" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, 0.804353, 0.900001)
+
+[node name="Marker3D146" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, 0.804353, 0.300001)
+
+[node name="Marker3D147" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, 0.804353, 0.600001)
+
+[node name="Marker3D148" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, 0.804353, 0.900001)
+
+[node name="Marker3D149" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.02232, 0.804353, 0.300001)
+
+[node name="Marker3D150" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.022312, 0.804353, 0.300001)
+
+[node name="Marker3D151" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.022312, 0.804353, 0.600001)
+
+[node name="Marker3D152" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.02232, 0.804353, 0.900001)
+
+[node name="Marker3D153" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.977684, 0.804353, 0.300001)
+
+[node name="Marker3D154" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, 0.804353, 0.300001)
+
+[node name="Marker3D155" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.977685, 0.804353, 0.600001)
+
+[node name="Marker3D156" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, 0.804353, 0.600001)
+
+[node name="Marker3D157" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.977685, 0.804353, 0.900001)
+
+[node name="Marker3D158" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, 0.804353, 0.900001)
+
+[node name="Marker3D159" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.02232, 0.804353, 0.600001)
+
+[node name="Marker3D160" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.0223119, 0.804353, 0.900001)
+
+[node name="Marker3D161" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.12231, 0.804353, 0.300001)
+
+[node name="Marker3D162" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.02231, 0.804353, 0.300001)
+
+[node name="Marker3D163" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.12231, 0.804353, 0.600001)
+
+[node name="Marker3D164" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.02231, 0.804353, 0.600001)
+
+[node name="Marker3D165" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.12231, 0.804353, 0.900001)
+
+[node name="Marker3D166" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.02231, 0.804353, 0.900001)
+
+[node name="Marker3D167" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, 0.822823, 0.300001)
+
+[node name="Marker3D168" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, 0.822823, 0.900001)
+
+[node name="Marker3D169" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, 0.822823, 0.600001)
+
+[node name="Marker3D170" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, 0.822823, 0.300001)
+
+[node name="Marker3D171" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, 0.822823, 0.900001)
+
+[node name="Marker3D172" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, 0.822823, 0.300001)
+
+[node name="Marker3D173" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, 0.822823, 0.300001)
+
+[node name="Marker3D174" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, 0.822823, 0.600001)
+
+[node name="Marker3D175" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, 0.822823, 0.600001)
+
+[node name="Marker3D176" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, 0.822823, 0.900001)
+
+[node name="Marker3D177" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, 0.822823, 0.900001)
+
+[node name="Marker3D178" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, 0.822823, 0.600001)
+
+[node name="Marker3D179" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.0146, 0.822823, 0.300001)
+
+[node name="Marker3D180" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, 0.822823, 0.300001)
+
+[node name="Marker3D181" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.0146, 0.822823, 0.600001)
+
+[node name="Marker3D182" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, 0.822823, 0.600001)
+
+[node name="Marker3D183" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.0146, 0.822823, 0.900001)
+
+[node name="Marker3D184" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, 0.822823, 0.900001)
+
+[node name="Marker3D185" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, -1.92363, 0.300001)
+
+[node name="Marker3D186" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, -1.92363, 0.900001)
+
+[node name="Marker3D187" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, -1.92363, 0.300001)
+
+[node name="Marker3D188" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6085, -1.92363, 0.300001)
+
+[node name="Marker3D189" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, -1.92363, 0.600001)
+
+[node name="Marker3D190" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6085, -1.92363, 0.600001)
+
+[node name="Marker3D191" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, -1.92363, 0.900001)
+
+[node name="Marker3D192" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6085, -1.92363, 0.900001)
+
+[node name="Marker3D193" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, -1.92363, 0.300001)
+
+[node name="Marker3D194" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, -1.92363, 0.600001)
+
+[node name="Marker3D195" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, -1.92363, 0.600001)
+
+[node name="Marker3D196" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, -1.92363, 0.900001)
+
+[node name="Marker3D197" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, -1.92363, 0.300001)
+
+[node name="Marker3D198" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, -1.92363, 0.600001)
+
+[node name="Marker3D199" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, -1.92363, 0.900001)
+
+[node name="Marker3D200" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, -1.92363, 0.300001)
+
+[node name="Marker3D201" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, -1.92363, 0.300001)
+
+[node name="Marker3D202" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, -1.92363, 0.600001)
+
+[node name="Marker3D203" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, -1.92363, 0.600001)
+
+[node name="Marker3D204" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, -1.92363, 0.900001)
+
+[node name="Marker3D205" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, -1.92363, 0.900001)
+
+[node name="Marker3D206" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, -1.92363, 0.300001)
+
+[node name="Marker3D207" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, -1.92363, 0.600001)
+
+[node name="Marker3D208" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, -1.92363, 0.900001)
+
+[node name="Marker3D209" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.02232, -1.92363, 0.300001)
+
+[node name="Marker3D210" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.022312, -1.92363, 0.300001)
+
+[node name="Marker3D211" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.022312, -1.92363, 0.600001)
+
+[node name="Marker3D212" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.02232, -1.92363, 0.900001)
+
+[node name="Marker3D213" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.977684, -1.92363, 0.300001)
+
+[node name="Marker3D214" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, -1.92363, 0.300001)
+
+[node name="Marker3D215" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.977685, -1.92363, 0.600001)
+
+[node name="Marker3D216" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, -1.92363, 0.600001)
+
+[node name="Marker3D217" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.977685, -1.92363, 0.900001)
+
+[node name="Marker3D218" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, -1.92363, 0.900001)
+
+[node name="Marker3D219" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.02232, -1.92363, 0.600001)
+
+[node name="Marker3D220" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.0223119, -1.92363, 0.900001)
+
+[node name="Marker3D221" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.12231, -1.92, 0.300001)
+
+[node name="Marker3D222" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.02231, -1.92363, 0.300001)
+
+[node name="Marker3D223" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.12231, -1.92, 0.600001)
+
+[node name="Marker3D224" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.02231, -1.92363, 0.600001)
+
+[node name="Marker3D225" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.12231, -1.92, 0.900001)
+
+[node name="Marker3D226" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.02231, -1.92363, 0.900001)
+
+[node name="Marker3D227" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, -1.93058, 0.300001)
+
+[node name="Marker3D228" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, -1.93058, 0.900001)
+
+[node name="Marker3D229" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.38116, -1.93058, 0.600001)
+
+[node name="Marker3D230" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, -1.92363, 0.300001)
+
+[node name="Marker3D231" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, -1.92363, 0.900001)
+
+[node name="Marker3D232" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, -1.92363, 0.300001)
+
+[node name="Marker3D233" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, -1.93058, 0.300001)
+
+[node name="Marker3D234" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, -1.92363, 0.600001)
+
+[node name="Marker3D235" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, -1.93058, 0.600001)
+
+[node name="Marker3D236" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.58116, -1.92363, 0.900001)
+
+[node name="Marker3D237" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.48116, -1.93058, 0.900001)
+
+[node name="Marker3D238" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.68116, -1.92363, 0.600001)
+
+[node name="Marker3D239" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.88116, -1.92363, 0.300001)
+
+[node name="Marker3D240" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, -1.92363, 0.300001)
+
+[node name="Marker3D241" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.88116, -1.92363, 0.600001)
+
+[node name="Marker3D242" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, -1.92363, 0.600001)
+
+[node name="Marker3D243" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.88116, -1.92363, 0.900001)
+
+[node name="Marker3D244" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.78116, -1.92363, 0.900001)
+
+[node name="Marker3D245" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, -3.3084, 0.300001)
+
+[node name="Marker3D246" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, -3.3084, 0.900001)
+
+[node name="Marker3D247" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, -3.3084, 0.300001)
+
+[node name="Marker3D248" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6085, -3.3084, 0.300001)
+
+[node name="Marker3D249" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, -3.3084, 0.600001)
+
+[node name="Marker3D250" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6085, -3.3084, 0.600001)
+
+[node name="Marker3D251" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.57769, -3.3084, 0.900001)
+
+[node name="Marker3D252" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6085, -3.3084, 0.900001)
+
+[node name="Marker3D253" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, -3.3084, 0.300001)
+
+[node name="Marker3D254" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, -3.3084, 0.600001)
+
+[node name="Marker3D255" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.57769, -3.3084, 0.600001)
+
+[node name="Marker3D256" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.47769, -3.3084, 0.900001)
+
+[node name="Marker3D257" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, -3.3084, 0.300001)
+
+[node name="Marker3D258" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, -3.3084, 0.600001)
+
+[node name="Marker3D259" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.17769, -3.3084, 0.900001)
+
+[node name="Marker3D260" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, -3.3084, 0.300001)
+
+[node name="Marker3D261" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, -3.3084, 0.300001)
+
+[node name="Marker3D262" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, -3.3084, 0.600001)
+
+[node name="Marker3D263" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, -3.3084, 0.600001)
+
+[node name="Marker3D264" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.27769, -3.3084, 0.900001)
+
+[node name="Marker3D265" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.37769, -3.3084, 0.900001)
+
+[node name="Marker3D266" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, -3.3084, 0.300001)
+
+[node name="Marker3D267" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, -3.3084, 0.600001)
+
+[node name="Marker3D268" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.27769, -3.3084, 0.900001)
+
+[node name="Marker3D269" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, -3.3084, 0.300001)
+
+[node name="Marker3D270" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, -3.3084, 0.600001)
+
+[node name="Marker3D271" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.07769, -3.3084, 0.900001)
+
+[node name="Marker3D41" type="Marker3D" parent="SpawnPoints Yerba y té2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.97144, -3.2757, 0.700001)
+
+[node name="SpawnPoints Objetos tamaño mediano2" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.732903, -4.24557, -0.121449)
+
+[node name="Gaseosas5" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -0.941297, -0.0999999)
+
+[node name="Marker3D125" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.300001)
+
+[node name="Marker3D126" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.900001)
+
+[node name="Marker3D127" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.300001)
+
+[node name="Marker3D128" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.300001)
+
+[node name="Marker3D129" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.600001)
+
+[node name="Marker3D130" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.600001)
+
+[node name="Marker3D131" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.900001)
+
+[node name="Marker3D132" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.900001)
+
+[node name="Marker3D133" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.52772, 0.300001)
+
+[node name="Marker3D134" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.52772, 0.600001)
+
+[node name="Marker3D135" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.600001)
+
+[node name="Marker3D136" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.52772, 0.900001)
+
+[node name="Marker3D137" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.300001)
+
+[node name="Marker3D138" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.600001)
+
+[node name="Marker3D139" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.900001)
+
+[node name="Marker3D140" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.300001)
+
+[node name="Marker3D141" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.300001)
+
+[node name="Marker3D142" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.600001)
+
+[node name="Marker3D143" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.600001)
+
+[node name="Marker3D144" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.900001)
+
+[node name="Marker3D145" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.900001)
+
+[node name="Marker3D146" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.300001)
+
+[node name="Marker3D147" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.600001)
+
+[node name="Marker3D148" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.900001)
+
+[node name="Marker3D149" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.300001)
+
+[node name="Marker3D150" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.300001)
+
+[node name="Marker3D151" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.600001)
+
+[node name="Marker3D152" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.900001)
+
+[node name="Marker3D153" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.300001)
+
+[node name="Marker3D154" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.300001)
+
+[node name="Marker3D155" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.600001)
+
+[node name="Marker3D156" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.600001)
+
+[node name="Marker3D157" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.900001)
+
+[node name="Marker3D158" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.900001)
+
+[node name="Marker3D159" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.600001)
+
+[node name="Marker3D160" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.900001)
+
+[node name="Marker3D161" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.300001)
+
+[node name="Marker3D162" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.300001)
+
+[node name="Marker3D163" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.600001)
+
+[node name="Marker3D164" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.600001)
+
+[node name="Marker3D165" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.900001)
+
+[node name="Marker3D166" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.900001)
+
+[node name="Marker3D167" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.300001)
+
+[node name="Marker3D168" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.900001)
+
+[node name="Marker3D169" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.600001)
+
+[node name="Marker3D170" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.300001)
+
+[node name="Marker3D171" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.900001)
+
+[node name="Marker3D172" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.300001)
+
+[node name="Marker3D173" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.300001)
+
+[node name="Marker3D174" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.600001)
+
+[node name="Marker3D175" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.600001)
+
+[node name="Marker3D176" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.900001)
+
+[node name="Marker3D177" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.900001)
+
+[node name="Marker3D178" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.600001)
+
+[node name="Marker3D179" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.300001)
+
+[node name="Marker3D180" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.300001)
+
+[node name="Marker3D181" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.600001)
+
+[node name="Marker3D182" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.600001)
+
+[node name="Marker3D183" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.900001)
+
+[node name="Marker3D184" type="Marker3D" parent="Gaseosas5"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.900001)

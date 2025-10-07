@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsxrd65pivwjl"]
+
+[ext_resource type="PackedScene" uid="uid://cr2ufodqln770" path="res://assets/modelos3D/productos/Verdulería/BERENJENA_A.glb" id="1_sqo4o"]
+
+[node name="BERENJENA_A" instance=ExtResource("1_sqo4o")]

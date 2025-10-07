@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4shokxtraud3"]
+
+[ext_resource type="PackedScene" uid="uid://d3nbrnlu5pa3" path="res://assets/modelos3D/productos/Heladeras/CARNE PICADA.glb" id="1_6lxvg"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/shaders/default_object.gdshader" id="2_vqsqt"]
+[ext_resource type="Texture2D" uid="uid://bnr857m4kvq6u" path="res://assets/texturas/productos/Heladeras/Carne/pescado_TEX.png" id="3_qgbas"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ilee2"]
+render_priority = 0
+shader = ExtResource("2_vqsqt")
+shader_parameter/color_texture = ExtResource("3_qgbas")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="Bandeja de Pescado" instance=ExtResource("1_6lxvg")]
+
+[node name="CARNE PICADA" parent="." index="0"]
+transform = Transform3D(1.46355, 0, 0, 0, -6.39738e-08, 1.46355, 0, -1.46355, -6.39738e-08, 0, 1.57342, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_ilee2")

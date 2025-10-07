@@ -1,0 +1,147 @@
+[gd_scene load_steps=12 format=3 uid="uid://chcvs7ckorihy"]
+
+[ext_resource type="Script" uid="uid://bn07k17t66thm" path="res://scripts/UI-Menus/Menupausa.gd" id="1_pn6q0"]
+[ext_resource type="Texture2D" uid="uid://dcfe0621lsp13" path="res://assets/texturas/UI/A_black_image.jpg" id="2_wsx3i"]
+[ext_resource type="Texture2D" uid="uid://d3cixdwb8s87e" path="res://assets/texturas/UI/MENU PAUSA.png" id="3_i1mr8"]
+[ext_resource type="FontFile" uid="uid://c6kcrwk4fdltc" path="res://assets/fonts/Handwriting-Regular.otf" id="4_gh5uc"]
+[ext_resource type="Texture2D" uid="uid://7lr07efmkwjc" path="res://assets/texturas/UI/UNPRESSED (1).png" id="5_wsx3i"]
+[ext_resource type="Texture2D" uid="uid://cir447ic41bb4" path="res://assets/texturas/UI/PRESSED.png" id="6_nsj1o"]
+[ext_resource type="Texture2D" uid="uid://w3b2cxb5caqf" path="res://assets/texturas/UI/HOOVER.png" id="7_sgfe2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1hmcp"]
+font = ExtResource("4_gh5uc")
+font_size = 100
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dsb4a"]
+font = ExtResource("4_gh5uc")
+font_size = 38
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_lkuyo"]
+font = ExtResource("4_gh5uc")
+font_size = 38
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wsx3i"]
+font = ExtResource("4_gh5uc")
+font_size = 40
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_pn6q0")
+
+[node name="ABlackImage" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.333333)
+position = Vector2(576, 324)
+scale = Vector2(0.352941, 0.264706)
+texture = ExtResource("2_wsx3i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -250.0
+offset_right = 500.0
+offset_bottom = 250.0
+grow_vertical = 2
+texture = ExtResource("3_i1mr8")
+stretch_mode = 2
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.5
+offset_top = -186.0
+offset_right = 99.5
+offset_bottom = -109.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Pausa"
+label_settings = SubResource("LabelSettings_1hmcp")
+
+[node name="Reanudar" type="TextureButton" parent="TextureRect"]
+process_mode = 2
+layout_mode = 0
+offset_left = 156.0
+offset_top = 151.0
+offset_right = 340.0
+offset_bottom = 197.0
+texture_normal = ExtResource("5_wsx3i")
+texture_pressed = ExtResource("6_nsj1o")
+texture_hover = ExtResource("7_sgfe2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureRect/Reanudar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -12.5
+offset_right = 60.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Reanudar"
+label_settings = SubResource("LabelSettings_dsb4a")
+
+[node name="Salir" type="TextureButton" parent="TextureRect"]
+process_mode = 2
+layout_mode = 0
+offset_left = 156.0
+offset_top = 208.0
+offset_right = 340.0
+offset_bottom = 257.0
+texture_normal = ExtResource("5_wsx3i")
+texture_pressed = ExtResource("6_nsj1o")
+texture_hover = ExtResource("7_sgfe2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureRect/Salir"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -82.0
+offset_top = -12.0
+offset_right = 82.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Salir al menu"
+label_settings = SubResource("LabelSettings_lkuyo")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 519.0
+offset_top = 178.0
+offset_right = 1055.0
+offset_bottom = 447.0
+text = "                    Controles:
+Movimiento:                     WASD
+Correr:                            Shift
+Saltar:                           Espacio
+Esconder Lista:                    R
+Agarrar Objetos:         Click Izquierdo
+Rotar Objetos:             Click Derecho
+Acercar o Alejar:        Rueda del Mouse
+Pausa:                               ESC"
+label_settings = SubResource("LabelSettings_wsx3i")
+
+[connection signal="pressed" from="TextureRect/Reanudar" to="." method="_on_reanudar_pressed"]
+[connection signal="pressed" from="TextureRect/Salir" to="." method="_on_salir_pressed"]

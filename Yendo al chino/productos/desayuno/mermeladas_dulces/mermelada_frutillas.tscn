@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c40bvcvh66811"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_83e26"]
+[ext_resource type="PackedScene" uid="uid://b5ryhub5tsymj" path="res://assets/modelos_3D/Blend+Textura/Desayuno/Mermeladas/Mermelada Frutilla.tscn" id="2_h1tj4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cir6"]
+size = Vector3(0.622101, 0.860474, 0.0339966)
+
+[node name="Mermelada de Frutilla La M" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_83e26")
+
+[node name="MERMELADA" parent="." instance=ExtResource("2_h1tj4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00447088, 0.431176, -0.00192522)
+shape = SubResource("BoxShape3D_4cir6")
+
+[node name="Producto" type="Node" parent="."]

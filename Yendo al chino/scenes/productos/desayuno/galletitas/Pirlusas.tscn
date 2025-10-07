@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cek6howlmoc6b"]
+
+[ext_resource type="PackedScene" uid="uid://bc6jm12b271o" path="res://assets/modelos3D/productos/Desayuno/BIZCOCHITOS.glb" id="1_3nsw8"]
+[ext_resource type="Texture2D" uid="uid://js2k00olvn6s" path="res://assets/texturas/productos/Desayuno/Galletitas/pirtusas_TEX.png" id="2_3nsw8"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/shaders/default_object.gdshader" id="2_gs7n0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4rf2o"]
+render_priority = 0
+shader = ExtResource("2_gs7n0")
+shader_parameter/color_texture = ExtResource("2_3nsw8")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="BIZCOCHITOS" instance=ExtResource("1_3nsw8")]
+
+[node name="BAKE" parent="." index="0"]
+transform = Transform3D(1.66534, 0, 0, 0, 0, -1.66534, 0, 1.66534, 0, 0, 0.00564167, -0.0749404)
+surface_material_override/0 = SubResource("ShaderMaterial_4rf2o")

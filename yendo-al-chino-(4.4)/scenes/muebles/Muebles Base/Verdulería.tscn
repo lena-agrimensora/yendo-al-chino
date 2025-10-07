@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://lik88racxm38"]
+
+[ext_resource type="ArrayMesh" uid="uid://d0jg3p8wp58ev" path="res://assets/modelos_3D/Modelado - Muebles/Góndolas y heladeras/verduleria simple.obj" id="1_qtm47"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dakvs"]
+size = Vector3(0.13575, 1.59119, 9.61258)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qtm47"]
+size = Vector3(1.96094, 1.58362, 0.522484)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_21q5o"]
+size = Vector3(1.98535, 0.192627, 9.62811)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jij4r"]
+size = Vector3(1.63013, 6.10312, 0.670761)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_726l1"]
+size = Vector3(1.59381, 0.245605, 9.60974)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x4fgc"]
+size = Vector3(6.6632, 1.01791, 9.69693)
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="VerduleriaSimple" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.93433, 0, -2.00456)
+mesh = ExtResource("1_qtm47")
+
+[node name="Paredes Cajas en suelo" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.34177, -0.0501848, -2.02089)
+shape = SubResource("BoxShape3D_dakvs")
+
+[node name="Paredes Cajas en suelo2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.489614, -0.0501848, -2.02089)
+shape = SubResource("BoxShape3D_dakvs")
+
+[node name="Paredes Cajas en suelo3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4176, -0.0464478, 2.7915)
+shape = SubResource("BoxShape3D_qtm47")
+
+[node name="Paredes Cajas en suelo4" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4176, -0.0464478, -0.359955)
+shape = SubResource("BoxShape3D_qtm47")
+
+[node name="Suelo de cajas en suelo" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.40915, -0.754639, -2.00084)
+shape = SubResource("BoxShape3D_21q5o")
+
+[node name="Paredes Cajas en suelo5" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4176, -0.0464478, -3.63931)
+shape = SubResource("BoxShape3D_qtm47")
+
+[node name="Paredes Cajas en suelo6" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4176, -0.0464478, -6.78331)
+shape = SubResource("BoxShape3D_qtm47")
+
+[node name="Paredes Cajas Diagonal" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.77301, -0.634393, 0, 0.634393, 0.77301, 0, 0, 0, 1, -1.95729, 2.76759, 2.6724)
+shape = SubResource("BoxShape3D_jij4r")
+
+[node name="Paredes Cajas Diagonal2" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.77301, -0.634393, 0, 0.634393, 0.77301, 0, 0, 0, 1, -1.95729, 2.76759, -0.361755)
+shape = SubResource("BoxShape3D_jij4r")
+
+[node name="Paredes Cajas Diagonal3" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.77301, -0.634393, 0, 0.634393, 0.77301, 0, 0, 0, 1, -1.95729, 2.76759, -3.71359)
+shape = SubResource("BoxShape3D_jij4r")
+
+[node name="Paredes Cajas Diagonal4" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.77301, -0.634393, 0, 0.634393, 0.77301, 0, 0, 0, 1, -1.95729, 2.76759, -6.71633)
+shape = SubResource("BoxShape3D_jij4r")
+
+[node name="Paredes Cajas Diagonal5" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.775925, -0.630825, 0, 0.630825, 0.775925, 0, 0, 0, 1, -0.0345485, 0.418424, -1.93336)
+shape = SubResource("BoxShape3D_726l1")
+
+[node name="Paredes Cajas Diagonal6" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.775925, -0.630825, 0, 0.630825, 0.775925, 0, 0, 0, 1, -1.31094, 1.96958, -1.93336)
+shape = SubResource("BoxShape3D_726l1")
+
+[node name="Paredes Cajas Diagonal7" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.775925, -0.630825, 0, 0.630825, 0.775925, 0, 0, 0, 1, -2.57368, 3.59719, -1.93336)
+shape = SubResource("BoxShape3D_726l1")
+
+[node name="Paredes Cajas Diagonal8" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.775925, -0.630825, 0, 0.630825, 0.775925, 0, 0, 0, 1, -3.8788, 5.07717, -1.91518)
+shape = SubResource("BoxShape3D_726l1")
+
+[node name="Suelo de cajas diagonal" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.650496, 0.75951, 0, -0.75951, 0.650496, 0, 0, 0, 1, -2.64261, 1.98751, -2.02122)
+shape = SubResource("BoxShape3D_x4fgc")

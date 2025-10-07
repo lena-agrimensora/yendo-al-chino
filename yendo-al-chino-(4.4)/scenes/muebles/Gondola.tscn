@@ -1,0 +1,2245 @@
+[gd_scene load_steps=3 format=3 uid="uid://cs046xrwlq0qq"]
+
+[ext_resource type="Script" uid="uid://bj76ms0tiwom8" path="res://scripts/managers/Gondola_Manager.gd" id="1_gt4l1"]
+[ext_resource type="PackedScene" uid="uid://b75fnraam0727" path="res://assets/modelos - texturas/muebles/gondolas/gondola-entera.glb" id="2_x260e"]
+
+[node name="Gondola" type="Node3D"]
+script = ExtResource("1_gt4l1")
+
+[node name="Estantes" parent="." instance=ExtResource("2_x260e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.451939, -4.09715, -0.438192)
+
+[node name="SpawnPoints" type="Node3D" parent="Estantes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000160933, 3.6412, 0.103917)
+
+[node name="Lado1" type="Node3D" parent="Estantes/SpawnPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00028038, 0.0869274, 0.0106697)
+
+[node name="EstanteSuperior" type="Node3D" parent="Estantes/SpawnPoints/Lado1"]
+
+[node name="Marker_Sup" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2329, 3.56026, -1.02145)
+
+[node name="Marker_Sup2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2329, 3.56026, -0.721449)
+
+[node name="Marker_Sup3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2329, 3.56026, -0.421449)
+
+[node name="Marker_Sup4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3329, 3.56026, -1.02145)
+
+[node name="Marker_Sup5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3329, 3.56026, -0.721449)
+
+[node name="Marker_Sup6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3329, 3.56026, -0.421449)
+
+[node name="Marker_Sup7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.3329, 3.56026, -1.02145)
+
+[node name="Marker_Sup8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.3329, 3.56026, -0.721449)
+
+[node name="Marker_Sup9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.3329, 3.56026, -0.421449)
+
+[node name="Marker_Sup10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2329, 3.56026, -1.02145)
+
+[node name="Marker_Sup11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2329, 3.56026, -0.721449)
+
+[node name="Marker_Sup12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2329, 3.56026, -0.421449)
+
+[node name="Marker_Sup13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1329, 3.56026, -1.02145)
+
+[node name="Marker_Sup14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1329, 3.56026, -0.721449)
+
+[node name="Marker_Sup15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1329, 3.56026, -0.42145)
+
+[node name="Marker_Sup16" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0329, 3.56026, -1.02145)
+
+[node name="Marker_Sup17" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0329, 3.56026, -0.72145)
+
+[node name="Marker_Sup18" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0329, 3.56026, -0.42145)
+
+[node name="Marker_Sup19" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.61252, 3.57311, -1.02145)
+
+[node name="Marker_Sup20" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.61252, 3.57311, -0.82145)
+
+[node name="Marker_Sup21" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.61252, 3.57311, -0.62145)
+
+[node name="Marker_Sup22" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512527, 3.57311, -1.02145)
+
+[node name="Marker_Sup23" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512527, 3.57311, -0.82145)
+
+[node name="Marker_Sup24" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512527, 3.57311, -0.62145)
+
+[node name="Marker_Sup25" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.58747, 3.57311, -1.02145)
+
+[node name="Marker_Sup26" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.58747, 3.57311, -0.82145)
+
+[node name="Marker_Sup27" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.58748, 3.57311, -0.62145)
+
+[node name="Marker_Sup28" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5671, 3.51864, -1.02145)
+
+[node name="Marker_Sup29" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5671, 3.51864, -0.72145)
+
+[node name="Marker_Sup30" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5671, 3.51864, -0.42145)
+
+[node name="Marker_Sup31" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6671, 3.54636, -1.02145)
+
+[node name="Marker_Sup32" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6671, 3.54636, -0.72145)
+
+[node name="Marker_Sup33" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6671, 3.54636, -0.42145)
+
+[node name="Marker_Sup34" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7671, 3.54636, -1.02145)
+
+[node name="Marker_Sup35" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7671, 3.54636, -0.721451)
+
+[node name="Marker_Sup36" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7671, 3.54636, -0.421451)
+
+[node name="Marker_Sup37" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8671, 3.54636, -1.02145)
+
+[node name="Marker_Sup38" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8671, 3.54636, -0.721451)
+
+[node name="Marker_Sup39" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8671, 3.54636, -0.421451)
+
+[node name="Marker_Sup40" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9671, 3.54636, -1.02145)
+
+[node name="Marker_Sup41" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9671, 3.54636, -0.721451)
+
+[node name="Marker_Sup42" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9671, 3.54636, -0.421451)
+
+[node name="Marker_Sup43" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.0671, 3.54636, -1.02145)
+
+[node name="Marker_Sup44" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.0671, 3.54636, -0.721451)
+
+[node name="Marker_Sup45" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.0671, 3.54636, -0.421451)
+
+[node name="Marker_Sup46" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3005, 3.51864, -1.02145)
+
+[node name="Marker_Sup47" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3005, 3.51864, -0.721451)
+
+[node name="Marker_Sup48" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3005, 3.51864, -0.421451)
+
+[node name="Columna1" type="Node3D" parent="Estantes/SpawnPoints/Lado1"]
+
+[node name="Estante1_1" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna1"]
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_2" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37634, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_3" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.80318, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_4" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.1356, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_5" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.42698, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Columna2" type="Node3D" parent="Estantes/SpawnPoints/Lado1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.64103, 0, 0)
+
+[node name="Estante1_1" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna2"]
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_2" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37634, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_3" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.80318, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_4" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.1356, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_5" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.40799, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Columna3" type="Node3D" parent="Estantes/SpawnPoints/Lado1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1677, 0, 0)
+
+[node name="Estante1_1" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna3"]
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_2" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37634, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_3" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.80318, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_4" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.1356, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_5" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.42698, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Columna4" type="Node3D" parent="Estantes/SpawnPoints/Lado1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.4452, 0, 0)
+
+[node name="Estante1_1" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna4"]
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_2" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37634, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_3" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.80318, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_4" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.1356, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_5" type="Node3D" parent="Estantes/SpawnPoints/Lado1/Columna4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.43229, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado1/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Lado2" type="Node3D" parent="Estantes/SpawnPoints"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.00028038, 0.0869274, -0.162271)
+
+[node name="EstanteSuperior" type="Node3D" parent="Estantes/SpawnPoints/Lado2"]
+
+[node name="Marker_Sup" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2329, 3.56026, -1.02145)
+
+[node name="Marker_Sup2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2329, 3.56026, -0.721449)
+
+[node name="Marker_Sup3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2329, 3.56026, -0.421449)
+
+[node name="Marker_Sup4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3329, 3.56026, -1.02145)
+
+[node name="Marker_Sup5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3329, 3.56026, -0.721449)
+
+[node name="Marker_Sup6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.3329, 3.56026, -0.421449)
+
+[node name="Marker_Sup7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.3329, 3.56026, -1.02145)
+
+[node name="Marker_Sup8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.3329, 3.56026, -0.721449)
+
+[node name="Marker_Sup9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.3329, 3.56026, -0.421449)
+
+[node name="Marker_Sup10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2329, 3.56026, -1.02145)
+
+[node name="Marker_Sup11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2329, 3.56026, -0.721449)
+
+[node name="Marker_Sup12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2329, 3.56026, -0.421449)
+
+[node name="Marker_Sup13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1329, 3.56026, -1.02145)
+
+[node name="Marker_Sup14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1329, 3.56026, -0.721449)
+
+[node name="Marker_Sup15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1329, 3.56026, -0.42145)
+
+[node name="Marker_Sup16" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0329, 3.56026, -1.02145)
+
+[node name="Marker_Sup17" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0329, 3.56026, -0.72145)
+
+[node name="Marker_Sup18" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0329, 3.56026, -0.42145)
+
+[node name="Marker_Sup19" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.61252, 3.57311, -1.02145)
+
+[node name="Marker_Sup20" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.61252, 3.57311, -0.82145)
+
+[node name="Marker_Sup21" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.61252, 3.57311, -0.62145)
+
+[node name="Marker_Sup22" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512527, 3.57311, -1.02145)
+
+[node name="Marker_Sup23" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512527, 3.57311, -0.82145)
+
+[node name="Marker_Sup24" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512527, 3.57311, -0.62145)
+
+[node name="Marker_Sup25" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.58747, 3.57311, -1.02145)
+
+[node name="Marker_Sup26" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.58747, 3.57311, -0.82145)
+
+[node name="Marker_Sup27" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.58748, 3.57311, -0.62145)
+
+[node name="Marker_Sup28" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5671, 3.51864, -1.02145)
+
+[node name="Marker_Sup29" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5671, 3.51864, -0.72145)
+
+[node name="Marker_Sup30" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5671, 3.51864, -0.42145)
+
+[node name="Marker_Sup31" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6671, 3.54636, -1.02145)
+
+[node name="Marker_Sup32" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6671, 3.54636, -0.72145)
+
+[node name="Marker_Sup33" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6671, 3.54636, -0.42145)
+
+[node name="Marker_Sup34" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7671, 3.54636, -1.02145)
+
+[node name="Marker_Sup35" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7671, 3.54636, -0.721451)
+
+[node name="Marker_Sup36" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.7671, 3.54636, -0.421451)
+
+[node name="Marker_Sup37" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8671, 3.54636, -1.02145)
+
+[node name="Marker_Sup38" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8671, 3.54636, -0.721451)
+
+[node name="Marker_Sup39" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8671, 3.54636, -0.421451)
+
+[node name="Marker_Sup40" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9671, 3.54636, -1.02145)
+
+[node name="Marker_Sup41" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9671, 3.54636, -0.721451)
+
+[node name="Marker_Sup42" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9671, 3.54636, -0.421451)
+
+[node name="Marker_Sup43" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.0671, 3.54636, -1.02145)
+
+[node name="Marker_Sup44" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.0671, 3.54636, -0.721451)
+
+[node name="Marker_Sup45" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.0671, 3.54636, -0.421451)
+
+[node name="Marker_Sup46" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3005, 3.51864, -1.02145)
+
+[node name="Marker_Sup47" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3005, 3.51864, -0.721451)
+
+[node name="Marker_Sup48" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/EstanteSuperior"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3005, 3.51864, -0.421451)
+
+[node name="Columna1" type="Node3D" parent="Estantes/SpawnPoints/Lado2"]
+
+[node name="Estante1_1" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna1"]
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_2" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37634, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_3" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.80318, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_4" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.1356, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_5" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.39453, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna1/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Columna2" type="Node3D" parent="Estantes/SpawnPoints/Lado2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.64103, 0, 0)
+
+[node name="Estante1_1" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna2"]
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_2" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37634, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_3" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.80318, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_4" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.1356, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_5" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.36471, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna2/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Columna3" type="Node3D" parent="Estantes/SpawnPoints/Lado2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1677, 0, 0)
+
+[node name="Estante1_1" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna3"]
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_2" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37634, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_3" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.80318, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_4" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.1356, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_5" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.42434, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna3/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Columna4" type="Node3D" parent="Estantes/SpawnPoints/Lado2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.4452, 0, 0)
+
+[node name="Estante1_1" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna4"]
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_2" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.37634, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_3" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.80318, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_4" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.1356, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)
+
+[node name="Estante1_5" type="Node3D" parent="Estantes/SpawnPoints/Lado2/Columna4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5.36471, 0)
+
+[node name="Marker_estante" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.388, 2.15, -1.025)
+
+[node name="Marker_estante2" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.725366)
+
+[node name="Marker_estante3" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.425366)
+
+[node name="Marker_estante4" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -1.02537)
+
+[node name="Marker_estante5" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.725366)
+
+[node name="Marker_estante6" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29191, 2.15, -0.425366)
+
+[node name="Marker_estante7" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -1.02537)
+
+[node name="Marker_estante8" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.725366)
+
+[node name="Marker_estante9" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.29191, 2.15, -0.425366)
+
+[node name="Marker_estante10" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -1.02537)
+
+[node name="Marker_estante11" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.725366)
+
+[node name="Marker_estante12" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.19191, 2.15, -0.425366)
+
+[node name="Marker_estante13" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.02537)
+
+[node name="Marker_estante14" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.725366)
+
+[node name="Marker_estante15" type="Marker3D" parent="Estantes/SpawnPoints/Lado2/Columna4/Estante1_5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -0.425367)

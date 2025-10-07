@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://w5u4bmtssq8e"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/productos/Producto.gd" id="1_35sqi"]
+[ext_resource type="PackedScene" uid="uid://dq7alp0fxkpmj" path="res://scenes/productos/Latas/lata jardinera.tscn" id="2_00gwx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hltg4"]
+size = Vector3(2.01089, 2.62243, 0.183186)
+
+[node name="Jardinera P&S" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_35sqi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.000527336, 0.396004, 0.000200449)
+shape = SubResource("BoxShape3D_hltg4")
+
+[node name="LATAS" parent="." instance=ExtResource("2_00gwx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0025911, 0)
+
+[node name="Producto" type="Node" parent="."]

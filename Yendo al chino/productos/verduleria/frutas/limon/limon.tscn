@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://buai04djynt45"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_o1liv"]
+[ext_resource type="PackedScene" uid="uid://dn3m3l1omeeau" path="res://assets/modelos_3D/Blend+Textura/Verdulería/Limon_A.tscn" id="2_o1liv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cir6"]
+size = Vector3(0.470833, 0.646408, 0.0339966)
+
+[node name="Limon" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_o1liv")
+
+[node name="LIMON_A" parent="." instance=ExtResource("2_o1liv")]
+transform = Transform3D(0.298281, 0, 0.0320718, 0, 0.3, 0, -0.0320718, 0, 0.298281, 0, -0.0103871, -0.0370022)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000133559, 0.321778, 0.000515178)
+shape = SubResource("BoxShape3D_4cir6")
+
+[node name="Producto" type="Node" parent="."]

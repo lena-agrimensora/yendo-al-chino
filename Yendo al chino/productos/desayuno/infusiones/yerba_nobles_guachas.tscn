@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt77kj340i3o6"]
+
+[ext_resource type="PackedScene" uid="uid://dpclyl0s27nsb" path="res://assets/modelos_3D/Blend+Textura/Desayuno/Infusiones/Yerba Azul.tscn" id="1_lt48s"]
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_mb6rp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oxpo4"]
+size = Vector3(0.832303, 1.06776, 0.077586)
+
+[node name="Yerba Nobles Guachas" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_mb6rp")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000990375, 0.533603, 0.000782702)
+shape = SubResource("BoxShape3D_oxpo4")
+
+[node name="YERBA BASE" parent="." instance=ExtResource("1_lt48s")]
+
+[node name="Producto" type="Node" parent="."]

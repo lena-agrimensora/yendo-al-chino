@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=4 uid="uid://cwhgli3ujgu5"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://scripts/Producto.gd" id="1_ie320"]
+[ext_resource type="Texture2D" uid="uid://cdfnjqv1n8r14" path="res://assets/modelos_3D/Modelado - Productos/Harinas, cereales y polvos/CEREAL_Untitled.png" id="2_30xk1"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/shaders/default_object.gdshader" id="3_s3vab"]
+[ext_resource type="Texture2D" uid="uid://baiormmkur1su" path="res://assets/modelos_3D/Modelado - Productos/Harinas, cereales y polvos/cerealAzul_TEX.png" id="4_evukh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jkhvl"]
+resource_name = "CEREAL MAT"
+cull_mode = 2
+albedo_texture = ExtResource("2_30xk1")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_na3na"]
+_surfaces = [{
+"aabb": AABB(-1.93242, -2.60719, -0.0450001, 3.86483, 5.21565, 0.0900002),
+"format": 34896613377,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAgAIAAAAAgAJAAgAAgAKAAkACQALAAgACQAKAAsAAgADAAoAAwALAAoAAQADAAIACAALAAUAAwAFAAsACAAFAAAAAQAHAAMABQADAAcABQAHAAYAAAAFAAYAAAAEAAEAAAAGAAQABAAMAAEADAAHAAEABAAGAA0ABAAOAAwABAANAA4ABgAPAA0ADgANAA8ABgAHAA8ADgAPAAwADAAPAAcA"),
+"lods": [0.149207, PackedByteArray("AAABAAIAAQADAAIAAAAEAAEAAgADAAUAAgAFAAAAAAAGAAQAAAAFAAYABAAHAAEAAQAHAAMABAAGAAcABQADAAcABQAHAAYA")],
+"name": "CEREAL MAT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AABcBf7/AAD//6P3//8AAP//XAX+/wAA//9cBQAAAAAAAKP3//8AAAAAXAUAAAAAAACj9wAAAAD//6P3AAAAAMwJAAD+/wAAMvYAAP7/AAAy9gAAAAAAAMwJAAAAAAAA8vf/////AAAMCP//AAAAAAwI/////wAA8vf//wAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_aufeo"]
+resource_name = "CEREAL_Plane_002"
+_surfaces = [{
+"aabb": AABB(-1.93242, -2.60719, -0.0450001, 3.86483, 5.21565, 0.0900002),
+"attribute_data": PackedByteArray("XujD7It18hWLdcPsXujyFe51w+wcA/IV7nXyFRwDw+w68///C/AAADrzAAAL8P//2+wAAAvw///b7P//C/AAAJr5/v9q9tQzmvnUM2r2//9q9v//OvN2Lmr2di468///+OOF8fB5hfEoeYkOweSJDrgGiQ5ScokOiXGF8YEHhfGa+XX2avZdPZr5XT1q9nX2mvldPWr2XT1q9nX2mvl19mr2JfU681A5avZQOTrzJfVq9lA5OvNQOTrzJfVq9iX1"),
+"format": 34896613399,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAgAYAAAAAgAZABgAAAADAAEAAwAaAAEAAwAbABoABAAFAAYABgAFABwABgAcAB0ABAAHAAUABwAEAB4ABwAeAB8ACAAJAAoACAALAAkADAANAA4ADAAPAA0AIAAhACIAIAAjACEAJAARABIAJAAlABEAEAAmACcAEAATACYAKAApACoAKAArACkALAAVABYALAAtABUAFAAuAC8AFAAXAC4A"),
+"lods": [0.149207, PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA")],
+"material": SubResource("StandardMaterial3D_jkhvl"),
+"name": "CEREAL MAT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 48,
+"vertex_data": PackedByteArray("AABcBf7/AAD//6P3//8AAP//XAX+/wAAAACj9///AAAAAFwFAAD/////o/cAAP//AACj9wAA/////1wFAAD//wAAXAX+//+/AACj9wAA/78AAKP3////vwAAXAUAAP+///+j9////7///1wFAAD/v///XAX+//+///+j9wAA/7///1wF/v+T5QAAXAUAAFPIAABcBf7/U8j//1wFAACT5QAAo/f//8rD//+j9wAASO7//6P3//9I7gAAo/cAAMrDzAkAAP7/AAAy9gAA/v8AAPL3/////wAADAj/////AADy9///AAD//wwI//8AAP//zAkAAAAA//8y9gAAAAD//zL2AAD+/1TVzAkAAAAAVNXMCQAA/v9U1TL2AAAAAFTVzAkAAP7/U8jMCQAAAABTyDL2AAAAAJPlMvYAAP7/k+UMCP////9U1fL3//8AAFTV8vf/////VNUMCP//AABU1fL3/////0ju8vf//wAASO4MCP//AADKwwwI/////8rD/3//f/9//3//f/9//3//f/9/////f////3////9/////f////3/+//9//v//f////38AAP9/AAD/fwAA/38AAMoZ5MyzP9nfsz/Z38oZ5Mz7mAbOKrepkSq3qZH7mAbO/3//f/9//3//f/9//3//f/9/////f////3////9///+qKlTVqipU1aoqVNWqKlTVsz/Z37M/2d/KGeTMyhnkzKmqqqqpqqqqqaqqqqmqqqoqt6mRKrepkfuYBs77mAbO")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_na3na")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qw4ue"]
+render_priority = 0
+shader = ExtResource("3_s3vab")
+shader_parameter/color_texture = ExtResource("4_evukh")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_igs8l"]
+size = Vector3(0.800552, 1.06147, 0.0474539)
+
+[node name="Cereal Escarchito Chocolate" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_ie320")
+
+[node name="CEREAL" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.2, 0, 4.76837e-08, 0, 0.2, 0, -4.76837e-08, 0, 0.2, 0, 0.522088, 0)
+mesh = SubResource("ArrayMesh_aufeo")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("ShaderMaterial_qw4ue")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00533295, 0.523478, 0.000341415)
+shape = SubResource("BoxShape3D_igs8l")
+
+[node name="Producto" type="Node" parent="."]

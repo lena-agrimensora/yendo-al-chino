@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1ont325jsvwk"]
+
+[ext_resource type="PackedScene" uid="uid://ch13465kg404h" path="res://assets/modelos_3D/Modelado - Productos/Verdulería/PERA_A.glb" id="1_wj276"]
+
+[node name="PERA_A" instance=ExtResource("1_wj276")]

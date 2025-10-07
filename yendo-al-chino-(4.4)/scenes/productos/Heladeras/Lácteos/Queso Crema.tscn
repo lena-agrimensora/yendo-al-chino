@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://ln7saqgy8xsu"]
+
+[ext_resource type="PackedScene" uid="uid://dfhpud6j1vyoo" path="res://assets/modelos_3D/Modelado - Productos/Heladeras/DDL.glb" id="1_qumha"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://scripts/Shaders/default_object.gdshader" id="2_7mgen"]
+[ext_resource type="Texture2D" uid="uid://g07fw8aqkwn1" path="res://assets/texturas/Texturas - Productos/Heladeras/Dulce de Leche/quesoC_TEX.png" id="2_qumha"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ypjtx"]
+render_priority = 0
+shader = ExtResource("2_7mgen")
+shader_parameter/color_texture = ExtResource("2_qumha")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="DDL" instance=ExtResource("1_qumha")]
+transform = Transform3D(-0.3, 0, -4.52987e-08, 0, 0.3, 0, 4.52987e-08, 0, -0.3, 0, -0.141527, 0)
+
+[node name="DULCE" parent="." index="0"]
+transform = Transform3D(-1.16967, -1.02256e-07, 0, 0, 0, -1.16967, 1.02256e-07, -1.16967, 0, 0, 0.166935, -0.0526352)
+surface_material_override/0 = SubResource("ShaderMaterial_ypjtx")

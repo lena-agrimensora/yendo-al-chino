@@ -1,0 +1,36 @@
+extends Node3D
+
+# Lista fija de rutas a escenas
+@export var scene_paths: Array[String] = [
+	"res://ESCENAS/Productos/Snacks/Chizitos Paraná Barbacoa.tscn",
+	"res://ESCENAS/Productos/Snacks/Chizitos Paraná Extra Queso.tscn",
+	"res://ESCENAS/Productos/Snacks/Chizitos Paraná.tscn",
+	"res://ESCENAS/Productos/Objetos/Gondola/Fideos Largos Consentida.tscn",
+	"res://ESCENAS/Productos/Objetos/Gondola/Fideos_Moñito.tscn",
+	"res://ESCENAS/Productos/Snacks/Papas Pringas Asado.tscn",
+	"res://ESCENAS/Productos/Snacks/Papas Pringas Barbacoa.tscn",
+	"res://ESCENAS/Productos/Snacks/Papas Pringas Cebolla y Crema.tscn",
+	"res://ESCENAS/Productos/Snacks/Douritos Cheddar.tscn",
+	"res://ESCENAS/Productos/Snacks/Douritos Jalapeño Picante.tscn",
+	"res://ESCENAS/Productos/Snacks/Douritos.tscn"
+]
+
+@export var spawn_chance: float = 1.0  # Entre 0.0 (nunca) y 1.0 (siempre)
+
+func _ready():
+	randomize()
+	call_deferred("spawn_random_at_markers")
+
+func spawn_random_at_markers():
+	if scene_paths.is_empty():
+		return
+
+	for marker in get_children():
+		if marker is Marker3D:
+			if randf() <= spawn_chance:
+				var scene_path = scene_paths[randi() % scene_paths.size()]
+				var scene = load(scene_path)
+				if scene:
+					var instance = scene.instantiate()
+					marker.add_child(instance)
+					instance.transform = Transform3D.IDENTITY

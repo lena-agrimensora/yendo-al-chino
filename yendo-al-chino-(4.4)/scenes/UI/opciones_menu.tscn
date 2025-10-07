@@ -1,0 +1,284 @@
+[gd_scene load_steps=15 format=3 uid="uid://c13no7dniq785"]
+
+[ext_resource type="Script" uid="uid://dl5vihy77rdbd" path="res://scripts/UI/opciones_menu.gd" id="1_8i3bi"]
+[ext_resource type="Texture2D" uid="uid://d3yqxrkjxxjnn" path="res://assets/modelos - texturas/UI/MENU PRINCIPAL HARD.png" id="2_4a0c5"]
+[ext_resource type="Texture2D" uid="uid://7lr07efmkwjc" path="res://assets/modelos - texturas/UI/UNPRESSED (1).png" id="3_8i3bi"]
+[ext_resource type="Texture2D" uid="uid://cir447ic41bb4" path="res://assets/modelos - texturas/UI/PRESSED.png" id="4_kw618"]
+[ext_resource type="Texture2D" uid="uid://w3b2cxb5caqf" path="res://assets/modelos - texturas/UI/HOOVER.png" id="5_1bnix"]
+[ext_resource type="FontFile" uid="uid://cym0qah8ej80v" path="res://assets/fonts/YendoAlChido2-Regular.otf" id="5_t4pay"]
+[ext_resource type="FontFile" uid="uid://c6kcrwk4fdltc" path="res://assets/fonts/Handwriting-Regular.otf" id="6_rvdvn"]
+[ext_resource type="Texture2D" uid="uid://dcfe0621lsp13" path="res://assets/modelos - texturas/UI/A_black_image.jpg" id="7_4a0c5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e1n0b"]
+font = ExtResource("6_rvdvn")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8i3bi"]
+font = ExtResource("6_rvdvn")
+font_size = 42
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kw618"]
+font = ExtResource("5_t4pay")
+
+[sub_resource type="LabelSettings" id="LabelSettings_anp0j"]
+font = ExtResource("6_rvdvn")
+font_size = 40
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4a0c5"]
+font = ExtResource("6_rvdvn")
+font_size = 40
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_t4pay"]
+font = ExtResource("6_rvdvn")
+font_size = 50
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Opciones Menu" type="CanvasLayer"]
+script = ExtResource("1_8i3bi")
+
+[node name="Fondo" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_4a0c5")
+expand_mode = 1
+
+[node name="Tipo de Timer" type="TextureRect" parent="Fondo"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 241.0
+offset_right = 398.0
+offset_bottom = 325.0
+scale = Vector2(0.84, 0.84)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_8i3bi")
+
+[node name="Label" type="Label" parent="Fondo/Tipo de Timer"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -103.714
+offset_top = -15.8095
+offset_right = 87.2857
+offset_bottom = 30.1905
+grow_horizontal = 2
+grow_vertical = 2
+text = "Timer fijo: "
+label_settings = SubResource("LabelSettings_e1n0b")
+
+[node name="CheckButton" type="CheckButton" parent="Fondo/Tipo de Timer"]
+layout_mode = 0
+offset_left = 252.381
+offset_top = 26.1905
+offset_right = 296.381
+offset_bottom = 50.1905
+scale = Vector2(1.55082, 1.55082)
+
+[node name="CarritoCoptero" type="TextureRect" parent="Fondo"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 324.0
+offset_right = 398.0
+offset_bottom = 408.0
+scale = Vector2(0.84, 0.84)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_8i3bi")
+
+[node name="Label" type="Label" parent="Fondo/CarritoCoptero"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -151.19
+offset_top = -13.0
+offset_right = 119.81
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "CarritoCoptero:"
+label_settings = SubResource("LabelSettings_8i3bi")
+
+[node name="CheckButton" type="CheckButton" parent="Fondo/CarritoCoptero"]
+layout_mode = 0
+offset_left = 252.381
+offset_top = 26.1905
+offset_right = 296.381
+offset_bottom = 50.1905
+scale = Vector2(1.52989, 1.57143)
+
+[node name="ValumeSeter" type="TextureRect" parent="Fondo"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 490.0
+offset_right = 398.0
+offset_bottom = 574.0
+scale = Vector2(0.84, 0.84)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_8i3bi")
+
+[node name="Label" type="Label" parent="Fondo/ValumeSeter"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = -38.0
+offset_right = 165.0
+offset_bottom = 41.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "100%"
+label_settings = SubResource("LabelSettings_e1n0b")
+horizontal_alignment = 1
+
+[node name="Subir" type="Button" parent="Fondo/ValumeSeter"]
+layout_mode = 0
+offset_left = 269.048
+offset_top = 23.8095
+offset_right = 309.048
+offset_bottom = 63.8095
+
+[node name="Label" type="Label" parent="Fondo/ValumeSeter/Subir"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.179
+anchor_right = 1.0
+anchor_bottom = 0.754
+offset_top = -0.0171423
+offset_bottom = -0.0171413
+text = "+"
+label_settings = SubResource("LabelSettings_kw618")
+horizontal_alignment = 1
+
+[node name="Bajar" type="Button" parent="Fondo/ValumeSeter"]
+layout_mode = 0
+offset_left = 21.4286
+offset_top = 23.8095
+offset_right = 61.4286
+offset_bottom = 63.8095
+
+[node name="Label" type="Label" parent="Fondo/ValumeSeter/Bajar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.179
+anchor_right = 1.0
+anchor_bottom = 0.754
+offset_top = -0.0171423
+offset_bottom = -0.0171413
+text = "-"
+label_settings = SubResource("LabelSettings_kw618")
+horizontal_alignment = 1
+
+[node name="ABlackImage" type="Sprite2D" parent="Fondo"]
+visible = false
+self_modulate = Color(1, 1, 1, 0.301961)
+position = Vector2(425, 329)
+texture = ExtResource("7_4a0c5")
+
+[node name="Salir" type="TextureButton" parent="Fondo"]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 573.0
+offset_right = 237.0
+offset_bottom = 627.0
+texture_normal = ExtResource("3_8i3bi")
+texture_pressed = ExtResource("4_kw618")
+texture_hover = ExtResource("5_1bnix")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Fondo/Salir"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.5
+offset_top = -13.0
+offset_right = 98.5
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Volver al menu"
+label_settings = SubResource("LabelSettings_anp0j")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mostrar controles" type="TextureButton" parent="Fondo"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 407.0
+offset_right = 344.0
+offset_bottom = 477.0
+texture_normal = ExtResource("3_8i3bi")
+texture_pressed = ExtResource("4_kw618")
+texture_hover = ExtResource("5_1bnix")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ControlesLabel" type="Label" parent="Fondo/Mostrar controles"]
+visible = false
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 177.0
+offset_top = -231.0
+offset_right = 713.0
+offset_bottom = 72.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "                    Controles:
+Movimiento:                     WASD
+Correr:                            Shift
+Saltar:                           Espacio
+Esconder Lista:                    R
+Agarrar Objetos:         Click Izquierdo
+Rotar Objetos:             Click Derecho
+Acercar o Alejar:        Rueda del Mouse
+Pausa:                               ESC"
+label_settings = SubResource("LabelSettings_4a0c5")
+
+[node name="Label" type="Label" parent="Fondo/Mostrar controles"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.0
+offset_top = -16.5
+offset_right = 71.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Controles"
+label_settings = SubResource("LabelSettings_t4pay")
+
+[connection signal="toggled" from="Fondo/Tipo de Timer/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="toggled" from="Fondo/CarritoCoptero/CheckButton" to="." method="carrito_coptero"]
+[connection signal="pressed" from="Fondo/ValumeSeter/Subir" to="." method="subir_volumen"]
+[connection signal="pressed" from="Fondo/ValumeSeter/Bajar" to="." method="bajar_volumen"]
+[connection signal="pressed" from="Fondo/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="Fondo/Mostrar controles" to="." method="_on_mostrar_controles_pressed"]
