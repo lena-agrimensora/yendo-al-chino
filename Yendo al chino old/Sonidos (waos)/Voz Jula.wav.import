@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://buyftfhqoonss"
+path="res://.godot/imported/Voz Jula.wav-2e764c1e6e7b513546a53062d8a3d446.sample"
+
+[deps]
+
+source_file="res://Sonidos (waos)/Voz Jula.wav"
+dest_files=["res://.godot/imported/Voz Jula.wav-2e764c1e6e7b513546a53062d8a3d446.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

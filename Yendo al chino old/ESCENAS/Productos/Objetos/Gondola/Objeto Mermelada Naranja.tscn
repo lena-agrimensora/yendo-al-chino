@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckxk2i7ubkb10"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_eu1wf"]
+[ext_resource type="PackedScene" uid="uid://btyrqxk06sxwd" path="res://ESCENAS/Productos/Blend+Textura/Desayuno/Mermeladas/Mermelada Cereza.tscn" id="2_q4xx4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cir6"]
+size = Vector3(0.625504, 0.870483, 0.0339966)
+
+[node name="Mermelada de Naranja Carton" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_eu1wf")
+
+[node name="MERMELADA" parent="." instance=ExtResource("2_q4xx4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000816435, 0.433296, -0.00152074)
+shape = SubResource("BoxShape3D_4cir6")
+
+[node name="Producto" type="Node" parent="."]

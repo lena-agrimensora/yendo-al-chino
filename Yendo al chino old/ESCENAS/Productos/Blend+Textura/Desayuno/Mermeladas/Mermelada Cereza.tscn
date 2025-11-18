@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://btyrqxk06sxwd"]
+
+[ext_resource type="PackedScene" uid="uid://o7kbfdk6t8bk" path="res://Modelos 3D/Modelado - Productos/Desayuno/MERMELADA.glb" id="1_wmlra"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://Scripts/Shaders/default_object.gdshader" id="2_geyrd"]
+[ext_resource type="Texture2D" uid="uid://cyt5kdfqlyvw8" path="res://Texturas/Texturas - Productos/Desayuno/Mermelada/mermeladaNaranja_TEX.png" id="2_wmlra"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_npxv1"]
+render_priority = 0
+shader = ExtResource("2_geyrd")
+shader_parameter/color_texture = ExtResource("2_wmlra")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="MERMELADA" instance=ExtResource("1_wmlra")]
+
+[node name="MERMELADA" parent="." index="0"]
+transform = Transform3D(0.3, 0, 0, 0, -1.31134e-08, -0.3, 0, 0.3, -1.31134e-08, 0, 0.00229886, -0.000321802)
+surface_material_override/0 = SubResource("ShaderMaterial_npxv1")

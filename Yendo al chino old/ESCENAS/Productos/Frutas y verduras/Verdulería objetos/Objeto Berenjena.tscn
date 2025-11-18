@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpbcqr6myx5n0"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_ar1ij"]
+[ext_resource type="PackedScene" uid="uid://dsxrd65pivwjl" path="res://ESCENAS/Productos/Blend+Textura/Verdulería/Berenjena_A.tscn" id="2_ar1ij"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cir6"]
+size = Vector3(0.431279, 0.781352, 0.044342)
+
+[node name="Berenjena" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_ar1ij")
+
+[node name="BERENJENA_A" parent="." instance=ExtResource("2_ar1ij")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1661e-05, 0.388558, 0.0017912)
+shape = SubResource("BoxShape3D_4cir6")
+
+[node name="Producto" type="Node" parent="."]

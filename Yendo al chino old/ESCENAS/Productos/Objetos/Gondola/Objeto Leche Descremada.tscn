@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsqnrgro8t57s"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_hfkm8"]
+[ext_resource type="PackedScene" uid="uid://b0o2a1kxj471c" path="res://ESCENAS/Productos/Blend+Textura/Heladeras/Lácteos/Leche Descremada.tscn" id="2_j7oiu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oxpo4"]
+size = Vector3(0.651624, 0.928003, 0.0451965)
+
+[node name="Leche Descremada Santor" type="RigidBody3D" groups=["Objetos"]]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_hfkm8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0116885, 0.463856, 0.000259401)
+shape = SubResource("BoxShape3D_oxpo4")
+
+[node name="LECHE2" parent="." instance=ExtResource("2_j7oiu")]
+
+[node name="Producto" type="Node" parent="."]

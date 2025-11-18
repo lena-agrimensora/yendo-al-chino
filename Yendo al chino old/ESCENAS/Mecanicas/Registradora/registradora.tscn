@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bycr8hrnsttq7"]
+
+[ext_resource type="Script" uid="uid://dfqo4u45var06" path="res://Scripts/Registradora.gd" id="1_6hhaq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7vcfs"]
+size = Vector3(1.5, 1.5, 1.5)
+
+[node name="Registradora" type="Area3D"]
+collision_mask = 5
+script = ExtResource("1_6hhaq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7vcfs")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

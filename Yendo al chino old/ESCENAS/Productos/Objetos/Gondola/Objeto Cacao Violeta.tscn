@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://hl4u2jc2k1n0"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_qgx8r"]
+[ext_resource type="PackedScene" uid="uid://syhp4roxpasr" path="res://ESCENAS/Productos/Blend+Textura/Desayuno/Infusiones/Cacao Violeta.tscn" id="1_w15n6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h27tu"]
+size = Vector3(0.649012, 0.773042, 0.0491562)
+
+[node name="Cacao Nezslow Altisimo en Azucar" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_qgx8r")
+
+[node name="Chocolatada" parent="." instance=ExtResource("1_w15n6")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.00351528, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000624716, 0.385277, 0.00158311)
+shape = SubResource("BoxShape3D_h27tu")
+
+[node name="Producto" type="Node" parent="."]

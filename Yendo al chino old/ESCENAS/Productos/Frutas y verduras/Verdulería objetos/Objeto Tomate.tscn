@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b62fwu1guuslp"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_20elg"]
+[ext_resource type="PackedScene" uid="uid://cqeqlwuosi6bb" path="res://ESCENAS/Productos/Blend+Textura/Verdulería/Tomate_A.tscn" id="2_20elg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cir6"]
+size = Vector3(0.618683, 0.522308, 0.0417023)
+
+[node name="Tomate" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_20elg")
+
+[node name="Tomate" parent="." instance=ExtResource("2_20elg")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00126642, 0.259728, 0.000858505)
+shape = SubResource("BoxShape3D_4cir6")
+
+[node name="Producto" type="Node" parent="."]

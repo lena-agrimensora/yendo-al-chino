@@ -1,0 +1,755 @@
+[gd_scene load_steps=108 format=3 uid="uid://dyme057gfwunc"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_x20aj"]
+[ext_resource type="PackedScene" uid="uid://2aa43gti1sxv" path="res://ESCENAS/Mecanicas/Carrito/carrito.tscn" id="2_8lwkj"]
+[ext_resource type="PackedScene" uid="uid://chcvs7ckorihy" path="res://ESCENAS/Menu_Pausa.tscn" id="2_inrgs"]
+[ext_resource type="PackedScene" uid="uid://dx7mde512w05i" path="res://ESCENAS/Super/chinoreal.tscn" id="2_kaowk"]
+[ext_resource type="PackedScene" uid="uid://qidnqa5ws0kc" path="res://ESCENAS/Super/fumador_2.tscn" id="3_1oe3y"]
+[ext_resource type="Script" uid="uid://uu648rysc4j7" path="res://ESCENAS/Spawn_Gondolas.gd" id="3_ehqqe"]
+[ext_resource type="FontFile" uid="uid://c6kcrwk4fdltc" path="res://Fonts/Handwriting-Regular.otf" id="3_in5rc"]
+[ext_resource type="Script" uid="uid://bqvyuuj31anv4" path="res://ESCENAS/Spawn_Pan.gd" id="3_kaowk"]
+[ext_resource type="Script" uid="uid://cyihvnywfl32e" path="res://ESCENAS/Spawn_Verduleria.gd" id="4_i16v5"]
+[ext_resource type="Script" uid="uid://x3gkr4n7bv3d" path="res://Scripts/Spawn_gondolas_pared.gd" id="6_ehqqe"]
+[ext_resource type="Script" uid="uid://dryxv6urmdq2s" path="res://ESCENAS/Spawn_carne.gd" id="6_inrgs"]
+[ext_resource type="Texture2D" uid="uid://c8pd0p8urgiix" path="res://Modelos 3D/Super/QUESOS.png" id="6_jeqng"]
+[ext_resource type="PackedScene" uid="uid://dl1fw8xjn2sqp" path="res://ESCENAS/Super/caja_singular.tscn" id="6_tlwtu"]
+[ext_resource type="PackedScene" uid="uid://byb6jywnlfp5y" path="res://Personajes/Npc_estatico2.tscn" id="9_fn3uo"]
+[ext_resource type="PackedScene" uid="uid://dqoai8quuamut" path="res://ESCENAS/Muebles/Muebles con productos/Heladera/Heladera Chica.tscn" id="9_oc42b"]
+[ext_resource type="PackedScene" uid="uid://cifvxvfnf7074" path="res://Personajes/Npc_movimiento.tscn" id="10_dcbrs"]
+[ext_resource type="PackedScene" uid="uid://4dhan3kuujdb" path="res://ESCENAS/Muebles/Muebles con productos/Heladera/Heladera Grande.tscn" id="10_mu7hw"]
+[ext_resource type="PackedScene" uid="uid://bdjsnypc1ongt" path="res://ESCENAS/Super/pila-canastos.glb" id="11_mu7hw"]
+[ext_resource type="PackedScene" uid="uid://b83dlj83mqai2" path="res://ESCENAS/Muebles/Muebles Base/Caja Registradora.tscn" id="13_j2oyp"]
+[ext_resource type="Script" uid="uid://ql5l2pqmx2s0" path="res://ESCENAS/Mecanicas/Managers/list_manager.gd" id="17_qgn5v"]
+[ext_resource type="PackedScene" uid="uid://ddtcxrlvmwmsb" path="res://Personajes/VIEJO SENTADO.glb" id="18_5w2cy"]
+[ext_resource type="Script" uid="uid://cq83d72bqny30" path="res://Scripts/Viejo_CAJA.gd" id="18_jeqng"]
+[ext_resource type="PackedScene" uid="uid://cafp37a62jhre" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Bizcochitos Dulces.tscn" id="18_uftet"]
+[ext_resource type="PackedScene" uid="uid://dodp6ii438st" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Bizcochitos Salados.tscn" id="19_8p1pn"]
+[ext_resource type="PackedScene" uid="uid://b5qdwsu1353h6" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto chips blanco.tscn" id="20_xjp1v"]
+[ext_resource type="PackedScene" uid="uid://cilrw424n1m6m" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto chips.tscn" id="21_i16v5"]
+[ext_resource type="Texture2D" uid="uid://deb4akyvlon2o" path="res://Texturas/UI/Proyecto nuevo.png" id="22_fnw1b"]
+[ext_resource type="PackedScene" uid="uid://pogtx8p80rtn" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto chocogalles.tscn" id="22_inrgs"]
+[ext_resource type="Script" uid="uid://c6ye68v8630k0" path="res://ESCENAS/omni_light_3d.gd" id="23_cd4v2"]
+[ext_resource type="PackedScene" uid="uid://bhgrskl1ieyj8" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Pirtusas.tscn" id="23_ehqqe"]
+[ext_resource type="PackedScene" uid="uid://b1q7njkc4i6s8" path="res://ESCENAS/Super/Pero que truene la bocina.tscn" id="24_00l5k"]
+[ext_resource type="PackedScene" uid="uid://b4dy3x40efmiu" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Cacao Amarillo.tscn" id="24_4jpjb"]
+[ext_resource type="Script" uid="uid://coxwsdrqg0wgf" path="res://ESCENAS/Super/Parlante.gd" id="24_pwm4y"]
+[ext_resource type="Texture2D" uid="uid://bovn5gbrnjcu5" path="res://Texturas/UI/cartelchido.png" id="25_he8tx"]
+[ext_resource type="PackedScene" uid="uid://ct4bqxhgxgxey" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Cacao Azul.tscn" id="25_t1chq"]
+[ext_resource type="PackedScene" uid="uid://hl4u2jc2k1n0" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Cacao Violeta.tscn" id="26_hxm62"]
+[ext_resource type="PackedScene" uid="uid://b6irq67evjpfq" path="res://ESCENAS/Productos/Objetos/Infusiones2/Objeto Caja de Té.tscn" id="27_u7nc6"]
+[ext_resource type="PackedScene" uid="uid://cf56etf11k0mj" path="res://ESCENAS/Productos/Objetos/Infusiones2/Objeto Mate Cocido.tscn" id="28_hd6su"]
+[ext_resource type="PackedScene" uid="uid://dt77kj340i3o6" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Yerba Azul.tscn" id="29_4k3yh"]
+[ext_resource type="PackedScene" uid="uid://ce8kf8f60wegv" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Yerba Roja.tscn" id="30_4wycs"]
+[ext_resource type="PackedScene" uid="uid://cdvgffe1xve0i" path="res://ESCENAS/Productos/Gaseosas/bepis_2lts.tscn" id="30_s5vsp"]
+[ext_resource type="PackedScene" uid="uid://bdnap7guftly6" path="res://ESCENAS/Productos/Gaseosas/CrotoCola_2lts.tscn" id="31_1ubg1"]
+[ext_resource type="PackedScene" uid="uid://ceeqyj3stpbdl" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Yerba Verde.tscn" id="31_fwaeo"]
+[ext_resource type="PackedScene" uid="uid://5ohffkqbf3om" path="res://ESCENAS/Productos/Gaseosas/Marnaos_2lts.tscn" id="32_dfj6u"]
+[ext_resource type="PackedScene" uid="uid://cpbcqr6myx5n0" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Objeto Berenjena.tscn" id="33_fwav0"]
+[ext_resource type="PackedScene" uid="uid://brwgktvyoxwj8" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Objeto Calabaza.tscn" id="34_16uc0"]
+[ext_resource type="PackedScene" uid="uid://buai04djynt45" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Objeto Limon.tscn" id="35_oc42b"]
+[ext_resource type="PackedScene" uid="uid://juebxcsjnh12" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Objeto Mandarina.tscn" id="36_mu7hw"]
+[ext_resource type="PackedScene" uid="uid://dmae4c7tj1do6" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Objeto Naranja.tscn" id="37_ohnr8"]
+[ext_resource type="PackedScene" uid="uid://cvghthimgkj12" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Objeto Pera.tscn" id="38_5w2cy"]
+[ext_resource type="PackedScene" uid="uid://b62fwu1guuslp" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Objeto Tomate.tscn" id="39_jeqng"]
+[ext_resource type="PackedScene" uid="uid://cfper1ladwbxk" path="res://ESCENAS/Productos/Objetos/Heladeras/Carnicería/Bandeja de Pescado.tscn" id="40_tlwtu"]
+[ext_resource type="PackedScene" uid="uid://b1v8u7wrxqlfm" path="res://ESCENAS/Productos/Objetos/Heladeras/Carnicería/Milanesas.tscn" id="41_ttgt7"]
+[ext_resource type="PackedScene" uid="uid://bmdn0kwaqj6g1" path="res://ESCENAS/Productos/Objetos/Heladeras/Carnicería/Objeto Carne Picada.tscn" id="42_1oe3y"]
+[ext_resource type="PackedScene" uid="uid://yec8l7b54x1t" path="res://ESCENAS/Productos/Objetos/Heladeras/Carnicería/Pollo Entero.tscn" id="43_cd4v2"]
+[ext_resource type="PackedScene" uid="uid://b7amf2t4d5oty" path="res://ESCENAS/Productos/Objetos/Heladeras/Objeto Leche Entera.tscn" id="46_ohnr8"]
+[ext_resource type="PackedScene" uid="uid://b2al2dm852erx" path="res://ESCENAS/Productos/Objetos/Heladeras/Objeto Leche Sancor.tscn" id="47_5w2cy"]
+[ext_resource type="PackedScene" uid="uid://bfbukoa1exj7k" path="res://Texturas/Texturas - Productos/Heladeras/Dulce de Leche/Objeto Queso Crema.tscn" id="48_jeqng"]
+[ext_resource type="PackedScene" uid="uid://bhiof53v2apx6" path="res://ESCENAS/Productos/Objetos/Papeleria/papel_higienico.tscn" id="54_186rf"]
+[ext_resource type="PackedScene" uid="uid://o06f2mhlwvby" path="res://ESCENAS/Productos/Objetos/Papeleria/rollo_de_cocina.tscn" id="55_fnw1b"]
+[ext_resource type="PackedScene" uid="uid://ct334evmcn7nd" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Zanahoria.tscn" id="59_4tmqf"]
+[ext_resource type="PackedScene" uid="uid://hfts7x4832uj" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Banana.tscn" id="60_00l5k"]
+[ext_resource type="PackedScene" uid="uid://bl5okqq3ff86u" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Choclo.tscn" id="61_a2qr8"]
+[ext_resource type="PackedScene" uid="uid://34kctqm2p7bf" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Lechuga.tscn" id="62_iad1j"]
+[ext_resource type="PackedScene" uid="uid://dv8p52qle38bb" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Manzana Verde.tscn" id="63_iad1j"]
+[ext_resource type="PackedScene" uid="uid://cea6eo1dbikhd" path="res://ESCENAS/Productos/Frutas y verduras/Verdulería objetos/Objeto TetoPera.tscn" id="66_d4nrh"]
+[ext_resource type="Script" uid="uid://dxujbj4ew5t5d" path="res://ESCENAS/Prueba zoom camara.gd" id="67_vu6gs"]
+[ext_resource type="PackedScene" uid="uid://4kou4xsrdlov" path="res://ESCENAS/Super/Linterna.tscn" id="68_3bspb"]
+[ext_resource type="PackedScene" uid="uid://buixrlb87a8eb" path="res://ESCENAS/Productos/Harinas y Fideos/flan.tscn" id="71_he8tx"]
+[ext_resource type="PackedScene" uid="uid://5n1ua4ayy8o5" path="res://ESCENAS/Productos/Harinas y Fideos/Gelatina de Frambuesa.tscn" id="72_5wei5"]
+[ext_resource type="PackedScene" uid="uid://brc1l8jmr0cro" path="res://ESCENAS/Productos/Harinas y Fideos/Gelatina de Manzana Verde.tscn" id="73_2sebm"]
+[ext_resource type="PackedScene" uid="uid://xrmmv6wjr4hp" path="res://ESCENAS/Productos/Harinas y Fideos/Harina Leudante.tscn" id="74_cijr6"]
+[ext_resource type="PackedScene" uid="uid://d1cie1etq7rhj" path="res://ESCENAS/Productos/Harinas y Fideos/Harina 000.tscn" id="75_3dwuj"]
+[ext_resource type="PackedScene" uid="uid://dqdcj6rpk5f1p" path="res://ESCENAS/Productos/Harinas y Fideos/Harina 0000.tscn" id="76_vftjp"]
+[ext_resource type="PackedScene" uid="uid://mkg4l561el7u" path="res://ESCENAS/Productos/Harinas y Fideos/Bizcochuelo de Vainilla.tscn" id="77_vftjp"]
+[ext_resource type="PackedScene" uid="uid://clbc7cv5t7qsf" path="res://ESCENAS/Productos/Harinas y Fideos/Bizcochuelo de Chocolate.tscn" id="78_vpc8c"]
+[ext_resource type="PackedScene" uid="uid://cf4kf0j3sigwa" path="res://ESCENAS/Productos/Higiene/Shampoo.tscn" id="79_gg7mp"]
+[ext_resource type="PackedScene" uid="uid://ppmawr21wp0j" path="res://ESCENAS/Productos/Snacks/Chizitos Paraná.tscn" id="84_esg7x"]
+[ext_resource type="PackedScene" uid="uid://cfaj15nbmo071" path="res://ESCENAS/Productos/Snacks/Chizitos Paraná Barbacoa.tscn" id="84_ps838"]
+[ext_resource type="PackedScene" uid="uid://b14wg2xu17ijs" path="res://ESCENAS/Productos/Snacks/Chizitos Paraná Extra Queso.tscn" id="85_r8qb3"]
+[ext_resource type="PackedScene" uid="uid://bqyfc6itgiryl" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Lata Arvejas.tscn" id="87_id2nh"]
+[ext_resource type="PackedScene" uid="uid://wainiftdsme7" path="res://ESCENAS/Productos/Snacks/Douritos.tscn" id="87_r8qb3"]
+[ext_resource type="PackedScene" uid="uid://c2jwi4p1fi4g6" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Lata Champiñones.tscn" id="88_3iu8f"]
+[ext_resource type="PackedScene" uid="uid://cee43dn3qh5f6" path="res://ESCENAS/Productos/Snacks/Douritos Cheddar.tscn" id="88_l3kye"]
+[ext_resource type="PackedScene" uid="uid://dx1ejj0obhqtt" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Lata Duraznos.tscn" id="89_0dfv0"]
+[ext_resource type="PackedScene" uid="uid://cdr7jdxv0nnqy" path="res://ESCENAS/Productos/Snacks/Douritos Jalapeño Picante.tscn" id="89_irjbd"]
+[ext_resource type="Script" uid="uid://cuegdrntw43fa" path="res://ESCENAS/pearto.gd" id="89_vec18"]
+[ext_resource type="PackedScene" uid="uid://w5u4bmtssq8e" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Lata Jardinera.tscn" id="90_3tpkv"]
+[ext_resource type="PackedScene" uid="uid://dvambgaachqse" path="res://ESCENAS/Productos/Snacks/Papas Pringas Asado.tscn" id="90_jjqoc"]
+[ext_resource type="PackedScene" uid="uid://ctclqusucrjja" path="res://ESCENAS/Productos/Objetos/Gondola/Objeto Lata Palmitos.tscn" id="91_fb3hq"]
+[ext_resource type="PackedScene" uid="uid://41vuruckyiin" path="res://ESCENAS/Productos/Snacks/Papas Pringas Cebolla y Crema.tscn" id="91_qotas"]
+[ext_resource type="PackedScene" uid="uid://ciy527vmmjcg7" path="res://ESCENAS/Productos/Snacks/Papas Pringas Barbacoa.tscn" id="92_id2nh"]
+[ext_resource type="PackedScene" uid="uid://dw1m7p1yghcna" path="res://ESCENAS/Productos/Snacks/Papitas Slay's 💅🫦.tscn" id="93_qotas"]
+[ext_resource type="PackedScene" uid="uid://gnaach51e87d" path="res://ESCENAS/Productos/Snacks/Papitas Slay's 💅🫦 Ketchup.tscn" id="94_3iu8f"]
+[ext_resource type="PackedScene" uid="uid://8j04vc32rn7" path="res://ESCENAS/Productos/Snacks/Papitas Slay's 💅🫦 Salame.tscn" id="95_0dfv0"]
+[ext_resource type="Texture2D" uid="uid://yotys6ao06af" path="res://Texturas/Ofertas de verdulerías.png" id="95_fb3hq"]
+[ext_resource type="Texture2D" uid="uid://cwyh2nbfuu8h6" path="res://Texturas/Cartel Marnaos.png" id="96_in5rc"]
+[ext_resource type="Texture2D" uid="uid://cqp7koggqtmx4" path="res://Texturas/Carteles de leche.png" id="97_rxy6d"]
+[ext_resource type="Texture2D" uid="uid://ddfclow2c2txh" path="res://Texturas/Cartel cereales.png" id="98_writn"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_h2yge"]
+sky_top_color = Color(0.110873, 0.345204, 0.719413, 1)
+sky_horizon_color = Color(0.17, 0.17, 0.17, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.0811519, 0.144901, 0.352839, 1)
+ground_curve = 1.00427
+sun_angle_max = 0.0
+
+[sub_resource type="Sky" id="Sky_1bvp3"]
+sky_material = SubResource("ProceduralSkyMaterial_h2yge")
+
+[sub_resource type="Environment" id="Environment_lquwl"]
+background_mode = 2
+background_energy_multiplier = 0.7
+sky = SubResource("Sky_1bvp3")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3bspb"]
+size = Vector3(16.35, 4.1, 10.2371)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rxy6d"]
+font = ExtResource("3_in5rc")
+font_size = 45
+outline_size = 16
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cd4v2"]
+size = Vector3(0.5, 0.3, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jeqng"]
+size = Vector3(2.2, 4, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_irjbd"]
+size = Vector3(1000, 50, 10)
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_lquwl")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.74415, -0.126009, -0.65602, -0.249557, -0.858505, 0.447985, -0.619647, 0.497082, 0.60741, 0, 13.0627, 0)
+light_energy = 0.6
+light_angular_distance = 4.5
+shadow_enabled = true
+directional_shadow_fade_start = 1.0
+sky_mode = 2
+
+[node name="ProtoController" parent="." instance=ExtResource("1_x20aj")]
+transform = Transform3D(-0.999943, 0, 0.0107161, 0, 1, 0, -0.0107161, 0, -0.999943, 0, 0, -143.238)
+grab_force = 10.0
+release_force = 0.4
+default_grab_distance = 5.0
+min_grab_distance = 2.0
+max_grab_distance = 6.0
+grab_distance_objetos = 2.5
+max_name_display_distance = 5.0
+total_time = 150
+timer_always_visible = true
+
+[node name="Zoom" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -123.3)
+script = ExtResource("67_vu6gs")
+duracion_zoom = 0.5
+tiempo_en_destino = 6.5
+push_time = 0.75
+
+[node name="Marker3D" type="Marker3D" parent="Zoom"]
+transform = Transform3D(-0.766044, 0, 0.642788, 0, 1, 0, -0.642788, 0, -0.766044, -5.9, 2.8, -6)
+
+[node name="Area3D" type="Area3D" parent="Zoom"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Zoom/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.125014, 1.55, -3.41857)
+shape = SubResource("BoxShape3D_3bspb")
+
+[node name="Control" type="Control" parent="Zoom"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Zoom/Control"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -325.0
+offset_top = -132.0
+offset_right = -22.0
+offset_bottom = -22.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Mantene para
+saltear"
+label_settings = SubResource("LabelSettings_rxy6d")
+horizontal_alignment = 1
+
+[node name="CHINO" parent="." instance=ExtResource("2_kaowk")]
+transform = Transform3D(1.7, 0, 0, 0, 1, 0, 0, 0, 2, 0, -3.01203, -79.043)
+
+[node name="pila-canastos" parent="CHINO" instance=ExtResource("11_mu7hw")]
+transform = Transform3D(0.470588, 0, 0, 0, 0.6, 0, 0, 0, 0.4, -7.3625, 2.40684, -17.7009)
+
+[node name="pila-canastos2" parent="CHINO" instance=ExtResource("11_mu7hw")]
+transform = Transform3D(0.470588, 0, 0, 0, 0.6, 0, 0, 0, 0.4, -5.69524, 2.40684, -17.7009)
+
+[node name="Luces" type="Node3D" parent="CHINO"]
+transform = Transform3D(0.588235, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 3.01203, 39.5215)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3202, 8.98797, -51.4126)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+shadow_enabled = true
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3202, 8.98797, -108.413)
+light_color = Color(0.88, 0.70092, 0.5544, 1)
+shadow_enabled = true
+shadow_opacity = 0.75
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3202, 8.98797, -71.0099)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9624, 8.98797, -51.4126)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+shadow_enabled = true
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9624, 8.98797, -108.413)
+light_color = Color(0.88, 0.70092, 0.5544, 1)
+shadow_enabled = true
+shadow_opacity = 0.75
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9624, 8.98797, -71.0099)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.148, 8.98797, -51.4126)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+shadow_enabled = true
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.148, 8.98797, -108.413)
+light_color = Color(0.88, 0.70092, 0.5544, 1)
+shadow_enabled = true
+shadow_opacity = 0.75
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.148, 8.98797, -71.0099)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78045, 8.98797, -51.4126)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+shadow_enabled = true
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78045, 8.98797, -108.413)
+light_color = Color(0.88, 0.70092, 0.5544, 1)
+shadow_enabled = true
+shadow_opacity = 0.75
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78045, 8.98797, -71.0099)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0279, 8.98797, -51.4126)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+shadow_enabled = true
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0279, 8.98797, -108.413)
+light_color = Color(0.88, 0.70092, 0.5544, 1)
+shadow_enabled = true
+shadow_opacity = 0.75
+omni_range = 35.0
+omni_attenuation = 0.104
+
+[node name="OmniLight3D15" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0279, 8.98797, -71.0099)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 33.033, 8.34733, -124.604)
+shadow_enabled = true
+spot_range = 26.0
+spot_attenuation = -0.19
+spot_angle = 70.7298
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CHINO/Luces/SpotLight3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.9, -0.388039, 0.0768919)
+mesh = SubResource("BoxMesh_cd4v2")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.132982, 8.34733, -124.604)
+shadow_enabled = true
+spot_range = 33.0
+spot_attenuation = -0.19
+spot_angle = 65.4015
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CHINO/Luces/SpotLight3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49012e-06, -0.388039, 0.0768919)
+mesh = SubResource("BoxMesh_cd4v2")
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -33.867, 8.34733, -124.604)
+shadow_enabled = true
+spot_range = 31.0
+spot_attenuation = -0.19
+spot_angle = 65.7873
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CHINO/Luces/SpotLight3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.9, -0.388039, 0.0768919)
+mesh = SubResource("BoxMesh_cd4v2")
+
+[node name="OmniLight3D16" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3202, 8.98797, -89.9006)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="OmniLight3D17" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.9624, 8.98797, -89.9006)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="OmniLight3D18" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.148, 8.98797, -89.9006)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="OmniLight3D19" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.78045, 8.98797, -89.9006)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="OmniLight3D20" type="OmniLight3D" parent="CHINO/Luces"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0279, 8.98797, -89.9006)
+light_color = Color(0.878431, 0.701961, 0.552941, 1)
+omni_range = 35.0
+omni_attenuation = 0.257
+
+[node name="Lamparas" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.3)
+
+[node name="lantern" parent="Lamparas" instance=ExtResource("68_3bspb")]
+transform = Transform3D(0.948986, 0, -0.315318, 0, 1, 0, 0.315318, 0, 0.948986, -5.98902, 3.981, -117.592)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lamparas/lantern"]
+transform = Transform3D(1, 2.4869e-14, -1.49012e-07, 0, 1, 1.93715e-07, 1.49012e-07, -1.93715e-07, 1, -0.0695457, -0.61261, -0.151009)
+light_color = Color(0.96, 0.64128, 0.1632, 1)
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 10.0
+shadow_opacity = 0.85
+shadow_blur = 10.0
+omni_range = 2.42655
+omni_attenuation = 0.5
+script = ExtResource("23_cd4v2")
+hold_time_max = 0.1
+hold_time_min = 0.1
+wait_between_loops_min = 0.1
+wait_between_loops_max = 0.1
+
+[node name="lantern2" parent="Lamparas" instance=ExtResource("68_3bspb")]
+transform = Transform3D(0.960294, 0, 0.278991, 0, 1, 0, -0.278991, 0, 0.960294, -2.98902, 3.981, -117.592)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lamparas/lantern2"]
+transform = Transform3D(0.823334, 1.09944e-07, -0.567556, 0, 1, 1.93715e-07, 0.567556, -1.59492e-07, 0.823334, 0.0459881, -0.61261, -0.158707)
+light_color = Color(0.960784, 0.643137, 0.164706, 1)
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 10.0
+shadow_opacity = 0.85
+shadow_blur = 10.0
+omni_range = 2.42655
+omni_attenuation = 0.5
+script = ExtResource("23_cd4v2")
+hold_time_max = 0.0
+hold_time_min = 0.5
+wait_between_loops_min = 0.1
+wait_between_loops_max = 0.1
+
+[node name="lantern3" parent="Lamparas" instance=ExtResource("68_3bspb")]
+transform = Transform3D(0.99572, 0, -0.0924227, 0, 1, 0, 0.0924227, 0, 0.99572, 0.0109759, 3.981, -117.592)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Lamparas/lantern3"]
+transform = Transform3D(0.974067, 4.38301e-08, -0.226261, 0, 1, 1.93715e-07, 0.226261, -1.88691e-07, 0.974067, -0.0124636, -0.61261, -0.16478)
+light_color = Color(0.960784, 0.643137, 0.164706, 1)
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 10.0
+shadow_opacity = 0.85
+shadow_blur = 10.0
+omni_range = 2.42655
+omni_attenuation = 0.5
+script = ExtResource("23_cd4v2")
+hold_time_max = 0.3
+hold_time_min = 0.0
+wait_between_loops_min = 0.1
+wait_between_loops_max = 0.1
+
+[node name="lantern4" parent="Lamparas" instance=ExtResource("68_3bspb")]
+transform = Transform3D(0.97753, 0, -0.210796, 0, 1, 0, 0.210796, 0, 0.97753, 3.01098, 3.981, -117.592)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Lamparas/lantern4"]
+transform = Transform3D(0.99413, 2.09581e-08, -0.108191, 0, 1, 1.93715e-07, 0.108191, -1.92578e-07, 0.99413, -0.0404377, -0.61261, -0.160316)
+light_color = Color(0.960784, 0.643137, 0.164706, 1)
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 10.0
+shadow_opacity = 0.85
+shadow_blur = 10.0
+omni_range = 2.42655
+omni_attenuation = 0.5
+script = ExtResource("23_cd4v2")
+hold_time_max = 0.1
+hold_time_min = 0.4
+wait_between_loops_min = 0.1
+wait_between_loops_max = 0.1
+
+[node name="lantern5" parent="Lamparas" instance=ExtResource("68_3bspb")]
+transform = Transform3D(0.944066, 0, 0.329757, 0, 1, 0, -0.329757, 0, 0.944066, 6.01098, 3.981, -117.592)
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Lamparas/lantern5"]
+transform = Transform3D(0.791927, 1.18285e-07, -0.610616, 0, 1, 1.93715e-07, 0.610616, -1.53408e-07, 0.791927, 0.0528374, -0.61261, -0.15657)
+light_color = Color(0.960784, 0.643137, 0.164706, 1)
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 10.0
+shadow_opacity = 0.85
+shadow_blur = 10.0
+omni_range = 2.42655
+omni_attenuation = 0.5
+script = ExtResource("23_cd4v2")
+hold_time_max = 0.2
+hold_time_min = 0.2
+wait_between_loops_min = 0.1
+wait_between_loops_max = 0.1
+
+[node name="Carrito" parent="." instance=ExtResource("2_8lwkj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78863, 0.556453, -113.295)
+mass = 1.0
+gravity_scale = 3.0
+
+[node name="PauseMenu" parent="." instance=ExtResource("2_inrgs")]
+
+[node name="Pan" type="Node3D" parent="."]
+script = ExtResource("3_kaowk")
+
+[node name="Marker3D" type="Marker3D" parent="Pan"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -24.5864, -1.23991, -112.998)
+
+[node name="Gondolas" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.8, -0.2, -82.5585)
+script = ExtResource("3_ehqqe")
+
+[node name="Marker3D2" type="Marker3D" parent="Gondolas"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -16.0915, 3, 2.15509)
+
+[node name="Marker3D3" type="Marker3D" parent="Gondolas"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.45419, 3, 2.15509)
+
+[node name="Marker3D4" type="Marker3D" parent="Gondolas"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.2758, 3, 2.15509)
+
+[node name="Marker3D5" type="Marker3D" parent="Gondolas"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.2758, 3, 2.15509)
+
+[node name="Gondolas Pared" type="Node3D" parent="."]
+script = ExtResource("6_ehqqe")
+
+[node name="Marker3D" type="Marker3D" parent="Gondolas Pared"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 28.5566, -1.20926, -88.8968)
+
+[node name="Verduleria" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.20078, 21.5754)
+script = ExtResource("4_i16v5")
+
+[node name="Marker3D4" type="Marker3D" parent="Verduleria"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6702, 2.94324, -134.365)
+
+[node name="Heladeras" type="Node3D" parent="."]
+
+[node name="heladera" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, -17.7802, -0.625617, -115.43)
+
+[node name="heladera-larga" parent="Heladeras" instance=ExtResource("10_mu7hw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8233, -0.491277, -84.8171)
+
+[node name="heladera-larga2" parent="Heladeras" instance=ExtResource("10_mu7hw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8233, -0.491277, -65.2626)
+
+[node name="heladera2" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -60.6532)
+
+[node name="heladera3" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -56.6532)
+
+[node name="heladera4" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -64.6532)
+
+[node name="heladera5" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -68.6532)
+
+[node name="heladera6" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(1.04907e-07, 0, 0.8, 0, 0.8, 0, -0.8, 0, 1.04907e-07, -19.1027, -0.625617, -43.1783)
+
+[node name="heladera7" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(1.04907e-07, 0, 0.8, 0, 0.8, 0, -0.8, 0, 1.04907e-07, -15.1027, -0.625617, -43.1783)
+
+[node name="Mostrador de carne" type="Node3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 0, 16.8)
+script = ExtResource("6_inrgs")
+
+[node name="Marker3D" type="Marker3D" parent="Mostrador de carne"]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 66.8156, -0.2, -0.0999999)
+
+[node name="Marker3D2" type="Marker3D" parent="Mostrador de carne"]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 66.8156, -0.2, -15.9)
+
+[node name="Marker3D3" type="Marker3D" parent="Mostrador de carne"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.8156, -0.2, -8)
+
+[node name="Personajes" type="Node3D" parent="."]
+
+[node name="Señor Guardia" parent="Personajes" instance=ExtResource("9_fn3uo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.0509, 1.42689, -78.4598)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Personajes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.1)
+script = ExtResource("18_jeqng")
+
+[node name="VIEJO SENTADO" parent="Personajes/CharacterBody3D" instance=ExtResource("18_5w2cy")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -0.3, -1.25484, -74.3852)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Personajes/CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.8, -74.4)
+shape = SubResource("BoxShape3D_jeqng")
+
+[node name="FUMADOR2" parent="Personajes" instance=ExtResource("3_1oe3y")]
+transform = Transform3D(1, 0, 0, 0, 0.985034, -0.172359, 0, 0.172359, 0.985034, -9.28801, -1.21203, -125.043)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Personajes/FUMADOR2"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.93715e-07, 0, -1.93715e-07, 1, -0.350396, 4.12436, -0.0577087)
+light_color = Color(0.96, 0.416, 0, 1)
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 10.0
+shadow_opacity = 0.85
+shadow_blur = 10.0
+omni_range = 1.0
+omni_attenuation = 0.5
+script = ExtResource("23_cd4v2")
+wait_between_loops_max = 10.0
+
+[node name="Node3D" parent="Personajes" instance=ExtResource("10_dcbrs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -85.4066)
+
+[node name="Path3D" parent="Personajes/Node3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.23033, 22.6607)
+
+[node name="PathFollow3D" parent="Personajes/Node3D/Path3D" index="0"]
+max_move_duration = 6.0
+max_pause_duration = 6.0
+
+[node name="CharacterBody3D" parent="Personajes/Node3D/Path3D/PathFollow3D" index="0"]
+script = null
+
+[node name="Caja Registradora" parent="." instance=ExtResource("13_j2oyp")]
+transform = Transform3D(0.00874396, 0, -0.999962, 0, 1, 0, 0.999962, 0, 0.00874396, 8.70843, -1.58792, -113.312)
+
+[node name="Poster Quesos" type="Sprite3D" parent="Caja Registradora"]
+transform = Transform3D(0.00873002, 0.00049366, 0.999962, -0.0564572, 0.998405, -2.26925e-10, -0.998367, -0.056455, 0.00874397, -2.94301, 5.28591, -0.374062)
+pixel_size = 0.0025
+shaded = true
+double_sided = false
+alpha_cut = 3
+texture = ExtResource("6_jeqng")
+
+[node name="Poster Gatos" type="Sprite3D" parent="Caja Registradora"]
+transform = Transform3D(-0.00698125, 0, -0.999976, 0, 1, 0, 0.999976, 0, -0.00698125, -10.7448, 3.81644, -1.6512)
+pixel_size = 0.0025
+shaded = true
+alpha_cut = 3
+texture = ExtResource("22_fnw1b")
+
+[node name="Parlante (Propiedad de la Cajera)" parent="Caja Registradora" instance=ExtResource("24_00l5k")]
+transform = Transform3D(0.868789, 0, 0.495187, 0, 1, 0, -0.495187, 0, 0.868789, -1.90195, 3.53953, -0.274853)
+script = ExtResource("24_pwm4y")
+
+[node name="Sprite3D" type="Sprite3D" parent="Caja Registradora"]
+transform = Transform3D(0.00872656, 0, 0.999962, 0, 1, 0, -0.999962, 0, 0.00872656, -2.91912, 5, -3.02564)
+pixel_size = 0.002
+shaded = true
+alpha_cut = 3
+texture = ExtResource("25_he8tx")
+
+[node name="list_manager" type="Node" parent="."]
+script = ExtResource("17_qgn5v")
+margen = Vector2(5, 8)
+productos = Array[PackedScene]([ExtResource("18_uftet"), ExtResource("19_8p1pn"), ExtResource("20_xjp1v"), ExtResource("21_i16v5"), ExtResource("22_inrgs"), ExtResource("23_ehqqe"), ExtResource("24_4jpjb"), ExtResource("25_t1chq"), ExtResource("26_hxm62"), ExtResource("27_u7nc6"), ExtResource("28_hd6su"), ExtResource("29_4k3yh"), ExtResource("30_4wycs"), ExtResource("31_fwaeo"), ExtResource("30_s5vsp"), ExtResource("31_1ubg1"), ExtResource("32_dfj6u"), ExtResource("33_fwav0"), ExtResource("34_16uc0"), ExtResource("35_oc42b"), ExtResource("36_mu7hw"), ExtResource("37_ohnr8"), ExtResource("38_5w2cy"), ExtResource("39_jeqng"), ExtResource("40_tlwtu"), ExtResource("41_ttgt7"), ExtResource("42_1oe3y"), ExtResource("43_cd4v2"), ExtResource("46_ohnr8"), ExtResource("47_5w2cy"), ExtResource("48_jeqng"), ExtResource("54_186rf"), ExtResource("55_fnw1b"), ExtResource("59_4tmqf"), ExtResource("62_iad1j"), ExtResource("61_a2qr8"), ExtResource("60_00l5k"), ExtResource("63_iad1j"), ExtResource("78_vpc8c"), ExtResource("77_vftjp"), ExtResource("71_he8tx"), ExtResource("72_5wei5"), ExtResource("73_2sebm"), ExtResource("75_3dwuj"), ExtResource("76_vftjp"), ExtResource("74_cijr6"), ExtResource("79_gg7mp"), ExtResource("84_ps838"), ExtResource("85_r8qb3"), ExtResource("84_esg7x"), ExtResource("88_l3kye"), ExtResource("89_irjbd"), ExtResource("87_r8qb3"), ExtResource("90_jjqoc"), ExtResource("92_id2nh"), ExtResource("91_qotas"), ExtResource("94_3iu8f"), ExtResource("95_0dfv0"), ExtResource("93_qotas"), ExtResource("87_id2nh"), ExtResource("88_3iu8f"), ExtResource("89_0dfv0"), ExtResource("90_3tpkv"), ExtResource("91_fb3hq")])
+productos_obligatorios = Array[PackedScene]([ExtResource("55_fnw1b"), ExtResource("54_186rf")])
+pearto = ExtResource("66_d4nrh")
+metadata/_custom_type_script = "uid://ql5l2pqmx2s0"
+
+[node name="Cajas" type="Node3D" parent="."]
+
+[node name="Caja de Productos" parent="Cajas" instance=ExtResource("6_tlwtu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 23.0401, -1.21203, -44.9764)
+mass = 3.0
+gravity_scale = 4.0
+script = ExtResource("24_pwm4y")
+
+[node name="Caja de Productos 2" parent="Cajas" instance=ExtResource("6_tlwtu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24.1333, -0.135075, -44.9764)
+mass = 3.0
+gravity_scale = 4.0
+script = ExtResource("24_pwm4y")
+
+[node name="Caja de Productos 3" parent="Cajas" instance=ExtResource("6_tlwtu")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 25.1333, -1.20311, -44.9764)
+mass = 3.0
+gravity_scale = 4.0
+script = ExtResource("24_pwm4y")
+
+[node name="Caja de Productos 4" parent="Cajas" instance=ExtResource("6_tlwtu")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -29.0555, -1.20876, -74.5303)
+mass = 3.0
+gravity_scale = 4.0
+script = ExtResource("24_pwm4y")
+
+[node name="Caja de Productos 5" parent="Cajas" instance=ExtResource("6_tlwtu")]
+transform = Transform3D(-1, 0, -8.74228e-08, 8.74228e-08, -4.37114e-08, -1, -3.82137e-15, -1, 4.37114e-08, -29.0555, -0.208756, -75.6303)
+mass = 3.0
+gravity_scale = 4.0
+script = ExtResource("24_pwm4y")
+
+[node name="Caja de Productos 6" parent="Cajas" instance=ExtResource("6_tlwtu")]
+transform = Transform3D(-1, 0, -8.74228e-08, -4.37114e-08, 0.866025, 0.5, 7.57104e-08, 0.5, -0.866025, -29.0555, 0.791244, -75.2303)
+mass = 3.0
+gravity_scale = 4.0
+script = ExtResource("24_pwm4y")
+
+[node name="bordes de mapa" type="StaticBody3D" parent="."]
+collision_layer = 255
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="bordes de mapa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -221.796)
+shape = SubResource("BoxShape3D_irjbd")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="bordes de mapa"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.2468)
+shape = SubResource("BoxShape3D_irjbd")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="bordes de mapa"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 82.702, 0, -70.122)
+shape = SubResource("BoxShape3D_irjbd")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="bordes de mapa"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -94.2054, 0, -70.122)
+shape = SubResource("BoxShape3D_irjbd")
+
+[node name="Pearto" type="Node3D" parent="."]
+script = ExtResource("89_vec18")
+
+[node name="Marker3D" type="Marker3D" parent="Pearto"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -29.5274, 1.01285, -76.4749)
+
+[node name="Marker3D2" type="Marker3D" parent="Pearto"]
+transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 28, 5.8, -70.3)
+
+[node name="Poster Verduleria" type="Sprite3D" parent="."]
+transform = Transform3D(0.00176281, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00176281, 28.7068, 3.066, -103.839)
+pixel_size = 0.0025
+shaded = true
+alpha_cut = 3
+texture = ExtResource("95_fb3hq")
+
+[node name="Poster Marnaos" type="Sprite3D" parent="."]
+transform = Transform3D(0.00176281, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00176281, 28.7068, 3.066, -75.1392)
+pixel_size = 0.0025
+shaded = true
+alpha_cut = 3
+texture = ExtResource("96_in5rc")
+
+[node name="Poster Leche" type="Sprite3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29.8203, 4.2177, -74.9681)
+pixel_size = 0.0025
+shaded = true
+alpha_cut = 3
+texture = ExtResource("97_rxy6d")
+
+[node name="Poster Cereales" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1558, 4.2177, -116.24)
+pixel_size = 0.0025
+shaded = true
+alpha_cut = 3
+texture = ExtResource("98_writn")
+
+[node name="Poster Snacks" type="Sprite3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -24.2626, 2.26185, -42.3763)
+pixel_size = 0.0025
+shaded = true
+alpha_cut = 3
+texture = ExtResource("98_writn")
+
+[connection signal="body_entered" from="Zoom/Area3D" to="Zoom" method="_on_body_entered"]
+
+[editable path="Heladeras/heladera3"]
+[editable path="Personajes/Node3D"]

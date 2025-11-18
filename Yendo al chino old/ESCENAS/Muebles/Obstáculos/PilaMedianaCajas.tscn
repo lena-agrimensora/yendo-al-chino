@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgh3emep2y3pv"]
+
+[ext_resource type="PackedScene" uid="uid://bdi0cvuchr210" path="res://Modelos 3D/Modelos con colisiones/monton de cajas 2.glb" id="1_k0d5b"]
+
+[node name="monton de cajas 2" instance=ExtResource("1_k0d5b")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)

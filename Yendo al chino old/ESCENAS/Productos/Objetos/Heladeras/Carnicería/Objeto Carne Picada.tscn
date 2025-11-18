@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmdn0kwaqj6g1"]
+
+[ext_resource type="PackedScene" uid="uid://x6kn66ou5k0d" path="res://ESCENAS/Productos/Blend+Textura/Heladeras/Carnicería/Carne Picada.tscn" id="1_eyj1d"]
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_rbtri"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rbtri"]
+size = Vector3(1.02838, 0.919068, 0.0523376)
+
+[node name="Carne Picada" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_rbtri")
+
+[node name="Bandeja de carne" parent="." instance=ExtResource("1_eyj1d")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 0.000579834, 0.460576, 0.000427245)
+shape = SubResource("BoxShape3D_rbtri")
+
+[node name="Producto" type="Node" parent="."]

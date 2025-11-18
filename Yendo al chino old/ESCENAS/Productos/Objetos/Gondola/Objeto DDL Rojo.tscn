@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1vfxwh1qu5gi"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_ju0l0"]
+[ext_resource type="PackedScene" uid="uid://by0dglh22pgsn" path="res://ESCENAS/Productos/Blend+Textura/Heladeras/Lácteos/Dulce de Leche Rojo.tscn" id="2_d7oxu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oxpo4"]
+size = Vector3(0.723567, 0.65916, 0.036245)
+
+[node name="Dulce de Leche La Alteradisima" type="RigidBody3D" groups=["Objetos"]]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
+script = ExtResource("1_ju0l0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.78502e-05, 0.329292, 0.000625112)
+shape = SubResource("BoxShape3D_oxpo4")
+
+[node name="DDL" parent="." instance=ExtResource("2_d7oxu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.51709e-11, 0.00121789, 0.000173535)
+
+[node name="Producto" type="Node" parent="."]

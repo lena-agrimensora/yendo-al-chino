@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ce8kf8f60wegv"]
+
+[ext_resource type="PackedScene" uid="uid://dgfpnbs84gwjp" path="res://ESCENAS/Productos/Blend+Textura/Desayuno/Infusiones/Yerba Roja.tscn" id="1_qdpqs"]
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_v7n38"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rxgel"]
+size = Vector3(0.821198, 1.03611, 0.0808518)
+
+[node name="Yerba Largartija" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_v7n38")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00121759, 0.51778, -0.000260471)
+shape = SubResource("BoxShape3D_rxgel")
+
+[node name="YERBA BASE" parent="." instance=ExtResource("1_qdpqs")]
+
+[node name="Producto" type="Node" parent="."]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ct4bqxhgxgxey"]
+
+[ext_resource type="PackedScene" uid="uid://rymj16iqbv32" path="res://ESCENAS/Productos/Blend+Textura/Desayuno/Infusiones/Cacao Azul.tscn" id="1_27hyn"]
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_eg0km"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h27tu"]
+size = Vector3(0.656593, 0.769594, 0.0478134)
+
+[node name="Cacao Neszlow Bajo en Azucar" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_eg0km")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00104138, 0.383553, 0.00188828)
+shape = SubResource("BoxShape3D_h27tu")
+
+[node name="Chocolatada" parent="." instance=ExtResource("1_27hyn")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="Producto" type="Node" parent="."]

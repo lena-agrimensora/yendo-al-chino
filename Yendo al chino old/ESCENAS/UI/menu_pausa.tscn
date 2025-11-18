@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://h1dmug45uwoe"]
+
+[ext_resource type="Script" path="res://ESCENAS/menu_pausa.gd" id="1_7jfmh"]
+
+[node name="Menu Pausa" type="CanvasLayer"]
+script = ExtResource("1_7jfmh")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Reanudar" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Salir" type="Button" parent="Panel"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="pressed" from="Panel/Reanudar" to="." method="_on_reanudar_pressed"]
+[connection signal="pressed" from="Panel/Salir" to="." method="_on_salir_pressed"]

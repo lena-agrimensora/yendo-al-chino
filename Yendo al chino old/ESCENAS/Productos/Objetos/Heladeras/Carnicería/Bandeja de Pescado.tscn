@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfper1ladwbxk"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_6lxvg"]
+[ext_resource type="PackedScene" uid="uid://c4shokxtraud3" path="res://ESCENAS/Productos/Blend+Textura/Heladeras/Carnicería/Bandeja de Pescado.tscn" id="2_5neam"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rbtri"]
+size = Vector3(0.92073, 1.2403, 0.0523376)
+
+[node name="Pescado" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_6lxvg")
+
+[node name="Bandeja de Pescado" parent="." instance=ExtResource("2_5neam")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 0.000579834, 0.619349, 0.000427245)
+shape = SubResource("BoxShape3D_rbtri")
+
+[node name="Producto" type="Node" parent="."]

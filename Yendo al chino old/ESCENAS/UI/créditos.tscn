@@ -1,0 +1,130 @@
+[gd_scene load_steps=9 format=3 uid="uid://ym0hf72l4mdm"]
+
+[ext_resource type="Script" uid="uid://ch8ccn25anhrk" path="res://ESCENAS/UI/créditos.gd" id="1_6uopg"]
+[ext_resource type="Texture2D" uid="uid://dy4oh6obpemhq" path="res://Texturas/UI/TITULOS.png" id="2_6uopg"]
+[ext_resource type="Texture2D" uid="uid://dgvbe1kdve6vj" path="res://Texturas/UI/UNPRESSED ALT.png" id="3_v3a8e"]
+[ext_resource type="Texture2D" uid="uid://d12w8ivpn4j0t" path="res://Texturas/UI/PRESSED ALT.png" id="4_owrar"]
+[ext_resource type="Texture2D" uid="uid://dub8aoxg5ydxm" path="res://Texturas/UI/HOOVER ALT.png" id="5_2ywi8"]
+[ext_resource type="FontFile" uid="uid://c6kcrwk4fdltc" path="res://Fonts/Handwriting-Regular.otf" id="6_2ywi8"]
+[ext_resource type="Texture2D" uid="uid://dna6w4k3501u" path="res://Texturas/UI/TITULOS2.png" id="6_owrar"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k6a2c"]
+font = ExtResource("6_2ywi8")
+font_size = 28
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Créditos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6uopg")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_6uopg")
+expand_mode = 1
+
+[node name="Volver Menu" type="TextureButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.784314)
+layout_mode = 0
+offset_left = 750.0
+offset_top = 553.0
+offset_right = 845.0
+offset_bottom = 595.0
+scale = Vector2(2.18263, 2.46534)
+texture_normal = ExtResource("3_v3a8e")
+texture_pressed = ExtResource("4_owrar")
+texture_hover = ExtResource("5_2ywi8")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Pag siguiente" type="TextureButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.784314)
+offset_left = 932.0
+offset_top = 553.0
+offset_right = 1027.0
+offset_bottom = 595.0
+scale = Vector2(2.18263, 2.46534)
+texture_normal = ExtResource("3_v3a8e")
+texture_pressed = ExtResource("4_owrar")
+texture_hover = ExtResource("5_2ywi8")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 783.0
+offset_top = 596.0
+offset_right = 981.0
+offset_bottom = 627.0
+text = "Volver al Menu"
+label_settings = SubResource("LabelSettings_k6a2c")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 958.0
+offset_top = 595.0
+offset_right = 1156.0
+offset_bottom = 626.0
+text = "Pagina Siguiente"
+label_settings = SubResource("LabelSettings_k6a2c")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("6_owrar")
+expand_mode = 1
+
+[node name="Volver Menu" type="TextureButton" parent="TextureRect2"]
+self_modulate = Color(1, 1, 1, 0.784314)
+offset_left = 750.0
+offset_top = 553.0
+offset_right = 845.0
+offset_bottom = 595.0
+scale = Vector2(2.18263, 2.46534)
+texture_normal = ExtResource("3_v3a8e")
+texture_pressed = ExtResource("4_owrar")
+texture_hover = ExtResource("5_2ywi8")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Pag anterior" type="TextureButton" parent="TextureRect2"]
+self_modulate = Color(1, 1, 1, 0.784314)
+offset_left = 932.0
+offset_top = 553.0
+offset_right = 1027.0
+offset_bottom = 595.0
+scale = Vector2(2.18263, 2.46534)
+texture_normal = ExtResource("3_v3a8e")
+texture_pressed = ExtResource("4_owrar")
+texture_hover = ExtResource("5_2ywi8")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label5" type="Label" parent="TextureRect2"]
+offset_left = 958.0
+offset_top = 595.0
+offset_right = 1156.0
+offset_bottom = 626.0
+text = "Pagina Anterior"
+label_settings = SubResource("LabelSettings_k6a2c")
+
+[node name="Label3" type="Label" parent="TextureRect2"]
+layout_mode = 0
+offset_left = 783.0
+offset_top = 596.0
+offset_right = 981.0
+offset_bottom = 627.0
+text = "Volver al Menu"
+label_settings = SubResource("LabelSettings_k6a2c")
+
+[connection signal="pressed" from="Volver Menu" to="." method="_on_volver_menu_pressed"]
+[connection signal="pressed" from="Pag siguiente" to="." method="_on_pag_siguiente_pressed"]
+[connection signal="pressed" from="TextureRect2/Volver Menu" to="." method="_on_volver_menu_pressed"]
+[connection signal="pressed" from="TextureRect2/Pag anterior" to="." method="_on_pag_anterior_pressed"]

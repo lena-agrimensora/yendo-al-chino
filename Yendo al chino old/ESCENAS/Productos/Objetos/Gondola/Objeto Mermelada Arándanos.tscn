@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://m855ivg2y74u"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_bxeqd"]
+[ext_resource type="PackedScene" uid="uid://byg7d25sww4h3" path="res://ESCENAS/Productos/Blend+Textura/Desayuno/Mermeladas/mermelada Arándano.tscn" id="2_n8hc5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4cir6"]
+size = Vector3(0.618668, 0.867249, 0.0339966)
+
+[node name="Mermelada de Arandanos CV" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_bxeqd")
+
+[node name="MERMELADA" parent="." instance=ExtResource("2_n8hc5")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000801116, 0.434077, 0.00150372)
+shape = SubResource("BoxShape3D_4cir6")
+
+[node name="Producto" type="Node" parent="."]

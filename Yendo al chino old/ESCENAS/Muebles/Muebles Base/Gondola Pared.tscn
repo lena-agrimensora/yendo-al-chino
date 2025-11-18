@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4i0yrukheocd"]
+
+[ext_resource type="PackedScene" uid="uid://b3s64khlovcqu" path="res://ESCENAS/Muebles/Muebles Base/gondola-pared.glb" id="1_kw7pf"]
+
+[node name="gondola-pared2" instance=ExtResource("1_kw7pf")]

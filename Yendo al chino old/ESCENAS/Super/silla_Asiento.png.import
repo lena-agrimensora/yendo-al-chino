@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://dal2aoia1hneu"
+path.s3tc="res://.godot/imported/silla_Asiento.png-49ec5053b7d5b03b2f8a24b85123a8ed.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "501a1bf168847b23eef651b31437d778"
+}
+
+[deps]
+
+source_file="res://ESCENAS/Super/silla_Asiento.png"
+dest_files=["res://.godot/imported/silla_Asiento.png-49ec5053b7d5b03b2f8a24b85123a8ed.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

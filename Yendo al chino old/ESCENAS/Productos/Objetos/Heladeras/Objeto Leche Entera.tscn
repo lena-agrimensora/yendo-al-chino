@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7amf2t4d5oty"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_vtknp"]
+[ext_resource type="PackedScene" uid="uid://kaowblbchkt" path="res://ESCENAS/Productos/Blend+Textura/Heladeras/Lácteos/Leche Entera.tscn" id="2_lrwi3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oxpo4"]
+size = Vector3(0.670288, 0.937469, 0.0437622)
+
+[node name="Leche Entera Santor" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_vtknp")
+
+[node name="LECHE2" parent="." instance=ExtResource("2_lrwi3")]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0.00450557, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0087278, 0.471306, -0.000457764)
+shape = SubResource("BoxShape3D_oxpo4")
+
+[node name="Producto" type="Node" parent="."]

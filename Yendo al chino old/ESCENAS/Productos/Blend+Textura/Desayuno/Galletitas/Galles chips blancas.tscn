@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cfxs7iexe8u30"]
+
+[ext_resource type="PackedScene" uid="uid://ctha2xnsy1nof" path="res://Modelos 3D/Modelado - Productos/Desayuno/GALLETITAS.glb" id="1_ydulu"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://Scripts/Shaders/default_object.gdshader" id="2_360kd"]
+[ext_resource type="Texture2D" uid="uid://wc7vjigu0igx" path="res://Modelos 3D/Modelado - Productos/Desayuno/gallesAzul_TEX.png" id="3_0dogc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ns0v8"]
+render_priority = 0
+shader = ExtResource("2_360kd")
+shader_parameter/color_texture = ExtResource("3_0dogc")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="GALLETITAS" instance=ExtResource("1_ydulu")]
+
+[node name="GALLES" parent="." index="0"]
+transform = Transform3D(0.33, 0, 0, 0, -1.44248e-08, -0.33, 0, 0.33, -1.44248e-08, -0.00890114, 0.106871, 0.013453)
+surface_material_override/0 = SubResource("ShaderMaterial_ns0v8")

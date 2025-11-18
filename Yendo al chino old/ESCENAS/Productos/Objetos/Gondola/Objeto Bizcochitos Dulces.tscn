@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cafp37a62jhre"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_3wioe"]
+[ext_resource type="PackedScene" uid="uid://ew1f1iuju3a8" path="res://ESCENAS/Productos/Blend+Textura/Desayuno/Galletitas/Bizcochitos Dulces.tscn" id="1_hkxqe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3wioe"]
+size = Vector3(0.795585, 0.707093, 0.0481262)
+
+[node name="Bizcochitos Dulces Don Saul" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_3wioe")
+
+[node name="BIZCOCHITOS" parent="." instance=ExtResource("1_hkxqe")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.011754, 0.0132946)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00267461, 0.358184, -0.000755178)
+shape = SubResource("BoxShape3D_3wioe")
+
+[node name="Producto" type="Node" parent="."]

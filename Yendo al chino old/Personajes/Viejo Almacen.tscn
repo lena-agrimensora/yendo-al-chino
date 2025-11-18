@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://hspgbe3mj7jo"]
+
+[ext_resource type="Texture2D" uid="uid://bu1cwd7krrixa" path="res://Personajes/VIEJO ALMACEN1.png" id="1_1ugb6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1ugb6"]
+size = Vector3(3.6, 6.9, 1)
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+texture = ExtResource("1_1ugb6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0999999, 0.0499997, 0)
+shape = SubResource("BoxShape3D_1ugb6")

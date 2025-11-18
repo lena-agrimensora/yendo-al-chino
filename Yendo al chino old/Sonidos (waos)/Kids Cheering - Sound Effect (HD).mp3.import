@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cameoi7foej4j"
+path="res://.godot/imported/Kids Cheering - Sound Effect (HD).mp3-57ba15fdfbe6da2dfa53f47c5c645b67.mp3str"
+
+[deps]
+
+source_file="res://Sonidos (waos)/Kids Cheering - Sound Effect (HD).mp3"
+dest_files=["res://.godot/imported/Kids Cheering - Sound Effect (HD).mp3-57ba15fdfbe6da2dfa53f47c5c645b67.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7mubibr6d43i"]
+
+[ext_resource type="PackedScene" uid="uid://dfhpud6j1vyoo" path="res://Modelos 3D/Modelado - Productos/Heladeras/DDL.glb" id="1_e2wff"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://Scripts/Shaders/default_object.gdshader" id="2_ttfs8"]
+[ext_resource type="Texture2D" uid="uid://bnlr2nao3eui" path="res://Modelos 3D/Modelado - Productos/Desayuno/ddlNaranja_TEX.png" id="3_crhvn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sutit"]
+render_priority = 0
+shader = ExtResource("2_ttfs8")
+shader_parameter/color_texture = ExtResource("3_crhvn")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="DDL" instance=ExtResource("1_e2wff")]
+
+[node name="DULCE" parent="." index="0"]
+transform = Transform3D(0.3, 0, 0, 0, -1.31134e-08, -0.3, 0, 0.3, -1.31134e-08, 0, 0.00367688, -0.000226457)
+surface_material_override/0 = SubResource("ShaderMaterial_sutit")

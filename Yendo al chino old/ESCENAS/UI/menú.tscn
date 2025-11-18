@@ -1,0 +1,187 @@
+[gd_scene load_steps=13 format=3 uid="uid://cm03u84362mc2"]
+
+[ext_resource type="Script" uid="uid://d0w8ah3nqaeex" path="res://Scripts/menú principal.gd" id="1_ru16m"]
+[ext_resource type="Texture2D" uid="uid://d3yqxrkjxxjnn" path="res://Texturas/UI/MENU PRINCIPAL HARD.png" id="2_llk1a"]
+[ext_resource type="Texture2D" uid="uid://7lr07efmkwjc" path="res://Texturas/UI/UNPRESSED (1).png" id="3_pjm36"]
+[ext_resource type="Texture2D" uid="uid://cir447ic41bb4" path="res://Texturas/UI/PRESSED.png" id="4_yk1l1"]
+[ext_resource type="Texture2D" uid="uid://w3b2cxb5caqf" path="res://Texturas/UI/HOOVER.png" id="5_s3h8x"]
+[ext_resource type="FontFile" uid="uid://c6kcrwk4fdltc" path="res://Fonts/Handwriting-Regular.otf" id="6_pjm36"]
+[ext_resource type="PackedScene" uid="uid://c13no7dniq785" path="res://ESCENAS/opciones_menu.tscn" id="7_yk1l1"]
+[ext_resource type="PackedScene" uid="uid://ym0hf72l4mdm" path="res://ESCENAS/UI/créditos.tscn" id="8_llk1a"]
+[ext_resource type="AudioStream" uid="uid://bvtxncpup4qpf" path="res://Sonidos (waos)/loop2.mp3" id="8_s3h8x"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yk1l1"]
+font = ExtResource("6_pjm36")
+font_size = 60
+outline_size = 13
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_pjm36"]
+font = ExtResource("6_pjm36")
+font_size = 55
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_s3h8x"]
+font = ExtResource("6_pjm36")
+font_size = 60
+outline_size = 13
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Menú" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ru16m")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_llk1a")
+expand_mode = 1
+
+[node name="Nuevo Juego" type="TextureButton" parent="TextureRect"]
+layout_mode = 2
+offset_left = 62.0
+offset_top = 241.0
+offset_right = 398.0
+offset_bottom = 326.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.84, 0.84)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3_pjm36")
+texture_pressed = ExtResource("4_yk1l1")
+texture_hover = ExtResource("5_s3h8x")
+
+[node name="Label" type="Label" parent="TextureRect/Nuevo Juego"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.5
+offset_top = -23.0
+offset_right = 125.5
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Nuevo juego"
+label_settings = SubResource("LabelSettings_yk1l1")
+
+[node name="Salir" type="TextureButton" parent="TextureRect"]
+layout_mode = 2
+offset_left = 21.0
+offset_top = 573.0
+offset_right = 237.0
+offset_bottom = 627.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_pjm36")
+texture_pressed = ExtResource("4_yk1l1")
+texture_hover = ExtResource("5_s3h8x")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureRect/Salir"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -42.0
+offset_top = -43.0
+offset_right = 42.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Salir"
+label_settings = SubResource("LabelSettings_pjm36")
+vertical_alignment = 1
+
+[node name="Ajustes" type="TextureButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 324.0
+offset_right = 398.0
+offset_bottom = 408.0
+scale = Vector2(0.84, 0.84)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3_pjm36")
+texture_pressed = ExtResource("4_yk1l1")
+texture_hover = ExtResource("5_s3h8x")
+
+[node name="Label" type="Label" parent="TextureRect/Ajustes"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -79.5
+offset_top = -23.0002
+offset_right = 79.5
+offset_bottom = 23.0002
+grow_horizontal = 2
+grow_vertical = 2
+text = "Ajustes"
+label_settings = SubResource("LabelSettings_s3h8x")
+
+[node name="Créditos" type="TextureButton" parent="TextureRect"]
+layout_mode = 2
+offset_left = 62.0
+offset_top = 407.0
+offset_right = 398.0
+offset_bottom = 490.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.84, 0.84)
+texture_normal = ExtResource("3_pjm36")
+texture_pressed = ExtResource("4_yk1l1")
+texture_hover = ExtResource("5_s3h8x")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureRect/Créditos"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.5
+offset_top = -23.0
+offset_right = 125.5
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Creditos"
+label_settings = SubResource("LabelSettings_yk1l1")
+horizontal_alignment = 1
+
+[node name="Opciones Menu" parent="." instance=ExtResource("7_yk1l1")]
+visible = false
+
+[node name="Créditos" parent="." instance=ExtResource("8_llk1a")]
+visible = false
+layout_mode = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_s3h8x")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="TextureRect/Nuevo Juego" to="." method="_on_nuevo_juego_pressed"]
+[connection signal="pressed" from="TextureRect/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="TextureRect/Ajustes" to="." method="_on_ajustes_pressed"]
+[connection signal="pressed" from="TextureRect/Créditos" to="." method="_on_créditos_pressed"]

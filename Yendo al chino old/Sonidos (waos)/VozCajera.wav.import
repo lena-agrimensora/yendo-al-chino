@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://hmh8cbwj6xmc"
+path="res://.godot/imported/VozCajera.wav-f3221dd4b3fb7068414f00b0344f8d32.sample"
+
+[deps]
+
+source_file="res://Sonidos (waos)/VozCajera.wav"
+dest_files=["res://.godot/imported/VozCajera.wav-f3221dd4b3fb7068414f00b0344f8d32.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

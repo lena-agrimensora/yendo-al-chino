@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://djws66m6iaadv"]
+
+[ext_resource type="PackedScene" uid="uid://drl5utrog4bg8" path="res://Modelos 3D/UI/BRAZO.glb" id="1_uc5sx"]
+
+[node name="BRAZO2" instance=ExtResource("1_uc5sx")]
+
+[node name="BRAZO" parent="." index="0"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.93469, 0)

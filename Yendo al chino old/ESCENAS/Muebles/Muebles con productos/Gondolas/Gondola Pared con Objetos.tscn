@@ -1,0 +1,747 @@
+[gd_scene load_steps=5 format=3 uid="uid://b35dvx3546nua"]
+
+[ext_resource type="PackedScene" uid="uid://d4i0yrukheocd" path="res://ESCENAS/Muebles/Muebles Base/Gondola Pared.tscn" id="1_eaqbf"]
+[ext_resource type="Script" uid="uid://bvur6w57aahh0" path="res://Scripts/Spawn_gaseosas.gd" id="2_5n4d0"]
+[ext_resource type="Script" uid="uid://dxq31m0dys8ns" path="res://Scripts/Spawn_gaseosas_CrotoCola.gd" id="3_w5vn3"]
+[ext_resource type="Script" uid="uid://dgdoi1wccbkki" path="res://ESCENAS/Muebles/Muebles con productos/Gondolas/Spawn_gaseosas_Marnaos.gd" id="4_egjcy"]
+
+[node name="Gondola Pared" type="Node3D"]
+
+[node name="gondola-pared2" parent="." instance=ExtResource("1_eaqbf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.345698, 0)
+
+[node name="Gaseosas" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.345698, 0)
+script = ExtResource("2_5n4d0")
+
+[node name="Marker3D125" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.300001)
+
+[node name="Marker3D126" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.900001)
+
+[node name="Marker3D127" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.300001)
+
+[node name="Marker3D128" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.300001)
+
+[node name="Marker3D129" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.600001)
+
+[node name="Marker3D130" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.600001)
+
+[node name="Marker3D131" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.900001)
+
+[node name="Marker3D132" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.900001)
+
+[node name="Marker3D133" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.55718, 0.300001)
+
+[node name="Marker3D134" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.55718, 0.600001)
+
+[node name="Marker3D135" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.600001)
+
+[node name="Marker3D136" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.55718, 0.900001)
+
+[node name="Marker3D137" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.300001)
+
+[node name="Marker3D138" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.600001)
+
+[node name="Marker3D139" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.900001)
+
+[node name="Marker3D140" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.300001)
+
+[node name="Marker3D141" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.300001)
+
+[node name="Marker3D142" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.600001)
+
+[node name="Marker3D143" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.600001)
+
+[node name="Marker3D144" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.900001)
+
+[node name="Marker3D145" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.900001)
+
+[node name="Marker3D146" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.300001)
+
+[node name="Marker3D147" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.600001)
+
+[node name="Marker3D148" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.900001)
+
+[node name="Marker3D149" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.300001)
+
+[node name="Marker3D150" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.300001)
+
+[node name="Marker3D151" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.600001)
+
+[node name="Marker3D152" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.900001)
+
+[node name="Marker3D153" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.300001)
+
+[node name="Marker3D154" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.300001)
+
+[node name="Marker3D155" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.600001)
+
+[node name="Marker3D156" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.600001)
+
+[node name="Marker3D157" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.900001)
+
+[node name="Marker3D158" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.900001)
+
+[node name="Marker3D159" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.600001)
+
+[node name="Marker3D160" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.900001)
+
+[node name="Marker3D161" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.300001)
+
+[node name="Marker3D162" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.300001)
+
+[node name="Marker3D163" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.600001)
+
+[node name="Marker3D164" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.600001)
+
+[node name="Marker3D165" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.900001)
+
+[node name="Marker3D166" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.900001)
+
+[node name="Marker3D167" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.300001)
+
+[node name="Marker3D168" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.900001)
+
+[node name="Marker3D169" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.600001)
+
+[node name="Marker3D170" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.300001)
+
+[node name="Marker3D171" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.900001)
+
+[node name="Marker3D172" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.300001)
+
+[node name="Marker3D173" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.300001)
+
+[node name="Marker3D174" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.600001)
+
+[node name="Marker3D175" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.600001)
+
+[node name="Marker3D176" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.900001)
+
+[node name="Marker3D177" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.900001)
+
+[node name="Marker3D178" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.600001)
+
+[node name="Marker3D179" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.300001)
+
+[node name="Marker3D180" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.300001)
+
+[node name="Marker3D181" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.600001)
+
+[node name="Marker3D182" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.600001)
+
+[node name="Marker3D183" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.900001)
+
+[node name="Marker3D184" type="Marker3D" parent="Gaseosas"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.900001)
+
+[node name="Gaseosas2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7344, 0)
+script = ExtResource("3_w5vn3")
+
+[node name="Marker3D125" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.300001)
+
+[node name="Marker3D126" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.900001)
+
+[node name="Marker3D127" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.300001)
+
+[node name="Marker3D128" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.300001)
+
+[node name="Marker3D129" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.600001)
+
+[node name="Marker3D130" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.600001)
+
+[node name="Marker3D131" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.900001)
+
+[node name="Marker3D132" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.900001)
+
+[node name="Marker3D133" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.54628, 0.300001)
+
+[node name="Marker3D134" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.54628, 0.600001)
+
+[node name="Marker3D135" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.600001)
+
+[node name="Marker3D136" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.54628, 0.900001)
+
+[node name="Marker3D137" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.300001)
+
+[node name="Marker3D138" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.600001)
+
+[node name="Marker3D139" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.900001)
+
+[node name="Marker3D140" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.300001)
+
+[node name="Marker3D141" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.300001)
+
+[node name="Marker3D142" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.600001)
+
+[node name="Marker3D143" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.600001)
+
+[node name="Marker3D144" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.900001)
+
+[node name="Marker3D145" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.900001)
+
+[node name="Marker3D146" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.300001)
+
+[node name="Marker3D147" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.600001)
+
+[node name="Marker3D148" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.900001)
+
+[node name="Marker3D149" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.300001)
+
+[node name="Marker3D150" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.300001)
+
+[node name="Marker3D151" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.600001)
+
+[node name="Marker3D152" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.900001)
+
+[node name="Marker3D153" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.300001)
+
+[node name="Marker3D154" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.300001)
+
+[node name="Marker3D155" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.600001)
+
+[node name="Marker3D156" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.600001)
+
+[node name="Marker3D157" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.900001)
+
+[node name="Marker3D158" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.900001)
+
+[node name="Marker3D159" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.600001)
+
+[node name="Marker3D160" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.900001)
+
+[node name="Marker3D161" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.300001)
+
+[node name="Marker3D162" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.300001)
+
+[node name="Marker3D163" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.600001)
+
+[node name="Marker3D164" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.600001)
+
+[node name="Marker3D165" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.900001)
+
+[node name="Marker3D166" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.900001)
+
+[node name="Marker3D167" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.300001)
+
+[node name="Marker3D168" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.900001)
+
+[node name="Marker3D169" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.600001)
+
+[node name="Marker3D170" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.300001)
+
+[node name="Marker3D171" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.900001)
+
+[node name="Marker3D172" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.300001)
+
+[node name="Marker3D173" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.300001)
+
+[node name="Marker3D174" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.600001)
+
+[node name="Marker3D175" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.600001)
+
+[node name="Marker3D176" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.900001)
+
+[node name="Marker3D177" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.900001)
+
+[node name="Marker3D178" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.600001)
+
+[node name="Marker3D179" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.300001)
+
+[node name="Marker3D180" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.300001)
+
+[node name="Marker3D181" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.600001)
+
+[node name="Marker3D182" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.600001)
+
+[node name="Marker3D183" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.900001)
+
+[node name="Marker3D184" type="Marker3D" parent="Gaseosas2"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.900001)
+
+[node name="Gaseosas3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.10762, 0)
+script = ExtResource("4_egjcy")
+
+[node name="Marker3D125" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.300001)
+
+[node name="Marker3D126" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.900001)
+
+[node name="Marker3D127" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.300001)
+
+[node name="Marker3D128" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.300001)
+
+[node name="Marker3D129" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.600001)
+
+[node name="Marker3D130" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.600001)
+
+[node name="Marker3D131" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.900001)
+
+[node name="Marker3D132" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.900001)
+
+[node name="Marker3D133" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.54736, 0.300001)
+
+[node name="Marker3D134" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.54736, 0.600001)
+
+[node name="Marker3D135" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.600001)
+
+[node name="Marker3D136" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.54736, 0.900001)
+
+[node name="Marker3D137" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.300001)
+
+[node name="Marker3D138" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.600001)
+
+[node name="Marker3D139" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.900001)
+
+[node name="Marker3D140" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.300001)
+
+[node name="Marker3D141" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.300001)
+
+[node name="Marker3D142" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.600001)
+
+[node name="Marker3D143" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.600001)
+
+[node name="Marker3D144" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.900001)
+
+[node name="Marker3D145" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.900001)
+
+[node name="Marker3D146" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.300001)
+
+[node name="Marker3D147" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.600001)
+
+[node name="Marker3D148" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.900001)
+
+[node name="Marker3D149" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.300001)
+
+[node name="Marker3D150" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.300001)
+
+[node name="Marker3D151" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.600001)
+
+[node name="Marker3D152" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.900001)
+
+[node name="Marker3D153" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.300001)
+
+[node name="Marker3D154" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.300001)
+
+[node name="Marker3D155" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.600001)
+
+[node name="Marker3D156" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.600001)
+
+[node name="Marker3D157" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.900001)
+
+[node name="Marker3D158" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.900001)
+
+[node name="Marker3D159" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.600001)
+
+[node name="Marker3D160" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.900001)
+
+[node name="Marker3D161" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.300001)
+
+[node name="Marker3D162" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.300001)
+
+[node name="Marker3D163" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.600001)
+
+[node name="Marker3D164" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.600001)
+
+[node name="Marker3D165" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.900001)
+
+[node name="Marker3D166" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.900001)
+
+[node name="Marker3D167" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.300001)
+
+[node name="Marker3D168" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.900001)
+
+[node name="Marker3D169" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.600001)
+
+[node name="Marker3D170" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.300001)
+
+[node name="Marker3D171" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.900001)
+
+[node name="Marker3D172" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.300001)
+
+[node name="Marker3D173" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.300001)
+
+[node name="Marker3D174" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.600001)
+
+[node name="Marker3D175" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.600001)
+
+[node name="Marker3D176" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.900001)
+
+[node name="Marker3D177" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.900001)
+
+[node name="Marker3D178" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.600001)
+
+[node name="Marker3D179" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.300001)
+
+[node name="Marker3D180" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.300001)
+
+[node name="Marker3D181" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.600001)
+
+[node name="Marker3D182" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.600001)
+
+[node name="Marker3D183" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.900001)
+
+[node name="Marker3D184" type="Marker3D" parent="Gaseosas3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.900001)
+
+[node name="Gaseosas4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.42134, 0)
+script = ExtResource("2_5n4d0")
+
+[node name="Marker3D125" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.300001)
+
+[node name="Marker3D126" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.900001)
+
+[node name="Marker3D127" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.300001)
+
+[node name="Marker3D128" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.300001)
+
+[node name="Marker3D129" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.600001)
+
+[node name="Marker3D130" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.600001)
+
+[node name="Marker3D131" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.32039, 4.55414, 0.900001)
+
+[node name="Marker3D132" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.4166, 4.55414, 0.900001)
+
+[node name="Marker3D133" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.52772, 0.300001)
+
+[node name="Marker3D134" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.52772, 0.600001)
+
+[node name="Marker3D135" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.32039, 4.55414, 0.600001)
+
+[node name="Marker3D136" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.22039, 4.52772, 0.900001)
+
+[node name="Marker3D137" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.300001)
+
+[node name="Marker3D138" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.600001)
+
+[node name="Marker3D139" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.92039, 4.55414, 0.900001)
+
+[node name="Marker3D140" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.300001)
+
+[node name="Marker3D141" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.300001)
+
+[node name="Marker3D142" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.600001)
+
+[node name="Marker3D143" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.600001)
+
+[node name="Marker3D144" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.02039, 4.55414, 0.900001)
+
+[node name="Marker3D145" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.12039, 4.53124, 0.900001)
+
+[node name="Marker3D146" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.300001)
+
+[node name="Marker3D147" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.600001)
+
+[node name="Marker3D148" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.02039, 4.55414, 0.900001)
+
+[node name="Marker3D149" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.300001)
+
+[node name="Marker3D150" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.300001)
+
+[node name="Marker3D151" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.600001)
+
+[node name="Marker3D152" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.900001)
+
+[node name="Marker3D153" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.300001)
+
+[node name="Marker3D154" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.300001)
+
+[node name="Marker3D155" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.600001)
+
+[node name="Marker3D156" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.600001)
+
+[node name="Marker3D157" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.72039, 4.5156, 0.900001)
+
+[node name="Marker3D158" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.82039, 4.55414, 0.900001)
+
+[node name="Marker3D159" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.27962, 4.55414, 0.600001)
+
+[node name="Marker3D160" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.279607, 4.55414, 0.900001)
+
+[node name="Marker3D161" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.300001)
+
+[node name="Marker3D162" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.300001)
+
+[node name="Marker3D163" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.600001)
+
+[node name="Marker3D164" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.600001)
+
+[node name="Marker3D165" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.37961, 4.55414, 0.900001)
+
+[node name="Marker3D166" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.27961, 4.55414, 0.900001)
+
+[node name="Marker3D167" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.300001)
+
+[node name="Marker3D168" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.900001)
+
+[node name="Marker3D169" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4.63846, 4.57261, 0.600001)
+
+[node name="Marker3D170" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.300001)
+
+[node name="Marker3D171" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.900001)
+
+[node name="Marker3D172" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.300001)
+
+[node name="Marker3D173" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.300001)
+
+[node name="Marker3D174" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.600001)
+
+[node name="Marker3D175" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.600001)
+
+[node name="Marker3D176" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6.83846, 4.57261, 0.900001)
+
+[node name="Marker3D177" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.73846, 4.57261, 0.900001)
+
+[node name="Marker3D178" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7.93846, 4.57261, 0.600001)
+
+[node name="Marker3D179" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.300001)
+
+[node name="Marker3D180" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.300001)
+
+[node name="Marker3D181" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.600001)
+
+[node name="Marker3D182" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.600001)
+
+[node name="Marker3D183" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10.2719, 4.57261, 0.900001)
+
+[node name="Marker3D184" type="Marker3D" parent="Gaseosas4"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9.03846, 4.57261, 0.900001)

@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dgfpnbs84gwjp"]
+
+[ext_resource type="PackedScene" uid="uid://dj5huuym7ojtn" path="res://Modelos 3D/Modelado - Productos/Desayuno/YERBA.glb" id="1_ca0no"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://Scripts/Shaders/default_object.gdshader" id="2_4xlx2"]
+[ext_resource type="Texture2D" uid="uid://cpcsxxx7yyacd" path="res://Texturas/Texturas - Productos/Desayuno/Yerba/yerbaRoja_TEX.png" id="2_ca0no"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mdv0e"]
+render_priority = 0
+shader = ExtResource("2_4xlx2")
+shader_parameter/color_texture = ExtResource("2_ca0no")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[node name="YERBA BASE" instance=ExtResource("1_ca0no")]
+
+[node name="YERBA" parent="." index="0"]
+transform = Transform3D(0.39, 0, 0, 0, -1.70474e-08, -0.39, 0, 0.39, -1.70474e-08, 0, 0, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_mdv0e")

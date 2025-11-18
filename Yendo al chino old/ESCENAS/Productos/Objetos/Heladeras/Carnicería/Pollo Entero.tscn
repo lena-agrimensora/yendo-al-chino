@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=4 uid="uid://yec8l7b54x1t"]
+
+[ext_resource type="Script" uid="uid://c7jq5jbowl22j" path="res://ESCENAS/Productos/Producto.gd" id="1_062p7"]
+[ext_resource type="Texture2D" uid="uid://8awvw45rn3lr" path="res://Modelos 3D/Modelado - Productos/Heladeras/POLLO_pollo_TEX.png" id="2_l8gmm"]
+[ext_resource type="Shader" uid="uid://db5p6il5kj2gs" path="res://Scripts/Shaders/default_object.gdshader" id="3_rqmvo"]
+[ext_resource type="Texture2D" uid="uid://dfl3r7rgu20n6" path="res://Texturas/Texturas - Productos/Heladeras/Carne/pollo_TEX.png" id="4_epmnq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dmkuu"]
+resource_name = "POLLO MAT"
+cull_mode = 2
+albedo_texture = ExtResource("2_l8gmm")
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_i2ssv"]
+_surfaces = [{
+"aabb": AABB(-1.49169, -2.06999, -0.0450001, 2.98339, 4.13998, 0.0900001),
+"format": 34896613377,
+"index_count": 132,
+"index_data": PackedByteArray("BwAMAAgADAADAAgACAADAA0ACAANAAcADAAJAAMADQADAAkAAgAJAAwABwACAAwADQAJAAYAAgAGAAkABwANAA4ADgANAAYADwACAAcABwAOAA8ADwAQAAIAEAAGAAIADwAOABEADgAGABIAEAASAAYAEgARAA4AEAAPABMADwARABMAFAASABAAEAATABQAEgALABEAFAALABIAEwAKABQACgALABQACgAVAAsAEQALABUAEwARAAUAEQAVAAUAEwAFAAAAEwAAAAoAAAAFABYAAQAVAAoAAAABAAoABQAVAAQAAQAEABUABQAEABYAAAAXAAEAFwAEAAEAAAAWABcAFwAWAAQA"),
+"lods": [0.414005, PackedByteArray("BwACAAgAAgADAAgACAADAAcAAgAJAAMAAwAJAAYAAgAGAAkABQADAAYABwADAAUACgAGAAIABwAKAAIABgALAAUACgALAAYABwAFAAAACgAHAAAABQALAAQACgAEAAsAAAAFAAQAAQAEAAoAAAAEAAEAAAABAAoA"), 0.479988, PackedByteArray("AAABAAIAAgADAAAAAAAEAAEAAQAEAAIAAAADAAUAAAAFAAQABQADAAYAAgAGAAMABQAGAAQAAgAEAAYA")],
+"name": "POLLO MAT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("4ApXA/7/AAAAAIbu/v8AAB71p/z//wAA//94EQAAAAAAAIbuAAAAAOAKVwMAAAAAHvWn/AAAAAAe9VcD/v8AAP//eBH+/wAA//+G7gAAAADgCqf8//8AAPwh//8AAAAA//+G7v7/AAAe9VcDAAAAAALeAAAAAAAAAt4AAP7/AAAC3v////8AAPwhAAAAAAAAAt7//wAAAAD8IQAA/v8AAPwh/////wAA4Aqn/AAAAAAAAHgRAAAAAAAAeBH+/wAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xv0jd"]
+resource_name = "POLLO_Plane_002"
+_surfaces = [{
+"aabb": AABB(-1.49169, -2.06999, -0.0450001, 2.98339, 4.13998, 0.0900001),
+"attribute_data": PackedByteArray("0uu79ePwDRe3fq0JdHS79UgCW+hZB60JhnkNFyTzAABx9Z2PJPP//3H1//9x9QAAvff//3H1YXC99wAAvfdhcLd+u/WleVvo0uutCUgCDRexaYIGJPOdjyTzZZlx9cgJvfeZZnH1UFyleQ0Xeonm+HqJggYP4eb4D+GCBuPwW+hZB7v1HBLm+BwSggaxaeb4dHStCYZ5W+hx9WWZJPNlmSTzyAlx9Z2PJPOdj3H1yAm990gKcfVICnH1rqMk866jcfVlmSTzyAlx9QAAcfU29r33NvZx9f//vfc29nH1YXC992FwcfU29iTzrqNx9bb1JPO29XH1rqNx9VBcvfdQXHH1mWYk87b1cfW29XH1mWa995lmvfdQXHH1SAq990gK"),
+"format": 34896613399,
+"index_count": 132,
+"index_data": PackedByteArray("EAAaABEAEAACABoAGwACABAAGwAcAAIAHAAbAB0AHAAdAB4AHQASAB4AHQAAABIAAAABABIAAAAfAAEAIAATAAUAIAAEABMAIQAgAAUAIQAFACIAIgAjACEAIgAUACMAIwAUACQAIwAkAAMAAwAkAAYAAwAGACUAFQAmACcAFQAIACYAKAApACoAKAArACkALAALAA4ALAAtAAsAFgAuAC8AFgAwAC4ABwAXADEABwAyABcADAAzADQADAA1ADMANgA3ADgANgA5ADcAOgA7ADwAOgA9ADsAGAA+AD8AGABAAD4AQQAKAAkAQQBCAAoADwBDAEQADwANAEMARQBGAEcARQAZAEYA"),
+"lods": [0.414005, PackedByteArray("EAACABEAEAASAAIAEgAQAAAAAAABABIABAATAAUAAwAEAAUABQAUAAMAAwAUAAYAFQAIABYABwAIABUABwAXAAgABwALABcAFgAIAAoAFgAKAAkADAAKAA0ADAANAA8ADwANABgAGAALAA4AGAANABkAGAAZAAsA"), 0.479988, PackedByteArray("AAABAAIAAwAEAAUAAwAFAAYABwAIAAkACQAIAAoABwALAAgADAAKAA0ADgANAAsADAANAA8ADwANAA4A")],
+"material": SubResource("StandardMaterial3D_dmkuu"),
+"name": "POLLO MAT",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 72,
+"vertex_data": PackedByteArray("4ApXA/7/AAAAAIbu/v8AAB71p/z//wAA4ApXAwAA/////3gRAAD//x71p/wAAP//AACG7gAA//8e9af8//+Owv//eBEAAI7C4ApXA/7/ItrgClcDAAAi2h71p/wAACLa4ApXA/7/jsIAAIbuAACOwh71p/z//yLaAACG7v7/jsIe9VcD/v8AAP//eBH+/wAA4Aqn/P//AAD//4buAAD///wh//8AAP////94Ef7/jsIe9VcD/v/V0P//hu4AAI7C4Aqn/P//1dD8If//AABU1f//hu7+/wAAAt4AAP7/AAAC3v////8AAPwhAAD+/wAA/CH/////AAAAAHgR/v8AAB71VwMAAP//At4AAAAA//8C3v//AAD///whAAAAAP//4Aqn/AAA//8AAHgRAAD//x71VwMAAI7CHvVXA/7/jsL//4bu/v//v///eBEAAP+///94Ef7//7///4buAAD/vwLe/////yLaAt7//wAAItoC3gAAAADV0ALeAAD+/9XQHvVXAwAA1dD//4bu/v+Owh71p/wAAI7CAAB4EQAAjsIAAHgR/v+OwuAKVwMAAI7CAAB4Ef7//78AAIbuAAD/vwAAhu7+//+/AAB4EQAA/78C3gAA/v9U1fwhAAAAAFTV/CEAAP7/VNUC3gAAAABU1fwh//8AANXQ/CH/////1dDgCqf8AADV0PwhAAD+/yLa/CEAAAAAItrgCqf8AACOwuAKp/z//47C/CH/////VNUC3v//AABU1QLe/////1TV/3//f/9//3//f/9//3/+//9//v//f/7//3/+/6ir1BUqaqkrmFLNWphSzVpmrTGlVlQq6tSVVdRmrTGl1JVV1P9//3//f/9//3//f/9//v//f/7/KmqpK0FYfE+oq9QVvaeCsKqqqqr/f/9//3//f/9//3//f/9//3//f/9//3//f/7//3/+//9//v//f/7//3/+//9//v8qaqkrKmqpK/9/AAD/fwAA/38AAP9/AABmrTGlZq0xpUFYfE9BWHxPQVh8T6ir1BWoq9QVVlQq6lZUKupWVCrq/3////9/////f////3///1RVVFVUVVRVVFVUVVRVVFW9p4KwvaeCsL2ngrCYUs1amFLNWtSVVdTUlVXUqqqqqqqqqqqqqqqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_i2ssv")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v13mh"]
+render_priority = 0
+shader = ExtResource("3_rqmvo")
+shader_parameter/color_texture = ExtResource("4_epmnq")
+shader_parameter/vertex_wobble = 0.08
+shader_parameter/affine_mapping = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rbtri"]
+size = Vector3(0.92073, 1.2403, 0.0523376)
+
+[node name="Pollo Entero" type="RigidBody3D" groups=["Objetos"]]
+script = ExtResource("1_062p7")
+
+[node name="Pollo Entero" type="Node3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="POLLO" type="MeshInstance3D" parent="Pollo Entero"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.06999, 0)
+mesh = SubResource("ArrayMesh_xv0jd")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("ShaderMaterial_v13mh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -1, -8.74228e-08, 0, 8.74228e-08, -1, 0.00225085, 0.62119, 0.000427231)
+shape = SubResource("BoxShape3D_rbtri")
+
+[node name="Producto" type="Node" parent="."]
