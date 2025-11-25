@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=4 uid="uid://cxkeh1wd2pbt5"]
+[gd_scene load_steps=10 format=4 uid="uid://cxkeh1wd2pbt5"]
 
-[ext_resource type="Script" uid="uid://bj76ms0tiwom8" path="res://scripts/managers/Gondola_Manager.gd" id="1_60uwg"]
+[ext_resource type="Script" uid="uid://ciuntqhxelop4" path="res://scripts/managers/gondola_manager_new.gd" id="1_60uwg"]
 [ext_resource type="Texture2D" uid="uid://dpg3bx7vhjeno" path="res://assets/modelos - texturas/muebles/exhibidor pan/exhibidor-pan_exhibidor-pan.png" id="2_jucm6"]
+[ext_resource type="Resource" uid="uid://bdbc2ciipuxwh" path="res://scripts/resources/product_catalog_panaderia.tres" id="2_ptq86"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6dqpx"]
 resource_name = "exhibidor-pan"
@@ -53,7 +54,10 @@ size = Vector3(2.18164, 0.351349, 7.27496)
 size = Vector3(3.31032, 1.54041, 7.32532)
 
 [node name="GondolaPanaderia" type="StaticBody3D"]
+transform = Transform3D(-4.371137e-08, 0, -0.9999996, 0, 1, 0, 0.9999996, 0, -4.371137e-08, 0, 0, 0)
 script = ExtResource("1_60uwg")
+product_db = ExtResource("2_ptq86")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
 
 [node name="exhibidor" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.9, 0, 0, 0, 0.675, 0, 0, 0, 3.996, 0, 0.665343, 0)

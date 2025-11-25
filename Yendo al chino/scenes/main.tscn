@@ -1,11 +1,10 @@
-[gd_scene load_steps=263 format=4 uid="uid://bq6craccgoo5m"]
+[gd_scene load_steps=191 format=4 uid="uid://bq6craccgoo5m"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://scenes/controls/proto_controller/proto_controller.tscn" id="1_x20aj"]
 [ext_resource type="PackedScene" uid="uid://chcvs7ckorihy" path="res://scenes/UI/Menu_Pausa.tscn" id="2_inrgs"]
 [ext_resource type="PackedScene" uid="uid://dx7mde512w05i" path="res://scenes/personajes/chinoreal.tscn" id="2_kaowk"]
 [ext_resource type="PackedScene" uid="uid://qidnqa5ws0kc" path="res://scenes/personajes/fumador_2.tscn" id="3_1oe3y"]
 [ext_resource type="FontFile" uid="uid://c6kcrwk4fdltc" path="res://assets/fonts/Handwriting-Regular.otf" id="3_in5rc"]
-[ext_resource type="Script" uid="uid://bj76ms0tiwom8" path="res://scripts/managers/Gondola_Manager.gd" id="5_ow8of"]
 [ext_resource type="Texture2D" uid="uid://c8pd0p8urgiix" path="res://assets/modelos - texturas/ambiente/decoraciones/carteles/QUESOS.png" id="6_jeqng"]
 [ext_resource type="PackedScene" uid="uid://dl1fw8xjn2sqp" path="res://scenes/objetos/caja_singular.tscn" id="6_tlwtu"]
 [ext_resource type="PackedScene" uid="uid://2aa43gti1sxv" path="res://scenes/carrito/carrito.tscn" id="8_1v8b0"]
@@ -14,11 +13,11 @@
 [ext_resource type="PackedScene" uid="uid://cifvxvfnf7074" path="res://scenes/personajes/Npc_movimiento.tscn" id="10_dcbrs"]
 [ext_resource type="PackedScene" uid="uid://cs046xrwlq0qq" path="res://scenes/muebles/Gondola.tscn" id="10_esrwe"]
 [ext_resource type="PackedScene" uid="uid://4dhan3kuujdb" path="res://scenes/muebles/Muebles con productos/Heladera/Heladera Grande.tscn" id="10_mu7hw"]
+[ext_resource type="Script" uid="uid://ciuntqhxelop4" path="res://scripts/managers/gondola_manager_new.gd" id="11_07pt3"]
 [ext_resource type="PackedScene" uid="uid://bdjsnypc1ongt" path="res://assets/modelos - texturas/objetos/canastos/pila-canastos.glb" id="11_mu7hw"]
-[ext_resource type="Script" uid="uid://bapcaa5m51wob" path="res://scripts/resources/product_groups.gd" id="11_ow8of"]
-[ext_resource type="Script" uid="uid://bko58ihcbyo8k" path="res://scripts/resources/product_config.gd" id="12_hj4tt"]
 [ext_resource type="Resource" uid="uid://dh584h8tmvpy3" path="res://scripts/resources/product_scenes_catalog.tres" id="13_gm02q"]
 [ext_resource type="PackedScene" uid="uid://b83dlj83mqai2" path="res://scenes/muebles/Muebles Base/Caja Registradora.tscn" id="13_j2oyp"]
+[ext_resource type="Resource" uid="uid://bjq1gyxvx0r5h" path="res://scripts/resources/product_catalog_bebidas_chicas.tres" id="14_8lcmr"]
 [ext_resource type="Script" uid="uid://ql5l2pqmx2s0" path="res://scenes/managers/list_manager.gd" id="17_qgn5v"]
 [ext_resource type="PackedScene" uid="uid://ddtcxrlvmwmsb" path="res://assets/modelos - texturas/personajes/VIEJO SENTADO.glb" id="18_5w2cy"]
 [ext_resource type="Script" uid="uid://cq83d72bqny30" path="res://scripts/personajes/Viejo_CAJA.gd" id="18_jeqng"]
@@ -108,6 +107,8 @@
 [ext_resource type="Texture2D" uid="uid://ddfclow2c2txh" path="res://assets/modelos - texturas/ambiente/decoraciones/carteles/Cartel cereales.png" id="98_writn"]
 [ext_resource type="PackedScene" uid="uid://drbmbxhe5vmwi" path="res://scenes/muebles/Muebles con productos/Exibidor de carne/mostrador_de_carne_con_productos.tscn" id="106_wvlrk"]
 [ext_resource type="PackedScene" uid="uid://cxkeh1wd2pbt5" path="res://scenes/muebles/Mostrador de Pan.tscn" id="107_engxj"]
+[ext_resource type="Resource" uid="uid://67nbw86huqgo" path="res://scripts/resources/product_catalog_carniceria.tres" id="111_37xlc"]
+[ext_resource type="Script" uid="uid://dhochi7h1ut1i" path="res://scripts/managers/gondolas_especiales_spawner.gd" id="115_8lcmr"]
 [ext_resource type="PackedScene" uid="uid://bwuikx4uro0fv" path="res://scenes/muebles/Muebles con productos/Verduleria/verduleria_completa.tscn" id="126_esrwe"]
 [ext_resource type="PackedScene" uid="uid://5hxb76o3n22o" path="res://scenes/muebles/Gondola-pared.tscn" id="129_683hg"]
 
@@ -140,174 +141,6 @@ outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_cd4v2"]
 size = Vector3(0.5, 0.3, 0.5)
-
-[sub_resource type="Resource" id="Resource_kqx4a"]
-script = ExtResource("12_hj4tt")
-categoria = "desayuno/mermeladas_dulces"
-porcentaje = 50.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_qr8e4"]
-script = ExtResource("12_hj4tt")
-categoria = "desayuno/infusiones"
-porcentaje = 50.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_pfcs8"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Lado1")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_kqx4a"), SubResource("Resource_qr8e4")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_50d7c"]
-script = ExtResource("12_hj4tt")
-categoria = "desayuno/cereales_barritas"
-porcentaje = 33.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_d7502"]
-script = ExtResource("12_hj4tt")
-categoria = "desayuno/polvos"
-porcentaje = 34.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_8ojta"]
-script = ExtResource("12_hj4tt")
-categoria = "desayuno/galletitas_bizcochitos_tostadas"
-porcentaje = 33.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_ruytr"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Lado2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_50d7c"), SubResource("Resource_d7502"), SubResource("Resource_8ojta")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_avynn"]
-script = ExtResource("12_hj4tt")
-categoria = "almacen/enlatados_conservas"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_eo1ke"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Lado1")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_avynn")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_kec7f"]
-script = ExtResource("12_hj4tt")
-categoria = "almacen/pastas_secas"
-porcentaje = 50.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_jgau6"]
-script = ExtResource("12_hj4tt")
-categoria = "almacen/snacks"
-porcentaje = 50.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_j5vj0"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Lado2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_kec7f"), SubResource("Resource_jgau6")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_6a1ct"]
-script = ExtResource("12_hj4tt")
-categoria = "limpieza/limpieza_hogar"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_xhrfq"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Lado1")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_6a1ct")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_jexbj"]
-script = ExtResource("12_hj4tt")
-categoria = "limpieza/limpieza_ropa"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_2xesh"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Lado2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_jexbj")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_6r4by"]
-script = ExtResource("12_hj4tt")
-categoria = "perfumeria/higiene_personal"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_0n3pv"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Lado1")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_6r4by")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_0gito"]
-script = ExtResource("12_hj4tt")
-categoria = "perfumeria/cuidado_cabello"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_lgnnt"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Lado2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_0gito")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_ga3rw"]
-script = ExtResource("12_hj4tt")
-categoria = "lacteos_congelados/lacteos"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_vny5k"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Estante")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_ga3rw")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_f5chs"]
-script = ExtResource("12_hj4tt")
-categoria = "lacteos_congelados/lacteos"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_8lcmr"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Estante2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_f5chs")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_wvlrk"]
-script = ExtResource("12_hj4tt")
-categoria = "bebidas/gaseosas_chicas"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_engxj"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Estante")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_wvlrk")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_raiwf"]
-script = ExtResource("12_hj4tt")
-categoria = "bebidas/gaseosas_chicas"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_roort"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Estante2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_raiwf")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jeqng"]
 size = Vector3(2.2, 4, 1)
@@ -1066,276 +899,6 @@ _bundled = {
 [sub_resource type="BoxShape3D" id="BoxShape3D_irjbd"]
 size = Vector3(1000, 50, 10)
 
-[sub_resource type="Resource" id="Resource_yton5"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/frutas/pera"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_4ahvx"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Peras")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_yton5")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_eh25q"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/frutas/limon"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_joh2r"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Limones")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_eh25q")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_2cr71"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/verduras/calabaza"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_1hbcg"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Calabazas")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_2cr71")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_m4o51"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/verduras/berenjena"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_jp61a"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Berenjenas")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_m4o51")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_esrwe"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/frutas/tomate"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_4b36k"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Tomates")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_esrwe")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_n756u"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/frutas/naranja"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_1v8b0"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Naranjas")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_n756u")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_k33j2"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/frutas/mandarina"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_683hg"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Mandarinas")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_k33j2")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_2cjf7"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/frutas/banana"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_o7pr5"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Bananas")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_2cjf7")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_4e8e3"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/frutas/manzana_verde"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_hyj2l"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Manzana")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_4e8e3")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_5gihh"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/verduras/lechuga"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_vuqay"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Lechuga")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_5gihh")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_407df"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/verduras/choclo"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_wfmv0"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Choclo")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_407df")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_4sqen"]
-script = ExtResource("12_hj4tt")
-categoria = "verduleria/verduras/zanahoria"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_wxrqn"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Spawn_Zanahoria")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_4sqen")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_hcsi8"]
-script = ExtResource("12_hj4tt")
-categoria = "bebidas/gaseosas"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_ow8of"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("gondola-pared/SpawnPoints/Estante2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_hcsi8")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_wi1le"]
-script = ExtResource("12_hj4tt")
-categoria = "bebidas/gaseosas"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_hj4tt"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("gondola-pared/SpawnPoints/Estante3")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_wi1le")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_la3dr"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("")
-products_config = Array[ExtResource("12_hj4tt")]([])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_w6a6y"]
-script = ExtResource("12_hj4tt")
-categoria = "carniceria/carnes_varias"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_knlx5"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Carne/Estante")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_w6a6y")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_pes4l"]
-script = ExtResource("12_hj4tt")
-categoria = "carniceria/pollo_granja"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_s5e0g"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Milanesas y Pollo/Estante")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_pes4l")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_oh722"]
-script = ExtResource("12_hj4tt")
-categoria = "carniceria/pescados_mariscos"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_m4lup"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Carne/Estante")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_oh722")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_redio"]
-script = ExtResource("12_hj4tt")
-categoria = "carniceria/pescados_mariscos"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_aiee3"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Milanesas y Pollo/Estante")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_redio")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_uya8e"]
-script = ExtResource("12_hj4tt")
-categoria = "panaderia/panes"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_gm02q"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/EstanteSuperior")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_uya8e")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_2tiby"]
-script = ExtResource("12_hj4tt")
-categoria = "panaderia/panes"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_07pt3"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/EstanteSuperior2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_2tiby")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_1m7le"]
-script = ExtResource("12_hj4tt")
-categoria = "panaderia/panes"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_37xlc"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Columna1")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_1m7le")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
-[sub_resource type="Resource" id="Resource_qqwal"]
-script = ExtResource("12_hj4tt")
-categoria = "panaderia/panes"
-porcentaje = 100.0
-metadata/_custom_type_script = "uid://bko58ihcbyo8k"
-
-[sub_resource type="Resource" id="Resource_83607"]
-script = ExtResource("11_ow8of")
-target_spawn_points = NodePath("Estantes/SpawnPoints/Columna2")
-products_config = Array[ExtResource("12_hj4tt")]([SubResource("Resource_qqwal")])
-metadata/_custom_type_script = "uid://bapcaa5m51wob"
-
 [node name="Main" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -1692,8 +1255,9 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.8, 
 
 [node name="Gondola" parent="Gondolas" instance=ExtResource("10_esrwe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -16.091, 3, 5.778)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_pfcs8"), SubResource("Resource_ruytr")])
+script = ExtResource("11_07pt3")
 product_db = ExtResource("13_gm02q")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4"), NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
 
 [node name="Marker_estante13" parent="Gondolas/Gondola/Estantes/SpawnPoints/Lado1/Columna1/Estante1_2" index="12"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.0494)
@@ -1715,55 +1279,68 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.370124)
 
 [node name="Gondola2" parent="Gondolas" instance=ExtResource("10_esrwe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.1214, 3, 5.778)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_eo1ke"), SubResource("Resource_j5vj0")])
+script = ExtResource("11_07pt3")
 product_db = ExtResource("13_gm02q")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4"), NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
 
 [node name="Gondola3" parent="Gondolas" instance=ExtResource("10_esrwe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.6257, 3, 5.778)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_xhrfq"), SubResource("Resource_2xesh")])
+script = ExtResource("11_07pt3")
 product_db = ExtResource("13_gm02q")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4"), NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
 
 [node name="Gondola4" parent="Gondolas" instance=ExtResource("10_esrwe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.6628, 3, 5.778)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_0n3pv"), SubResource("Resource_lgnnt")])
+script = ExtResource("11_07pt3")
 product_db = ExtResource("13_gm02q")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4"), NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
 
 [node name="Heladeras" type="Node3D" parent="."]
 
 [node name="heladera" parent="Heladeras" instance=ExtResource("9_oc42b")]
-transform = Transform3D(-3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, -17.7802, -0.625617, -115.43)
-product_db = ExtResource("13_gm02q")
-
-[node name="heladera-larga" parent="Heladeras" instance=ExtResource("10_mu7hw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8233, -0.491277, -84.8171)
-product_db = ExtResource("13_gm02q")
+transform = Transform3D(-3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, -16.552162, -0.625617, -115.43)
+script = ExtResource("11_07pt3")
+product_db = ExtResource("14_8lcmr")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
 
 [node name="heladera-larga2" parent="Heladeras" instance=ExtResource("10_mu7hw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8233, -0.491277, -65.2626)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_vny5k"), SubResource("Resource_8lcmr")])
-product_db = ExtResource("13_gm02q")
 
 [node name="heladera2" parent="Heladeras" instance=ExtResource("9_oc42b")]
 transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -60.6532)
-product_db = ExtResource("13_gm02q")
+script = ExtResource("11_07pt3")
+product_db = ExtResource("14_8lcmr")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
 
 [node name="heladera3" parent="Heladeras" instance=ExtResource("9_oc42b")]
 transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -56.6532)
-product_db = ExtResource("13_gm02q")
+script = ExtResource("11_07pt3")
+product_db = ExtResource("14_8lcmr")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
 
 [node name="heladera4" parent="Heladeras" instance=ExtResource("9_oc42b")]
 transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -64.8277)
+script = ExtResource("11_07pt3")
+product_db = ExtResource("14_8lcmr")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
 
 [node name="heladera6" parent="Heladeras" instance=ExtResource("9_oc42b")]
 transform = Transform3D(1.04907e-07, 0, 0.8, 0, 0.8, 0, -0.8, 0, 1.04907e-07, -19.1027, -0.625617, -43.1783)
+script = ExtResource("11_07pt3")
+product_db = ExtResource("14_8lcmr")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
 
 [node name="heladera7" parent="Heladeras" instance=ExtResource("9_oc42b")]
 transform = Transform3D(1.04907e-07, 0, 0.8, 0, 0.8, 0, -0.8, 0, 1.04907e-07, -15.1027, -0.625617, -43.1783)
+script = ExtResource("11_07pt3")
+product_db = ExtResource("14_8lcmr")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
 
 [node name="heladera5" parent="Heladeras" instance=ExtResource("9_oc42b")]
 transform = Transform3D(-0.799998, 0, -0.0016893, 0, 0.8, 0, 0.0016893, 0, -0.799998, 27.881, -0.626, -69.176)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_engxj"), SubResource("Resource_roort")])
-product_db = ExtResource("13_gm02q")
+script = ExtResource("11_07pt3")
+product_db = ExtResource("14_8lcmr")
+spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
 
 [node name="Estante2" parent="Heladeras/heladera5/Estantes/SpawnPoints" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.503657, 0.0117626, -7.62939e-06, -1.92252)
@@ -1807,7 +1384,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -85.4066)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.23033, 22.6607)
 
 [node name="PathFollow3D" parent="Personajes/Node3D/Path3D" index="0"]
-transform = Transform3D(-4.37113e-08, 0, -0.999997, 0, 1, 0, 0.999997, 0, -4.37113e-08, 0, 0, 0)
+transform = Transform3D(-4.3711257e-08, 0, -0.999997, 0, 1, 0, 0.999997, 0, -4.3711257e-08, 0, 0, 0)
 max_move_duration = 6.0
 max_pause_duration = 6.0
 
@@ -1931,17 +1508,6 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -29.52
 [node name="Marker3D2" type="Marker3D" parent="Pearto"]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 28, 5.8, -70.3)
 
-[node name="VerduleriaCompleta" parent="." instance=ExtResource("126_esrwe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7545, -1.40876, -112.374)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_4ahvx"), SubResource("Resource_joh2r"), SubResource("Resource_1hbcg"), SubResource("Resource_jp61a"), SubResource("Resource_4b36k"), SubResource("Resource_1v8b0"), SubResource("Resource_683hg"), SubResource("Resource_o7pr5"), SubResource("Resource_hyj2l"), SubResource("Resource_vuqay"), SubResource("Resource_wfmv0"), SubResource("Resource_wxrqn")])
-product_db = ExtResource("13_gm02q")
-
-[node name="Gondolas Pared" parent="." instance=ExtResource("129_683hg")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 28.6697, -0.836301, -88.8036)
-script = ExtResource("5_ow8of")
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_ow8of"), SubResource("Resource_hj4tt"), SubResource("Resource_la3dr")])
-product_db = ExtResource("13_gm02q")
-
 [node name="Decoraciones" type="Node3D" parent="."]
 transform = Transform3D(0.274412, 0, 0.961612, 0, 1, 0, -0.961612, 0, 0.274412, -8.17609, -0.154177, -49.4976)
 
@@ -1985,22 +1551,40 @@ transform = Transform3D(0.00176281, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.001762
 
 [node name="Mostrador Carne" parent="Carniceria" instance=ExtResource("106_wvlrk")]
 transform = Transform3D(-0.961126, 0, 0.276107, 0, 1, 0, -0.276107, 0, -0.961126, 54.2852, -3.22018, 37.4701)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_knlx5"), SubResource("Resource_s5e0g")])
-product_db = ExtResource("13_gm02q")
+script = ExtResource("11_07pt3")
+product_db = ExtResource("111_37xlc")
+spawn_groups = Array[NodePath]([NodePath("Carne/Estante"), NodePath("Milanesas y Pollo/Estante")])
 
 [node name="Mostrador Carne 2" parent="Carniceria" instance=ExtResource("106_wvlrk")]
 transform = Transform3D(-0.999999, 0, -1.73859e-05, 0, 1, 0, 1.73859e-05, 0, -0.999999, 55.3424, -3.22018, 28.9858)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_m4lup"), SubResource("Resource_aiee3")])
-product_db = ExtResource("13_gm02q")
+script = ExtResource("11_07pt3")
+product_db = ExtResource("111_37xlc")
+spawn_groups = Array[NodePath]([NodePath("Carne"), NodePath("Milanesas y Pollo")])
 
 [node name="Mostrador Carne 3" parent="Carniceria" instance=ExtResource("106_wvlrk")]
 transform = Transform3D(-0.91431, 0, -0.405014, 0, 1, 0, 0.405014, 0, -0.91431, 53.6452, -3.22018, 20.9427)
-product_db = ExtResource("13_gm02q")
+script = ExtResource("11_07pt3")
+product_db = ExtResource("111_37xlc")
+spawn_groups = Array[NodePath]([NodePath("Carne"), NodePath("Milanesas y Pollo")])
 
-[node name="Panaderia" parent="." instance=ExtResource("107_engxj")]
-transform = Transform3D(0.0159167, 0, -0.999873, 0, 1, 0, 0.999873, 0, 0.0159167, -24.2495, -1.24428, -113.505)
-products_spawn_config = Array[ExtResource("11_ow8of")]([SubResource("Resource_gm02q"), SubResource("Resource_07pt3"), SubResource("Resource_37xlc"), SubResource("Resource_83607")])
-product_db = ExtResource("13_gm02q")
+[node name="GondolasEspecialesSpawner" type="Node" parent="." node_paths=PackedStringArray("spawn_points_laterales", "spawn_points_especiales")]
+script = ExtResource("115_8lcmr")
+gondolas_laterales = Array[PackedScene]([ExtResource("129_683hg"), ExtResource("10_mu7hw")])
+gondolas_especiales = Array[PackedScene]([ExtResource("126_esrwe"), ExtResource("107_engxj")])
+spawn_points_laterales = [NodePath("../GondolaLateralMarker"), NodePath("../GondolaLateralMarker2")]
+spawn_points_especiales = [NodePath("../GondolaEspecialMarker"), NodePath("../GondolaEspecialMarker2")]
+
+[node name="GondolaEspecialMarker" type="Marker3D" parent="."]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -24.829918, -1.168436, -113.04186)
+
+[node name="GondolaLateralMarker" type="Marker3D" parent="."]
+transform = Transform3D(0.044316884, 0, 0.9990175, 0, 1, 0, -0.9990175, 0, 0.044316884, -28.721884, -1.1093265, -85.2475)
+
+[node name="GondolaLateralMarker2" type="Marker3D" parent="."]
+transform = Transform3D(-0.024310026, 0, -0.9997045, 0, 1, 0, 0.9997045, 0, -0.024310026, 27.259354, -0.9582274, -85.2475)
+
+[node name="GondolaEspecialMarker2" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.004606, -1.1603289, -113.76209)
 
 [connection signal="body_entered" from="Zoom/Area3D" to="Zoom" method="_on_body_entered"]
 
@@ -2008,12 +1592,15 @@ product_db = ExtResource("13_gm02q")
 [editable path="Gondolas/Gondola2"]
 [editable path="Gondolas/Gondola3"]
 [editable path="Gondolas/Gondola4"]
+[editable path="Heladeras/heladera"]
 [editable path="Heladeras/heladera-larga2"]
+[editable path="Heladeras/heladera2"]
 [editable path="Heladeras/heladera3"]
+[editable path="Heladeras/heladera4"]
+[editable path="Heladeras/heladera6"]
+[editable path="Heladeras/heladera7"]
 [editable path="Heladeras/heladera5"]
 [editable path="Personajes/Node3D"]
-[editable path="VerduleriaCompleta"]
-[editable path="Gondolas Pared"]
 [editable path="Carniceria/Mostrador Carne"]
 [editable path="Carniceria/Mostrador Carne 2"]
-[editable path="Panaderia"]
+[editable path="Carniceria/Mostrador Carne 3"]

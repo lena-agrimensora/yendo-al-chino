@@ -286,7 +286,7 @@ transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, 
 transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, -4.37098e-08, -0.999964, -0.00839498, 0.542194, -1.75885, -1.22671)
 
 [node name="Estante3" type="Node3D" parent="Estantes/SpawnPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.503657, 0.0117638, 0, -3.17294)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.503657, -0.111045495, 0, -3.17294)
 
 [node name="Marker3D" type="Marker3D" parent="Estantes/SpawnPoints/Estante3"]
 transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, -4.37098e-08, -0.999964, -0.00839498, -0.0963176, 1.71143, -1.22671)
@@ -334,7 +334,7 @@ transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, 
 transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, -4.37098e-08, -0.999964, -0.00839498, 0.542194, -1.75885, -1.22671)
 
 [node name="Estante4" type="Node3D" parent="Estantes/SpawnPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.503657, 0.0117638, 0, -4.52908)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.503657, -0.12518479, 0, -4.52908)
 
 [node name="Marker3D" type="Marker3D" parent="Estantes/SpawnPoints/Estante4"]
 transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, -4.37098e-08, -0.999964, -0.00839498, -0.0963176, 1.71143, -1.22671)
@@ -382,7 +382,7 @@ transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, 
 transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, -4.37098e-08, -0.999964, -0.00839498, 0.542194, -1.75885, -1.22671)
 
 [node name="Estante5" type="Node3D" parent="Estantes/SpawnPoints"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.503657, 0.0117638, 0, -5.7995)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.503657, -0.11264588, 0, -5.7995)
 
 [node name="Marker3D" type="Marker3D" parent="Estantes/SpawnPoints/Estante5"]
 transform = Transform3D(3.66956e-10, 0.00839498, -0.999965, 1, -4.37114e-08, 0, -4.37098e-08, -0.999964, -0.00839498, -0.0963176, 1.71143, -1.22671)

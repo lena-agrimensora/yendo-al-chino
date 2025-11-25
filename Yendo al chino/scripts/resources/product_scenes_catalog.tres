@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=112 format=3 uid="uid://dh584h8tmvpy3"]
+[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=79 format=3 uid="uid://dh584h8tmvpy3"]
 
 [ext_resource type="Script" uid="uid://bsghesyqlxvi3" path="res://scripts/resources/product_scenes_catalog.gd" id="1_1ces3"]
 [ext_resource type="PackedScene" uid="uid://c5nvkns6lr8ap" path="res://productos/almacen/legumbres/lata champiñones.tscn" id="1_aoe3v"]
@@ -22,14 +22,6 @@
 [ext_resource type="PackedScene" uid="uid://oxcxtgo7et4o" path="res://productos/almacen/snacks/papitas_slays.tscn" id="19_be4db"]
 [ext_resource type="PackedScene" uid="uid://cspe5v344mxuf" path="res://productos/almacen/snacks/papitas_slays_ketchup.tscn" id="20_jf5r0"]
 [ext_resource type="PackedScene" uid="uid://c7ttomw7xhg76" path="res://productos/almacen/snacks/papitas_slays_salame.tscn" id="21_qj41t"]
-[ext_resource type="PackedScene" uid="uid://cdvgffe1xve0i" path="res://productos/bebidas/gaseosas/bepis_2lts.tscn" id="22_qtfa6"]
-[ext_resource type="PackedScene" uid="uid://bdnap7guftly6" path="res://productos/bebidas/gaseosas/CrotoCola_2lts.tscn" id="23_7s2rc"]
-[ext_resource type="PackedScene" uid="uid://5ohffkqbf3om" path="res://productos/bebidas/gaseosas/Marnaos_2lts.tscn" id="24_yb8i7"]
-[ext_resource type="PackedScene" uid="uid://b24mcgppwtu4n" path="res://productos/bebidas/gaseosas_chicas/Marnaos_500ML.tscn" id="25_7s2rc"]
-[ext_resource type="PackedScene" uid="uid://bmdn0kwaqj6g1" path="res://productos/carniceria/carnes_varias/carne_picada.tscn" id="26_brnbi"]
-[ext_resource type="PackedScene" uid="uid://b1v8u7wrxqlfm" path="res://productos/carniceria/carnes_varias/milanesas.tscn" id="27_hcxuc"]
-[ext_resource type="PackedScene" uid="uid://cfper1ladwbxk" path="res://productos/carniceria/pescados_mariscos/bandeja_pescado.tscn" id="28_hcxuc"]
-[ext_resource type="PackedScene" uid="uid://yec8l7b54x1t" path="res://productos/carniceria/pollo_granja/pollo_entero.tscn" id="29_2w8q8"]
 [ext_resource type="PackedScene" uid="uid://dcd3c76whns8k" path="res://productos/desayuno/cereales_barritas/cereal_cherios.tscn" id="30_qj41t"]
 [ext_resource type="PackedScene" uid="uid://cwhgli3ujgu5" path="res://productos/desayuno/cereales_barritas/cereal_escarchito_chocolate.tscn" id="31_punko"]
 [ext_resource type="PackedScene" uid="uid://bkx3xq70lbckt" path="res://productos/desayuno/cereales_barritas/cereal_mellow_loops.tscn" id="32_0qsa8"]
@@ -60,10 +52,6 @@
 [ext_resource type="PackedScene" uid="uid://brc1l8jmr0cro" path="res://productos/desayuno/polvos/plebe_gelatina_manzana_verde.tscn" id="57_n4v3m"]
 [ext_resource type="PackedScene" uid="uid://clbc7cv5t7qsf" path="res://productos/desayuno/polvos/resequita_bizcochuelo_chocolate.tscn" id="58_wrrja"]
 [ext_resource type="PackedScene" uid="uid://mkg4l561el7u" path="res://productos/desayuno/polvos/resequita_bizcochuelo_vainilla.tscn" id="59_x4i0n"]
-[ext_resource type="PackedScene" uid="uid://dsqnrgro8t57s" path="res://productos/lacteos_congelados/lacteos/leche_descremada_santor.tscn" id="60_ko8gt"]
-[ext_resource type="PackedScene" uid="uid://b7amf2t4d5oty" path="res://productos/lacteos_congelados/lacteos/leche_entera_santor.tscn" id="61_n4v3m"]
-[ext_resource type="PackedScene" uid="uid://b2al2dm852erx" path="res://productos/lacteos_congelados/lacteos/leche_falsa_santor.tscn" id="62_wrrja"]
-[ext_resource type="PackedScene" uid="uid://bfbukoa1exj7k" path="res://productos/lacteos_congelados/lacteos/queso_crema_laqueso.tscn" id="63_x4i0n"]
 [ext_resource type="PackedScene" uid="uid://cypx00sswiib" path="res://productos/limpieza/limpieza_hogar/aromatizante_amarillo.tscn" id="64_48h66"]
 [ext_resource type="PackedScene" uid="uid://dk2oluxv7mxwd" path="res://productos/limpieza/limpieza_hogar/aromatizante_rosa.tscn" id="65_dsc4f"]
 [ext_resource type="PackedScene" uid="uid://c5ktblqavjcp0" path="res://productos/limpieza/limpieza_hogar/aromatizante_violeta.tscn" id="66_1tkjo"]
@@ -79,15 +67,6 @@
 [ext_resource type="PackedScene" uid="uid://bxx3rfl2bjebp" path="res://productos/limpieza/limpieza_ropa/zafiro_naranja.tscn" id="76_bsa5s"]
 [ext_resource type="PackedScene" uid="uid://bhiof53v2apx6" path="res://productos/limpieza/misc/papel_higienico.tscn" id="77_dho50"]
 [ext_resource type="PackedScene" uid="uid://o06f2mhlwvby" path="res://productos/limpieza/misc/rollo_de_cocina.tscn" id="78_uac10"]
-[ext_resource type="PackedScene" uid="uid://chwuu8ve38y8w" path="res://productos/panaderia/panes/flauta_de_pan.tscn" id="79_ec4os"]
-[ext_resource type="PackedScene" uid="uid://wiumgjfacwfo" path="res://productos/panaderia/panes/pan_hamburguesa_azulx4.tscn" id="80_ntddh"]
-[ext_resource type="PackedScene" uid="uid://bafppvge8e5nv" path="res://productos/panaderia/panes/pan_hamburguesa_celestex4.tscn" id="81_31e36"]
-[ext_resource type="PackedScene" uid="uid://c0uom2ns1rf33" path="res://productos/panaderia/panes/pan_molde_base.tscn" id="82_1uddv"]
-[ext_resource type="PackedScene" uid="uid://d0cr5xbbqxrc5" path="res://productos/panaderia/panes/pan_molde_rojo.tscn" id="83_werye"]
-[ext_resource type="PackedScene" uid="uid://balivhplhhhvg" path="res://productos/panaderia/panes/pan_molde_verde.tscn" id="84_gwnds"]
-[ext_resource type="PackedScene" uid="uid://bxuvjcfnyo1yd" path="res://productos/panaderia/panes/pan_pancho_celeste.tscn" id="85_hvy10"]
-[ext_resource type="PackedScene" uid="uid://bqsr88e26uxgc" path="res://productos/panaderia/panes/pan_pancho_rojo.tscn" id="86_tits1"]
-[ext_resource type="PackedScene" uid="uid://cd2q30af7ghh2" path="res://productos/panaderia/panes/pan_pancho_verde.tscn" id="87_om63j"]
 [ext_resource type="PackedScene" uid="uid://cf4kf0j3sigwa" path="res://productos/perfumeria/cuidado_cabello/shampoo_knees_toes.tscn" id="88_gwnds"]
 [ext_resource type="PackedScene" uid="uid://b30mnkhahlvda" path="res://productos/perfumeria/cuidado_cabello/tintura_castana.tscn" id="89_hvy10"]
 [ext_resource type="PackedScene" uid="uid://cofp07pdtnnme" path="res://productos/perfumeria/cuidado_cabello/tintura_colorada.tscn" id="90_tits1"]
@@ -99,18 +78,6 @@
 [ext_resource type="PackedScene" uid="uid://cpn5ehnlyf3mo" path="res://productos/perfumeria/higiene_personal/toallitas_alas.tscn" id="96_ymead"]
 [ext_resource type="PackedScene" uid="uid://84n8rhd3xpci" path="res://productos/perfumeria/higiene_personal/toallitas_estrellitas.tscn" id="97_d8ggd"]
 [ext_resource type="PackedScene" uid="uid://bkm1xfkxj1dre" path="res://productos/perfumeria/higiene_personal/toallitas_malvadas.tscn" id="98_1ly47"]
-[ext_resource type="PackedScene" uid="uid://hfts7x4832uj" path="res://productos/verduleria/frutas/banana/banana.tscn" id="99_cpywp"]
-[ext_resource type="PackedScene" uid="uid://buai04djynt45" path="res://productos/verduleria/frutas/limon/limon.tscn" id="100_ewbbs"]
-[ext_resource type="PackedScene" uid="uid://juebxcsjnh12" path="res://productos/verduleria/frutas/mandarina/mandarina.tscn" id="101_ymead"]
-[ext_resource type="PackedScene" uid="uid://dv8p52qle38bb" path="res://productos/verduleria/frutas/manzana_verde/manzana_verde.tscn" id="102_d8ggd"]
-[ext_resource type="PackedScene" uid="uid://dmae4c7tj1do6" path="res://productos/verduleria/frutas/naranja/naranja.tscn" id="103_1ly47"]
-[ext_resource type="PackedScene" uid="uid://cvghthimgkj12" path="res://productos/verduleria/frutas/pera/pera.tscn" id="104_2br0i"]
-[ext_resource type="PackedScene" uid="uid://b62fwu1guuslp" path="res://productos/verduleria/frutas/tomate/tomate.tscn" id="105_5s7vl"]
-[ext_resource type="PackedScene" uid="uid://cpbcqr6myx5n0" path="res://productos/verduleria/verduras/berenjena/berenjena.tscn" id="106_mpgs7"]
-[ext_resource type="PackedScene" uid="uid://brwgktvyoxwj8" path="res://productos/verduleria/verduras/calabaza/calabaza.tscn" id="107_s5pak"]
-[ext_resource type="PackedScene" uid="uid://bl5okqq3ff86u" path="res://productos/verduleria/verduras/choclo/choclo.tscn" id="108_81c7n"]
-[ext_resource type="PackedScene" uid="uid://34kctqm2p7bf" path="res://productos/verduleria/verduras/lechuga/lechuga.tscn" id="109_82uho"]
-[ext_resource type="PackedScene" uid="uid://ct334evmcn7nd" path="res://productos/verduleria/verduras/zanahoria/zanahoria.tscn" id="110_7nmr4"]
 
 [resource]
 script = ExtResource("1_1ces3")
@@ -119,34 +86,15 @@ categories = {
 "almacen/legumbres": [ExtResource("1_aoe3v")],
 "almacen/pastas_secas": [ExtResource("2_c5wb2"), ExtResource("3_crhoe")],
 "almacen/snacks": [ExtResource("10_ugx50"), ExtResource("11_gqgye"), ExtResource("12_j6nky"), ExtResource("13_qtfa6"), ExtResource("14_7s2rc"), ExtResource("15_yb8i7"), ExtResource("16_brnbi"), ExtResource("17_hcxuc"), ExtResource("18_2w8q8"), ExtResource("19_be4db"), ExtResource("20_jf5r0"), ExtResource("21_qj41t")],
-"bebidas/gaseosas": [ExtResource("22_qtfa6"), ExtResource("23_7s2rc"), ExtResource("24_yb8i7")],
-"bebidas/gaseosas_chicas": [ExtResource("25_7s2rc")],
-"carniceria/carnes_varias": [ExtResource("26_brnbi"), ExtResource("27_hcxuc")],
-"carniceria/pescados_mariscos": [ExtResource("28_hcxuc")],
-"carniceria/pollo_granja": [ExtResource("29_2w8q8")],
 "desayuno/cereales_barritas": [ExtResource("30_qj41t"), ExtResource("31_punko"), ExtResource("32_0qsa8")],
 "desayuno/galletitas_bizcochitos_tostadas": [ExtResource("33_ravke"), ExtResource("34_yel8j"), ExtResource("35_tt0nk"), ExtResource("36_ayv1h"), ExtResource("37_ttju6"), ExtResource("38_wdto7")],
 "desayuno/infusiones": [ExtResource("39_2lrky"), ExtResource("40_byy6s"), ExtResource("41_1ccl1"), ExtResource("42_ibgwj"), ExtResource("43_a0k54"), ExtResource("44_o3ifs"), ExtResource("45_gk4q2"), ExtResource("46_551kj")],
 "desayuno/mermeladas_dulces": [ExtResource("47_o3ifs"), ExtResource("48_gk4q2"), ExtResource("49_551kj"), ExtResource("50_8pyto"), ExtResource("51_m3wqa")],
 "desayuno/polvos": [ExtResource("52_5g56p"), ExtResource("53_134tw"), ExtResource("54_kj1uf"), ExtResource("55_4y2nk"), ExtResource("56_ko8gt"), ExtResource("57_n4v3m"), ExtResource("58_wrrja"), ExtResource("59_x4i0n")],
-"lacteos_congelados/lacteos": [ExtResource("60_ko8gt"), ExtResource("61_n4v3m"), ExtResource("62_wrrja"), ExtResource("63_x4i0n")],
 "limpieza/limpieza_hogar": [ExtResource("64_48h66"), ExtResource("65_dsc4f"), ExtResource("66_1tkjo"), ExtResource("67_g25rx"), ExtResource("68_8qj60"), ExtResource("69_xw527"), ExtResource("70_5awus"), ExtResource("71_dho50")],
 "limpieza/limpieza_ropa": [ExtResource("72_xw527"), ExtResource("73_5awus"), ExtResource("74_dho50"), ExtResource("75_uac10"), ExtResource("76_bsa5s")],
 "limpieza/misc": [ExtResource("77_dho50"), ExtResource("78_uac10")],
-"panaderia/panes": [ExtResource("79_ec4os"), ExtResource("80_ntddh"), ExtResource("81_31e36"), ExtResource("82_1uddv"), ExtResource("83_werye"), ExtResource("84_gwnds"), ExtResource("85_hvy10"), ExtResource("86_tits1"), ExtResource("87_om63j")],
 "perfumeria/cuidado_cabello": [ExtResource("88_gwnds"), ExtResource("89_hvy10"), ExtResource("90_tits1"), ExtResource("91_om63j"), ExtResource("92_rnemu")],
-"perfumeria/higiene_personal": [ExtResource("93_34xmw"), ExtResource("94_cpywp"), ExtResource("95_ewbbs"), ExtResource("96_ymead"), ExtResource("97_d8ggd"), ExtResource("98_1ly47")],
-"verduleria/frutas/banana": [ExtResource("99_cpywp")],
-"verduleria/frutas/limon": [ExtResource("100_ewbbs")],
-"verduleria/frutas/mandarina": [ExtResource("101_ymead")],
-"verduleria/frutas/manzana_verde": [ExtResource("102_d8ggd")],
-"verduleria/frutas/naranja": [ExtResource("103_1ly47")],
-"verduleria/frutas/pera": [ExtResource("104_2br0i")],
-"verduleria/frutas/tomate": [ExtResource("105_5s7vl")],
-"verduleria/verduras/berenjena": [ExtResource("106_mpgs7")],
-"verduleria/verduras/calabaza": [ExtResource("107_s5pak")],
-"verduleria/verduras/choclo": [ExtResource("108_81c7n")],
-"verduleria/verduras/lechuga": [ExtResource("109_82uho")],
-"verduleria/verduras/zanahoria": [ExtResource("110_7nmr4")]
+"perfumeria/higiene_personal": [ExtResource("93_34xmw"), ExtResource("94_cpywp"), ExtResource("95_ewbbs"), ExtResource("96_ymead"), ExtResource("97_d8ggd"), ExtResource("98_1ly47")]
 }
 metadata/_custom_type_script = "uid://bsghesyqlxvi3"

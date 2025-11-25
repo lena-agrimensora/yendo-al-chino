@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=5 format=3 uid="uid://d4ghiaphyn8nl"]
+
+[ext_resource type="Script" uid="uid://bsghesyqlxvi3" path="res://scripts/resources/product_scenes_catalog.gd" id="1_jgmck"]
+[ext_resource type="PackedScene" uid="uid://cdvgffe1xve0i" path="res://productos/bebidas/gaseosas/bepis_2lts.tscn" id="1_xdhr6"]
+[ext_resource type="PackedScene" uid="uid://bdnap7guftly6" path="res://productos/bebidas/gaseosas/CrotoCola_2lts.tscn" id="2_lxdsm"]
+[ext_resource type="PackedScene" uid="uid://5ohffkqbf3om" path="res://productos/bebidas/gaseosas/Marnaos_2lts.tscn" id="3_axm4m"]
+
+[resource]
+script = ExtResource("1_jgmck")
+categories = {
+"bebidas/gaseosas": [ExtResource("1_xdhr6"), ExtResource("2_lxdsm"), ExtResource("3_axm4m")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"

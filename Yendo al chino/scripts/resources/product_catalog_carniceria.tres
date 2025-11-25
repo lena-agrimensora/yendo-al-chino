@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=4 format=3 uid="uid://67nbw86huqgo"]
+
+[ext_resource type="PackedScene" uid="uid://bmdn0kwaqj6g1" path="res://productos/carniceria/carnes_varias/carne_picada.tscn" id="1_cdqdp"]
+[ext_resource type="Script" uid="uid://bsghesyqlxvi3" path="res://scripts/resources/product_scenes_catalog.gd" id="1_xh15e"]
+[ext_resource type="PackedScene" uid="uid://b1v8u7wrxqlfm" path="res://productos/carniceria/carnes_varias/milanesas.tscn" id="2_w61by"]
+
+[resource]
+script = ExtResource("1_xh15e")
+categories = {
+"carniceria/carnes_varias": [ExtResource("1_cdqdp"), ExtResource("2_w61by")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"

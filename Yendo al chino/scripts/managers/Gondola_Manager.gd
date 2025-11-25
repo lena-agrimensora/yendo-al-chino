@@ -1,5 +1,5 @@
 extends Node
-class_name GondolaManager
+class_name GondolaManagerOld
 
 @export var products_spawn_config: Array[ProductGroups]
 @export var product_db: ProductScenesCatalog
@@ -77,7 +77,6 @@ func instantiate_product_on_point(config: ProductConfig, point: Node3D):
 	var category: String = config.categoria
 	
 	if not product_db.has_category(category):
-		push_warning("No existe '%s' como categoria!!!!" % category)
 		return
 	
 	var scenes: Array = product_db.get_scenes(category)

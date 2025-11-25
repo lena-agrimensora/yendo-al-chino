@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://5hxb76o3n22o"]
+[gd_scene load_steps=4 format=3 uid="uid://5hxb76o3n22o"]
 
 [ext_resource type="PackedScene" uid="uid://b3s64khlovcqu" path="res://scenes/muebles/Muebles Base/gondola-pared.glb" id="1_j7wuu"]
+[ext_resource type="Script" uid="uid://ciuntqhxelop4" path="res://scripts/managers/gondola_manager_new.gd" id="2_oxtat"]
+[ext_resource type="Resource" uid="uid://d4ghiaphyn8nl" path="res://scripts/resources/product_catalog_bebidas.tres" id="3_ac1l8"]
 
 [node name="gondola-pared2" instance=ExtResource("1_j7wuu")]
+transform = Transform3D(0.9999998, 0, 0, 0, 1, 0, 0, 0, 0.9999998, 0, 0, 0)
+script = ExtResource("2_oxtat")
+product_db = ExtResource("3_ac1l8")
+spawn_groups = Array[NodePath]([NodePath("gondola-pared/SpawnPoints")])
 
 [node name="SpawnPoints" type="Node3D" parent="gondola-pared" index="1"]
 
@@ -660,7 +666,7 @@ transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.513
 transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.969995, 1.17771, 0.77303)
 
 [node name="Estante3" type="Node3D" parent="gondola-pared/SpawnPoints" index="2"]
-transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0, 8.54135, 0)
+transform = Transform3D(1, 0, 0, 0, 0.99999887, 0, 0, 0, 0.99999994, 0, 8.541349, -0.08183744)
 
 [node name="Marker3D" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante3" index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.220715)
@@ -987,7 +993,7 @@ transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.513
 transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.969995, 1.17771, 0.77303)
 
 [node name="Estante4" type="Node3D" parent="gondola-pared/SpawnPoints" index="3"]
-transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0, 13.1427, 0)
+transform = Transform3D(1, 0, 0, 0, 0.99999887, 0, 0, 0, 0.99999994, 0, 13.142698, -0.13027185)
 
 [node name="Marker3D" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante4" index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.220715)
@@ -1314,7 +1320,7 @@ transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.970046, 1.187, 0.513
 transform = Transform3D(1, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0.969995, 1.17771, 0.77303)
 
 [node name="Estante5" type="Node3D" parent="gondola-pared/SpawnPoints" index="4"]
-transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, 0, 18.081, 0)
+transform = Transform3D(1, 0, 0, 0, 0.9999987, 0, 0, 0, 0.9999997, 0, 17.514135, -0.13027182)
 
 [node name="Marker3D" type="Marker3D" parent="gondola-pared/SpawnPoints/Estante5" index="0"]
 transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 1, -0.965569, 1.17555, 0.220715)
