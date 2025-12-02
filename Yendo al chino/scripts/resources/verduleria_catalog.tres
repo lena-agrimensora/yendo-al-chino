@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=15 format=3 uid="uid://qeap4ac8ty2u"]
+
+[ext_resource type="PackedScene" uid="uid://hfts7x4832uj" path="res://productos/verduleria/frutas/banana/banana.tscn" id="1_h7yt6"]
+[ext_resource type="PackedScene" uid="uid://buai04djynt45" path="res://productos/verduleria/frutas/limon/limon.tscn" id="2_01l7t"]
+[ext_resource type="PackedScene" uid="uid://juebxcsjnh12" path="res://productos/verduleria/frutas/mandarina/mandarina.tscn" id="3_v6xc6"]
+[ext_resource type="PackedScene" uid="uid://dv8p52qle38bb" path="res://productos/verduleria/frutas/manzana_verde/manzana_verde.tscn" id="4_ysx30"]
+[ext_resource type="PackedScene" uid="uid://dmae4c7tj1do6" path="res://productos/verduleria/frutas/naranja/naranja.tscn" id="5_rdcjr"]
+[ext_resource type="PackedScene" uid="uid://cvghthimgkj12" path="res://productos/verduleria/frutas/pera/pera.tscn" id="6_hdgkq"]
+[ext_resource type="PackedScene" uid="uid://b62fwu1guuslp" path="res://productos/verduleria/frutas/tomate/tomate.tscn" id="7_2ta14"]
+[ext_resource type="PackedScene" uid="uid://cpbcqr6myx5n0" path="res://productos/verduleria/verduras/berenjena/berenjena.tscn" id="8_01l7t"]
+[ext_resource type="PackedScene" uid="uid://brwgktvyoxwj8" path="res://productos/verduleria/verduras/calabaza/calabaza.tscn" id="9_v6xc6"]
+[ext_resource type="Script" uid="uid://bsghesyqlxvi3" path="res://scripts/resources/product_scenes_catalog.gd" id="10_5q1v3"]
+[ext_resource type="PackedScene" uid="uid://bl5okqq3ff86u" path="res://productos/verduleria/verduras/choclo/choclo.tscn" id="10_ysx30"]
+[ext_resource type="PackedScene" uid="uid://34kctqm2p7bf" path="res://productos/verduleria/verduras/lechuga/lechuga.tscn" id="11_rdcjr"]
+[ext_resource type="PackedScene" uid="uid://ct334evmcn7nd" path="res://productos/verduleria/verduras/zanahoria/zanahoria.tscn" id="12_hdgkq"]
+
+[sub_resource type="Resource" id="Resource_oi045"]
+script = ExtResource("10_5q1v3")
+categories = {
+"banana": [ExtResource("1_h7yt6")],
+"berenjena": [ExtResource("8_01l7t")],
+"calabaza": [ExtResource("9_v6xc6")],
+"choclo": [ExtResource("10_ysx30")],
+"lechuga": [ExtResource("11_rdcjr")],
+"limon": [ExtResource("2_01l7t")],
+"mandarina": [ExtResource("3_v6xc6")],
+"manzana_verde": [ExtResource("4_ysx30")],
+"naranja": [ExtResource("5_rdcjr")],
+"pera": [ExtResource("6_hdgkq")],
+"tomate": [ExtResource("7_2ta14")],
+"zanahoria": [ExtResource("12_hdgkq")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"
+
+[resource]
+script = ExtResource("10_5q1v3")
+categories = {
+"verduleria": SubResource("Resource_oi045")
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"

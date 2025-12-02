@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://5hxb76o3n22o"]
 
 [ext_resource type="PackedScene" uid="uid://b3s64khlovcqu" path="res://scenes/muebles/Muebles Base/gondola-pared.glb" id="1_j7wuu"]
-[ext_resource type="Script" uid="uid://ciuntqhxelop4" path="res://scripts/managers/gondola_manager_new.gd" id="2_oxtat"]
-[ext_resource type="Resource" uid="uid://d4ghiaphyn8nl" path="res://scripts/resources/product_catalog_bebidas.tres" id="3_ac1l8"]
+[ext_resource type="Script" uid="uid://bqoxia5405wbd" path="res://scripts/managers/gondola_manager.gd" id="2_oxtat"]
+[ext_resource type="Resource" uid="uid://tge37pva5d37" path="res://scripts/resources/gondolas_bebidas_catalog.tres" id="3_ac1l8"]
 
 [node name="gondola-pared2" instance=ExtResource("1_j7wuu")]
 transform = Transform3D(0.9999998, 0, 0, 0, 1, 0, 0, 0, 0.9999998, 0, 0, 0)
 script = ExtResource("2_oxtat")
 product_db = ExtResource("3_ac1l8")
-spawn_groups = Array[NodePath]([NodePath("gondola-pared/SpawnPoints")])
+common_group_one = Array[NodePath]([NodePath("gondola-pared/SpawnPoints/Estante"), NodePath("gondola-pared/SpawnPoints/Estante2"), NodePath("gondola-pared/SpawnPoints/Estante3"), NodePath("gondola-pared/SpawnPoints/Estante4"), NodePath("gondola-pared/SpawnPoints/Estante5")])
 
 [node name="SpawnPoints" type="Node3D" parent="gondola-pared" index="1"]
 

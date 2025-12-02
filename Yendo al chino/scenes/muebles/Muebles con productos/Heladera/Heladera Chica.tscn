@@ -1,8 +1,9 @@
-[gd_scene load_steps=22 format=4 uid="uid://dqoai8quuamut"]
+[gd_scene load_steps=23 format=4 uid="uid://dqoai8quuamut"]
 
 [ext_resource type="Texture2D" uid="uid://b1bq8l6ieo2g" path="res://assets/modelos - texturas/muebles/heladera/heladera-larga_Estantes.png" id="1_0lrt1"]
-[ext_resource type="Script" uid="uid://bj76ms0tiwom8" path="res://scripts/managers/Gondola_Manager.gd" id="2_4lwcv"]
+[ext_resource type="Script" uid="uid://bqoxia5405wbd" path="res://scripts/managers/gondola_manager.gd" id="2_4lwcv"]
 [ext_resource type="Texture2D" uid="uid://b1akgkvpaohky" path="res://assets/modelos - texturas/muebles/heladera/heladera_Heladera.png" id="2_rfmll"]
+[ext_resource type="Resource" uid="uid://dk0gjfd3ixcw4" path="res://scripts/resources/heladeras_chicas_catalog.tres" id="2_xlrvr"]
 [ext_resource type="Texture2D" uid="uid://dr68wwnopoacl" path="res://assets/modelos - texturas/muebles/heladera/heladera_Marco.png" id="3_bqu4m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kieql"]
@@ -181,6 +182,8 @@ size = Vector3(0.426397, 8.42354, 4.54938)
 
 [node name="heladera" type="StaticBody3D"]
 script = ExtResource("2_4lwcv")
+product_db = ExtResource("2_xlrvr")
+common_group_one = Array[NodePath]([NodePath("Estantes/SpawnPoints/Estante"), NodePath("Estantes/SpawnPoints/Estante2"), NodePath("Estantes/SpawnPoints/Estante3"), NodePath("Estantes/SpawnPoints/Estante4"), NodePath("Estantes/SpawnPoints/Estante5")])
 
 [node name="Estantes" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0, -1, 0, 1, 0, 0, 0, 0)

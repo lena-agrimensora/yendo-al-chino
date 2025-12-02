@@ -1,10 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cs046xrwlq0qq"]
+[gd_scene load_steps=2 format=3 uid="uid://cs046xrwlq0qq"]
 
-[ext_resource type="Script" uid="uid://bj76ms0tiwom8" path="res://scripts/managers/Gondola_Manager.gd" id="1_gt4l1"]
 [ext_resource type="PackedScene" uid="uid://b75fnraam0727" path="res://assets/modelos - texturas/muebles/gondolas/gondola-entera.glb" id="2_x260e"]
 
 [node name="Gondola" type="Node3D"]
-script = ExtResource("1_gt4l1")
 
 [node name="Estantes" parent="." instance=ExtResource("2_x260e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.451939, -4.09715, -0.438192)

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7kmikhbvr42u"]
+
+[ext_resource type="PackedScene" uid="uid://dqn43b1yxt400" path="res://assets/modelos - texturas/personajes/NIÑO EXPLOTADO.glb" id="1_l1q6t"]
+
+[node name="NeneRepositor" type="Node3D"]
+
+[node name="NIÑO EXPLOTADO2" parent="." instance=ExtResource("1_l1q6t")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)

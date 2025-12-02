@@ -1,54 +1,53 @@
+class_name ObstacleManager
 extends Node
-class_name ObstaculosManager
 
-const OBSTACULOS_BASE_PATH := "res://scenes/muebles/Obstaculos/"
-var spawn_points: Array[Marker3D]
-var obstacles_array: Array[PackedScene]
+@export var normal_markers          : Array[Marker3D] = []
+@export var special_markers         : Array[Marker3D] = []
+@export var normal_obstacle_scenes  : Array[PackedScene] = []
+@export var special_obstacle_scenes : Array[PackedScene] = []
 
-func _ready() -> void:
-	_retrieve_spawn_points()
-	_get_all_obstacle_scenes()
-	_spawn_obstacles()
+
+func _ready():
+	spawn_normal_obstacles()
+	spawn_special_obstacles()
+
+func spawn_normal_obstacles():
+	if normal_obstacle_scenes.is_empty():
+		return
+
+	#TODO: tener en cuenta la seed?
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
 	
-func _retrieve_spawn_points() -> void:	
-	var children = get_children()
-	for child in children:
-		if(child.is_class("Marker3D")):
-			spawn_points.append(child)
-	print(children)
-	return
-	
-func _spawn_obstacles() -> void:
-	if(spawn_points.size() <= 0 or obstacles_array.size() <= 0):
-		print("Complicado spawnear algo en estas condiciones.")
+
+	for marker in normal_markers:
+		var scene_index = rng.randi_range(0, normal_obstacle_scenes.size() - 1)
+		var scene = normal_obstacle_scenes[scene_index]
+		
+		instantiate_and_place(scene, marker)
+
+func spawn_special_obstacles():
+	if special_obstacle_scenes.is_empty():
 		return
 		
-	for point in spawn_points:
-		_spawn_random_obstacle(obstacles_array,point)
+	var special_pool: Array[PackedScene] = special_obstacle_scenes.duplicate()
+	special_pool.shuffle()
+	
+	var marker_pool: Array[Marker3D] = special_markers.duplicate()
+	marker_pool.shuffle()
 
-func _spawn_random_obstacle(obst_array: Array, spawn_point: Marker3D) -> void:
-	var rng = RandomNumberGenerator.new()
-	var index = rng.randi_range(0, obst_array.size() - 1)
-	var obs_scene = obstacles_array[index]
-	var obs_instance = obs_scene.instantiate()
-	spawn_point.add_child(obs_instance)
-	obs_instance.transform = Transform3D.IDENTITY 
-	return
+	var spawn_count = min(special_pool.size(), marker_pool.size())
+	
+	for i in range(spawn_count):
+		var scene_to_spawn = special_pool.pop_front()
+		var marker_to_use = marker_pool.pop_front()
+		
+		instantiate_and_place(scene_to_spawn, marker_to_use)
 
-func _get_all_obstacle_scenes() -> void:
-	var dir: = DirAccess.open(OBSTACULOS_BASE_PATH)
-	if(!dir):
-		print("No existe el directorio :(")
+func instantiate_and_place(scene: PackedScene, marker: Marker3D):
+	if not scene:
 		return
-	if dir:
-		dir.list_dir_begin()
-		var file_name = dir.get_next()
-		while file_name != "":
-			if file_name.ends_with(".tscn"):
-				var scene_path = OBSTACULOS_BASE_PATH + file_name
-				var packed_scene: PackedScene = load(scene_path)
-				if packed_scene:
-					obstacles_array.append(packed_scene)
-			file_name = dir.get_next()
-		dir.list_dir_end()
-	pass
+		
+	var instance = scene.instantiate()
+	add_child(instance)
+	instance.global_position = marker.global_position

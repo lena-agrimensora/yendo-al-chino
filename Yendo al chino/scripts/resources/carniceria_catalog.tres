@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=7 format=3 uid="uid://bmnym38pf617e"]
+
+[ext_resource type="PackedScene" uid="uid://bmdn0kwaqj6g1" path="res://productos/carniceria/carnes_varias/carne_picada.tscn" id="1_56onb"]
+[ext_resource type="PackedScene" uid="uid://b1v8u7wrxqlfm" path="res://productos/carniceria/carnes_varias/milanesas.tscn" id="2_c7cx0"]
+[ext_resource type="PackedScene" uid="uid://cfper1ladwbxk" path="res://productos/carniceria/pescados_mariscos/bandeja_pescado.tscn" id="3_tjajr"]
+[ext_resource type="PackedScene" uid="uid://yec8l7b54x1t" path="res://productos/carniceria/pollo_granja/pollo_entero.tscn" id="4_jkl14"]
+[ext_resource type="Script" uid="uid://bsghesyqlxvi3" path="res://scripts/resources/product_scenes_catalog.gd" id="10_v7drj"]
+
+[sub_resource type="Resource" id="Resource_tcg7x"]
+script = ExtResource("10_v7drj")
+categories = {
+"carnes_varias": [ExtResource("1_56onb"), ExtResource("2_c7cx0")],
+"pescados_mariscos": [ExtResource("3_tjajr")],
+"pollo_granja": [ExtResource("4_jkl14")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"
+
+[resource]
+script = ExtResource("10_v7drj")
+categories = {
+"carniceria": SubResource("Resource_tcg7x")
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://08w856m5ki2b"]
 
-[ext_resource type="PackedScene" uid="uid://ctuhml13775ll" path="res://assets/modelos_3D/Modelos con colisiones/monton de cajas 3.glb" id="1_xhihy"]
+[ext_resource type="PackedScene" uid="uid://ctuhml13775ll" path="res://assets/modelos - texturas/objetos/cajas/monton de cajas 3.glb" id="1_xhihy"]
 
 [node name="monton de cajas 3" instance=ExtResource("1_xhihy")]
 

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=7 format=3 uid="uid://ccepiiwnlkilj"]
+
+[ext_resource type="PackedScene" uid="uid://dsqnrgro8t57s" path="res://productos/lacteos_congelados/lacteos/leche_descremada_santor.tscn" id="1_7g3ty"]
+[ext_resource type="Script" uid="uid://bsghesyqlxvi3" path="res://scripts/resources/product_scenes_catalog.gd" id="1_h6mqa"]
+[ext_resource type="PackedScene" uid="uid://b7amf2t4d5oty" path="res://productos/lacteos_congelados/lacteos/leche_entera_santor.tscn" id="2_ukw2j"]
+[ext_resource type="PackedScene" uid="uid://b2al2dm852erx" path="res://productos/lacteos_congelados/lacteos/leche_falsa_santor.tscn" id="3_brlm7"]
+[ext_resource type="PackedScene" uid="uid://bfbukoa1exj7k" path="res://productos/lacteos_congelados/lacteos/queso_crema_laqueso.tscn" id="4_wrqqc"]
+
+[sub_resource type="Resource" id="Resource_1553j"]
+script = ExtResource("1_h6mqa")
+categories = {
+"lacteos": [ExtResource("1_7g3ty"), ExtResource("2_ukw2j"), ExtResource("3_brlm7"), ExtResource("4_wrqqc")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"
+
+[resource]
+script = ExtResource("1_h6mqa")
+categories = {
+"lacteos_congelados": SubResource("Resource_1553j")
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"

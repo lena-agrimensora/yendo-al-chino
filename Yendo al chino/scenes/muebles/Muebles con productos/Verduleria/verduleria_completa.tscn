@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=4 uid="uid://bwuikx4uro0fv"]
 
 [ext_resource type="Texture2D" uid="uid://dsvsxowtfv5n3" path="res://assets/modelos - texturas/muebles/verduleria/verduleria-completa_verduleria-completa.png" id="1_64hta"]
-[ext_resource type="Script" uid="uid://ciuntqhxelop4" path="res://scripts/managers/gondola_manager_new.gd" id="1_tov32"]
-[ext_resource type="Resource" uid="uid://ds6nx0ebgtnoy" path="res://scripts/resources/product_catalog_verduleria.tres" id="2_8pxdi"]
+[ext_resource type="Script" uid="uid://bqoxia5405wbd" path="res://scripts/managers/gondola_manager.gd" id="1_tov32"]
+[ext_resource type="Resource" uid="uid://qeap4ac8ty2u" path="res://scripts/resources/verduleria_catalog.tres" id="2_8pxdi"]
 [ext_resource type="PackedScene" uid="uid://udxvxfwlsc7q" path="res://assets/modelos - texturas/objetos/cajones/cajon singular.glb" id="9_o3akv"]
 [ext_resource type="PackedScene" uid="uid://b84s4cuvkawjj" path="res://scenes/personajes/Verdulera.tscn" id="10_4xavj"]
 [ext_resource type="Script" uid="uid://cuaqiga67qgqk" path="res://scripts/personajes/verdulera.gd" id="16_kxnx0"]
@@ -56,7 +56,7 @@ data = PackedVector3Array(-1, -1.28251, 0.0489464, -1, -0.896626, -0.0489464, -1
 [node name="VerduleriaCompleta" type="Node3D"]
 script = ExtResource("1_tov32")
 product_db = ExtResource("2_8pxdi")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Spawn_Limones"), NodePath("Estantes/SpawnPoints/Spawn_Peras"), NodePath("Estantes/SpawnPoints/Spawn_Calabazas"), NodePath("Estantes/SpawnPoints/Spawn_Berenjenas"), NodePath("Estantes/SpawnPoints/Spawn_Tomates"), NodePath("Estantes/SpawnPoints/Spawn_Naranjas"), NodePath("Estantes/SpawnPoints/Spawn_Mandarinas"), NodePath("Estantes/SpawnPoints/Spawn_Bananas"), NodePath("Estantes/SpawnPoints/Spawn_Manzana"), NodePath("Estantes/SpawnPoints/Spawn_Lechuga"), NodePath("Estantes/SpawnPoints/Spawn_Choclo"), NodePath("Estantes/SpawnPoints/Spawn_Zanahoria")])
+common_group_one = Array[NodePath]([NodePath("Estantes/SpawnPoints/Spawn_Limones"), NodePath("Estantes/SpawnPoints/Spawn_Peras"), NodePath("Estantes/SpawnPoints/Spawn_Calabazas"), NodePath("Estantes/SpawnPoints/Spawn_Berenjenas"), NodePath("Estantes/SpawnPoints/Spawn_Tomates"), NodePath("Estantes/SpawnPoints/Spawn_Naranjas"), NodePath("Estantes/SpawnPoints/Spawn_Mandarinas"), NodePath("Estantes/SpawnPoints/Spawn_Bananas"), NodePath("Estantes/SpawnPoints/Spawn_Manzana"), NodePath("Estantes/SpawnPoints/Spawn_Lechuga"), NodePath("Estantes/SpawnPoints/Spawn_Choclo"), NodePath("Estantes/SpawnPoints/Spawn_Zanahoria")])
 
 [node name="verduleria" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.49759, 0, 0, 0, 0.642788, -0.766044, 0, 0.766044, 0.642788, -0.0195603, 5.02905, 0.0463865)

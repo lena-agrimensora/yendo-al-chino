@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=62 format=3 uid="uid://dyridh4mu0ka4"]
+
+[ext_resource type="PackedScene" uid="uid://bj8wbfwyimgbd" path="res://productos/almacen/enlatados_conservas/lata_arvejas.tscn" id="1_2727o"]
+[ext_resource type="Script" uid="uid://bsghesyqlxvi3" path="res://scripts/resources/product_scenes_catalog.gd" id="1_xeoux"]
+[ext_resource type="PackedScene" uid="uid://c2jwi4p1fi4g6" path="res://productos/almacen/enlatados_conservas/lata_champignones.tscn" id="2_g1or1"]
+[ext_resource type="PackedScene" uid="uid://dx1ejj0obhqtt" path="res://productos/almacen/enlatados_conservas/lata_duraznos.tscn" id="3_0tavn"]
+[ext_resource type="PackedScene" uid="uid://w5u4bmtssq8e" path="res://productos/almacen/enlatados_conservas/lata_jardinera.tscn" id="4_b7ks5"]
+[ext_resource type="PackedScene" uid="uid://ctclqusucrjja" path="res://productos/almacen/enlatados_conservas/lata_palmitos.tscn" id="5_n0k2t"]
+[ext_resource type="PackedScene" uid="uid://nvmceofgecq0" path="res://productos/almacen/enlatados_conservas/pure_tomate.tscn" id="6_osrjj"]
+[ext_resource type="PackedScene" uid="uid://c5nvkns6lr8ap" path="res://productos/almacen/legumbres/lata champiñones.tscn" id="7_g1or1"]
+[ext_resource type="PackedScene" uid="uid://c5f4spfj20h6b" path="res://productos/almacen/pastas_secas/fideos_largos.tscn" id="8_b7ks5"]
+[ext_resource type="PackedScene" uid="uid://xehuf1uuomhp" path="res://productos/almacen/pastas_secas/fideos_monito.tscn" id="9_n0k2t"]
+[ext_resource type="PackedScene" uid="uid://d067el5hi0l8h" path="res://productos/almacen/snacks/chizitos_parana.tscn" id="10_rwahw"]
+[ext_resource type="PackedScene" uid="uid://cx3hd2xlshyet" path="res://productos/almacen/snacks/chizitos_parana_barbacoa.tscn" id="11_21dh0"]
+[ext_resource type="PackedScene" uid="uid://byie23me6jayp" path="res://productos/almacen/snacks/chizitos_parana_extra_queso.tscn" id="12_ww8dv"]
+[ext_resource type="PackedScene" uid="uid://wainiftdsme7" path="res://productos/almacen/snacks/douritos.tscn" id="13_n58cy"]
+[ext_resource type="PackedScene" uid="uid://chqrcfaxptydj" path="res://productos/almacen/snacks/douritos_cheddar.tscn" id="14_kko0l"]
+[ext_resource type="PackedScene" uid="uid://oups5jwd7hbk" path="res://productos/almacen/snacks/douritos_jalapeño_picante.tscn" id="15_7kl7x"]
+[ext_resource type="PackedScene" uid="uid://d1pj5src3t2j0" path="res://productos/almacen/snacks/papas_pringas_asado.tscn" id="16_o3osf"]
+[ext_resource type="PackedScene" uid="uid://vf3p8wrlh2k3" path="res://productos/almacen/snacks/papas_pringas_barbacoa.tscn" id="17_pg1wy"]
+[ext_resource type="PackedScene" uid="uid://bvfe0uyjk3but" path="res://productos/almacen/snacks/papas_pringas_cebolla_crema.tscn" id="18_iuj1j"]
+[ext_resource type="PackedScene" uid="uid://oxcxtgo7et4o" path="res://productos/almacen/snacks/papitas_slays.tscn" id="19_f8kl1"]
+[ext_resource type="PackedScene" uid="uid://cspe5v344mxuf" path="res://productos/almacen/snacks/papitas_slays_ketchup.tscn" id="20_yg575"]
+[ext_resource type="PackedScene" uid="uid://c7ttomw7xhg76" path="res://productos/almacen/snacks/papitas_slays_salame.tscn" id="21_rqcwg"]
+[ext_resource type="PackedScene" uid="uid://dcd3c76whns8k" path="res://productos/desayuno/cereales_barritas/cereal_cherios.tscn" id="23_n58cy"]
+[ext_resource type="PackedScene" uid="uid://cwhgli3ujgu5" path="res://productos/desayuno/cereales_barritas/cereal_escarchito_chocolate.tscn" id="24_kko0l"]
+[ext_resource type="PackedScene" uid="uid://bkx3xq70lbckt" path="res://productos/desayuno/cereales_barritas/cereal_mellow_loops.tscn" id="25_7kl7x"]
+[ext_resource type="PackedScene" uid="uid://cafp37a62jhre" path="res://productos/desayuno/galletitas_bizcochitos_tostadas/bizcochitos_dulces.tscn" id="26_f8kl1"]
+[ext_resource type="PackedScene" uid="uid://dodp6ii438st" path="res://productos/desayuno/galletitas_bizcochitos_tostadas/bizcochitos_salados.tscn" id="27_yg575"]
+[ext_resource type="PackedScene" uid="uid://pogtx8p80rtn" path="res://productos/desayuno/galletitas_bizcochitos_tostadas/galletitas_crotolinas.tscn" id="28_rqcwg"]
+[ext_resource type="PackedScene" uid="uid://b5qdwsu1353h6" path="res://productos/desayuno/galletitas_bizcochitos_tostadas/galletitas_pepotas.tscn" id="29_o0vmw"]
+[ext_resource type="PackedScene" uid="uid://bhgrskl1ieyj8" path="res://productos/desayuno/galletitas_bizcochitos_tostadas/galletitas_pirtusas.tscn" id="30_kavds"]
+[ext_resource type="PackedScene" uid="uid://cilrw424n1m6m" path="res://productos/desayuno/galletitas_bizcochitos_tostadas/galletitas_terrapusie.tscn" id="31_eevha"]
+[ext_resource type="PackedScene" uid="uid://cypx00sswiib" path="res://productos/limpieza/limpieza_hogar/aromatizante_amarillo.tscn" id="32_cw8tm"]
+[ext_resource type="PackedScene" uid="uid://dk2oluxv7mxwd" path="res://productos/limpieza/limpieza_hogar/aromatizante_rosa.tscn" id="33_05qph"]
+[ext_resource type="PackedScene" uid="uid://c5ktblqavjcp0" path="res://productos/limpieza/limpieza_hogar/aromatizante_violeta.tscn" id="34_siipo"]
+[ext_resource type="PackedScene" uid="uid://b4sv272r6yqix" path="res://productos/limpieza/limpieza_hogar/desinfectante_ambientes.tscn" id="35_jarsr"]
+[ext_resource type="PackedScene" uid="uid://df4w57l8r6gvl" path="res://productos/limpieza/limpieza_hogar/insecticida_cucas.tscn" id="36_ylr48"]
+[ext_resource type="PackedScene" uid="uid://k1siqgjah0lo" path="res://productos/limpieza/limpieza_hogar/insecticida_mosquitos.tscn" id="37_f4bcf"]
+[ext_resource type="PackedScene" uid="uid://t1st5ex1fubi" path="res://productos/limpieza/limpieza_hogar/limpiavidrios.tscn" id="38_pgrr0"]
+[ext_resource type="PackedScene" uid="uid://cx2hyralqocbl" path="res://productos/limpieza/limpieza_hogar/lustramuebles.tscn" id="39_8iljr"]
+[ext_resource type="PackedScene" uid="uid://fjnl5adcg6id" path="res://productos/limpieza/limpieza_ropa/jabon_polvo.tscn" id="40_f4bcf"]
+[ext_resource type="PackedScene" uid="uid://cy7jf2alnuktf" path="res://productos/limpieza/limpieza_ropa/quitamanchas.tscn" id="41_pgrr0"]
+[ext_resource type="PackedScene" uid="uid://bq8i8h3pfi2vj" path="res://productos/limpieza/limpieza_ropa/suavizante.tscn" id="42_8iljr"]
+[ext_resource type="PackedScene" uid="uid://jr1oax2t2m2y" path="res://productos/limpieza/limpieza_ropa/zafiro_menta.tscn" id="43_evo87"]
+[ext_resource type="PackedScene" uid="uid://bxx3rfl2bjebp" path="res://productos/limpieza/limpieza_ropa/zafiro_naranja.tscn" id="44_mib31"]
+[ext_resource type="PackedScene" uid="uid://bhiof53v2apx6" path="res://productos/limpieza/misc/papel_higienico.tscn" id="45_8iljr"]
+[ext_resource type="PackedScene" uid="uid://o06f2mhlwvby" path="res://productos/limpieza/misc/rollo_de_cocina.tscn" id="46_evo87"]
+[ext_resource type="PackedScene" uid="uid://cf4kf0j3sigwa" path="res://productos/perfumeria/cuidado_cabello/shampoo_knees_toes.tscn" id="47_iojii"]
+[ext_resource type="PackedScene" uid="uid://b30mnkhahlvda" path="res://productos/perfumeria/cuidado_cabello/tintura_castana.tscn" id="48_ypkg0"]
+[ext_resource type="PackedScene" uid="uid://cofp07pdtnnme" path="res://productos/perfumeria/cuidado_cabello/tintura_colorada.tscn" id="49_qk1wv"]
+[ext_resource type="PackedScene" uid="uid://dowevfnoefq12" path="res://productos/perfumeria/cuidado_cabello/tintura_negra.tscn" id="50_5gucq"]
+[ext_resource type="PackedScene" uid="uid://buvb6w1s60mj7" path="res://productos/perfumeria/cuidado_cabello/tintura_rubia.tscn" id="51_xtf8s"]
+[ext_resource type="PackedScene" uid="uid://dtjl24ygvv3tq" path="res://productos/perfumeria/higiene_personal/jabon_blanco.tscn" id="52_c7gi6"]
+[ext_resource type="PackedScene" uid="uid://dejfqx0pjbrrv" path="res://productos/perfumeria/higiene_personal/jabon_tocador.tscn" id="53_gcr52"]
+[ext_resource type="PackedScene" uid="uid://ddkuey26kowl3" path="res://productos/perfumeria/higiene_personal/protectores_diarios.tscn" id="54_7ro5u"]
+[ext_resource type="PackedScene" uid="uid://cpn5ehnlyf3mo" path="res://productos/perfumeria/higiene_personal/toallitas_alas.tscn" id="55_blkln"]
+[ext_resource type="PackedScene" uid="uid://84n8rhd3xpci" path="res://productos/perfumeria/higiene_personal/toallitas_estrellitas.tscn" id="56_okyg3"]
+[ext_resource type="PackedScene" uid="uid://bkm1xfkxj1dre" path="res://productos/perfumeria/higiene_personal/toallitas_malvadas.tscn" id="57_ddpt7"]
+
+[sub_resource type="Resource" id="Resource_xeoux"]
+script = ExtResource("1_xeoux")
+categories = {
+"enlatados_conservas": [ExtResource("1_2727o"), ExtResource("2_g1or1"), ExtResource("3_0tavn"), ExtResource("4_b7ks5"), ExtResource("5_n0k2t"), ExtResource("6_osrjj")],
+"legumbres": [ExtResource("7_g1or1")],
+"pastas_secas": [ExtResource("8_b7ks5"), ExtResource("9_n0k2t")],
+"snacks": [ExtResource("10_rwahw"), ExtResource("11_21dh0"), ExtResource("12_ww8dv"), ExtResource("13_n58cy"), ExtResource("14_kko0l"), ExtResource("15_7kl7x"), ExtResource("16_o3osf"), ExtResource("17_pg1wy"), ExtResource("18_iuj1j"), ExtResource("19_f8kl1"), ExtResource("20_yg575"), ExtResource("21_rqcwg")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"
+
+[sub_resource type="Resource" id="Resource_rwahw"]
+script = ExtResource("1_xeoux")
+categories = {
+"cereales_barritas": [ExtResource("23_n58cy"), ExtResource("24_kko0l"), ExtResource("25_7kl7x")],
+"galletitas_bizcochitos_tostadas": [ExtResource("26_f8kl1"), ExtResource("27_yg575"), ExtResource("28_rqcwg"), ExtResource("29_o0vmw"), ExtResource("30_kavds"), ExtResource("31_eevha")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"
+
+[sub_resource type="Resource" id="Resource_f8kl1"]
+script = ExtResource("1_xeoux")
+categories = {
+"limpieza_hogar": [ExtResource("32_cw8tm"), ExtResource("33_05qph"), ExtResource("34_siipo"), ExtResource("35_jarsr"), ExtResource("36_ylr48"), ExtResource("37_f4bcf"), ExtResource("38_pgrr0"), ExtResource("39_8iljr")],
+"limpieza_ropa": [ExtResource("40_f4bcf"), ExtResource("41_pgrr0"), ExtResource("42_8iljr"), ExtResource("43_evo87"), ExtResource("44_mib31")],
+"misc": [ExtResource("45_8iljr"), ExtResource("46_evo87")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"
+
+[sub_resource type="Resource" id="Resource_swxkn"]
+script = ExtResource("1_xeoux")
+categories = {
+"cuidado_cabello": [ExtResource("47_iojii"), ExtResource("48_ypkg0"), ExtResource("49_qk1wv"), ExtResource("50_5gucq"), ExtResource("51_xtf8s")],
+"higiene_personal": [ExtResource("52_c7gi6"), ExtResource("53_gcr52"), ExtResource("54_7ro5u"), ExtResource("55_blkln"), ExtResource("56_okyg3"), ExtResource("57_ddpt7")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"
+
+[resource]
+script = ExtResource("1_xeoux")
+categories = {
+"almacen": SubResource("Resource_xeoux"),
+"desayuno": SubResource("Resource_rwahw"),
+"limpieza": SubResource("Resource_f8kl1"),
+"perfumeria": SubResource("Resource_swxkn")
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"

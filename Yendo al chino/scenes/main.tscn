@@ -1,4 +1,4 @@
-[gd_scene load_steps=191 format=4 uid="uid://bq6craccgoo5m"]
+[gd_scene load_steps=193 format=4 uid="uid://bq6craccgoo5m"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://scenes/controls/proto_controller/proto_controller.tscn" id="1_x20aj"]
 [ext_resource type="PackedScene" uid="uid://chcvs7ckorihy" path="res://scenes/UI/Menu_Pausa.tscn" id="2_inrgs"]
@@ -13,11 +13,10 @@
 [ext_resource type="PackedScene" uid="uid://cifvxvfnf7074" path="res://scenes/personajes/Npc_movimiento.tscn" id="10_dcbrs"]
 [ext_resource type="PackedScene" uid="uid://cs046xrwlq0qq" path="res://scenes/muebles/Gondola.tscn" id="10_esrwe"]
 [ext_resource type="PackedScene" uid="uid://4dhan3kuujdb" path="res://scenes/muebles/Muebles con productos/Heladera/Heladera Grande.tscn" id="10_mu7hw"]
-[ext_resource type="Script" uid="uid://ciuntqhxelop4" path="res://scripts/managers/gondola_manager_new.gd" id="11_07pt3"]
+[ext_resource type="Script" uid="uid://bqoxia5405wbd" path="res://scripts/managers/gondola_manager.gd" id="11_37xlc"]
 [ext_resource type="PackedScene" uid="uid://bdjsnypc1ongt" path="res://assets/modelos - texturas/objetos/canastos/pila-canastos.glb" id="11_mu7hw"]
-[ext_resource type="Resource" uid="uid://dh584h8tmvpy3" path="res://scripts/resources/product_scenes_catalog.tres" id="13_gm02q"]
+[ext_resource type="Resource" uid="uid://dyridh4mu0ka4" path="res://scripts/resources/gondolas_centrales_catalog.tres" id="12_83607"]
 [ext_resource type="PackedScene" uid="uid://b83dlj83mqai2" path="res://scenes/muebles/Muebles Base/Caja Registradora.tscn" id="13_j2oyp"]
-[ext_resource type="Resource" uid="uid://bjq1gyxvx0r5h" path="res://scripts/resources/product_catalog_bebidas_chicas.tres" id="14_8lcmr"]
 [ext_resource type="Script" uid="uid://ql5l2pqmx2s0" path="res://scenes/managers/list_manager.gd" id="17_qgn5v"]
 [ext_resource type="PackedScene" uid="uid://ddtcxrlvmwmsb" path="res://assets/modelos - texturas/personajes/VIEJO SENTADO.glb" id="18_5w2cy"]
 [ext_resource type="Script" uid="uid://cq83d72bqny30" path="res://scripts/personajes/Viejo_CAJA.gd" id="18_jeqng"]
@@ -105,9 +104,12 @@
 [ext_resource type="Script" uid="uid://byyf87vnq3vat" path="res://scripts/managers/ObstaculosManager.gd" id="97_raiwf"]
 [ext_resource type="Texture2D" uid="uid://cqp7koggqtmx4" path="res://assets/modelos - texturas/ambiente/decoraciones/carteles/Carteles de leche.png" id="97_rxy6d"]
 [ext_resource type="Texture2D" uid="uid://ddfclow2c2txh" path="res://assets/modelos - texturas/ambiente/decoraciones/carteles/Cartel cereales.png" id="98_writn"]
+[ext_resource type="PackedScene" uid="uid://08w856m5ki2b" path="res://scenes/muebles/Obstaculos/PilaAltaCajas.tscn" id="99_37xlc"]
+[ext_resource type="PackedScene" uid="uid://dgv5jr2o8xunk" path="res://scenes/muebles/Obstaculos/PilaGrandeCajas.tscn" id="100_83607"]
+[ext_resource type="PackedScene" uid="uid://cgh3emep2y3pv" path="res://scenes/muebles/Obstaculos/PilaMedianaCajas.tscn" id="101_vny5k"]
+[ext_resource type="PackedScene" uid="uid://b7kmikhbvr42u" path="res://scenes/muebles/Obstaculos/nene_explotado.tscn" id="102_83607"]
 [ext_resource type="PackedScene" uid="uid://drbmbxhe5vmwi" path="res://scenes/muebles/Muebles con productos/Exibidor de carne/mostrador_de_carne_con_productos.tscn" id="106_wvlrk"]
 [ext_resource type="PackedScene" uid="uid://cxkeh1wd2pbt5" path="res://scenes/muebles/Mostrador de Pan.tscn" id="107_engxj"]
-[ext_resource type="Resource" uid="uid://67nbw86huqgo" path="res://scripts/resources/product_catalog_carniceria.tres" id="111_37xlc"]
 [ext_resource type="Script" uid="uid://dhochi7h1ut1i" path="res://scripts/managers/gondolas_especiales_spawner.gd" id="115_8lcmr"]
 [ext_resource type="PackedScene" uid="uid://bwuikx4uro0fv" path="res://scenes/muebles/Muebles con productos/Verduleria/verduleria_completa.tscn" id="126_esrwe"]
 [ext_resource type="PackedScene" uid="uid://5hxb76o3n22o" path="res://scenes/muebles/Gondola-pared.tscn" id="129_683hg"]
@@ -1255,9 +1257,15 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.8, 
 
 [node name="Gondola" parent="Gondolas" instance=ExtResource("10_esrwe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -16.091, 3, 5.778)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("13_gm02q")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4"), NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
+script = ExtResource("11_37xlc")
+product_db = ExtResource("12_83607")
+special_group_one = NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior")
+common_group_one = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4")])
+special_group_two = NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior")
+common_group_two = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
+
+[node name="Estantes" parent="Gondolas/Gondola" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8287277, -4.09715, -0.43819237)
 
 [node name="Marker_estante13" parent="Gondolas/Gondola/Estantes/SpawnPoints/Lado1/Columna1/Estante1_2" index="12"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09191, 2.15, -1.0494)
@@ -1279,71 +1287,65 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3882, 2.15, -0.370124)
 
 [node name="Gondola2" parent="Gondolas" instance=ExtResource("10_esrwe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.1214, 3, 5.778)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("13_gm02q")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4"), NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
+script = ExtResource("11_37xlc")
+product_db = ExtResource("12_83607")
+special_group_one = NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior")
+common_group_one = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4")])
+special_group_two = NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior")
+common_group_two = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
+
+[node name="Estantes" parent="Gondolas/Gondola2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7985535, -4.09715, -0.4381919)
 
 [node name="Gondola3" parent="Gondolas" instance=ExtResource("10_esrwe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.6257, 3, 5.778)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("13_gm02q")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4"), NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
+script = ExtResource("11_37xlc")
+product_db = ExtResource("12_83607")
+special_group_one = NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior")
+common_group_one = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4")])
+special_group_two = NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior")
+common_group_two = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
+
+[node name="Estantes" parent="Gondolas/Gondola3" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7387314, -4.09715, -0.4381919)
 
 [node name="Gondola4" parent="Gondolas" instance=ExtResource("10_esrwe")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 15.6628, 3, 5.778)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("13_gm02q")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4"), NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior"), NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
+script = ExtResource("11_37xlc")
+product_db = ExtResource("12_83607")
+special_group_one = NodePath("Estantes/SpawnPoints/Lado1/EstanteSuperior")
+common_group_one = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado1/Columna1"), NodePath("Estantes/SpawnPoints/Lado1/Columna2"), NodePath("Estantes/SpawnPoints/Lado1/Columna3"), NodePath("Estantes/SpawnPoints/Lado1/Columna4")])
+special_group_two = NodePath("Estantes/SpawnPoints/Lado2/EstanteSuperior")
+common_group_two = Array[NodePath]([NodePath("Estantes/SpawnPoints/Lado2/Columna1"), NodePath("Estantes/SpawnPoints/Lado2/Columna2"), NodePath("Estantes/SpawnPoints/Lado2/Columna3"), NodePath("Estantes/SpawnPoints/Lado2/Columna4")])
+
+[node name="Estantes" parent="Gondolas/Gondola4" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.796524, -4.09715, -0.43819237)
 
 [node name="Heladeras" type="Node3D" parent="."]
 
-[node name="heladera" parent="Heladeras" instance=ExtResource("9_oc42b")]
-transform = Transform3D(-3.49691e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.49691e-08, -16.552162, -0.625617, -115.43)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("14_8lcmr")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
+[node name="heladera-chica-1" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-3.4969112e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.4969112e-08, -17.361149, -0.6730604, -114.41581)
 
-[node name="heladera-larga2" parent="Heladeras" instance=ExtResource("10_mu7hw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8233, -0.491277, -65.2626)
+[node name="heladera-chica-2" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-0.8, 0, 6.9938224e-08, 0, 0.8, 0, -6.9938224e-08, 0, -0.8, 27.881, -0.669, -69.176)
 
-[node name="heladera2" parent="Heladeras" instance=ExtResource("9_oc42b")]
-transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -60.6532)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("14_8lcmr")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
+[node name="heladera-chica-3" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-0.8, 0, 6.9938224e-08, 0, 0.8, 0, -6.9938224e-08, 0, -0.8, 27.948818, -0.66890085, -65.2053)
 
-[node name="heladera3" parent="Heladeras" instance=ExtResource("9_oc42b")]
-transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -56.6532)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("14_8lcmr")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
+[node name="heladera-chica-4" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-0.8, 0, 6.9938224e-08, 0, 0.8, 0, -6.9938224e-08, 0, -0.8, 27.948818, -0.66890085, -61.202354)
 
-[node name="heladera4" parent="Heladeras" instance=ExtResource("9_oc42b")]
-transform = Transform3D(-0.8, 0, 6.99382e-08, 0, 0.8, 0, -6.99382e-08, 0, -0.8, 27.8973, -0.625617, -64.8277)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("14_8lcmr")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
+[node name="heladera-chica-5" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-0.8, 0, 6.9938224e-08, 0, 0.8, 0, -6.9938224e-08, 0, -0.8, 27.948818, -0.66890085, -57.090267)
 
-[node name="heladera6" parent="Heladeras" instance=ExtResource("9_oc42b")]
-transform = Transform3D(1.04907e-07, 0, 0.8, 0, 0.8, 0, -0.8, 0, 1.04907e-07, -19.1027, -0.625617, -43.1783)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("14_8lcmr")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
+[node name="heladera-chica-6" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -13.362159, -0.66890085, -43.154266)
 
-[node name="heladera7" parent="Heladeras" instance=ExtResource("9_oc42b")]
-transform = Transform3D(1.04907e-07, 0, 0.8, 0, 0.8, 0, -0.8, 0, 1.04907e-07, -15.1027, -0.625617, -43.1783)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("14_8lcmr")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
+[node name="heladera-chica-7" parent="Heladeras" instance=ExtResource("9_oc42b")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -17.45142, -0.66890085, -43.154266)
 
-[node name="heladera5" parent="Heladeras" instance=ExtResource("9_oc42b")]
-transform = Transform3D(-0.799998, 0, -0.0016893, 0, 0.8, 0, 0.0016893, 0, -0.799998, 27.881, -0.626, -69.176)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("14_8lcmr")
-spawn_groups = Array[NodePath]([NodePath("Estantes/SpawnPoints")])
-
-[node name="Estante2" parent="Heladeras/heladera5/Estantes/SpawnPoints" index="1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.503657, 0.0117626, -7.62939e-06, -1.92252)
+[node name="heladera-larga" parent="Heladeras" instance=ExtResource("10_mu7hw")]
+transform = Transform3D(0.9999997, 0, 0, 0, 1, 0, 0, 0, 0.9999997, -29.066187, -0.5499308, -64.477486)
 
 [node name="Personajes" type="Node3D" parent="."]
 
@@ -1427,20 +1429,38 @@ productos = Array[PackedScene]([ExtResource("18_uftet"), ExtResource("19_8p1pn")
 productos_obligatorios = Array[PackedScene]([ExtResource("55_fnw1b"), ExtResource("54_186rf")])
 metadata/_custom_type_script = "uid://ql5l2pqmx2s0"
 
-[node name="ObstaculosPoints" type="Node" parent="."]
+[node name="ObstaculosManager" type="Node" parent="." node_paths=PackedStringArray("normal_markers", "special_markers")]
 script = ExtResource("97_raiwf")
+normal_markers = [NodePath("Marker3D"), NodePath("Marker3D2"), NodePath("Marker3D3"), NodePath("Marker3D4")]
+special_markers = [NodePath("ObstaculosEspecialesPoints/Marker3D"), NodePath("ObstaculosEspecialesPoints/Marker3D4"), NodePath("ObstaculosEspecialesPoints/Marker3D2"), NodePath("ObstaculosEspecialesPoints/Marker3D3")]
+normal_obstacle_scenes = Array[PackedScene]([ExtResource("99_37xlc"), ExtResource("100_83607"), ExtResource("101_vny5k")])
+special_obstacle_scenes = Array[PackedScene]([ExtResource("102_83607")])
 
-[node name="Marker3D" type="Marker3D" parent="ObstaculosPoints"]
+[node name="Marker3D" type="Marker3D" parent="ObstaculosManager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.9645, -0.98683, -78.1891)
 
-[node name="Marker3D2" type="Marker3D" parent="ObstaculosPoints"]
+[node name="Marker3D2" type="Marker3D" parent="ObstaculosManager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.113, -0.972588, -78.1891)
 
-[node name="Marker3D3" type="Marker3D" parent="ObstaculosPoints"]
+[node name="Marker3D3" type="Marker3D" parent="ObstaculosManager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2894, -1.22336, -78.1891)
 
-[node name="Marker3D4" type="Marker3D" parent="ObstaculosPoints"]
+[node name="Marker3D4" type="Marker3D" parent="ObstaculosManager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.10537, -1.02396, -78.1857)
+
+[node name="ObstaculosEspecialesPoints" type="Node" parent="ObstaculosManager"]
+
+[node name="Marker3D" type="Marker3D" parent="ObstaculosManager/ObstaculosEspecialesPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6682639, -1.0210145, -86.40283)
+
+[node name="Marker3D4" type="Marker3D" parent="ObstaculosManager/ObstaculosEspecialesPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.894318, -1.0210145, -86.40283)
+
+[node name="Marker3D2" type="Marker3D" parent="ObstaculosManager/ObstaculosEspecialesPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.410902, -1.0210145, -86.40283)
+
+[node name="Marker3D3" type="Marker3D" parent="ObstaculosManager/ObstaculosEspecialesPoints"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.275608, -1.0210145, -86.40283)
 
 [node name="Cajas" type="Node3D" parent="."]
 
@@ -1549,41 +1569,32 @@ texture = ExtResource("98_writn")
 [node name="Carniceria" type="Node3D" parent="."]
 transform = Transform3D(0.00176281, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00176281, 28.7068, 3.066, -103.839)
 
-[node name="Mostrador Carne" parent="Carniceria" instance=ExtResource("106_wvlrk")]
-transform = Transform3D(-0.961126, 0, 0.276107, 0, 1, 0, -0.276107, 0, -0.961126, 54.2852, -3.22018, 37.4701)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("111_37xlc")
-spawn_groups = Array[NodePath]([NodePath("Carne/Estante"), NodePath("Milanesas y Pollo/Estante")])
+[node name="mostrador-carne" parent="Carniceria" instance=ExtResource("106_wvlrk")]
+transform = Transform3D(-0.91354483, 0, 0.40673646, 0, 1, 0, -0.40673646, 0, -0.91354483, 53.709976, -3.220177, 37.061783)
 
-[node name="Mostrador Carne 2" parent="Carniceria" instance=ExtResource("106_wvlrk")]
-transform = Transform3D(-0.999999, 0, -1.73859e-05, 0, 1, 0, 1.73859e-05, 0, -0.999999, 55.3424, -3.22018, 28.9858)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("111_37xlc")
-spawn_groups = Array[NodePath]([NodePath("Carne"), NodePath("Milanesas y Pollo")])
+[node name="mostrador-carne2" parent="Carniceria" instance=ExtResource("106_wvlrk")]
+transform = Transform3D(-0.9999993, 0, -8.707866e-08, 0, 1, 0, 8.707866e-08, 0, -0.9999993, 55.415714, -3.220177, 29.017374)
 
-[node name="Mostrador Carne 3" parent="Carniceria" instance=ExtResource("106_wvlrk")]
-transform = Transform3D(-0.91431, 0, -0.405014, 0, 1, 0, 0.405014, 0, -0.91431, 53.6452, -3.22018, 20.9427)
-script = ExtResource("11_07pt3")
-product_db = ExtResource("111_37xlc")
-spawn_groups = Array[NodePath]([NodePath("Carne"), NodePath("Milanesas y Pollo")])
+[node name="mostrador-carne3" parent="Carniceria" instance=ExtResource("106_wvlrk")]
+transform = Transform3D(-0.91354483, 0, -0.4067361, 0, 1, 0, 0.4067361, 0, -0.91354483, 53.862404, -3.220177, 20.935005)
 
 [node name="GondolasEspecialesSpawner" type="Node" parent="." node_paths=PackedStringArray("spawn_points_laterales", "spawn_points_especiales")]
 script = ExtResource("115_8lcmr")
 gondolas_laterales = Array[PackedScene]([ExtResource("129_683hg"), ExtResource("10_mu7hw")])
 gondolas_especiales = Array[PackedScene]([ExtResource("126_esrwe"), ExtResource("107_engxj")])
-spawn_points_laterales = [NodePath("../GondolaLateralMarker"), NodePath("../GondolaLateralMarker2")]
-spawn_points_especiales = [NodePath("../GondolaEspecialMarker"), NodePath("../GondolaEspecialMarker2")]
+spawn_points_laterales = [NodePath("GondolaLateralMarker"), NodePath("GondolaLateralMarker2")]
+spawn_points_especiales = [NodePath("GondolaEspecialMarker"), NodePath("GondolaEspecialMarker2")]
 
-[node name="GondolaEspecialMarker" type="Marker3D" parent="."]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -24.829918, -1.168436, -113.04186)
+[node name="GondolaEspecialMarker" type="Marker3D" parent="GondolasEspecialesSpawner"]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -24.829918, -1.168436, -112.605865)
 
-[node name="GondolaLateralMarker" type="Marker3D" parent="."]
-transform = Transform3D(0.044316884, 0, 0.9990175, 0, 1, 0, -0.9990175, 0, 0.044316884, -28.721884, -1.1093265, -85.2475)
+[node name="GondolaLateralMarker" type="Marker3D" parent="GondolasEspecialesSpawner"]
+transform = Transform3D(0.044316884, 0, 0.9990175, 0, 1, 0, -0.9990175, 0, 0.044316884, -28.721884, -1.1093265, -88.58765)
 
-[node name="GondolaLateralMarker2" type="Marker3D" parent="."]
+[node name="GondolaLateralMarker2" type="Marker3D" parent="GondolasEspecialesSpawner"]
 transform = Transform3D(-0.024310026, 0, -0.9997045, 0, 1, 0, 0.9997045, 0, -0.024310026, 27.259354, -0.9582274, -85.2475)
 
-[node name="GondolaEspecialMarker2" type="Marker3D" parent="."]
+[node name="GondolaEspecialMarker2" type="Marker3D" parent="GondolasEspecialesSpawner"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.004606, -1.1603289, -113.76209)
 
 [connection signal="body_entered" from="Zoom/Area3D" to="Zoom" method="_on_body_entered"]
@@ -1592,15 +1603,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.004606, -1.1603289, -113.7
 [editable path="Gondolas/Gondola2"]
 [editable path="Gondolas/Gondola3"]
 [editable path="Gondolas/Gondola4"]
-[editable path="Heladeras/heladera"]
-[editable path="Heladeras/heladera-larga2"]
-[editable path="Heladeras/heladera2"]
-[editable path="Heladeras/heladera3"]
-[editable path="Heladeras/heladera4"]
-[editable path="Heladeras/heladera6"]
-[editable path="Heladeras/heladera7"]
-[editable path="Heladeras/heladera5"]
+[editable path="Heladeras/heladera-chica-1"]
+[editable path="Heladeras/heladera-chica-2"]
+[editable path="Heladeras/heladera-chica-3"]
+[editable path="Heladeras/heladera-chica-4"]
+[editable path="Heladeras/heladera-chica-5"]
+[editable path="Heladeras/heladera-chica-6"]
+[editable path="Heladeras/heladera-chica-7"]
+[editable path="Heladeras/heladera-larga"]
 [editable path="Personajes/Node3D"]
-[editable path="Carniceria/Mostrador Carne"]
-[editable path="Carniceria/Mostrador Carne 2"]
-[editable path="Carniceria/Mostrador Carne 3"]
+[editable path="Carniceria/mostrador-carne"]
+[editable path="Carniceria/mostrador-carne2"]
+[editable path="Carniceria/mostrador-carne3"]

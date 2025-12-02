@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ProductScenesCatalog" load_steps=12 format=3 uid="uid://nvlkuqmir74v"]
+
+[ext_resource type="PackedScene" uid="uid://chwuu8ve38y8w" path="res://productos/panaderia/panes/flauta_de_pan.tscn" id="1_1n365"]
+[ext_resource type="PackedScene" uid="uid://wiumgjfacwfo" path="res://productos/panaderia/panes/pan_hamburguesa_azulx4.tscn" id="2_f2ate"]
+[ext_resource type="PackedScene" uid="uid://bafppvge8e5nv" path="res://productos/panaderia/panes/pan_hamburguesa_celestex4.tscn" id="3_sp5ak"]
+[ext_resource type="PackedScene" uid="uid://c0uom2ns1rf33" path="res://productos/panaderia/panes/pan_molde_base.tscn" id="4_qlpeg"]
+[ext_resource type="Script" uid="uid://bsghesyqlxvi3" path="res://scripts/resources/product_scenes_catalog.gd" id="5_aw0jg"]
+[ext_resource type="PackedScene" uid="uid://d0cr5xbbqxrc5" path="res://productos/panaderia/panes/pan_molde_rojo.tscn" id="5_lwyyg"]
+[ext_resource type="PackedScene" uid="uid://balivhplhhhvg" path="res://productos/panaderia/panes/pan_molde_verde.tscn" id="6_62mtx"]
+[ext_resource type="PackedScene" uid="uid://bxuvjcfnyo1yd" path="res://productos/panaderia/panes/pan_pancho_celeste.tscn" id="7_owkgc"]
+[ext_resource type="PackedScene" uid="uid://bqsr88e26uxgc" path="res://productos/panaderia/panes/pan_pancho_rojo.tscn" id="8_0xtij"]
+[ext_resource type="PackedScene" uid="uid://cd2q30af7ghh2" path="res://productos/panaderia/panes/pan_pancho_verde.tscn" id="9_skahg"]
+
+[sub_resource type="Resource" id="Resource_k8e11"]
+script = ExtResource("5_aw0jg")
+categories = {
+"panes": [ExtResource("1_1n365"), ExtResource("2_f2ate"), ExtResource("3_sp5ak"), ExtResource("4_qlpeg"), ExtResource("5_lwyyg"), ExtResource("6_62mtx"), ExtResource("7_owkgc"), ExtResource("8_0xtij"), ExtResource("9_skahg")]
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"
+
+[resource]
+script = ExtResource("5_aw0jg")
+categories = {
+"panaderia": SubResource("Resource_k8e11")
+}
+metadata/_custom_type_script = "uid://bsghesyqlxvi3"

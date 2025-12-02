@@ -24,6 +24,7 @@ EnvConfig="*res://scripts/environments/env_config.gd"
 Global="*res://scripts/managers/global.gd"
 SonidoAgarrar="*res://scripts/managers/SonidoAgarrar.gd"
 ProductScanner="*res://scripts/herramientas/product_scanner.gd"
+CategoryManager="*res://scripts/managers/categories_manager.gd"
 
 [custom]
 

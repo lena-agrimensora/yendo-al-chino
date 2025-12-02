@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://drbmbxhe5vmwi"]
+[gd_scene load_steps=4 format=3 uid="uid://drbmbxhe5vmwi"]
 
-[ext_resource type="Script" uid="uid://bj76ms0tiwom8" path="res://scripts/managers/Gondola_Manager.gd" id="1_8ujwy"]
+[ext_resource type="Script" uid="uid://bqoxia5405wbd" path="res://scripts/managers/gondola_manager.gd" id="1_8ujwy"]
 [ext_resource type="PackedScene" uid="uid://cg6fp3lxyc3iu" path="res://scenes/muebles/Muebles Base/mostrador_carne.tscn" id="1_nhb8h"]
+[ext_resource type="Resource" uid="uid://bmnym38pf617e" path="res://scripts/resources/carniceria_catalog.tres" id="2_gcl8v"]
 
 [node name="Mostrador de Carne Con Productos" type="Node3D"]
 script = ExtResource("1_8ujwy")
+product_db = ExtResource("2_gcl8v")
+common_group_one = Array[NodePath]([NodePath("Carne/Estante"), NodePath("Milanesas y Pollo/Estante")])
 
 [node name="Mostrador Carne" parent="." instance=ExtResource("1_nhb8h")]
 
